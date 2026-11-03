@@ -2,7 +2,7 @@
 Other/Documentation/Guides/How_To_Git.txt <br>
 Other/Documentation/Guides/Repo_Structure.txt <br> <br>
 
-
+### Members Organization
 Project Leaders: Jan Bartos, Leonida Ilijoska <br> <br>
 
 Git Leader - Francesco Ardei <br><br>
