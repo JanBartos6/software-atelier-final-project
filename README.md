@@ -1,14 +1,14 @@
-Git Leader - Francesco Ardei
+Git Leader - Francesco Ardei <br><br>
 
-CSS Lead 1 - Alessandro Rohrwasser
-CSS Lead 2 - Dell'Agnello Andrea
+CSS Lead 1 - Alessandro Rohrwasser <br>
+CSS Lead 2 - Dell'Agnello Andrea   <br><br>
 
-Topic leader 1 - Eros Butti
-Topic leader 2 - Giulia Mettifogo
-Topic leader 3 - Eliot Boniface
-Topic leader 4 - Giacomo Demartini
+Topic leader 1 - Eros Butti <br>
+Topic leader 2 - Giulia Mettifogo <br>
+Topic leader 3 - Eliot Boniface <br>
+Topic leader 4 - Giacomo Demartini <br> <br>
 
-Sub 1: Mark, Alessio, Luca
-Sub 2: Mohammed, Nguyen, Fabio
-Sub 3: Daniele, Emanuele, Tran
+Sub 1: Mark, Alessio, Luca <br>
+Sub 2: Mohammed, Nguyen, Fabio <br>
+Sub 3: Daniele, Emanuele, Tran <br>
 Sub 4: Eleonora, Changlong, Lexie
