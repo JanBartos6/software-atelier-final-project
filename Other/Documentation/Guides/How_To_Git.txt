@@ -1,0 +1,22 @@
+Key sequence:
+git add ...
+git commit -m "Comment"
+git push
+
+Added Bavota's presentation for reference if you forget anything.
+-----------------------------------------------------------------
+
+If you want to git add multiple files at once:
+
+git add ./\*.txt
+
+
+^Change .txt with the type of file you're interested in (e.g. .html)
+The command will add every file ending in .txt in your current directory + its subdirectories
+-----------------------------------------------------------------
+
+We decided we'll be working in branches, that means topic members will work in their respective branch and only merge once major (stable) progress has been made.
+
+-----------------------------------------------------------------
+
+How to move to your branch:

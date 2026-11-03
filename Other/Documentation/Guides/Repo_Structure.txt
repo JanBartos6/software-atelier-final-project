@@ -1,0 +1,23 @@
+
+    CSS
+      This is where all CSS stuff will go. Up to the CSS leaders to organize.
+    HTML
+      Sub 1		- Sub refers to what we discussed in class on the first day.
+        Topic 1
+        .
+        .
+        Topic 4
+      .
+      .
+      Sub 4
+    Other
+      Documentation
+        Guides
+          Where we are storing stuff that might help you
+      Media
+        Where all images and stuff will go
+    README.md
+
+Regarding media: please save images in a smart way (no img.png pls). For example, if you are working on "AI History", save the images as AI_History_1.png, AI_History_2.png, etc to avoid any conflict.
+
+Guides: Feel free to add anything that you think might help others.
