@@ -53,3 +53,5 @@ pls work in ur branch
 -----------------------------------------------------------------
 
 NEVER do git add . -> you will add all of Mac OS's hidden files.
+EDIT: After adding .gitignore to the repo, you can now do git add .
+This is bad practice and you shouldn't though 👀
