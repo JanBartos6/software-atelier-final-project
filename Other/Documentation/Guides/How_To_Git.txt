@@ -3,6 +3,13 @@ git add ...
 git commit -m "Comment"
 git push
 
+You can do:
+
+git add -u
+
+To automatically stage all previously tracked files' modifications. It won't track newly added files.
+
+
 Added Bavota's presentation for reference if you forget anything.
 -----------------------------------------------------------------
 
@@ -15,8 +22,34 @@ git add ./\*.txt
 The command will add every file ending in .txt in your current directory + its subdirectories
 -----------------------------------------------------------------
 
-We decided we'll be working in branches, that means topic members will work in their respective branch and only merge once major (stable) progress has been made.
+We decided we'll be working in branches, that means topic members will work in their respective branch and only merge once major (stable) progress has been made. Only topic leaders can ask for merges.
 
 -----------------------------------------------------------------
 
-How to move to your branch:
+How to move to your branch
+
+Run the command: git fetch origin
+This will download all the branches to your local machine.
+
+Afterwards run: git switch name-of-branch
+and you are set. (You just pull and commit/push as normal)
+-----------------------------------------------------------------
+
+How to update your branch with newly added content from main
+
+git switch main
+git pull
+git switch your-branch
+git merge main
+
+(this will merge main into your branch) (do not for whatever reason do the opposite) (i'm not aware you can but don't even think about it)
+-----------------------------------------------------------------
+
+CSS writers will (most likely) be working on main branch.
+
+-----------------------------------------------------------------
+
+pls work in ur branch
+-----------------------------------------------------------------
+
+NEVER do git add . -> you will add all of Mac OS's hidden files.

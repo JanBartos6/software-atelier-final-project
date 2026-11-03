@@ -11,4 +11,8 @@ Topic leader 4 - Giacomo Demartini <br> <br>
 Sub 1: Mark, Alessio, Luca <br>
 Sub 2: Mohammed, Nguyen, Fabio <br>
 Sub 3: Daniele, Emanuele, Tran <br>
-Sub 4: Eleonora, Changlong, Lexie
+Sub 4: Eleonora, Changlong, Lexie <br> <br>
+
+## PLEASE READ THE FOLLOWING BEFORE DOING ANYTHING
+Other/Documentation/Guides/How_To_Git.txt <br>
+Other/Documentation/Guides/Repo_Structure.txt
