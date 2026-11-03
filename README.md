@@ -1,3 +1,10 @@
+## PLEASE READ THE FOLLOWING BEFORE DOING ANYTHING
+Other/Documentation/Guides/How_To_Git.txt <br>
+Other/Documentation/Guides/Repo_Structure.txt <br> <br>
+
+
+Project Leaders: Jan Bartos, Leonida Ilijoska <br> <br>
+
 Git Leader - Francesco Ardei <br><br>
 
 CSS Lead 1 - Alessandro Rohrwasser <br>
@@ -13,6 +20,3 @@ Sub 2: Mohammed, Nguyen, Fabio <br>
 Sub 3: Daniele, Emanuele, Tran <br>
 Sub 4: Eleonora, Changlong, Lexie <br> <br>
 
-## PLEASE READ THE FOLLOWING BEFORE DOING ANYTHING
-Other/Documentation/Guides/How_To_Git.txt <br>
-Other/Documentation/Guides/Repo_Structure.txt
