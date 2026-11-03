@@ -12,8 +12,8 @@ CSS Lead 2 - Dell'Agnello Andrea   <br><br>
 
 Topic leader 1 - Eros Butti <br>
 Topic leader 2 - Giulia Mettifogo <br>
-Topic leader 3 - Eliot Boniface <br>
-Topic leader 4 - Giacomo Demartini <br> <br>
+Topic leader 3 - Giacomo Demartini <br>
+Topic leader 4 - Eliot Boniface <br> <br>
 
 Sub 1: Mark, Alessio, Luca <br>
 Sub 2: Mohammed, Nguyen, Fabio <br>
