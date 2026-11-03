@@ -1,5 +1,4 @@
-
-   .
+.
 ├── CSS/
 │   └── This is where all CSS stuff will go. Up to the CSS leaders to organize.
 ├── HTML/
@@ -17,7 +16,7 @@
 │   │       └── Where we are storing stuff that might help you
 │   └── Media/
 │       └── Images/
-│           └── Where all images
+│           └── Where all images go
 └── README.md
 
 Regarding media: please save images in a smart way (no img.png pls). For example, if you are working on "AI History", save the images as AI_History_1.png, AI_History_2.png, etc to avoid any conflict.
