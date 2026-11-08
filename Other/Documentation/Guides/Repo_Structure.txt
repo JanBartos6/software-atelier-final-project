@@ -2,25 +2,23 @@
 ├── CSS/
 │   └── This is where all CSS stuff will go. Up to the CSS leaders to organize.
 ├── HTML/
-│   ├── Sub 1/
-│   │   ├── Topic 1
-│   │   ├── .
-│   │   ├── .
-│   │   └── Topic 4
-│   ├── .
-│   ├── .
-│   └── Sub 4
+│   ├── Introduction_to_AI -- Each one is the name of a topic
+│   ├── AI_Technologies
+│   └── Impacts
 ├── Other/
 │   ├── Documentation/
 │   │   └── Guides/
 │   │       └── Where we are storing stuff that might help you
 │   └── Media/
 │       └── Images/
-│           └── Where all images go
+│           └── Where all images and stuff will go
 └── README.md
 
-Regarding media: please save images in a smart way (no img.png pls). For example, if you are working on "AI History", save the images as AI_History_1.png, AI_History_2.png, etc to avoid any conflict.
+
+Regarding media: please save images in a smart way (no img.png pls). For example, if you are working on "AI History", save the images as AI_History_1.png, AI_History_2.png, etc to avoid any conflict. You can also make subfolders, it's really up to you.
 
 Guides: Feel free to add anything that you think might help others.
 
-Sub - Check README to know which sub you are in. Topic leaders are free to change their sub folder to better reflect their organization (e.g. rename Topic 1 to "AI History").
+Topic: Check README to know which topic you are in, and work in your respective branch.
+Each topic folder can be organized in the way you prefer but it's really up to the topic
+leader/s to decide.
