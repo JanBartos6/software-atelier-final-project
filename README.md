@@ -16,15 +16,19 @@ Topic leader 3 - Giacomo Demartini <br>
 
 ### Topic 1, Introduction to AI
 Leader: Eros Butti <br>
-Members: Mark, Alessio, Luca <br> <br>
+Members: Mark, Alessio, Luca <br> 
+Branch name: Topic1 <br> <br>
 
 ### Topic 2, AI Technologies
 Subgroup 1: Leader, Giulia Mettifogo <br>
-Members: Mohammed, Nguyen, Fabio <br> <br>
+Members: Mohammed, Nguyen, Fabio <br>
+Branch name: Topic2-SG1 <br> <br>
 
 Subgroup 2: Leader, Giacomo Demartini <br>
-Members: Daniele, Emanuele, Tran <br> <br>
+Members: Daniele, Emanuele, Tran <br>
+Branch name: Topic2-SG2 <br> <br>
 
 ### Topic 3, Impacts
 Leader: Eliot Boniface <br>
-Members: Eleonora, Changlong, Lexie <br> <br>
+Members: Eleonora, Changlong, Lexie <br>
+Branch name: Topic3 <br> <br>
