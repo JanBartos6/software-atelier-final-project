@@ -19,8 +19,11 @@ Leader: Eros Butti <br>
 Members: Mark, Alessio, Luca <br> <br>
 
 ### Topic 2, AI Technologies
-Leader: Giulia Mettifogo, Giacomo Demartini <br>
-Members: Mohammed, Nguyen, Fabio, Daniele, Emanuele, Tran <br> <br>
+Subgroup 1: Leader, Giulia Mettifogo <br>
+Members: Mohammed, Nguyen, Fabio <br> <br>
+
+Subgroup 2: Leader, Giacomo Demartini <br>
+Members: Daniele, Emanuele, Tran <br> <br>
 
 ### Topic 3, Impacts
 Leader: Eliot Boniface <br>
