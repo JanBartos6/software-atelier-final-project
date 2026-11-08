@@ -1,0 +1,71 @@
+@import url("homepage.css");
+@import url("article.css");
+@import url("animations.css");
+@import url("definitions.css");
+@import url("fonts.css");
+
+/* GLOBAL STYLES */
+
+body, nav, main, #article-title > span, footer {
+	background-color: var(--primary-bg-color);
+}
+
+nav, main, #article-title, footer {
+	border-color: var(--global-border-color);
+}
+
+/* ---------- BASE ---------- */
+
+*, *:before, *:after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	background-color: var(--primary-bg-color);
+	font-family: var(--main-font);
+	color: var(--main-font-color);
+	font-size: 16px;
+	font-weight: 200;
+	overflow-x: hidden;
+	scroll-behavior: smooth;
+	/*cursor: crosshair;*/
+}
+
+body {
+	animation: fade-out 0.6s ease-in forwards; /* LOADING ANIMATION */
+	will-change: opacity; /* LOADING ANIMATION */
+}
+
+a {
+	color: var(--links-color);
+	text-decoration: none;
+	transition: 0.5s ease;
+}
+
+a img {
+	border: none;
+	display: block;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+hr {
+	border: none;
+	background-color: var(--article-card-border-color);
+	height: 1px;
+	margin: 3px 0 5px 0;
+}
+
+[id] {
+	scroll-margin-top: 100px;
+}
+
+img:not([src]), img[src=""] {
+	display: none;
+}

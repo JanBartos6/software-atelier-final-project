@@ -1,0 +1,79 @@
+/* ANIMATIONS */
+
+@keyframes background-breathing {
+	
+	0% {
+		background-size: 150%;
+	}
+	
+	100% {
+		background-size: 100%;
+	}
+	
+}
+
+@keyframes fade-in {
+	
+	0% {
+		opacity: 1;
+	}
+	
+	100% {
+		opacity: 0;
+	}
+	
+}
+
+@keyframes fade-out {
+	
+	0% {
+		opacity: 0;
+	}
+	
+	100% {
+		opacity: 1;
+	}
+	
+}
+
+@keyframes neon-block {
+	
+	0% {
+		box-shadow:
+			0 3px 4px 0 rgba(0,180,210,0.5),
+			0 -3px 4px 0 rgba(0,180,210,0.5);
+	}
+	
+	100% {
+		box-shadow:
+			0 4px 5px 0 rgba(0,180,210,0.75),
+			0 -4px 5px 0 rgba(0,180,210,0.75);
+	}
+}
+
+@keyframes neon-inline {
+	
+	0% {
+		box-shadow:
+			3px 0 4px 0 rgba(0,180,210,0.5),
+			-3px 0 4px 0 rgba(0,180,210,0.5);
+	}
+	
+	100% {
+		box-shadow:
+			4px 0 5px 0 rgba(0,180,210,0.75),
+			-4px 0 5px 0 rgba(0,180,210,0.75);
+	}
+}
+
+@keyframes rotate-x {
+	
+	0% {
+		transform: rotatey(0);
+	}
+	
+	100% {
+		transform: rotatey(360deg);
+	}
+	
+}
