@@ -11,17 +11,17 @@ CSS Lead 1 - Alessandro Rohrwasser <br>
 CSS Lead 2 - Dell'Agnello Andrea   <br><br>
 
 Topic leader 1 - Eros Butti <br>
-Topic leader 2 - Giulia Mettifogo <br>
+Topic leader 2 - Giulia Mettifogo and Giacomo Demartini <br>
 Topic leader 3 - Giacomo Demartini <br>
 
 ### Topic 1, Introduction to AI
 Leader: Eros Butti <br>
-Members: Mark, Alessio, Luca <br>
+Members: Mark, Alessio, Luca <br> <br>
 
 ### Topic 2, AI Technologies
 Leader: Giulia Mettifogo, Giacomo Demartini <br>
-Members: Mohammed, Nguyen, Fabio, Daniele, Emanuele, Tran <br>
+Members: Mohammed, Nguyen, Fabio, Daniele, Emanuele, Tran <br> <br>
 
 ### Topic 3, Impacts
 Leader: Eliot Boniface <br>
-Members: Eleonora, Changlong, Lexie <br>
+Members: Eleonora, Changlong, Lexie <br> <br>
