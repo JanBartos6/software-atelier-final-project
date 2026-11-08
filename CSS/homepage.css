@@ -1,0 +1,317 @@
+/* HOMEPAGE */
+
+/* ---------- LOGOTYPE ---------- */
+
+#project-logotype {
+	display: grid;
+	align-items: center;
+	grid-template-columns: auto auto;
+	gap: var(--logotype-gap);
+	cursor: default;	
+}
+
+#project-logotype:hover .left-part > span > img {
+	animation: rotate-x 2s ease-in-out forwards;
+}
+
+#project-logotype .left-part {
+	font-size: var(--logotype-left-part-font-size);
+	text-align: right;
+}
+
+#project-logotype .left-part span {
+	position: relative;
+}
+
+#project-logotype img {
+	position: absolute;
+	top: -5px;
+	left: 1px;
+}
+
+#project-logotype .right-part {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	text-transform: uppercase;
+}
+
+#project-logotype .right-part .first-row {
+	font-size: calc(var(--logotype-right-part-font-size) * 0.2);
+	line-height: 0.76;
+	letter-spacing: 0.2px;
+	margin-bottom: 15px;
+	padding-top: 2px;
+}
+
+#project-logotype .right-part .second-row {
+	font-size: calc(var(--logotype-right-part-font-size) * 0.665);
+	line-height: 0.74;
+	margin-left: -4px;
+}
+
+/* ---------- WELCOME SECTION ---------- */
+
+#welcome {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background:
+		radial-gradient(ellipse at bottom, rgba(0, 180, 210, 0.25) 0%, transparent 50%) no-repeat center bottom / 150%,
+		linear-gradient(to bottom, #111112 0%, #1c1c1e 100%) no-repeat center bottom / 100%;
+	animation:
+		background-breathing 2s ease-in-out infinite alternate,
+		neon-block 10s ease-in-out infinite alternate;
+	will-change: background-size, box-shadow;
+}
+
+#cloud {
+	position: relative;
+	font-family: var(--main-font);
+	font-size: calc(var(--logotype-right-part-font-size)*0.2);
+	text-align: center;
+}
+
+#topics-container {
+	display: flex;
+	gap: 1em;
+	margin-top: 1.2em;
+}
+
+#topics-container span {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	flex: 1;
+	gap: 0.3em;
+	padding: 1em;
+	border-radius: var(--global-border-radius);
+}
+
+#topics-container span:nth-child(1) {
+	border-right: var(--global-border-thickness) solid var(--main-font-color);
+	text-align: right;
+}
+
+#topics-container span:nth-child(1) a:hover  {
+	color: var(--first-main-topic-color-neon);
+}
+
+#topics-container span:nth-child(2) a:hover {
+	color: var(--second-main-topic-color-neon);
+}
+
+#topics-container span:nth-child(3) {
+	border-left: var(--global-border-thickness) solid var(--main-font-color);
+	text-align: left;
+}
+
+#topics-container span:nth-child(3) a:hover {
+	color: var(--third-main-topic-color-neon);
+}
+
+#topics-container a {
+	text-transform: uppercase;
+	color: inherit;
+}
+
+#topics-container a:hover {
+	color: var(--links-color);
+}
+
+/* ---------- TOPICS SELECTION ---------- */
+
+#main-topics {
+	display: flex;
+	width: 90%;
+	margin: 0 auto;
+}
+
+.main-topic {
+	flex: 1;
+	padding: 25px;
+	text-align: center;
+}
+
+.first {
+	border-color: var(--first-main-topic-color);
+}
+
+.second, nav a:nth-child(2):hover {
+	border-color: var(--second-main-topic-color);
+}
+
+.third, nav a:nth-child(3):hover {
+	border-color: var(--third-main-topic-color);
+}
+
+.sub-topic {
+	margin-bottom: 32px;
+	padding: 16px 42px;
+	border-inline-width: var(--global-border-thickness);
+	border-inline-style: solid;
+	border-radius: var(--global-border-radius);
+}
+
+.sub-topic h2 {
+	margin-bottom: 0.6em;
+	padding-bottom: 0.4em;
+	border-bottom-width: var(--global-border-thickness);
+	border-bottom-style: solid;
+	font-size: 1.6em;
+	text-transform: uppercase;
+}
+
+.sub-topic > p {
+	margin-bottom: 1.8em;
+}
+
+#introduction-to-ai .sub-topic h2 {
+	color: var(--first-main-topic-color);
+}
+
+#ai-technologies .sub-topic h2 {
+	color: var(--second-main-topic-color);
+}
+
+#impact-and-ethics .sub-topic h2 {
+	color: var(--third-main-topic-color);
+}
+
+.articles {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.articles a {
+	color: var(--main-font-color);
+}
+
+.sub-topic article {
+	background-color: rgba(31, 32, 65, 0.25);
+	padding-bottom: 1.6em;
+	border: var(--article-card-border-style);
+	border-radius: var(--global-border-radius);
+	overflow: hidden;
+	transition: background-color 0.5s ease;
+	box-shadow: 0 2px 2px var(--global-border-color);
+}
+
+.sub-topic article:hover {
+	background-color: rgba(31, 32, 65, 1);
+}
+
+article img {
+	object-fit: cover;
+	width: 100%;
+	height: 8vh;
+	border-bottom: var(--article-card-border-style) !important;
+}
+
+article h3, article p {
+	padding-inline: 1.4em;
+}
+
+article h3 {
+	color: #f4f0ec;
+	font-size: 1.2em;
+	margin-top: 0.9em;
+}
+
+article hr {
+	margin-block: 6px;
+}
+
+article p {
+	font-size: 0.9em;
+	line-height: 1.2;
+}
+
+article p.subtitle {
+	margin-bottom: 1em;
+	font-size: 0.8em;
+	text-transform: uppercase;
+}
+
+/* ---------- FOOTER ---------- */
+
+footer#home {
+	padding-block: 32px;
+	border: none;
+	animation: neon-block 10s ease-in-out infinite alternate;
+	will-change: box-shadow;
+}
+
+footer#home > span {
+	display: flex;
+	justify-content: center;
+	gap: 1em;
+	margin-bottom: 24px;
+}
+
+footer#home > span span:nth-child(odd) {
+	text-align: right;
+}
+
+footer#home > span span:nth-child(even) {
+	text-align: left;
+}
+
+footer#home h4 {
+	font-weight: 400;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+footer#home h4 span:nth-child(1) {
+	color: #a0aab0;
+}
+
+footer#home h4 span:nth-child(2) {
+	color: var(--group-color);
+}
+
+footer#home hr {
+	border: none;
+	background-color: var(--global-border-color);
+	height: 1px;
+	margin: 6px 0 24px 0;
+}
+
+footer#home h5 {
+	margin: 0.8em 0 0.4em 0;
+}
+
+footer#home h5:first-child {
+	margin-top: 0;
+}
+
+footer#home #back-to-top {
+	background-color: var(--primary-bg-color);
+	position: fixed;
+	bottom: 11px;
+	left: 50%;
+	transform: translatex(-50%);
+	display: block;
+	width: fit-content;
+	margin: 0 auto;
+	margin-top: 30px;
+	padding: 6px 18px;
+	border-inline: var(--global-border-thickness) solid var(--article-navigation-border-color);
+	border-radius: var(--global-border-radius);
+	color: var(--main-font-color);
+	text-transform: uppercase;
+	box-shadow: 0 0 24px var(--primary-bg-color);
+	animation: fade-out ease-out both;
+	animation-timeline: scroll(root);
+	animation-range: 25% 50%;
+	transition: color border-color 0.5s ease;
+}
+
+footer#home #back-to-top:hover {
+	color: var(--links-color);
+	border-color: var(--links-color);
+}

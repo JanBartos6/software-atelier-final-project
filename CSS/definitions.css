@@ -1,0 +1,42 @@
+/* DEFINITIONS */
+
+:root {
+	--main-font: "Inter", Helvetica, Arial, sans-serif;
+	--secondary-font: "Share Tech Mono", monoface, system-ui;
+	--main-font-color: #f3f4f6;
+	--links-color: #00b4d2;
+
+	--primary-bg-color: #1c1c1e;
+	--secondary-bg-color: #242426;
+	
+	--group-color: #f9b61a;
+	--first-main-topic-color-pale: #df8afa;
+	--second-main-topic-color-pale: #8accde;
+	--third-main-topic-color-pale: #ff9777;
+	--first-main-topic-color: #d564f9;
+	--second-main-topic-color: #64bcd4;
+	--third-main-topic-color: #ff754a;
+	--first-main-topic-color-neon: #d500f9;
+	--second-main-topic-color-neon: #00bcd4;
+	--third-main-topic-color-neon: #ff5722;
+	
+	--global-border-color: #004854;
+	--global-border-thickness: 1px;
+	--global-border-radius: 10px;
+	--article-navigation-border-color: #fff;
+	
+	--nav-height: 80px;
+	--arrow-positioning: calc(50% - (var(--article-width) / 2) - 60px);
+	
+	--article-width: 70%;
+	--article-content-padding: 60px;
+
+	--article-card-border-color: rgba(255,255,255,0.25);
+	--article-card-border-style: var(--global-border-thickness) solid var(--article-card-border-color);
+
+	--logotype-left-part-font-size: calc(var(--logotype-right-part-font-size) * 1);
+	--logotype-right-part-font-size: 160px;
+	--logotype-gap: calc(var(--logotype-right-part-font-size) * 0.06);
+	
+	--template-placeholder-color: #00ff26;
+}
