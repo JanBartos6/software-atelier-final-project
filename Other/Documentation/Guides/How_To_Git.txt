@@ -31,8 +31,11 @@ How to move to your branch
 Run the command: git fetch origin
 This will download all the branches to your local machine.
 
-Afterwards run: git switch name-of-branch
+Afterwards run: git switch --track name-of-branch 
 and you are set. (You just pull and commit/push as normal)
+
+!!-> (the name will start with origin, so for example for topic 1 
+-> git switch --track origin/Topic1)!!
 -----------------------------------------------------------------
 
 How to update your branch with newly added content from main
