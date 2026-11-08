@@ -8,7 +8,7 @@
 		<!-- CUSTOM EXTERNAL CSS -->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="format-detection" content="telephone=no">
-		<meta name="description" content=""> <!-- ARTICLE DESCRIPTION -->
+		<meta name="description" content="A brief guide on how to set up a new article page for our project."> <!-- ARTICLE DESCRIPTION -->
 		<style>
 			:root {
 				--template-color: var(--links-color);
@@ -25,15 +25,15 @@
 				object-fit: cover;
 				width: 100%;
 				height: 100px;
-				border: var(--article-card-border-style);
 				margin-bottom: 32px;
+				border: var(--article-card-border-style);
 			}
 			
 			.article-section h2 {
-				color: var(--group-color);
 				margin-block: 1.6em 0.8em;
-				text-transform: uppercase;
+				color: var(--group-color);
 				text-align: center;
+				text-transform: uppercase;
 			}
 			
 			.article-section ol {
@@ -76,6 +76,7 @@
 				</li>
 			</ul>
 		</nav>
+		<!-- PUT YOUR CONTENT ONLY INSIDE THE <main> TAG, AFTER LINKS AND TITLE SECTION -->
 		<main>
 			<!-- PREVIOUS/NEXT ARTICLE LINKS -->
 			<a id="previous-article" href="" aria-label="Read previous article" title="Previous article">&#10094</a>
@@ -83,11 +84,11 @@
 			<!-- ARTICLE TITLE (START) -->
 			<section id="article-title">
 				<span>
-					<h1>CSS/HTML guide</h1>
+					<h1>CSS/HTML Setup Guide</h1>
 					<p id="article-subtitle">a brief document on how to use this page to build your article pages</p>
-					<p class="article-title-paragraph">This is your template page; all custom layouts and components must be placed exclusively within the <code>&lt;main&gt;</code> container, preferably using the <code>&lt;section class="article-section"&gt;</code> container.</p>
-					<p class="article-title-paragraph">Read on to discover the steps required to set up a new article, along with a few style tips.</p>
-					<p id="author"><span>by</span> Andrea Dell'Agnello <span>and</span> Alessandro Rohrwasser</p>
+					<p class="article-title-paragraph">This is your template page; all custom layouts and components must be placed within the <code>&lt;main&gt;</code> container, preferably using the <code>&lt;section class="article-section"&gt;</code> container.</p>
+					<p class="article-title-paragraph">Read on to discover the steps required to set up a new article, along with a few useful tips.</p>
+					<p id="author"><span>by </span>Andrea Dell'Agnello <span>and</span> Alessandro Rohrwasser</p>
 				</span>
 			</section>
 			<!-- ARTICLE SECTION (START) -->
@@ -102,19 +103,19 @@
 					<li>Add the page description in the appropriate meta tag, once again in the document <code>&lt;head&gt;</code>.</li>
 					<li>Modify the value of <code>--template-color</code> to reflect your main topic. The defined possible values are <code>var(--first-main-topic-color)</code>, <code>var(--second-main-topic-color)</code>, or <code>var(--third-main-topic-color)</code>. If you wish to use a different color (in hexadecimal or rgb/rgba format), replace the entire <code>var()</code> expression with your desired value.</li>
 					<li>Fill the title, subtitle, description and author fields within the <code>&lt;article-title&gt;</code> section.</li>
-					<li>Add links to the previous and next articles, following the instructions provided in the reference document.</li>
+					<li>Add links to the previous and next articles, following the instructions provided in the reference document. You can search for <code>PREVIOUS ARTICLE LINK</code> and <code>NEXT ARTICLE LINK</code> to find what you need to replace.</li>
 				</ol>
 				<h2>Random useful tips</h2>
 				<p>Little to no CSS is defined within <code>&lt;main&gt;</code>. You are essentially free to do as you please, but try to <strong>maintain consistency</strong> with the overall design of the website.</p>
-				<p>Before using an HTML element in your layout, <strong>search the existing markup code to check whether it has already been used</strong>. If it is already present, you can reuse it, but make sure to choose a unique ID or an available class.</p>
+				<p>Before using a native HTML tag in your layout, <strong>search the existing markup code to check whether it has already been used</strong>. If it is already present, you can reuse it, but make sure to choose a unique ID or an available class.</p>
 				<p>The only "reserved" tag is, in essence, the <code>&lt;H1&gt;</code> tag, which is used for the main title of the page.</p>
-				<p>If you notice any <span style="color:var(--template-placeholder-color)">neon-green text or element</span> on the page, it is a placeholder from the template; <strong>you should replace it</strong> with the relevant information.</p>
+				<p>If you notice any <span style="color:var(--template-placeholder-color)">neon-green text or element</span> on the page, it is sign a placeholder from the template is still active; <strong>you should replace it</strong> with the relevant information.</p>
 				<p>In the <code>css</code> folder of the project, you will find the <code>definitions.css</code> file. It contains all the project's global variable definitions. You can use this file as a reference if you wish to apply the styles contained within it.</p>
 				<p>If you would like to use an image as a background for the article title section, you can override <code>background-image</code> in the <code>#article-title</code> selector.</p>
 				<p>We are always available to discuss any questions or feedback regarding the CSS, so please don't hesitate to reach out!</p>
 			</section>
 		</main>
-		 <!-- PUT YOUR CONTENT ONLY INSIDE THE <main> TAG, AFTER LINKS AND TITLE SECTION -->
+		<!-- PUT YOUR CONTENT ONLY INSIDE THE <main> TAG, BEFORE THE FOOTER -->
 		<footer id="article">
 			<a href="">&#10094&#10094&#10094 Previous article</a>
 			<a id="back-to-top" href="#">Back to top</a>
