@@ -1,0 +1,10 @@
+.boxDisappear{
+    height: 7.2vh;
+    overflow: hidden;
+    
+
+}
+
+.js{
+transition: height 2s ease;
+}
