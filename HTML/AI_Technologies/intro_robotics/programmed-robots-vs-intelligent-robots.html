@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Programmed robots vs. intelligent robots - AI in Everyday Life</title> <!-- ARTICLE TITLE -->
+		<link rel="icon" href="/Other/Media/Images/Template/ai-icon.png"> <!-- THIS ROOT SHOULD BE POINTING TO THE START OF THE PROJECT, NOT UR FILE SYSTEM -->
+		<link rel="stylesheet" href="/CSS/global.css"> <!-- Use a virtual server and you should be fine. -->
+		<!-- CUSTOM EXTERNAL CSS -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="description" content="From Unimate to VEX competition robots: what separates a programmed robot from an intelligent one, the role of perception, planning and learning, and Moravec’s paradox."> <!-- ARTICLE DESCRIPTION -->
+		<style>
+			:root {
+				--template-color: var(--second-main-topic-color);
+			}
+			
+			/* CUSTOM INTERNAL CSS */
+			.article-section {
+				width: 80%;
+				margin: 0 auto;
+			}
+			
+			.article-section ul {
+				display: flex;
+				flex-direction: column;
+				gap: 0.5em;
+				margin: 0.8em 0 0.8em 1.5em;
+				line-height: 1.4;
+			}
+			
+			.article-section li::marker {
+				color: var(--template-color);
+			}
+			
+			.article-section strong {
+				font-weight: 600;
+				color: var(--second-main-topic-color-pale);
+			}
+			
+			.article-section li ul {
+				margin-block: 0.5em 0;
+			}
+			
+			.article-section figure {
+				max-width: 500px;
+				margin: 2.5em auto;
+			}
+			
+			.article-section figure img {
+				width: 100%;
+				border: var(--article-card-border-style);
+				border-radius: var(--global-border-radius);
+			}
+			
+			.article-section figure.small {
+				max-width: 400px;
+			}
+			
+			.article-section figcaption {
+				margin-top: 0.6em;
+				font-size: 0.9em;
+				font-style: italic;
+				text-align: center;
+				opacity: 0.7;
+			}
+			
+			.sources {
+				margin-top: 3em;
+				padding: 1em 1.5em;
+				border-left: var(--global-border-thickness) solid var(--template-color);
+				background-color: var(--secondary-bg-color);
+				border-radius: 0 var(--global-border-radius) var(--global-border-radius) 0;
+				font-size: 0.85em;
+			}
+			
+			.article-section .sources h2 {
+				margin: 0;
+				font-size: 1em;
+				font-weight: 600;
+				text-transform: uppercase;
+				color: var(--template-color);
+			}
+			
+			.sources ul {
+				gap: 0.3em;
+				word-break: break-all;
+			}
+		</style>
+	</head>
+	<body id="article">
+		<nav>
+			<a id="back-to-homepage" href="/HTML/index.html"><img src="/Other/Media/Images/Template/logotype.png" alt="Return to the homepage"></a>
+			<ul>
+				<li id="first-main-topic">
+					<a href="/HTML/index.html#introduction-to-ai">Introduction to AI</a>
+					<ul class="dropdown">
+						<li><a href="/HTML/index.html#history-of-ai">History of AI</a></li>
+						<li><a href="/HTML/index.html#basic-concepts">Basic Concepts</a></li>
+					</ul>
+				</li>
+				<li id="second-main-topic">
+					<a href="/HTML/index.html#ai-technologies">AI Technologies</a>
+					<ul class="dropdown">
+						<li><a href="/HTML/index.html#robotics">Robotics</a></li>
+						<li><a href="/HTML/index.html#applications">Applications</a></li>
+						<li><a href="/HTML/index.html#language-technologies">Language Technologies</a></li>
+					</ul>
+				</li>
+				<li id="third-main-topic">
+					<a href="/HTML/index.html#impact-and-ethics">Impact and Ethics</a>
+					<ul class="dropdown">
+						<li><a href="/HTML/index.html#ethics">Ethics</a></li>
+						<li><a href="/HTML/index.html#limitations">Limitations</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+		<!-- PUT YOUR CONTENT ONLY INSIDE THE <main> TAG, AFTER LINKS AND TITLE SECTION -->
+		<main>
+			<!-- PREVIOUS/NEXT ARTICLE LINKS -->
+			<a id="previous-article" href="do-we-really-know-what-a-robot-is.html" aria-label="Read previous article" title="Previous article">&#10094;</a>
+			<a id="next-article" href="the-robot-combines-all-ai-applications-into-one.html" aria-label="Read next article" title="Next article">&#10095;</a>
+			<!-- ARTICLE TITLE (START) -->
+			<section id="article-title">
+				<span>
+					<h1>Programmed robots vs. intelligent robots</h1>
+					<p id="article-subtitle">In 1961, General Motors installed Unimate, the first industrial robot.</p>
+					<p class="article-title-paragraph">It was an arm that picked up pieces of very hot metal and welded them onto car bodies. This was a dangerous task for workers, who could suffer serious harm from toxic fumes or even lose limbs if they weren’t paying attention. This robot repeated the same movement endlessly, with a precision no worker could match.</p>
+					<p id="author"><span>by </span>Giacomo Demartini</p>
+				</span>
+			</section>
+			<!-- ARTICLE SECTION (START) -->
+			<section class="article-section">
+				<figure class="small">
+					<img src="unimate.jpg" alt="The Unimate industrial robot arm pouring a cup of coffee for a man">
+					<figcaption>The Unimate robot pouring coffee for a human.</figcaption>
+				</figure>
+
+				<p>Classic industrial robots repeat precise movements in fenced-off, enclosed spaces and don’t adapt to anything. Artificial intelligence, on the other hand, is needed when the environment is unpredictable. It comes into play at three levels:</p>
+				<ul>
+					<li><strong>Perception:</strong> understanding what’s around.</li>
+					<li><strong>Planning:</strong> deciding the path or sequence of actions.</li>
+					<li><strong>Learning:</strong> learning by trial and error (<em>reinforcement learning</em>) or by imitating (<em>imitation learning</em>).</li>
+				</ul>
+
+				<p>To understand this better, let’s take an example: the task of picking up a glass from a table full of objects.</p>
+				<ul>
+					<li><strong>Perception:</strong> the robot has to recognize which of the many objects is the glass, where it is, and how it’s oriented.</li>
+					<li><strong>Planning:</strong> the robot has to decide how to move its arm to reach the glass without knocking over the objects next to it.</li>
+					<li><strong>Learning:</strong> the robot has two options.
+						<ul>
+							<li><em>Reinforcement learning:</em> the robot tries thousands of times and gets a “reward” when it succeeds, so that it learns to recognize a correct action (a bit like training a dog).</li>
+							<li><em>Imitation learning:</em> a person moves the arm by hand and the robot learns by copying the movements.</li>
+						</ul>
+					</li>
+				</ul>
+
+				<p>It seems absurd to have to teach a machine something so simple. All this just to pick up a glass, something a two-year-old does without thinking. But this is exactly where robotics discovers one of its most surprising truths: what is easy for us is extremely hard for a computer, and vice versa.</p>
+				<p>This is exactly what <strong>Moravec’s paradox</strong> says: what is hard for us is easy for a computer (for example, playing chess or doing complex calculations), and what is trivial for us is hard for a computer (for example, walking or picking up a glass).</p>
+
+				<figure class="small">
+					<img src="moravec.jpg" alt="Illustration of Moravec’s paradox: a computer beats a man at chess, while a toddler easily walks, plays and climbs stairs. Machines often excel at tasks people find difficult, yet struggle with what comes easily to people.">
+				</figure>
+
+				<p>As proof of this, in 1997 IBM’s supercomputer Deep Blue beat world chess champion Garry Kasparov. Yet almost thirty years later, robots still struggle to fold a T-shirt or open an ordinary door. Walking, seeing and grabbing objects are abilities our bodies have perfected over millions of years. For us they are automatic, so we don’t realize how complex they are. Chess and mathematics are relatively more recent inventions. Their algorithmic, rigid approach makes them hard for the human mind, but for a computer they are just rules and calculations that it carries out with absolute ease.</p>
+
+				<p>But how much is really “intelligent” in today’s robots? A good example comes from international robotics competitions, such as the VEX competition, where students from all over the world program robots that have to act on their own in a competition environment.</p>
+
+				<p>In Lugano, there is a group that puts these challenges into practice. Smilebots is a university team that designs, builds and programs robots for VEX U, the university division of one of the largest robotics competitions in the world. Every year the organizers present a completely new game, with new objects to collect, new goals and new rules. Teams therefore have only a few months to come up with robots that can take it on. Each match starts with the autonomous period: 30 seconds in which no one can touch the controls, and the robots must act based only on their program and on what their sensors measure. Only after that does the driver-controlled phase begin, in which students drive the robots with a controller. The autonomous period is exactly where you can see how hard it is to perceive, decide and act without a human.</p>
+
+				<figure>
+					<img src="vex.jpg" alt="A VEX competition robot built by the Smilebots team">
+					<figcaption>A VEX robot from Smilebots</figcaption>
+				</figure>
+
+				<p>To know where it is, the robot relies on its sensors. Autonomous routes are planned in advance, but planning isn’t enough: in the real world a wheel slips, or one motor is slightly weaker than the other. That’s why teams use PID, a control method that continuously corrects the movement. It works like riding a bike: if you notice you’re drifting, you steer a little to get back on track. PID corrects errors after they have already happened. There is also software that anticipates the movement by predicting the next moves and where the robot should be at every moment. It compares the prediction with the real sensor data, corrects the estimate and produces new predictions, so that the robot arrives precisely at the required point. It’s a continuous cycle of prediction, measurement and correction.</p>
+
+				<p>AI also comes in through a less visible but increasingly important route: development itself. Today, students can use artificial intelligence models to write code, find bugs, understand complex algorithms and optimize their robots’ parameters. As a result, tools that until a few years ago required an engineer’s experience are now accessible even to a team of students.</p>
+				<p>There is a limit, though: an AI model can suggest code, but it can’t know how the robot will behave on that field, with that battery, on that mat. The final word always belongs to testing in the real world.</p>
+
+				<p>Looking at a competition robot, you might think it’s a machine full of intelligence. In reality, much of its behavior is still programmed by hand. Even an action that seems simple, like driving perfectly straight for one meter, requires sensors, continuous corrections and hours of testing. It’s Moravec’s paradox seen up close. So artificial intelligence doesn’t replace traditional programming but complements it, stepping in where conditions are unpredictable. And that is exactly what “intelligent” robots are about: they are machines that can adapt to what wasn’t foreseen.</p>
+				<aside class="sources">
+					<h2>Sources</h2>
+					<ul>
+						<li><a href="https://en.wikipedia.org/wiki/Unimate" target="_blank" rel="noopener">https://en.wikipedia.org/wiki/Unimate</a></li>
+						<li><a href="https://en.wikipedia.org/wiki/Reinforcement_learning" target="_blank" rel="noopener">https://en.wikipedia.org/wiki/Reinforcement_learning</a></li>
+						<li><a href="https://en.wikipedia.org/wiki/Moravec%27s_paradox" target="_blank" rel="noopener">https://en.wikipedia.org/wiki/Moravec%27s_paradox</a></li>
+						<li><a href="https://en.wikipedia.org/wiki/Deep_Blue_versus_Garry_Kasparov" target="_blank" rel="noopener">https://en.wikipedia.org/wiki/Deep_Blue_versus_Garry_Kasparov</a></li>
+						<li><a href="https://www.vexrobotics.com/" target="_blank" rel="noopener">https://www.vexrobotics.com/</a></li>
+						<li><a href="https://sketchplanations.com/moravecs-paradox" target="_blank" rel="noopener">https://sketchplanations.com/moravecs-paradox</a></li>
+					</ul>
+				</aside>
+			</section>
+		</main>
+		<!-- PUT YOUR CONTENT ONLY INSIDE THE <main> TAG, BEFORE THE FOOTER -->
+		<footer id="article">
+			<a href="do-we-really-know-what-a-robot-is.html">&#10094;&#10094;&#10094; Previous article</a>
+			<a id="back-to-top" href="#">Back to top</a>
+			<a href="the-robot-combines-all-ai-applications-into-one.html">Next article &#10095;&#10095;&#10095;</a>
+		</footer>
+	</body>
+</html>

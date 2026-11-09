@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Do we really know what a robot is? - AI in Everyday Life</title> <!-- ARTICLE TITLE -->
+		<link rel="icon" href="/Other/Media/Images/Template/ai-icon.png"> <!-- THIS ROOT SHOULD BE POINTING TO THE START OF THE PROJECT, NOT UR FILE SYSTEM -->
+		<link rel="stylesheet" href="/CSS/global.css"> <!-- Use a virtual server and you should be fine. -->
+		<!-- CUSTOM EXTERNAL CSS -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="description" content="What really makes a machine a robot: the cycle of perception, decision and action, some borderline examples, and the difference between a chatbot and embodied AI."> <!-- ARTICLE DESCRIPTION -->
+		<style>
+			:root {
+				--template-color: var(--second-main-topic-color);
+			}
+			
+			/* CUSTOM INTERNAL CSS */
+			.article-section {
+				width: 80%;
+				margin: 0 auto;
+			}
+			
+			.article-section ul {
+				display: flex;
+				flex-direction: column;
+				gap: 0.5em;
+				margin: 0.8em 0 0.8em 1.5em;
+				line-height: 1.4;
+			}
+			
+			.article-section li::marker {
+				color: var(--template-color);
+			}
+			
+			.article-section strong {
+				font-weight: 600;
+				color: var(--second-main-topic-color-pale);
+			}
+			
+			.article-section figure {
+				max-width: 500px;
+				margin: 2.5em auto;
+			}
+			
+			.article-section figure img {
+				width: 100%;
+				border: var(--article-card-border-style);
+				border-radius: var(--global-border-radius);
+			}
+			
+			.article-section figcaption {
+				margin-top: 0.6em;
+				font-size: 0.9em;
+				font-style: italic;
+				text-align: center;
+				opacity: 0.7;
+			}
+			
+			.article-section .highlight {
+				margin-block: 1.5em;
+				padding-left: 1em;
+				border-left: 3px solid var(--template-color);
+				font-size: 1.15em;
+				font-weight: 400;
+			}
+			
+			.sources {
+				margin-top: 3em;
+				padding: 1em 1.5em;
+				border-left: var(--global-border-thickness) solid var(--template-color);
+				background-color: var(--secondary-bg-color);
+				border-radius: 0 var(--global-border-radius) var(--global-border-radius) 0;
+				font-size: 0.85em;
+			}
+			
+			.article-section .sources h2 {
+				margin: 0;
+				font-size: 1em;
+				font-weight: 600;
+				text-transform: uppercase;
+				color: var(--template-color);
+			}
+			
+			.sources ul {
+				gap: 0.3em;
+				word-break: break-all;
+			}
+		</style>
+	</head>
+	<body id="article">
+		<nav>
+			<a id="back-to-homepage" href="/HTML/index.html"><img src="/Other/Media/Images/Template/logotype.png" alt="Return to the homepage"></a>
+			<ul>
+				<li id="first-main-topic">
+					<a href="/HTML/index.html#introduction-to-ai">Introduction to AI</a>
+					<ul class="dropdown">
+						<li><a href="/HTML/index.html#history-of-ai">History of AI</a></li>
+						<li><a href="/HTML/index.html#basic-concepts">Basic Concepts</a></li>
+					</ul>
+				</li>
+				<li id="second-main-topic">
+					<a href="/HTML/index.html#ai-technologies">AI Technologies</a>
+					<ul class="dropdown">
+						<li><a href="/HTML/index.html#robotics">Robotics</a></li>
+						<li><a href="/HTML/index.html#applications">Applications</a></li>
+						<li><a href="/HTML/index.html#language-technologies">Language Technologies</a></li>
+					</ul>
+				</li>
+				<li id="third-main-topic">
+					<a href="/HTML/index.html#impact-and-ethics">Impact and Ethics</a>
+					<ul class="dropdown">
+						<li><a href="/HTML/index.html#ethics">Ethics</a></li>
+						<li><a href="/HTML/index.html#limitations">Limitations</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+		<!-- PUT YOUR CONTENT ONLY INSIDE THE <main> TAG, AFTER LINKS AND TITLE SECTION -->
+		<main>
+			<!-- PREVIOUS/NEXT ARTICLE LINKS -->
+			<a id="previous-article" href="PREVIOUS ARTICLE LINK" aria-label="Read previous article" title="Previous article">&#10094;</a>
+			<a id="next-article" href="programmed-robots-vs-intelligent-robots.html" aria-label="Read next article" title="Next article">&#10095;</a>
+			<!-- ARTICLE TITLE (START) -->
+			<section id="article-title">
+				<span>
+					<h1>Do we really know what a robot is?</h1>
+					<p id="article-subtitle">When asked to imagine any kind of robot, people often picture a humanoid from a science-fiction movie, with a metallic voice and clumsy movements.</p>
+					<p class="article-title-paragraph">In reality, we interact with robots more often than we realize, and most of the robots we deal with have nothing human about them. They might be discs that clean the floor, helpers that keep the yard tidy, or a mechanical arm that sorts our mail in a warehouse.</p>
+					<p id="author"><span>by </span>Giacomo Demartini</p>
+				</span>
+			</section>
+			<!-- ARTICLE SECTION (START) -->
+			<section class="article-section">
+				<figure>
+					<img src="welding_robot.jpg" alt="An industrial welding robot arm at work in a warehouse">
+					<figcaption>A welding robot in a warehouse</figcaption>
+				</figure>
+
+				<p>The word “robot” was coined in 1920 in the play “<em>R.U.R.</em>” by the Czech writer Karel Čapek. It comes from the Czech word “robota”, which means “hard labor” or “forced labor”. From the very beginning, therefore, the robot was conceived as something that works for us.</p>
+
+				<p>A robot’s work consists of an endless cycle of perception, decisions, and action. The robot perceives its surroundings through sensors, which can be of various types, such as motion, temperature, light, and acoustic sensors, among others. It then interprets what it has detected from the outside world by calculating mathematical values and deciding on its next moves, and based on these calculations, it acts through motors, actuators, and so on.</p>
+
+				<p>A robot vacuum cleaner is a good example of this cycle:</p>
+				<ul>
+					<li>It <strong>perceives</strong> using sensors that detect collisions, obstacles, and steps.</li>
+					<li>It <strong>decides</strong> where to go, which areas it has already cleaned, and when to return to recharge.</li>
+					<li>It <strong>acts</strong> using wheels and brushes.</li>
+				</ul>
+
+				<p>We can tell if it’s truly a robot by distinguishing it from two similar things:</p>
+				<ul>
+					<li>A simple <strong>automation</strong>: for example a washing machine, which follows a set program.</li>
+					<li><strong>Purely software-based artificial intelligence</strong>: such as a chatbot, which “thinks” but doesn’t have a body.</li>
+				</ul>
+
+				<p>For example, try asking yourself whether the following examples can truly be defined as “robots”:</p>
+				<ul>
+					<li><strong>The food processor:</strong> it has sensors (scale, temperature) and motors, but it follows fixed, step-by-step recipes. It’s closer to a washing machine than to a robot.</li>
+					<li><strong>Animatronics at theme parks:</strong> they have a body, move realistically, and seem alive, but they always repeat the same sequence. The public perceives them as robots, but they neither perceive nor decide anything.</li>
+					<li><strong>The pacemaker:</strong> it detects the heartbeat, determines if it’s too slow, and responds with an electrical impulse. It meets all three conditions.</li>
+					<li><strong>The Perseverance rover on Mars:</strong> a signal from Earth takes several minutes to arrive, so it can’t be controlled in real time like a remote-controlled car. For this reason, it must choose part of its route on its own and avoid rocks.</li>
+					<li><strong>The automatic door at the supermarket:</strong> it senses and acts, but the “decision” is fixed (there’s someone there, so open). It’s more of a reflex than a choice, and a true decision is needed, not just a sensor connected to a motor.</li>
+					<li><strong>The elevator:</strong> it receives calls from multiple floors and decides in which order to serve them. Some modern systems even use AI to predict traffic during peak hours.</li>
+					<li><strong>Remote-controlled drone:</strong> it has sensors and motors, but the pilot is the one who makes the decisions. It’s only half a robot.</li>
+				</ul>
+
+				<figure>
+					<img src="perseverance.jpg" alt="NASA's Perseverance rover on the surface of Mars">
+					<figcaption>The Perseverance rover</figcaption>
+				</figure>
+
+				<p>The line between robots and non-robots isn’t always clear, but one question always helps:</p>
+				<p class="highlight">does the machine make decisions based on what it perceives, or does it simply repeat what it has been programmed to do?</p>
+
+				<p>An AI chatbot can explain how to hold a glass, but it has never actually held one. That’s the difference between an AI and a robot. In the real world, if an AI makes a mistake, it can cause real damage to its surroundings. When an intelligence has a body and experiences the consequences of its actions, we refer to it as <em>embodied AI</em>.</p>
+
+				<p>Essentially, three things change:</p>
+				<ul>
+					<li><strong>There’s no Ctrl+Z</strong>: if a chatbot makes a mistake, it simply re-reads or regenerates its response. If a robot makes a mistake, it might break something or bump into a person.</li>
+					<li><strong>Time is real</strong>: a robot can’t take tens of seconds to think when a situation requires a quick reflex.</li>
+					<li><strong>Sensors aren’t perfect</strong>: a camera can be blinded by the sun, or a distance sensor can misread a shiny surface, so the robot must make decisions even with incomplete information.</li>
+				</ul>
+
+				<p>A robot, therefore, is not defined by its appearance, but by what it does: it perceives, decides, and acts in a world that does not forgive mistakes, does not wait, and cannot be precisely measured. But how do you program a machine to cope with all this uncertainty? For decades, the answer was simple: you didn’t.</p>
+				<aside class="sources">
+					<h2>Sources</h2>
+					<ul>
+						<li><a href="https://en.wikipedia.org/wiki/Robot" target="_blank" rel="noopener">https://en.wikipedia.org/wiki/Robot</a></li>
+						<li><a href="https://lamarr-institute.org/blog/embodied-ai-explained/" target="_blank" rel="noopener">https://lamarr-institute.org/blog/embodied-ai-explained/</a></li>
+						<li><a href="https://en.wikipedia.org/wiki/Robot_Hall_of_Fame" target="_blank" rel="noopener">https://en.wikipedia.org/wiki/Robot_Hall_of_Fame</a></li>
+						<li><a href="https://en.wikipedia.org/wiki/Perseverance_(rover)" target="_blank" rel="noopener">https://en.wikipedia.org/wiki/Perseverance_(rover)</a></li>
+					</ul>
+				</aside>
+			</section>
+		</main>
+		<!-- PUT YOUR CONTENT ONLY INSIDE THE <main> TAG, BEFORE THE FOOTER -->
+		<footer id="article">
+			<a href="PREVIOUS ARTICLE LINK">&#10094;&#10094;&#10094; Previous article</a>
+			<a id="back-to-top" href="#">Back to top</a>
+			<a href="programmed-robots-vs-intelligent-robots.html">Next article &#10095;&#10095;&#10095;</a>
+		</footer>
+	</body>
+</html>
