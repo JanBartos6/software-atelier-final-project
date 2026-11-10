@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>How autonomous is the robot, and where can it operate? - AI in Everyday Life</title> <!-- ARTICLE TITLE -->
+		<link rel="icon" href="../../layout/ai-icon.png">
+		<link rel="stylesheet" href="../../css/global.css">
+		<!-- CUSTOM EXTERNAL CSS -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="description" content="The two questions that decide where a robot can work: how much it decides on its own, and how predictable its environment is, plus the cost of a mistake."> <!-- ARTICLE DESCRIPTION -->
+		<meta name="author" content="Giacomo Demartini">
+		<style>
+			:root {
+				--template-color: var(--second-main-topic-color);
+			}
+			
+			/* CUSTOM INTERNAL CSS */
+			
+			.article-section {
+				width: 80%;
+				margin: 0 auto;
+			}
+			
+			.article-section ul {
+				display: flex;
+				flex-direction: column;
+				gap: 0.5em;
+				margin: 0.8em 0 0.8em 1.5em;
+				line-height: 1.4;
+			}
+			
+			.article-section li::marker {
+				color: var(--template-color);
+			}
+			
+			.article-section strong {
+				font-weight: 600;
+				color: var(--second-main-topic-color-pale);
+			}
+			
+			.article-section h2 {
+				margin-block: 1.8em 0.4em;
+				font-size: 1.3em;
+				font-weight: 500;
+				color: var(--template-color);
+			}
+			
+			.article-section figure {
+				max-width: 500px;
+				margin: 2.5em auto;
+			}
+			
+			.article-section figure img {
+				width: 100%;
+				border: var(--article-card-border-style);
+				border-radius: var(--global-border-radius);
+			}
+			
+			.article-section figcaption {
+				margin-top: 0.6em;
+				font-size: 0.9em;
+				font-style: italic;
+				text-align: center;
+				opacity: 0.7;
+			}
+			
+			.article-section .highlight {
+				margin-block: 1.5em;
+				padding-left: 1em;
+				border-left: 3px solid var(--template-color);
+				font-size: 1.15em;
+				font-weight: 400;
+			}
+			
+			.sources {
+				margin-top: 3em;
+				padding: 1em 1.5em;
+				border-left: var(--global-border-thickness) solid var(--template-color);
+				background-color: var(--secondary-bg-color);
+				border-radius: 0 var(--global-border-radius) var(--global-border-radius) 0;
+				font-size: 0.85em;
+			}
+			
+			.article-section .sources h2 {
+				margin: 0;
+				font-size: 1em;
+				font-weight: 600;
+				text-transform: uppercase;
+				color: var(--template-color);
+			}
+			
+			.sources ul {
+				gap: 0.3em;
+				word-break: break-all;
+			}
+		</style>
+	</head>
+	<body id="article">
+		<nav>
+			<a id="back-to-homepage" href="../../html/index.html"><img src="../../layout/logotype.png" alt="Return to the homepage"></a>
+			<ul>
+				<li id="first-main-topic">
+					<a href="../../html/index.html#introduction-to-ai">Introduction to AI</a>
+					<ul class="dropdown">
+						<li><a href="../../html/index.html#history-of-ai">History of AI</a></li>
+						<li><a href="../../html/index.html#basic-concepts">Basic Concepts</a></li>
+					</ul>
+				</li>
+				<li id="second-main-topic">
+					<a href="../../html/index.html#ai-technologies">AI Technologies</a>
+					<ul class="dropdown">
+						<li><a href="../../html/index.html#interactions">Interactions</a></li>
+						<li><a href="../../html/index.html#language-technologies">Language Technologies</a></li>
+						<li><a href="../../html/index.html#robotics">Robotics</a></li>
+					</ul>
+				</li>
+				<li id="third-main-topic">
+					<a href="../../html/index.html#impact-and-ethics">Impact and Ethics</a>
+					<ul class="dropdown">
+						<li><a href="../../html/index.html#ethics">Ethics</a></li>
+						<li><a href="../../html/index.html#limitations">Limitations</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+		<!-- PUT YOUR CONTENT ONLY INSIDE THE <main> TAG, AFTER LINKS AND TITLE SECTION -->
+		<main>
+			<!-- PREVIOUS/NEXT ARTICLE LINKS -->
+			<a id="previous-article" href="the-robot-combines-all-ai-applications-into-one.html" aria-label="Read previous article" title="Previous article">&#10094</a>
+			<a id="next-article" href="warehouse-robots.html" aria-label="Read next article" title="Next article">&#10095</a>
+			<!-- ARTICLE TITLE (START) -->
+			<section id="article-title">
+				<span>
+					<h1>How autonomous is the robot, and where can it operate?</h1>
+					<p id="article-subtitle">Understanding a sentence, recognizing an object and grabbing it with the right amount of force are not enough to make a robot ready for the real world.</p>
+					<p class="article-title-paragraph">To understand where a robot can actually work, it helps to ask two questions: how much does it decide on its own, and how predictable is the environment it’s in?</p>
+					<p id="author"><span>by </span>Giacomo Demartini</p>
+				</span>
+			</section>
+			<!-- ARTICLE SECTION (START) -->
+			<section class="article-section">
+				<h2>Question 1: how much does it decide on its own?</h2>
+
+				<p>The first question is about autonomy, which is not a “yes or no” matter but a scale.</p>
+				<ul>
+					<li>At one end are <strong>remote-controlled robots</strong>, where a human always makes the decisions. One example is the robots used to defuse explosive devices, which let an operator work from a safe distance.</li>
+					<li>In the middle of the scale are <strong>semi-autonomous systems</strong>, where the robot does part of the work while a human supervises. One example is a car that keeps itself in its lane, with the driver ready to take back control at any moment.</li>
+					<li>At the other end are <strong>fully autonomous robots</strong>, which perceive, decide and act without any human intervention, like a robot vacuum cleaner or a driverless taxi.</li>
+				</ul>
+
+				<figure>
+					<img src="../../contributors/giacomo-demartini/robot_bomb.jpg" alt="A wheeled bomb disposal robot with a gripper arm next to an explosive device">
+					<figcaption>A bomb disposal robot</figcaption>
+				</figure>
+
+				<h2>Question 2: how predictable is the environment?</h2>
+
+				<ul>
+					<li>In a <strong>factory</strong>, everything is designed to always be the same: parts arrive at the same spot, with the same orientation, at the same speed.</li>
+					<li>In a <strong>home</strong> or a <strong>warehouse</strong>, things change a bit: a chair that’s been moved, a box out of place or a cat crossing the room are unpredictable factors that can get in the way of a robot working correctly. Still, these are limited and relatively familiar spaces.</li>
+					<li>On the <strong>road</strong>, in the sky or in an area hit by a disaster, on the other hand, the unexpected is the rule: pedestrians crossing suddenly, rain and fog, rubble that keeps shifting.</li>
+				</ul>
+
+				<p>Putting the two questions together, a simple principle emerges:</p>
+				<p class="highlight">the more unpredictable the environment, the more artificial intelligence is needed, and the harder it is to make a robot truly autonomous.</p>
+				<p>This explains a fact that may seem strange at first: industrial robots have been working in factories for over sixty years, while driverless cars still operate in only a few cities around the world. The reason is precisely that the factory was designed to eliminate the unexpected, while the road is made of unexpected events.</p>
+
+				<figure>
+					<img src="../../contributors/giacomo-demartini/rescue_robots.jpg" alt="A rescue drone flying over a fire">
+					<figcaption>A rescue drone in a fire</figcaption>
+				</figure>
+
+				<p>There is also a third factor that is often overlooked: the cost of a mistake. If a robot vacuum makes a mistake, it bumps into a chair and changes direction. If a self-driving car makes a mistake, the consequences can be extremely serious. This is why a robot can be left completely free only when the environment is predictable enough, or when its mistakes don’t put anyone in danger. In all other cases, humans still play a key role in the decision-making loop.</p>
+
+				<p>In the next sections, we will look at the conditions these robots operate in: those that work in the controlled spaces of our homes and warehouses, and those that face the open world, from roads to the skies to rescue zones.</p>
+				<p>One fundamental question remains, though: if a robot has to learn to move in such difficult environments, how do you train it? A robot learning to walk falls thousands of times before it succeeds, but a car certainly can’t learn to drive by crashing. That’s why researchers build virtual worlds: simulated environments where the robot can make millions of mistakes without breaking and without hurting anyone, trying out in a few hours situations that would take years in real life. How these worlds are built, and how closely they can really resemble reality, will also be a topic of the next sections.</p>
+				<aside class="sources">
+					<h2>Sources</h2>
+					<ul>
+						<li><a href="https://www.agendadigitale.eu/industry-4-0/autonomia-dei-robot-cosa-e-e-come-misurarla/" target="_blank" rel="noopener">https://www.agendadigitale.eu/industry-4-0/autonomia-dei-robot-cosa-e-e-come-misurarla/</a></li>
+						<li><a href="https://en.wikipedia.org/wiki/Autonomous_robot" target="_blank" rel="noopener">https://en.wikipedia.org/wiki/Autonomous_robot</a></li>
+						<li><a href="https://www.bbc.com/future/article/20160714-what-does-a-bomb-disposal-robot-actually-do" target="_blank" rel="noopener">https://www.bbc.com/future/article/20160714-what-does-a-bomb-disposal-robot-actually-do</a></li>
+						<li><a href="https://amprius.com/rescue-robots/" target="_blank" rel="noopener">https://amprius.com/rescue-robots/</a></li>
+					</ul>
+				</aside>
+			</section>
+		</main>
+		<footer id="article">
+			<a href="the-robot-combines-all-ai-applications-into-one.html">&#10094&#10094&#10094 The robot combines all AI applications into one</a>
+			<a id="back-to-top" href="#">Back to top</a>
+			<a href="household-robots.html">Robots at Home: The Rise of Robotic Vacuum Cleaners &#10095&#10095&#10095</a>
+		</footer>
+    </body>
+</html>
