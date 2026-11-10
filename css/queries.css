@@ -23,13 +23,21 @@
 	.main-topic {
 		min-width: 40%;
 		max-width: 60%;
-		margin: 0 auto;
-		padding-inline: 16px;
+		margin: 16px auto;
+		padding-bottom: 0;
+	}
+
+	.main-topic:last-child {
+		padding-block: 0;
 	}
 
 }
 
 @media (width <= 850px) {
+
+	#project-logotype {
+		margin-top: 24px;
+	}
 
 	#topics-container {
 		flex-direction: column;
@@ -56,6 +64,7 @@
 
 	#main-topics {
 		flex-direction: column;
+		gap: 24px;
 	}
 
 	.main-topic {
@@ -93,6 +102,45 @@
 	
 }
 
+@media (width <= 500px) {
+
+	/* #project-logotype .left-part {
+		font-size: var(--logotype-left-part-small-font-size);
+	}
+
+	#project-logotype .right-part .first-row {
+		font-size: calc(var(--logotype-right-part-small-font-size) * 0.2);
+	}
+
+	#project-logotype .right-part .second-row {
+		font-size: calc(var(--logotype-right-part-small-font-size) * 0.665);
+	}
+
+	cloud {
+		font-size: calc(var(--logotype-right-part-font-size)*0.2);
+	} */
+
+	#project-logotype .left-part, #project-logotype .right-part {
+		display: none;
+	}
+
+	#responsive-logotype {
+		 display: block;
+		 width: 80%;
+		 margin: 0 auto;
+	}
+
+	footer#home > span {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	footer#home h5, footer#home p  {
+		text-align: center;
+	}
+
+}
+
 /* ---------- ARTICLES ---------- */
 
 @media (width <= 850px) {
@@ -124,6 +172,8 @@
 
 	nav a {
 		font-size: 2em;
+		word-break: break-word;
+		padding-inline: 20px;
 	}
 
 	#first-main-topic > a, #second-main-topic > a, #third-main-topic > a {
@@ -179,6 +229,10 @@
 
 @media (width <= 750px) {
 
+	nav img {
+		width: 90%;
+	}
+
 	footer#article a:nth-child(1), footer#article a:nth-child(3) {
 		max-width: 100px;
 		font-size: 2.6vw;
@@ -187,6 +241,18 @@
 	footer#article #back-to-top {
 		padding-inline: 9px;
 		font-size: 2.6vw;
+	}
+
+}
+
+@media (width <= 500px) {
+
+	#article-title > span {
+		padding-inline: 24px;
+	}
+
+	.article-section {
+		padding-inline: 24px;
 	}
 
 }
