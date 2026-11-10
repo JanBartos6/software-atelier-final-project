@@ -1,0 +1,357 @@
+THE GEOPOLITICAL IMPACT OF ARTIFICIAL INTELLIGENCE How AI is reshaping
+global power, security and international relations
+
+INTRODUCTION — AI AS A NEW SOURCE OF GEOPOLITICAL POWER
+
+Artificial intelligence (AI) is no longer simply a technological
+innovation used to make everyday tasks faster. It is becoming a
+strategic resource that can influence economic growth, military
+capabilities, political stability and the international balance of
+power. From analysing satellite images to developing medicines, managing
+financial systems and generating information, AI is changing the way
+governments and societies operate.
+
+This transformation has important geopolitical consequences. Countries
+that develop advanced AI systems, manufacture the hardware needed to run
+them and attract highly skilled researchers may gain significant
+economic and strategic advantages. At the same time, countries that
+depend on foreign technology risk becoming vulnerable to decisions made
+outside their borders.
+
+AI is therefore increasingly connected to national security and
+international competition. Governments are investing in research,
+computing infrastructure, semiconductor production and education. They
+are also debating how AI should be regulated and how to prevent its
+misuse. These choices are not only about technology: they concern
+sovereignty, influence and the distribution of power in the world.
+
+Unlike traditional resources such as oil or natural gas, AI depends on a
+complex combination of data, computer chips, energy, software,
+scientific knowledge and skilled workers. These resources are unevenly
+distributed. As a result, the development of AI may reinforce the
+influence of countries that already possess strong technological and
+economic foundations, while creating new opportunities for others.
+
+This article examines four major dimensions of AI’s geopolitical impact:
+the technological competition between major powers, its consequences for
+military and international security, the challenges of global
+governance, and the possible future of the international order.
+
+PAGE 1 — THE GLOBAL AI RACE: UNITED STATES, CHINA AND EUROPE
+
+The competition between the United States and China is one of the
+clearest examples of AI becoming a geopolitical issue. Both countries
+consider advanced technology essential to their long-term economic
+strength and national security. AI is central to this competition
+because it can improve productivity, support scientific research,
+strengthen military systems and influence the global technology market.
+
+The United States benefits from a powerful technology sector, major
+research universities, access to investment capital and companies that
+develop advanced AI models and computing systems. American firms play an
+important role in designing software, developing AI services and
+supplying the chips and cloud infrastructure required by many
+organisations around the world. This gives the United States
+considerable influence over the technologies used internationally.
+
+China has also made AI a national priority. Its large domestic market,
+substantial industrial capacity, expanding research community and
+government support provide important advantages. AI is being developed
+for applications ranging from manufacturing and logistics to healthcare,
+public services and security. China also seeks to reduce its dependence
+on foreign technology, particularly in strategically important areas
+such as advanced semiconductors.
+
+The rivalry is not limited to creating the most powerful AI model. It
+also concerns control over the supply chain. Advanced semiconductors are
+particularly important because they provide much of the computing power
+required to train and operate sophisticated AI systems. Their production
+depends on specialised equipment, materials, intellectual property and
+highly complex manufacturing processes. Only a relatively small number
+of countries and companies possess the capabilities needed to produce
+the most advanced chips.
+
+This concentration creates geopolitical leverage. Export restrictions,
+trade disputes or disruptions to manufacturing can affect another
+country’s ability to develop advanced technology. Governments may
+therefore use trade policy and investment controls to protect their
+strategic interests. Such measures can slow the transfer of sensitive
+technologies, but they can also increase tensions and encourage
+competing technological ecosystems.
+
+Europe occupies a different position in this competition. It has strong
+scientific institutions, industrial expertise and an important role in
+the global semiconductor equipment supply chain. However, it has
+generally struggled to match the scale of American private investment
+and the size of some Chinese technology programmes. European
+policymakers have consequently placed considerable emphasis on research,
+industrial capacity, digital sovereignty and regulation.
+
+The European Union’s approach is distinctive because it seeks to
+encourage innovation while establishing rules for the use of AI. Its AI
+Act introduces a risk-based regulatory framework, with stricter
+requirements for certain high-risk applications and restrictions on some
+unacceptable uses. This approach may strengthen public trust and
+establish international standards, although businesses must also manage
+the costs and complexity of compliance.
+
+The wider lesson is that the AI race is not a simple contest with one
+winner. Leadership can come from different areas: designing chips,
+building data centres, developing models, supplying industrial
+equipment, attracting researchers or setting regulatory standards.
+Countries that control several parts of this ecosystem are likely to
+have greater strategic independence.
+
+PAGE 2 — AI, MILITARY POWER AND INTERNATIONAL SECURITY
+
+Artificial intelligence is changing the nature of military power. Armed
+forces have long used computers and automated systems, but recent
+advances in machine learning and data analysis create new possibilities.
+AI can process large quantities of information, identify patterns,
+support decision-making and help military organisations respond more
+quickly to complex situations.
+
+One important application is intelligence and surveillance. Military
+organisations collect information from satellites, drones, radar
+systems, communications and other sources. AI can help analyse these
+large datasets, detect unusual activity and identify potential threats.
+This may allow commanders to obtain a clearer picture of events,
+although the quality of the result depends on the accuracy of the data
+and the reliability of the system.
+
+AI can also support logistics and planning. Predicting equipment
+failures, managing supply chains and allocating resources are essential
+parts of military operations. Better predictions may reduce costs and
+improve readiness. In addition, AI-assisted systems can help analyse
+possible scenarios and provide recommendations. However, military
+decisions involve uncertainty, ethical judgement and political
+consequences. Human responsibility remains essential.
+
+Autonomous weapons are among the most controversial applications. These
+systems can select or engage targets with varying degrees of human
+involvement. Some technologies already automate parts of defensive or
+targeting processes, while more advanced autonomous capabilities raise
+difficult questions about accountability and control.
+
+The central concern is whether a machine should be allowed to make
+decisions that can directly result in the use of lethal force. If an
+autonomous system mistakenly identifies a civilian as a threat,
+responsibility may be difficult to establish. The problem becomes even
+more serious if several automated systems interact during a rapidly
+developing conflict. A technical error or misunderstanding could
+escalate a situation before human decision-makers have time to
+intervene.
+
+AI is also changing cybersecurity. It can help defenders detect
+suspicious behaviour, identify vulnerabilities and respond to attacks.
+At the same time, malicious actors may use AI to automate parts of
+cyberattacks, create convincing fraudulent messages or search for
+weaknesses in digital systems. This creates a continuous competition
+between those seeking to protect networks and those attempting to
+compromise them.
+
+Another major security challenge is disinformation. Generative AI can
+produce realistic text, images, audio and video. These tools can be used
+to create fake political statements, imitate public figures or generate
+misleading content during elections and international crises. The
+ability to produce persuasive material quickly and at low cost may make
+information manipulation easier to scale.
+
+The danger is not limited to convincing people that a particular false
+story is true. A constant flow of fabricated material can also weaken
+public confidence in authentic information. Citizens may become less
+able to distinguish reliable reporting from manipulation, while
+governments may struggle to establish what happened during a crisis.
+This can damage democratic institutions and complicate diplomacy.
+
+AI does not automatically make conflict more likely, nor does it
+guarantee military superiority. Its effects depend on the systems being
+developed, the people operating them and the political decisions
+surrounding their use. Nevertheless, countries that integrate AI
+effectively into defence, intelligence and cybersecurity may gain
+important advantages. This creates pressure on other states to invest as
+well, potentially contributing to a new technological arms race.
+
+PAGE 3 — ECONOMIC POWER, DIGITAL DEPENDENCE AND GLOBAL INEQUALITY
+
+The geopolitical impact of AI extends far beyond military competition.
+AI may transform productivity and economic organisation, influencing
+which countries attract investment, create high-value industries and
+shape global trade.
+
+Businesses can use AI to automate repetitive tasks, improve forecasts,
+analyse markets and develop new products. In manufacturing, AI systems
+can help monitor production and predict equipment failures. In
+healthcare, they can support medical research and assist professionals
+in analysing information. In agriculture, they can help monitor crops
+and manage resources. These applications may increase efficiency and
+create new economic opportunities.
+
+However, the benefits will not necessarily be distributed equally.
+Countries with reliable electricity, high-speed networks, advanced
+research institutions, access to computing power and skilled workers are
+better positioned to adopt AI. Wealthier economies may therefore benefit
+earlier and more extensively. Countries with weaker infrastructure could
+find it difficult to compete, even if their populations have the talent
+and ambition to participate.
+
+This raises the possibility of a new digital divide. In the past,
+international inequality was often discussed in terms of access to
+industrial infrastructure, education and financial resources. In the AI
+era, access to computing capacity, high-quality data and advanced
+digital services may become equally important. If a small number of
+countries control the infrastructure on which others depend, existing
+economic inequalities could become more difficult to overcome.
+
+Dependence on foreign technology is also a question of sovereignty. Many
+governments and businesses rely on international providers for cloud
+computing, software, data storage and AI services. These services can be
+efficient and affordable, but reliance on a limited number of suppliers
+creates risks. Changes in prices, access policies, export restrictions
+or international sanctions may affect a country’s ability to use
+essential digital infrastructure.
+
+For this reason, governments increasingly discuss technological
+sovereignty: the ability to make independent decisions about critical
+technologies and maintain access to essential systems. Complete
+technological independence is unrealistic for most countries because
+modern supply chains are international. A more practical objective is to
+reduce excessive dependence, diversify suppliers, develop local
+expertise and establish reliable partnerships.
+
+AI may also change the relationship between governments and
+multinational corporations. Some private companies control enormous
+computing resources, advanced models and global digital platforms. Their
+decisions can influence access to information, business opportunities
+and technological development across national borders. Governments must
+therefore consider how to regulate powerful companies while preserving
+innovation and avoiding excessive concentration of power.
+
+For developing countries, AI presents both risks and opportunities. It
+may help improve education, public administration, agriculture and
+healthcare without requiring every country to build an entire technology
+industry from the beginning. Local researchers and entrepreneurs can
+adapt existing tools to regional languages and needs. Yet these
+opportunities depend on access, affordability, appropriate training and
+the ability to protect local data and interests.
+
+The geopolitical question is consequently not only which country
+develops the most advanced AI. It is also which countries can use AI
+productively, participate in its development and benefit from the value
+it creates. International cooperation, education and investment in
+digital infrastructure will be important in preventing AI from widening
+the gap between wealthy and poorer societies.
+
+PAGE 4 — GLOBAL GOVERNANCE AND THE FUTURE OF INTERNATIONAL RELATIONS
+
+AI develops across national borders, but laws and political institutions
+remain largely organised at the national level. This creates a major
+governance challenge. A system developed in one country may be used by
+businesses and individuals around the world. Its effects can cross
+borders, while responsibility for its design, deployment and misuse may
+be spread across several organisations and jurisdictions.
+
+Governments are responding in different ways. Some prioritise innovation
+and private-sector development. Others place greater emphasis on state
+supervision, security or social control. The European Union has pursued
+a regulatory approach based on the level of risk associated with
+different AI applications. International organisations and diplomatic
+forums have also encouraged discussions about safety, human rights,
+transparency and responsible development.
+
+However, reaching international agreement is difficult. Countries do not
+necessarily share the same political values, economic interests or
+security priorities. A government may see a technology as an opportunity
+for economic growth, while another may consider the same technology a
+security threat. States may also hesitate to accept rules that they
+believe could weaken their strategic position.
+
+Despite these differences, certain principles could form the basis of
+cooperation. Governments can work towards greater transparency in
+high-impact AI systems, clearer responsibility when systems cause harm,
+stronger cybersecurity practices and safeguards against discrimination.
+International dialogue may also help establish expectations concerning
+autonomous weapons and the use of AI during armed conflict.
+
+Cooperation is particularly important because AI-related risks are not
+restricted to individual countries. Cyberattacks can affect
+international infrastructure, disinformation can spread across borders,
+and failures in widely used systems can have consequences for many
+economies. Scientific cooperation can also help researchers identify
+technical risks and develop more reliable systems.
+
+At the same time, international governance must avoid creating rules so
+restrictive that they prevent smaller countries and organisations from
+participating in technological development. If regulation is designed
+only by the most powerful states and companies, it may reinforce
+existing inequalities. Developing countries need a meaningful role in
+discussions about standards, access, education and the distribution of
+benefits.
+
+The future geopolitical order will probably be shaped by several
+competing trends. First, technological competition is likely to continue
+as countries seek greater control over strategic infrastructure. Second,
+economic interdependence will remain important because no country can
+easily produce every component of the AI supply chain independently.
+Third, international institutions will face increasing pressure to
+develop rules that keep pace with technological change.
+
+AI could therefore produce two very different outcomes. In one scenario,
+competition becomes increasingly intense. Countries restrict access to
+technology, build separate digital ecosystems and treat AI primarily as
+an instrument of national power. This could deepen mistrust, increase
+inequality and make international cooperation more difficult.
+
+In another scenario, governments recognise that shared challenges
+require common solutions. They maintain strategic competition but
+cooperate on safety standards, scientific research, cybersecurity and
+the prevention of serious abuses. Such cooperation would not eliminate
+geopolitical rivalry, but it could reduce the risk that technological
+competition becomes destabilising.
+
+CONCLUSION — AI WILL HELP DEFINE THE NEXT BALANCE OF POWER
+
+Artificial intelligence is becoming one of the most important
+technologies shaping international relations. It influences economic
+competitiveness, military capabilities, political communication and the
+independence of states. As a result, the ability to develop and use AI
+is increasingly connected to national power.
+
+The competition between the United States and China demonstrates how
+technological leadership has become a strategic priority. Europe’s
+regulatory approach shows that influence can also come from establishing
+standards and shaping how technologies are used. Meanwhile, the military
+applications of AI raise urgent questions about human control,
+accountability and international security.
+
+Yet the most important issue may be how the benefits and risks of AI are
+distributed. If access to computing power, expertise and infrastructure
+remains concentrated in a small number of countries and companies, AI
+could reinforce existing inequalities. If access becomes broader and
+international cooperation improves, the technology could also support
+economic development and help address shared problems.
+
+Ultimately, AI is not simply a tool that countries use; it is a
+technology that may reshape the relationships between them. The future
+balance of power will depend not only on who builds the most advanced
+systems, but also on who controls the infrastructure, establishes the
+rules and ensures that technological progress serves society. The
+challenge for governments is to pursue innovation and national security
+without sacrificing international stability, human rights and
+cooperation.
+
+SUGGESTED FURTHER READING
+
+• Stanford Institute for Human-Centered Artificial Intelligence — AI
+Index Report: https://aiindex.stanford.edu/report/
+
+• European Commission — Regulatory framework for artificial
+intelligence:
+https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai
+
+• United Nations — Artificial intelligence: https://www.un.org/en/ai
+
+• OECD — Artificial intelligence: https://oecd.ai/
+
+• International Committee of the Red Cross — Autonomous weapon systems:
+https://www.icrc.org/en/war-and-law/weapons/autonomous-weapons
