@@ -133,7 +133,6 @@
 	flex-wrap: wrap;
 	width: 90%;
 	margin: 0 auto;
-	margin-top: 24px;
 }
 
 .main-topic {
@@ -254,18 +253,18 @@ footer#home {
 	will-change: box-shadow;
 }
 
-footer#home > span {
+footer#home > div {
 	display: flex;
 	justify-content: center;
 	gap: 1em;
 	margin-bottom: 24px;
 }
 
-footer#home > span span:nth-child(odd) {
+footer#home > div div:nth-child(odd) {
 	text-align: right;
 }
 
-footer#home > span span:nth-child(even) {
+footer#home > div div:nth-child(even) {
 	text-align: left;
 }
 

@@ -61,7 +61,7 @@
 			}
 		</style>
 	</head>
-	<body id="article">
+	<body>
 		<nav>
 			<a id="back-to-homepage" href="../html/index.html"><img src="../layout/logotype.png" alt="Return to the homepage"></a>
 			<ul>
@@ -92,21 +92,21 @@
 		<!-- PUT YOUR CONTENT ONLY INSIDE THE <main> TAG, AFTER LINKS AND TITLE SECTION -->
 		<main>
 			<!-- PREVIOUS/NEXT ARTICLE LINKS -->
-			<a id="previous-article" href="" aria-label="Read previous article" title="Previous article">&#10094</a>
-			<a id="next-article" href="" aria-label="Read next article" title="Next article">&#10095</a>
+			<a id="previous-article" href="" aria-label="Read previous article" title="Previous article">&#10094;</a>
+			<a id="next-article" href="" aria-label="Read next article" title="Next article">&#10095;</a>
 			<!-- ARTICLE TITLE (START) -->
 			<section id="article-title">
-				<span>
+				<div>
 					<h1>CSS/HTML Setup Guide</h1>
 					<p id="article-subtitle">a brief document on how to use this page to build your article pages</p>
 					<p class="article-title-paragraph">This is your template page; all custom layouts and components must be placed within the <code>&lt;main&gt;</code> container, preferably using the <code>&lt;section class="article-section"&gt;</code> container.</p>
 					<p class="article-title-paragraph">Read on to discover the steps required to set up a new article, along with a few useful tips.</p>
 					<p id="author"><span>by </span>Andrea Dell'Agnello <span>and</span> Alessandro Rohrwasser</p>
-				</span>
+				</div>
 			</section>
 			<!-- ARTICLE SECTION (START) -->
 			<section class="article-section">
-				<img src="../layout/random-ai-img.jpg">
+				<img src="../layout/random-ai-img.jpg" alt="An image showing an AI logo on a blue techno background">
 				<h2>How to set up a new article</h2>
 				<ol>
 					<li>If you haven't already, create a folder within the <code>contributors</code> directory and name it using your first and last name (e.g. <code>name_surname</code>); all custom CSS files and images related to your articles should be placed inside this folder.</li>
@@ -117,7 +117,7 @@
 					<li>Fill the description and the author meta tags, once again in the document <code>&lt;head&gt;</code>.</li>
 					<li>Modify the value of <code>--template-color</code> to reflect your main topic. The defined possible values are <code>var(--first-main-topic-color)</code>, <code>var(--second-main-topic-color)</code>, or <code>var(--third-main-topic-color)</code>. If you wish to use a different color (in hexadecimal or rgb/rgba format), replace the entire <code>var()</code> expression with your desired value.</li>
 					<li>Fill the title, subtitle, description and author fields within the <code>&lt;article-title&gt;</code> section.</li>
-					<li>Add links to the previous and next articles, following the instructions provided in the reference document. You can search for <code>PREVIOUS ARTICLE LINK</code> and <code>NEXT ARTICLE LINK</code> to find what you need to replace. Also, replace the visible previous/next article link text at the bottom of the page with the titles of the nearby articles, without touching the special arrow characters &#10094&#10094&#10094 and &#10095&#10095&#10095.</li>
+					<li>Add links to the previous and next articles, following the instructions provided in the reference document. You can search for <code>PREVIOUS ARTICLE LINK</code> and <code>NEXT ARTICLE LINK</code> to find what you need to replace. Also, replace the visible previous/next article link text at the bottom of the page with the titles of the nearby articles, without touching the special arrow characters &#10094;&#10094;&#10094; and &#10095;&#10095;&#10095;.</li>
 					<li>Add the link card to your article in the <code>index.html</code> file (the homepage of the website, directly contained in the <code>html</code> folder) inside the <code>&lt;div class="articles"&gt;</code> tag of your choosen sub-topic, using this template:</li>
 <pre>
 &lt;a href="<span class="template">LINK TO YOUR ARTICLE FROM THE HOMEPAGE</span>"&gt;&lt;article&gt;
@@ -141,9 +141,9 @@
 		</main>
 		<!-- PUT YOUR CONTENT ONLY INSIDE THE <main> TAG, BEFORE THE FOOTER -->
 		<footer id="article">
-			<a href="">&#10094&#10094&#10094 Previous article</a>
-			<a id="back-to-top" href="#">Back to top</a>
-			<a href="">Next article &#10095&#10095&#10095</a>
+			<a href="">&#10094;&#10094;&#10094; Previous article</a>
+			<a id="back-to-top" href="#" title="Back to top"><span>Back to top</span><span>&#x2B06;</span></a>
+			<a href="">Next article &#10095;&#10095;&#10095;</a>
 		</footer>
     </body>
 </html>
