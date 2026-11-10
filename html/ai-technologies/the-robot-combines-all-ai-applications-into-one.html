@@ -3,8 +3,8 @@
 	<head>
 		<meta charset="utf-8">
 		<title>The robot combines all AI applications into one - AI in Everyday Life</title> <!-- ARTICLE TITLE -->
-		<link rel="icon" href="/Other/Media/Images/Template/ai-icon.png"> <!-- THIS ROOT SHOULD BE POINTING TO THE START OF THE PROJECT, NOT UR FILE SYSTEM -->
-		<link rel="stylesheet" href="/CSS/global.css"> <!-- Use a virtual server and you should be fine. -->
+		<link rel="icon" href="../../layout/ai-icon.png">
+		<link rel="stylesheet" href="../../css/global.css">
 		<!-- CUSTOM EXTERNAL CSS -->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="format-detection" content="telephone=no">
@@ -16,6 +16,7 @@
 			}
 			
 			/* CUSTOM INTERNAL CSS */
+			
 			.article-section {
 				width: 80%;
 				margin: 0 auto;
@@ -79,28 +80,28 @@
 	</head>
 	<body id="article">
 		<nav>
-			<a id="back-to-homepage" href="/HTML/index.html"><img src="/Other/Media/Images/Template/logotype.png" alt="Return to the homepage"></a>
+			<a id="back-to-homepage" href="../../html/index.html"><img src="../../layout/logotype.png" alt="Return to the homepage"></a>
 			<ul>
 				<li id="first-main-topic">
-					<a href="/HTML/index.html#introduction-to-ai">Introduction to AI</a>
+					<a href="../../html/index.html#introduction-to-ai">Introduction to AI</a>
 					<ul class="dropdown">
-						<li><a href="/HTML/index.html#history-of-ai">History of AI</a></li>
-						<li><a href="/HTML/index.html#basic-concepts">Basic Concepts</a></li>
+						<li><a href="../../html/index.html#history-of-ai">History of AI</a></li>
+						<li><a href="../../html/index.html#basic-concepts">Basic Concepts</a></li>
 					</ul>
 				</li>
 				<li id="second-main-topic">
-					<a href="/HTML/index.html#ai-technologies">AI Technologies</a>
+					<a href="../../html/index.html#ai-technologies">AI Technologies</a>
 					<ul class="dropdown">
-						<li><a href="/HTML/index.html#robotics">Robotics</a></li>
-						<li><a href="/HTML/index.html#applications">Applications</a></li>
-						<li><a href="/HTML/index.html#language-technologies">Language Technologies</a></li>
+						<li><a href="../../html/index.html#robotics">Robotics</a></li>
+						<li><a href="../../html/index.html#applications">Applications</a></li>
+						<li><a href="../../html/index.html#language-technologies">Language Technologies</a></li>
 					</ul>
 				</li>
 				<li id="third-main-topic">
-					<a href="/HTML/index.html#impact-and-ethics">Impact and Ethics</a>
+					<a href="../../html/index.html#impact-and-ethics">Impact and Ethics</a>
 					<ul class="dropdown">
-						<li><a href="/HTML/index.html#ethics">Ethics</a></li>
-						<li><a href="/HTML/index.html#limitations">Limitations</a></li>
+						<li><a href="../../html/index.html#ethics">Ethics</a></li>
+						<li><a href="../../html/index.html#limitations">Limitations</a></li>
 					</ul>
 				</li>
 			</ul>
@@ -108,8 +109,8 @@
 		<!-- PUT YOUR CONTENT ONLY INSIDE THE <main> TAG, AFTER LINKS AND TITLE SECTION -->
 		<main>
 			<!-- PREVIOUS/NEXT ARTICLE LINKS -->
-			<a id="previous-article" href="programmed-robots-vs-intelligent-robots.html" aria-label="Read previous article" title="Previous article">&#10094;</a>
-			<a id="next-article" href="how-autonomous-is-the-robot-and-where-can-it-operate.html" aria-label="Read next article" title="Next article">&#10095;</a>
+			<a id="previous-article" href="programmed-robots-vs-intelligent-robots.html" aria-label="Read previous article" title="Previous article">&#10094</a>
+			<a id="next-article" href="how-autonomous-is-the-robot-and-where-can-it-operate.html" aria-label="Read next article" title="Next article">&#10095</a>
 			<!-- ARTICLE TITLE (START) -->
 			<section id="article-title">
 				<span>
@@ -136,7 +137,7 @@
 				<p>For a concrete comparison, think of the telephone game: if the first module hears “see” instead of “drink,” all the others perfectly carry out the wrong task. No module can notice the mistake, because each one only sees its own piece. On top of that, every new situation requires rewriting the rules by hand. A robot programmed for “water, juice, milk” doesn’t know what to do when it sees a bottle of iced tea.</p>
 
 				<figure>
-					<img src="images/robot_simpsons.jpg" alt="Homer Simpson and the robot Bender toasting with beer at a bar">
+					<img src="../../contributors/giacomo-demartini/robot_simpsons.jpg" alt="Homer Simpson and the robot Bender toasting with beer at a bar">
 				</figure>
 
 				<p>These VLA models work in a relatively simple way: as mentioned, they take an image and a sentence and directly output the movements. The “trick” is that movements are treated as if they were words. For example, Google chose to represent actions as tokens, which are the word fragments that language models normally use. Just as a chatbot predicts the next word in a sentence, the model predicts how the arm should move. The advantage is that the model is built on a language model trained on a large amount of text and images, so it already “knows” a lot about the world before it even touches an object.</p>
@@ -146,7 +147,7 @@
 				<p>Today, many recent robot models follow a dual architecture. One part reasons about the environment and the instructions and plans what to do, while the other translates those plans into fast motor commands that keep the robot balanced and moving. The “bring me something to drink” scenario we just described might not be so far off in the near future. In fact, in October 2025 the company 1X Technologies opened orders for NEO, presented as the first household humanoid robot for consumers, at a price of $20,000.</p>
 
 				<figure>
-					<img src="images/neo.webp" alt="The NEO humanoid robot by 1X Technologies looking into an open fridge in a kitchen">
+					<img src="../../contributors/giacomo-demartini/neo.webp" alt="The NEO humanoid robot by 1X Technologies looking into an open fridge in a kitchen">
 				</figure>
 
 				<p>A model that can understand, see and act is a huge step forward. But how much can we let a robot decide on its own? And in which environments is it ready to do so? The answer depends on two factors: its level of autonomy and how unpredictable the world it has to work in is.</p>
@@ -162,11 +163,10 @@
 				</aside>
 			</section>
 		</main>
-		<!-- PUT YOUR CONTENT ONLY INSIDE THE <main> TAG, BEFORE THE FOOTER -->
 		<footer id="article">
-			<a href="programmed-robots-vs-intelligent-robots.html">&#10094;&#10094;&#10094; Previous article</a>
+			<a href="programmed-robots-vs-intelligent-robots.html">&#10094&#10094&#10094 Programmed robots vs. intelligent robots</a>
 			<a id="back-to-top" href="#">Back to top</a>
-			<a href="how-autonomous-is-the-robot-and-where-can-it-operate.html">Next article &#10095;&#10095;&#10095;</a>
+			<a href="how-autonomous-is-the-robot-and-where-can-it-operate.html">How autonomous is the robot, and where can it operate? &#10095&#10095&#10095</a>
 		</footer>
-	</body>
+    </body>
 </html>
