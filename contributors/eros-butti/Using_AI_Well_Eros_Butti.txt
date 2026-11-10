@@ -1,0 +1,59 @@
+Eros Butti
+Using AI Well: How to Stay in Control
+
+
+A man asked Air Canada's website chatbot about the discount the airline offers after a death in the family. The chatbot gave him wrong information, and when he asked for the money, the airline refused to pay. At the tribunal, Air Canada argued that the chatbot was responsible for its own actions. The tribunal disagreed: "It should be obvious to Air Canada that it is responsible for all the information on its website." (CBC 2024)
+
+The lesson is simple: AI is useful, but it is not always right, and not always on your side. Here are three things to watch out for, and five rules that help.
+
+
+Warning 1: It Can Be Confidently Wrong
+
+In 2025, 22 public broadcasters from 18 countries, including the BBC, asked ChatGPT, Copilot, Gemini and Perplexity more than 3,000 questions about the news. 45% of the answers had at least one significant problem, and 20% had major errors, like wrong facts or invented details. (EBU 2025)
+
+Professionals fall for it too. In 2023 two New York lawyers were fined 5,000 dollars for submitting court cases that ChatGPT had made up. In 2025 the consulting firm Deloitte had to refund part of its fee to the Australian government because a 440,000-dollar report written with AI contained a quote from a judge that was never said, and references to reports that do not exist. (Bloomberg Law 2023, BNN Bloomberg / AP 2025)
+
+
+Warning 2: What You Type Doesn't Stay With You
+
+Everything you write to a chatbot leaves your device. In 2023 Samsung limited ChatGPT at work after employees pasted secret company code into it. In 2024 Italy's data protection authority fined OpenAI 15 million euros for training ChatGPT on personal data "without having an adequate legal basis". (CNBC 2023, Euronews 2024)
+
+
+Warning 3: Some Apps Want Your Time
+
+Not all AI is something we use on purpose. Some of it is designed to keep us using it. Aza Raskin, who invented infinite scroll in 2006, now says that "in technology, incentives eat intentions", and admits he had to "write software to break my own addiction". Tristan Harris, a former design ethicist at Google, put it this way: "Every time I check my phone, I'm playing the slot machine to see, 'What did I get?'" Netflix's co-founder Reed Hastings was even more direct in 2017: "we're competing with sleep". (NPR 2026, CBS News 2017, CNBC 2017)
+
+TikTok's own research, revealed in 2024, found that 260 videos, as little as 35 minutes, are enough to form a habit, and its time-limit reminder was, according to internal messages, mainly meant to improve public trust. In 2025, 45% of American teenagers said they spend too much time on social media, and 45% said it hurts their sleep. In 2026 the European Commission found, in a first and not yet final decision, that the addictive design of TikTok, Instagram and Facebook breaks EU law. (NPR 2024, Pew Research Center 2025, European Commission 2026)
+
+
+Five Rules
+
+Based on Harvard's guidelines for generative AI and the cases above:
+
+1. Check important facts with a trusted source. Sounding sure is not the same as being right.
+2. Check that the sources a chatbot gives you actually exist.
+3. Never type passwords, personal data or anything confidential into a chatbot.
+4. Follow the rules of your school or job, and say when you used AI.
+5. Notice when you open an app out of habit. Screen-time limits and fewer notifications help.
+
+(Harvard Privacy & Security)
+
+The goal is not to stop using AI. It is to use it on purpose.
+
+
+Sources
+
+1. European Broadcasting Union. AI's systemic distortion of news is consistent across languages and territories (2025) - https://www.ebu.ch/news/2025/10/ai-s-systemic-distortion-of-news-is-consistent-across-languages-and-territories-international-study-by-public-service-broadcaste
+2. Bloomberg Law. ChatGPT phony legal filing case gets lawyers a 5,000 dollar fine (2023) - https://news.bloomberglaw.com/bloomberg-government-news/chatgpt-phony-legal-filing-case-gets-lawyers-a-5-000-fine
+3. BNN Bloomberg / AP. Deloitte to partially refund Australian government for report with apparent AI-generated errors (2025) - https://www.bnnbloomberg.ca/business/artificial-intelligence/2025/10/07/deloitte-to-partially-refund-australian-government-for-report-with-apparent-ai-generated-errors/
+4. CBC. Air Canada found liable for chatbot's bad advice on plane tickets (2024) - https://www.cbc.ca/1.7116416
+5. CNBC. Samsung bans use of AI like ChatGPT for staff after misuse of chatbot (2023) - https://www.cnbc.com/2023/05/02/samsung-bans-use-of-ai-like-chatgpt-for-staff-after-misuse-of-chatbot.html
+6. Euronews. Italy's privacy watchdog fines OpenAI 15 million after probe into ChatGPT data collection (2024) - https://www.euronews.com/2024/12/20/italys-privacy-watchdog-fines-openai-15-million-after-probe-into-chatgpt-data-collection
+7. NPR, The Indicator from Planet Money. Interview with Aza Raskin (2026) - https://npr.org/transcripts/nx-s1-5775917
+8. CBS News, 60 Minutes. Brain Hacking (2017) - https://www.cbsnews.com/news/brain-hacking-tech-insiders-60-minutes
+9. CNBC. Netflix thinks its real competitor is sleep (2017) - https://www.cnbc.com/2017/04/17/amazon-hbo-netflix-thinks-its-real-competitor-is--sleep.html
+10. NPR / KUNC. Lawsuit documents reveal what TikTok executives know about app's effect on teenagers (2024) - https://www.kunc.org/2024-10-11/lawsuit-documents-reveal-what-tiktok-executives-know-about-apps-effect-on-teenagers
+11. Pew Research Center. Teens, Social Media and Mental Health (2025) - https://www.pewresearch.org/internet/2025/04/22/teens-social-media-and-mental-health/
+12. European Commission. TikTok's addictive design in breach of the Digital Services Act (2026) - https://digital-strategy.ec.europa.eu/en/news/commission-preliminarily-finds-tiktoks-addictive-design-breach-digital-services-act
+13. European Commission. Addictive design of Instagram and Facebook in breach of the Digital Services Act (2026) - https://digital-strategy.ec.europa.eu/en/news/commission-preliminarily-finds-addictive-design-instagram-and-facebook-breach-digital-services-act
+14. Harvard Privacy & Security. Best Practices: Using Generative AI - https://privsec.harvard.edu/best-practices-generative-ai-community-members

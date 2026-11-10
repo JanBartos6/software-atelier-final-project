@@ -1,0 +1,52 @@
+Eros Butti
+General AI: Hype vs Reality
+
+
+Every AI in this section so far is "narrow": very good at one kind of task, like translating, recognizing faces or writing text. Many AI companies are chasing something much bigger, artificial general intelligence, or AGI. IBM describes it as a "hypothetical stage" in which AI matches or beats humans at any mental task. Researchers at Google DeepMind even proposed levels of AGI, like the levels used for self-driving cars. The question everyone asks is: when? The answers could not be more different. (IBM, Morris et al. 2023)
+
+
+The Optimists
+
+The leaders of the biggest AI companies think it is close. "We are now confident we know how to build AGI as we have traditionally understood it," wrote OpenAI's CEO Sam Altman in January 2025. Anthropic's CEO Dario Amodei wrote in 2026 that very powerful AI "could be as little as 1–2 years away, although it could also be considerably further out". Demis Hassabis of Google DeepMind is more careful: he expects AGI to "start to emerge in the next five or 10 years". (Sam Altman 2025, Dario Amodei 2026, CNBC 2025)
+
+
+The Skeptics
+
+Others are not convinced. Yann LeCun, one of the pioneers of modern AI, says that "we are not going to get to human-level AI by just scaling LLMs", and in 2025 he left Meta to try a different approach. (Engadget 2025)
+
+There are reasons for doubt. Apple researchers found in 2025 that even the newest "reasoning" models suffer a "complete accuracy collapse" once puzzles get complex enough. A study from MIT found that 95% of the companies it looked at got no measurable return from generative AI, even though US companies had spent 35 to 40 billion dollars on it. Even Google's CEO Sundar Pichai sees "elements of irrationality" in the AI boom and warned that if the bubble bursts, "no company is going to be immune, including us". It is also worth remembering that the optimists run companies that need huge investments, and bold predictions help to attract them. (Apple 2025, The Register 2025, ITPro 2025)
+
+
+What the Numbers Say
+
+Researchers sit somewhere in between. In a survey of 2,778 AI researchers published in 2024, they gave a 10% chance that AI beats humans at every task by 2027, and a 50% chance by 2047, 13 years earlier than in the previous survey from 2022. On the forecasting site Metaculus, the median guess was 2031, as of November 2026. (AI Impacts 2024, Metaculus)
+
+What is clearly growing is what AI can do on its own. The research group METR found that the length of tasks AI can complete has been "doubling approximately every seven months since 2019". In 2025 the best models could complete, about half of the time, tasks that take a human expert around two hours. (METR 2025)
+
+
+And Our Jobs?
+
+The World Economic Forum expects AI and other changes to create 170 million jobs and remove 92 million by 2030, a net gain of 78 million, while almost 40% of the skills needed at work will change. The International Monetary Fund says almost 40% of jobs worldwide are "exposed" to AI, which means they will change, not necessarily disappear. The economic side is covered in the Impact and Ethics section. (World Economic Forum 2025, IMF 2024)
+
+
+So, Who Is Right?
+
+Nobody knows yet. AI is improving fast, but nobody can say when, or if, it will match human intelligence. The safest approach is to judge AI by what it can already do today, and to take bold predictions carefully, especially when they come from the people selling the technology.
+
+
+Sources
+
+1. IBM. What is artificial general intelligence (AGI)? (2026) - https://www.ibm.com/think/topics/artificial-general-intelligence
+2. Morris et al. Levels of AGI for Operationalizing Progress on the Path to AGI (2023) - https://arxiv.org/abs/2311.02462
+3. Sam Altman. Reflections (2025) - https://blog.samaltman.com/reflections
+4. Dario Amodei. The Adolescence of Technology (2026) - https://www.darioamodei.com/essay/the-adolescence-of-technology
+5. CNBC (via HedgeCo). Demis Hassabis: AGI will start to emerge in the next five or 10 years (2025) - https://www.hedgeco.net/news/?p=90632
+6. Engadget. Meta's chief AI scientist is leaving the company after 12 years (2025) - https://www.engadget.com/ai/metas-chief-ai-scientist-is-leaving-the-company-after-12-years-224325268.html
+7. AI Impacts. Thousands of AI Authors on the Future of AI (2024) - https://arxiv.org/abs/2401.02843
+8. Metaculus. Date of Artificial General Intelligence - https://www.metaculus.com/questions/5121/date-of-artificial-general-intelligence/
+9. Apple Machine Learning Research. The Illusion of Thinking (2025) - https://machinelearning.apple.com/research/illusion-of-thinking
+10. The Register. 95% of companies get zero return on generative AI investment (2025) - https://www.theregister.com/2025/08/18/generative_ai_zero_return_95_percent
+11. ITPro. Google CEO Sundar Pichai on a looming AI bubble (2025) - https://www.itpro.com/technology/artificial-intelligence/google-ceo-sundar-pichai-sounds-worried-about-a-looming-ai-bubble-i-think-no-company-is-going-to-be-immune-including-us
+12. METR. Measuring AI Ability to Complete Long Tasks (2025) - https://arxiv.org/abs/2503.14499
+13. World Economic Forum. Future of Jobs Report 2025 (2025) - https://www.weforum.org/press/2025/01/future-of-jobs-report-2025-78-million-new-job-opportunities-by-2030-but-urgent-upskilling-needed-to-prepare-workforces/
+14. IMF. AI will transform the global economy (2024) - https://www.imf.org/en/Blogs/Articles/2024/01/14/ai-will-transform-the-global-economy-lets-make-sure-it-benefits-humanity
