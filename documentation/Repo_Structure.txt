@@ -1,18 +1,22 @@
 .
-├── CSS/
-│   └── This is where all CSS stuff will go. Up to the CSS leaders to organize.
-├── HTML/
-│   ├── Introduction_to_AI -- Each one is the name of a topic
-│   ├── AI_Technologies
-│   └── Impacts
-├── Other/
-│   ├── Documentation/
-│   │   └── Guides/
-│   │       └── Where we are storing stuff that might help you
-│   └── Media/
-│       └── Images/
-│           └── Where all images and stuff will go
-└── README.md
+├── main/
+│   ├── contributors/
+│   │   ├── emanuele-tonazzo/
+│   │   ├── fabio-giandomenico/
+│   │   └── giacomo-demartini/
+│   ├── css/
+│   ├── documentation/
+│   ├── html/
+│   │   └── ai-technologies/
+│   ├── js/
+│   ├── layout/
+│   └── .gitignore
+├── Topic1/
+├── Topic2-SG1/
+├── Topic2-SG2/
+└── Topic3/
+
+*If it contains slash - / it is a directory. Only directories are mentioned here.
 
 
 Regarding media: please save images in a smart way (no img.png pls). For example, if you are working on "AI History", save the images as AI_History_1.png, AI_History_2.png, etc to avoid any conflict. You can also make subfolders, it's really up to you.
