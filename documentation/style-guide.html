@@ -5,6 +5,7 @@
 		<title>Style Guide - AI in Everyday Life</title> <!-- ARTICLE TITLE -->
 		<link rel="icon" href="../layout/ai-icon.png">
 		<link rel="stylesheet" href="../css/global.css">
+		<link rel="stylesheet" href="../css/custom-assets.css">
 		<!-- CUSTOM EXTERNAL CSS -->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="format-detection" content="telephone=no">
@@ -28,12 +29,22 @@
 				margin-bottom: 32px;
 				border: var(--article-card-border-style);
 			}
+
+			img.custom-asset {
+				width: 100%;
+				height: auto;
+			}
 			
 			.article-section h2 {
 				margin-block: 1.6em 0.8em;
 				color: var(--group-color);
 				text-align: center;
 				text-transform: uppercase;
+			}
+
+			.article-section h3 {
+				margin-block: 1.6em 0.8em;
+				text-align: center;
 			}
 			
 			.article-section ol {
@@ -58,6 +69,10 @@
 			
 			pre .template {
 				font-size: 0.8em;
+			}
+
+			hr{
+				margin: 32px 0 18px 0;
 			}
 		</style>
 	</head>
@@ -137,6 +152,22 @@
 				<p>In the <code>css</code> folder of the project, you will find the <code>definitions.css</code> file. It contains all the project's global variable definitions. You can use this file as a reference if you wish to apply the styles contained within it.</p>
 				<p>If you would like to use an image as a background for the article title section, you can override <code>background-image</code> in the <code>#article-title</code> selector.</p>
 				<p>We are always available to discuss any questions or feedback regarding the CSS, so please don't hesitate to reach out.</p>
+				<h2>Assets from the team</h2>
+				<p>Here you can find some assets created by other team members that you can use for your article pages as well.</p>
+				<p>All the custom CSS will be merged in the <code>custom-assets.css</code> file, so look into that if you want to use an element from this collection.</p>
+				<p>Do not link the <code>custom-assets.css</code> file itself to avoid conflicts; you should look up for the required CSS code yourself and copy-paste it into your stylesheets.</p>
+				<hr>
+				<!-- GIACOMO DEMARTINI - Sources Box -->
+				<h3>Giacomo Demartini - Sources Box</h3>
+				<img class="custom-asset" src="../layout/custom-asset-001.jpg">
+<pre>
+&lt;aside class="sources"&gt;
+	&lt;h2&gt;Sources&lt;/h2&gt;
+	&lt;ul&gt;
+		&lt;li&gt;&lt;a href="<span class="template">LINK URL</span>" target="_blank" rel="noopener"&gt;<span class="template">VISIBLE LINK TEXT</span>&lt;/a&gt;&lt;/li&gt;
+	&lt;/ul&gt;
+&lt;/aside&gt;
+</pre>
 			</section>
 		</main>
 		<!-- PUT YOUR CONTENT ONLY INSIDE THE <main> TAG, BEFORE THE FOOTER -->

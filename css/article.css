@@ -191,9 +191,9 @@ main {
 }
 
 .article-section {
-	padding: var(--article-content-padding);
 	width: 80%;
-	margin: auto;
+	margin: 0 auto;
+	padding: var(--article-content-padding);
 }
 
 .article-section p {
