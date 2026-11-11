@@ -1,0 +1,562 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>Teaching Robots Through Simulation - AI in Everyday Life</title>
+
+    <link rel="icon" href="../../layout/ai-icon.png">
+    <link rel="stylesheet" href="../../css/global.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+
+    <meta name="description" content="Discover how robots learn through simulation, reinforcement learning, and AI-generated environments.">
+
+    <meta name="author" content="Giulia">
+
+    <style>
+        :root {
+            --template-color: var(--second-main-topic-color);
+        }
+
+        /* CUSTOM INTERNAL CSS */
+
+        .article-section {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .article-section ul {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5em;
+            margin: 0.8em 0 0.8em 1.5em;
+            line-height: 1.4;
+        }
+
+        .article-section li::marker {
+            color: var(--template-color);
+        }
+
+        .article-section strong {
+            font-weight: 600;
+            color: var(--second-main-topic-color-pale);
+        }
+
+        .article-section figure {
+            max-width: 500px;
+            margin: 2.5em auto;
+        }
+
+        .article-section figure img {
+            width: 100%;
+            border: var(--article-card-border-style);
+            border-radius: var(--global-border-radius);
+        }
+
+        .article-section figcaption {
+            margin-top: 0.6em;
+            font-size: 0.9em;
+            font-style: italic;
+            text-align: center;
+            opacity: 0.7;
+        }
+
+        .article-section .highlight {
+            margin-block: 1.5em;
+            padding-left: 1em;
+            border-left: 3px solid var(--template-color);
+            font-size: 1.15em;
+            font-weight: 400;
+        }
+
+        .sources {
+            margin-top: 3em;
+            padding: 1em 1.5em;
+            border-left: var(--global-border-thickness) solid var(--template-color);
+            background-color: var(--secondary-bg-color);
+            border-radius: 0 var(--global-border-radius) var(--global-border-radius) 0;
+            font-size: 0.85em;
+        }
+
+        .article-section .sources h2 {
+            margin: 0;
+            font-size: 1em;
+            font-weight: 600;
+            text-transform: uppercase;
+            color: var(--template-color);
+        }
+
+        .sources ul {
+            gap: 0.3em;
+            word-break: break-all;
+        }
+
+        .article-section h2 {
+            margin-top: 2.2em;
+            margin-bottom: 0.7em;
+            color: var(--template-color);
+        }
+
+        .article-section h3 {
+            margin-top: 1.5em;
+            margin-bottom: 0.7em;
+        }
+
+        .article-section p {
+            line-height: 1.7;
+            margin-bottom: 1em;
+        }
+
+        @media (max-width: 680px) {
+            .article-section {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+
+<body id="article">
+
+    <!-- NAVIGATION BAR -->
+    <nav>
+        <a id="back-to-homepage" href="../../html/index.html">
+            <img src="../../layout/logotype.png" alt="Return to the homepage">
+        </a>
+
+        <ul>
+            <li id="first-main-topic">
+                <a href="../../html/index.html#introduction-to-ai">
+                    Introduction to AI
+                </a>
+                <ul class="dropdown">
+                    <li>
+                        <a href="../../html/index.html#history-of-ai">
+                            History of AI
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../../html/index.html#basic-concepts">
+                            Basic Concepts
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li id="second-main-topic">
+                <a href="../../html/index.html#ai-technologies">
+                    AI Technologies
+                </a>
+                <ul class="dropdown">
+                    <li>
+                        <a href="../../html/index.html#robotics">
+                            Robotics
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../../html/index.html#applications">
+                            Applications
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../../html/index.html#language-technologies">
+                            Language Technologies
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li id="third-main-topic">
+                <a href="../../html/index.html#impact-and-ethics">
+                    Impact and Ethics
+                </a>
+                <ul class="dropdown">
+                    <li>
+                        <a href="../../html/index.html#ethics">
+                            Ethics
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../../html/index.html#limitations">
+                            Limitations
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <!-- PREVIOUS/NEXT ARTICLE LINKS -->
+        <a
+            id="previous-article"
+            href="how-world-models-work.html"
+            aria-label="Read previous article"
+            title="Previous article">&#10094;</a>
+
+        <a
+            id="next-article"
+            href="world-models-future.html"
+            aria-label="Read next article"
+            title="Next article">&#10095;</a>
+
+
+        <!-- ARTICLE TITLE -->
+        <section id="article-title">
+            <span>
+                <h1>Teaching Robots Through Simulation</h1>
+
+                <p id="article-subtitle">
+                    Why should a robot practice in a virtual world
+                    before entering the real one?
+                </p>
+
+                <p class="article-title-paragraph">
+                    Training a robot in the physical world can be
+                    expensive, slow, and sometimes dangerous.
+                </p>
+
+                <p class="article-title-paragraph">
+                    Imagine teaching a robotic arm to pick up a fragile
+                    glass. During the learning process, the robot might
+                    drop the glass hundreds of times. With real
+                    hardware, these mistakes could damage equipment
+                    and require constant human supervision.
+                </p>
+
+                <p class="article-title-paragraph">
+                    But what if the robot could practice the same task
+                    thousands of times without breaking anything?
+                    This is one of the main advantages of
+                    <strong>robotics simulation</strong>.
+                </p>
+
+                <p id="author">
+                    <span>by </span>Giulia
+                </p>
+            </span>
+        </section>
+
+
+        <!-- ARTICLE CONTENT -->
+        <section class="article-section">
+
+            <h2>What Is Robotics Simulation?</h2>
+
+            <p>
+                Robotics simulation involves recreating a robot
+                and its surrounding environment inside a computer.
+            </p>
+
+            <p>
+                A simulator can reproduce important physical
+                properties, including gravity, collisions,
+                friction, and the movement of objects.
+            </p>
+
+            <p>
+                It can also simulate sensors, cameras, and
+                the robot's mechanical structure.
+            </p>
+
+            <p>
+                Inside this environment, developers can observe
+                how the robot behaves, test different conditions,
+                and improve its performance before using
+                physical hardware.
+            </p>
+
+            <p class="highlight">
+                This is often called a
+                <strong>simulation-first approach</strong>.
+            </p>
+
+
+            <h2>Why Use Simulations?</h2>
+
+            <p>
+                Simulations offer several important benefits.
+            </p>
+
+            <ul>
+                <li>
+                    <strong>Safety:</strong>
+                    Robots can make mistakes without putting
+                    people or expensive equipment at risk.
+                </li>
+
+                <li>
+                    <strong>Lower costs:</strong>
+                    Developers can test different strategies
+                    without repeatedly damaging or replacing
+                    physical components.
+                </li>
+
+                <li>
+                    <strong>Faster training:</strong>
+                    Many simulated environments can run faster
+                    than real time or operate in parallel,
+                    allowing robots to collect large amounts
+                    of experience.
+                </li>
+
+                <li>
+                    <strong>More varied experiences:</strong>
+                    Developers can modify obstacles, lighting,
+                    object positions, and physical properties
+                    to expose robots to different situations.
+                </li>
+            </ul>
+
+            <p>
+                The last technique is known as
+                <strong>domain randomization</strong>.
+            </p>
+
+            <p>
+                For example, a robot learning to pick up a cup
+                might practice with cups of different sizes,
+                weights, and positions. This can help it
+                develop a strategy that works beyond one
+                specific object.
+            </p>
+
+
+            <h2>Reinforcement Learning: Learning Through Trial and Error</h2>
+
+            <p>
+                One important method for training robots is
+                <strong>reinforcement learning (RL)</strong>.
+            </p>
+
+            <p>
+                In reinforcement learning, an AI agent learns
+                by interacting with an environment and receiving
+                feedback about its actions.
+            </p>
+
+            <p>
+                Imagine a robot learning to walk.
+            </p>
+
+            <p>
+                At first, it might move incorrectly and fall.
+                The learning algorithm receives information
+                about the outcome and gradually improves
+                the robot's movements.
+            </p>
+
+            <p>
+                Successful actions receive higher rewards,
+                encouraging the robot to repeat useful behavior.
+            </p>
+
+            <p>
+                Over many interactions, the agent learns a
+                <strong>policy</strong>, which is a strategy
+                for deciding which action to take in
+                a particular situation.
+            </p>
+
+            <p>
+                A single interaction usually consists of
+                performing an action and observing the
+                resulting state and reward.
+            </p>
+
+            <p class="highlight">
+                Complex tasks can require millions of these
+                interactions. Simulations allow robots to
+                accumulate experience without performing
+                every attempt in the physical world.
+            </p>
+
+
+            <h2>Model-Free vs. Model-Based Reinforcement Learning</h2>
+
+            <p>
+                There are two important approaches to
+                reinforcement learning.
+            </p>
+
+            <h3>Model-Free Reinforcement Learning</h3>
+
+            <p>
+                <strong>Model-free reinforcement learning</strong>
+                learns policies or action values directly from
+                experience, without using an explicit predictive
+                model of the environment's dynamics for planning.
+            </p>
+
+            <p>Examples include:</p>
+
+            <ul>
+                <li>
+                    <strong>PPO (Proximal Policy Optimization):</strong>
+                    An algorithm designed to improve a policy
+                    while avoiding excessively large updates.
+                </li>
+
+                <li>
+                    <strong>SAC (Soft Actor-Critic):</strong>
+                    An algorithm that learns from stored
+                    experiences and encourages exploration
+                    by maintaining randomness in its actions.
+                </li>
+            </ul>
+
+            <p>
+                Model-free methods can perform very well when
+                large amounts of training experience are available.
+            </p>
+
+            <p>
+                However, they may require many interactions
+                before learning a successful strategy.
+            </p>
+
+
+            <h3>Model-Based Reinforcement Learning</h3>
+
+            <p>
+                <strong>Model-based reinforcement learning</strong>
+                uses a model of the environment to predict
+                the consequences of actions.
+            </p>
+
+            <p>
+                For example, instead of physically trying
+                every possible movement, a robot could use
+                a learned model to imagine different outcomes
+                and decide which actions are promising.
+            </p>
+
+            <p>
+                This approach can reduce the need for real-world
+                interactions, although its effectiveness depends
+                on the quality of its predictions.
+            </p>
+
+            <p>
+                Neither approach is universally better.
+                The choice depends on the task, the available
+                data, and the accuracy of the environment model.
+            </p>
+
+            <p class="highlight">
+                A robot trained using model-free RL inside
+                a physics simulator is still using model-free RL.
+                What matters is whether the learning algorithm
+                itself uses a predictive dynamics model.
+            </p>
+
+
+            <h2>Software-in-the-Loop Testing</h2>
+
+            <p>
+                Simulation is useful not only for training
+                but also for testing robot software.
+            </p>
+
+            <p>
+                <strong>Software-in-the-Loop (SIL)</strong>
+                is a testing approach in which the software
+                controlling a robot is evaluated inside
+                a simulated environment rather than
+                directly on physical hardware.
+            </p>
+
+            <p>
+                For example, developers can test how
+                an autonomous warehouse robot responds
+                when an obstacle suddenly appears
+                in its path.
+            </p>
+
+            <p>
+                This allows them to identify software
+                problems and unexpected behaviors before
+                deploying the system.
+            </p>
+
+            <p>
+                While reinforcement learning focuses on
+                improving a robot's behavior, SIL testing
+                focuses on verifying that the software
+                functions correctly.
+            </p>
+
+
+            <h2>The Role of Generative World Models</h2>
+
+            <p>
+                Traditional robotics simulators often require
+                developers to manually create and
+                configure environments.
+            </p>
+
+            <p>
+                Generative world models offer the possibility
+                of producing more varied environments
+                automatically.
+            </p>
+
+            <p>
+                For example, instead of constructing hundreds
+                of different kitchens by hand, developers
+                might generate different layouts, furniture
+                arrangements, lighting conditions,
+                and obstacles.
+            </p>
+
+            <p>
+                These environments could help robots experience
+                a wider variety of situations.
+            </p>
+
+            <p>
+                However, AI-generated environments must still
+                provide reliable physical behavior before
+                they can be trusted for training.
+            </p>
+
+            <p class="highlight">
+                The ultimate goal is to let robots learn
+                in virtual environments and successfully
+                apply those skills in the physical world.
+            </p>
+
+            <p>
+                Achieving that transfer remains one of
+                the major challenges in robotics.
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer id="article">
+
+        <a href="how-world-models-work.html">
+            &#10094;&#10094;&#10094;
+            How Do World Models Work?
+        </a>
+
+        <a id="back-to-top" href="#">
+            Back to top
+        </a>
+
+        <a href="world-models-future.html">
+            World Models: Present and Future
+            &#10095;&#10095;&#10095;
+        </a>
+
+    </footer>
+
+</body>
+</html>

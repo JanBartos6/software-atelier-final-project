@@ -1,0 +1,486 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>How Do World Models Work? - AI in Everyday Life</title>
+
+    <link rel="icon" href="../../layout/ai-icon.png">
+    <link rel="stylesheet" href="../../css/global.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+
+    <meta name="description" content="Discover how AI world models are trained, how they predict the future, and how they differ from traditional physics simulators.">
+
+    <meta name="author" content="Giulia">
+
+    <style>
+        :root {
+            --template-color: var(--second-main-topic-color);
+        }
+
+        /* CUSTOM INTERNAL CSS */
+
+        .article-section {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .article-section ul {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5em;
+            margin: 0.8em 0 0.8em 1.5em;
+            line-height: 1.4;
+        }
+
+        .article-section li::marker {
+            color: var(--template-color);
+        }
+
+        .article-section strong {
+            font-weight: 600;
+            color: var(--second-main-topic-color-pale);
+        }
+
+        .article-section figure {
+            max-width: 500px;
+            margin: 2.5em auto;
+        }
+
+        .article-section figure img {
+            width: 100%;
+            border: var(--article-card-border-style);
+            border-radius: var(--global-border-radius);
+        }
+
+        .article-section figcaption {
+            margin-top: 0.6em;
+            font-size: 0.9em;
+            font-style: italic;
+            text-align: center;
+            opacity: 0.7;
+        }
+
+        .article-section .highlight {
+            margin-block: 1.5em;
+            padding-left: 1em;
+            border-left: 3px solid var(--template-color);
+            font-size: 1.15em;
+            font-weight: 400;
+        }
+
+        .sources {
+            margin-top: 3em;
+            padding: 1em 1.5em;
+            border-left: var(--global-border-thickness) solid var(--template-color);
+            background-color: var(--secondary-bg-color);
+            border-radius: 0 var(--global-border-radius) var(--global-border-radius) 0;
+            font-size: 0.85em;
+        }
+
+        .article-section .sources h2 {
+            margin: 0;
+            font-size: 1em;
+            font-weight: 600;
+            text-transform: uppercase;
+            color: var(--template-color);
+        }
+
+        .sources ul {
+            gap: 0.3em;
+            word-break: break-all;
+        }
+
+        .article-section h2 {
+            margin-top: 2.2em;
+            margin-bottom: 0.7em;
+            color: var(--template-color);
+        }
+
+        .article-section h3 {
+            margin-top: 1.5em;
+            margin-bottom: 0.7em;
+        }
+
+        .article-section p {
+            line-height: 1.7;
+            margin-bottom: 1em;
+        }
+
+        @media (max-width: 680px) {
+            .article-section {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+
+<body id="article">
+
+    <!-- NAVIGATION BAR -->
+    <nav>
+        <a id="back-to-homepage" href="../../html/index.html">
+            <img src="../../layout/logotype.png" alt="Return to the homepage">
+        </a>
+
+        <ul>
+            <li id="first-main-topic">
+                <a href="../../html/index.html#introduction-to-ai">
+                    Introduction to AI
+                </a>
+
+                <ul class="dropdown">
+                    <li>
+                        <a href="../../html/index.html#history-of-ai">
+                            History of AI
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../../html/index.html#basic-concepts">
+                            Basic Concepts
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li id="second-main-topic">
+                <a href="../../html/index.html#ai-technologies">
+                    AI Technologies
+                </a>
+
+                <ul class="dropdown">
+                    <li>
+                        <a href="../../html/index.html#robotics">
+                            Robotics
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../../html/index.html#applications">
+                            Applications
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../../html/index.html#language-technologies">
+                            Language Technologies
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li id="third-main-topic">
+                <a href="../../html/index.html#impact-and-ethics">
+                    Impact and Ethics
+                </a>
+
+                <ul class="dropdown">
+                    <li>
+                        <a href="../../html/index.html#ethics">
+                            Ethics
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../../html/index.html#limitations">
+                            Limitations
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <!-- PREVIOUS/NEXT ARTICLE LINKS -->
+        <a
+            id="previous-article"
+            href="world-models-introduction.html"
+            aria-label="Read previous article"
+            title="Previous article">&#10094;</a>
+
+        <a
+            id="next-article"
+            href="teaching-robots-through-simulation.html"
+            aria-label="Read next article"
+            title="Next article">&#10095;</a>
+
+
+        <!-- ARTICLE TITLE -->
+        <section id="article-title">
+            <span>
+                <h1>How Do World Models Work?</h1>
+
+                <p id="article-subtitle">
+                    From real-world observations to
+                    AI-generated environments.
+                </p>
+
+                <p class="article-title-paragraph">
+                    World models learn to represent environments by
+                    analyzing large amounts of data. Their purpose
+                    is not simply to generate realistic images, but
+                    to capture useful relationships between objects,
+                    actions, and changes over time.
+                </p>
+
+                <p class="article-title-paragraph">
+                    To understand how these models are developed,
+                    we can divide the process into several stages.
+                </p>
+
+                <p id="author">
+                    <span>by </span>Giulia
+                </p>
+            </span>
+        </section>
+
+
+        <!-- ARTICLE CONTENT -->
+        <section class="article-section">
+
+            <h2>1. Data Collection and Pre-processing</h2>
+
+            <p>
+                The first step is collecting information
+                about the world.
+            </p>
+
+            <p>
+                Depending on the application, training data can
+                include videos, images, 3D scenes, robot movements,
+                sensor readings, and descriptions of actions.
+            </p>
+
+            <p>
+                For example, videos of people picking up objects
+                can provide information about how hands move,
+                how objects respond to contact, and how different
+                actions change a scene.
+            </p>
+
+            <p>
+                Before training, the data must be prepared.
+            </p>
+
+            <p>
+                <strong>Data pre-processing</strong> involves
+                organizing, cleaning, and filtering the information.
+                Low-quality or duplicated samples may be removed,
+                while particularly useful situations can be selected.
+            </p>
+
+            <p>
+                A good dataset should also contain a variety
+                of environments and interactions, allowing
+                the model to learn more than one specific situation.
+            </p>
+
+
+            <h2>2. Pre-training</h2>
+
+            <p>
+                During pre-training, the model learns general
+                patterns from large datasets.
+            </p>
+
+            <p>
+                For example, by analyzing videos, it may learn
+                that objects usually move continuously, that
+                unsupported objects tend to fall, or that an object
+                becomes partially hidden when another object
+                passes in front of it.
+            </p>
+
+            <p>
+                The model adjusts its internal parameters
+                to improve its predictions or reconstructions.
+            </p>
+
+            <p>
+                Different architectures use different training
+                objectives. Some predict future video frames,
+                while others learn compressed representations
+                of their observations.
+            </p>
+
+            <p class="highlight">
+                The objective is to build a useful understanding
+                of how environments appear and evolve.
+            </p>
+
+
+            <h2>3. Specialized Training</h2>
+
+            <p>
+                After general training, a model can be adapted
+                to a specific application.
+            </p>
+
+            <p>
+                For robotics, this might involve training
+                with data collected from robot cameras,
+                actions, and sensors.
+            </p>
+
+            <p>
+                For example, a model trained on general videos
+                could be further adapted to understand
+                the movement of a robotic arm.
+            </p>
+
+            <p>
+                This type of specialized training can improve
+                performance on particular tasks, although not
+                all world models follow the same training pipeline.
+            </p>
+
+
+            <h2>4. Post-training and Evaluation</h2>
+
+            <p>
+                The model can then be refined and evaluated
+                to determine whether its predictions are useful.
+            </p>
+
+            <p>
+                Researchers may test how accurately it predicts
+                object movements, how consistently it represents
+                a 3D scene, or how well it responds
+                to different actions.
+            </p>
+
+            <p class="highlight">
+                For robotics, visual realism alone is not enough.
+                A model also needs to represent the consequences
+                of actions with sufficient accuracy for its
+                intended use.
+            </p>
+
+
+            <h2>How Does a World Model Predict the Future?</h2>
+
+            <p>
+                Imagine that a robot is looking at a ball
+                resting on a table.
+            </p>
+
+            <p>
+                The model receives information about the current
+                situation. If it is conditioned on an action,
+                such as pushing the ball, it can generate
+                a prediction of what might happen next.
+            </p>
+
+            <p>
+                The predicted outcome may depend on the direction
+                of the push, the position of the ball, and
+                the physical relationships the model has learned.
+            </p>
+
+            <p>
+                Some world models predict future images or videos.
+                Others predict future states in a compressed
+                internal representation.
+            </p>
+
+            <p>
+                These predictions can help an AI system compare
+                possible actions before performing them.
+            </p>
+
+
+            <h2>World Models vs. Physics Simulators</h2>
+
+            <p>
+                Although they are closely related, world models
+                and traditional physics simulators are not
+                the same thing.
+            </p>
+
+            <p>
+                A <strong>physics simulator</strong> calculates
+                the behavior of objects using mathematical models
+                of properties such as gravity, friction,
+                and collisions.
+            </p>
+
+            <p>
+                A <strong>learned world model</strong>, on the
+                other hand, uses patterns extracted from data
+                to make predictions about an environment.
+            </p>
+
+            <p>
+                For example, a physics simulator might calculate
+                how a ball falls using equations of motion.
+                A learned world model might predict its movement
+                from patterns observed during training.
+            </p>
+
+            <p>
+                Both methods have advantages and limitations.
+                Physics simulators depend on the accuracy of
+                their mathematical assumptions and parameters,
+                while learned world models can produce incorrect
+                or inconsistent predictions.
+            </p>
+
+            <p class="highlight">
+                Combining learned world models with physics-based
+                simulation is an important research direction.
+            </p>
+
+
+            <h2>From World Models to World Building</h2>
+
+            <p>
+                Once a system can represent or generate an
+                environment, it may become possible to create
+                entirely new virtual spaces for robots to explore.
+            </p>
+
+            <p>
+                Instead of manually constructing every room,
+                obstacle, and object, developers can use
+                generative AI to help create diverse
+                training environments.
+            </p>
+
+            <p>
+                But creating a convincing virtual world
+                is only the beginning.
+            </p>
+
+            <p class="highlight">
+                The next step is using these environments
+                to teach robots how to act.
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer id="article">
+
+        <a href="world-models-introduction.html">
+            &#10094;&#10094;&#10094;
+            Understanding World Models
+        </a>
+
+        <a id="back-to-top" href="#">
+            Back to top
+        </a>
+
+        <a href="teaching-robots-through-simulation.html">
+            Teaching Robots Through Simulation
+            &#10095;&#10095;&#10095;
+        </a>
+
+    </footer>
+
+</body>
+</html>
