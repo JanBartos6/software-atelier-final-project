@@ -36,6 +36,8 @@
 
 	--logotype-left-part-font-size: calc(var(--logotype-right-part-font-size) * 1);
 	--logotype-right-part-font-size: 160px;
+	--logotype-left-part-small-font-size: calc(var(--logotype-right-part-small-font-size) * 1);
+	--logotype-right-part-small-font-size: 80px;
 	--logotype-gap: calc(var(--logotype-right-part-font-size) * 0.06);
 	
 	--template-placeholder-color: #00ff26;

@@ -135,7 +135,7 @@ main {
 	border-bottom-style: solid;
 }
 
-#article-title > span {
+#article-title > div {
 	padding: 50px var(--article-content-padding);
 	border-block: var(--global-border-thickness) solid var(--template-color);
 }
@@ -245,4 +245,8 @@ footer#article #back-to-top {
 footer#article #back-to-top:hover {
 	color: var(--links-color);
 	border-color: var(--links-color);
+}
+
+footer#article #back-to-top span:last-child {
+	display: none;
 }

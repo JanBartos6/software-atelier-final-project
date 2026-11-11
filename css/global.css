@@ -64,7 +64,7 @@ hr {
 }
 
 [id] {
-	scroll-margin-top: 100px;
+	scroll-margin-top: 80px;
 }
 
 img:not([src]), img[src=""] {
