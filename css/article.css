@@ -192,7 +192,8 @@ main {
 
 .article-section {
 	padding: var(--article-content-padding);
-	width: 30%;
+	width: 80%;
+	margin: auto;
 }
 
 .article-section p {
