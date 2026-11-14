@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>The Invisible Assistant - AI in Everyday Life</title> <!-- ARTICLE TITLE -->
+		<link rel="icon" href="../../layout/ai-icon.png">
+		<link rel="stylesheet" href="../../css/global.css">
+		<!-- CUSTOM EXTERNAL CSS -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="description" content="The AI you use every day without noticing, from your keyboard and maps to your bank card and smart speaker"> <!-- ARTICLE DESCRIPTION -->
+		<meta name="author" content="Eros Butti"> <!-- ARTICLE AUTHOR -->
+		<style>
+			:root {
+				--template-color: var(--first-main-topic-color);
+			}
+			
+			/* CUSTOM INTERNAL CSS */
+			.article-section figure {
+				max-width: 500px;
+				margin: 2em auto;
+			}
+
+			.article-section figure img {
+				width: 100%;
+				border: var(--article-card-border-style);
+				border-radius: var(--global-border-radius);
+			}
+
+			.article-section figcaption {
+				margin-top: 0.6em;
+				font-size: 0.9em;
+				font-style: italic;
+				text-align: center;
+				opacity: 0.7;
+			}
+		</style>
+	</head>
+	<body>
+		<nav>
+			<a id="back-to-homepage" href="../../html/index.html"><img src="../../layout/logotype.png" alt="Return to the homepage"></a>
+			<ul>
+				<li id="first-main-topic">
+					<a href="../../html/index.html#introduction-to-ai">Introduction to AI</a>
+					<ul class="dropdown">
+						<li><a href="../../html/index.html#history-of-ai">History of AI</a></li>
+						<li><a href="../../html/index.html#basic-concepts">Basic Concepts</a></li>
+					</ul>
+				</li>
+				<li id="second-main-topic">
+					<a href="../../html/index.html#ai-technologies">AI Technologies</a>
+					<ul class="dropdown">
+						<li><a href="../../html/index.html#interactions">Interactions</a></li>
+						<li><a href="../../html/index.html#language-technologies">Language Technologies</a></li>
+						<li><a href="../../html/index.html#robotics">Robotics</a></li>
+					</ul>
+				</li>
+				<li id="third-main-topic">
+					<a href="../../html/index.html#impact-and-ethics">Impact and Ethics</a>
+					<ul class="dropdown">
+						<li><a href="../../html/index.html#ethics">Ethics</a></li>
+						<li><a href="../../html/index.html#limitations">Limitations</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+		<!-- PUT YOUR CONTENT ONLY INSIDE THE <main> TAG, AFTER LINKS AND TITLE SECTION -->
+		<main>
+			<!-- PREVIOUS/NEXT ARTICLE LINKS -->
+			<a id="previous-article" href="../../html/index.html" aria-label="Read previous article" title="Previous article">&#10094;</a>
+			<a id="next-article" href="what-your-apps-know-about-you.html" aria-label="Read next article" title="Next article">&#10095;</a>
+			<!-- ARTICLE TITLE (START) -->
+			<section id="article-title">
+				<div>
+					<h1>The Invisible Assistant</h1>
+					<p id="article-subtitle">The AI You Use Every Day Without Noticing</p>
+					<p class="article-title-paragraph">Ask people what AI is, and most will say "ChatGPT". In a 2026 survey by the Pew Research Center, chatbots were the first thing that came to mind for 29% of Americans, while only 3% mentioned search engines. In an earlier survey, only 30% could recognize six common examples of everyday AI, and just 51% knew that their email spam filter uses it. Most of the AI we use is simply invisible. So let's follow one ordinary day and see where it is hiding.</p>
+					<p id="author"><span>by </span>Eros Butti</p>
+					</div>
+			</section>
+			<!-- ARTICLE SECTIONS (START) -->
+			<section class="article-section">
+				<h2>7:00 - Waking Up</h2>
+				<p>The first AI of the day is often the one that unlocks the phone. Apple's Face ID projects thousands of invisible dots onto your face to measure its depth, which is why a photo of you is not enough to fool it. According to Apple, the chance that a stranger could unlock your iPhone is less than 1 in 1,000,000.</p>
+				<p>Then you start typing. Every word your keyboard suggests is a prediction made by a language model. Google's Gboard runs more than 30 of them directly on the phone, and they learn in an unusual way called federated learning: the model is trained on your phone, "all the training data remains on your device", and only a small update is sent back to improve the model for everyone.</p>
+			</section>
+			<section class="article-section">
+				<h2>8:00 - On the Way</h2>
+				<p>Before leaving, you check how long the trip will take. Google Maps arrival times are accurate for over 97% of trips, and a neural network developed with DeepMind made them up to 50% more accurate in cities like Berlin and Tokyo.</p>
+				<figure>
+					<img src="../../contributors/eros-butti/AI_Today_1.jpg" alt="A smartphone mounted on a car dashboard, used for navigation">
+					<figcaption>A phone used for navigation in a car. Photo: Shixart1985, CC BY 2.0, via Wikimedia Commons. <a href="https://commons.wikimedia.org/wiki/File:Smartphone_mounted_on_car_dashboard_during_a_drive_in_a_modern_vehicle_with_a_focus_on_navigation_use.jpg">Source</a></figcaption>
+				</figure>
+			</section>
+			<section class="article-section">
+				<h2>12:00 - Inbox and Lunch Break</h2>
+				<p>At lunch you check your email. You probably never see the spam: according to Google, machine learning helps Gmail block more than 99.9% of spam, phishing and malware.</p>
+				<p>Then you pay for lunch by card, and in the fraction of a second before the payment goes through, an AI decides whether it looks like fraud. Mastercard's system checks 143 billion transactions a year, each in less than 50 milliseconds, and Visa says its systems blocked 40 billion dollars of fraudulent transactions in 2023 alone.</p>
+				<p>A friend sends you a message in a language you don't speak, so you translate it. You are one of more than 1 billion people who use Google's translation tools every month, and in 2024 AI helped Google add 110 new languages at once.</p>
+			</section>
+			<section class="article-section">
+				<h2>21:00 - Back Home</h2>
+				<p>In the evening you ask your smart speaker to play some music. To hear "Alexa" or "Hey Siri", it has to listen all the time, and sometimes it wakes up when nobody called it.</p>
+				<figure>
+					<img src="../../contributors/eros-butti/AI_Today_2.jpg" alt="Close-up of the top of an Amazon Echo smart speaker">
+					<figcaption>An Amazon Echo smart speaker. Photo: Asivechowdhury, CC BY-SA 4.0, via Wikimedia Commons. <a href="https://commons.wikimedia.org/wiki/File:Amazon_Echo_Plus_02.jpg">Source</a></figcaption>
+				</figure>
+				<p>Those recordings are not always private. In 2019 Bloomberg revealed that thousands of Amazon workers listened to Alexa recordings, each reviewing about 1,000 clips per shift. A few months later a whistleblower told The Guardian that Apple contractors "regularly hear confidential details" in Siri recordings, including medical information.</p>
+				<p>It ended up in court: in 2025 Apple agreed to pay 95 million dollars over Siri recording people who had not said "Hey Siri", and in 2026 Google paid 68 million dollars in a similar case, although both deny any wrongdoing. And since March 2025, every voice recording from Amazon's Echo speakers goes to Amazon's cloud.</p>
+			</section>
+			<section class="article-section">
+				<h2>What We Didn&#x27;t Notice</h2>
+				<p>In one ordinary day, AI unlocked the phone, chose the next word, planned the route, filtered the emails and approved the payment, and we noticed none of it. All of these systems learn from what we type, where we go and what we say. The ones that learn the most, though, are the apps we open to scroll. That is the next article.</p>
+			</section>
+			<section class="article-section">
+				<h2>Sources</h2>
+				<ol>
+					<li><a href="https://www.pewresearch.org/internet/2026/06/17/what-do-americans-think-ai-is/">Pew Research Center. What do Americans think AI is? (2026)</a></li>
+					<li><a href="https://www.pewresearch.org/science/2023/02/15/public-awareness-of-artificial-intelligence-in-everyday-activities/">Pew Research Center. Public awareness of artificial intelligence in everyday activities (2023)</a></li>
+					<li><a href="https://research.google/blog/federated-learning-collaborative-machine-learning-without-centralized-training-data/">Google Research. Federated Learning: Collaborative Machine Learning without Centralized Training Data (2017)</a></li>
+					<li><a href="https://research.google/blog/advances-in-private-training-for-production-on-device-language-models/">Google Research. Advances in private training for production on-device language models (2024)</a></li>
+					<li><a href="https://support.apple.com/en-us/102381">Apple Support. About Face ID advanced technology</a></li>
+					<li><a href="https://deepmind.google/discover/blog/traffic-prediction-with-advanced-graph-neural-networks/">Google DeepMind. Traffic prediction with advanced Graph Neural Networks (2020)</a></li>
+					<li><a href="https://workspace.google.com/blog/product-announcements/ridding-gmail-of-100-million-more-spam-messages-with-tensorflow">Google Workspace Blog. Ridding Gmail of 100 million more spam messages with TensorFlow (2019)</a></li>
+					<li><a href="https://www.mastercard.com/au/en/news-and-trends/press/2024/february/mastercard-supercharges-consumer-protection-with-gen-ai.html">Mastercard. Mastercard supercharges consumer protection with gen AI (2024)</a></li>
+					<li><a href="https://www.thestar.com.my/tech/tech-news/2024/07/24/visa-prevented-40-billion-worth-of-fraudulent-transactions-in-2023--official">The Star / Reuters. Visa prevented 40 billion dollars worth of fraudulent transactions in 2023 (2024)</a></li>
+					<li><a href="https://blog.google/products/translate/google-translate-new-languages-2024/">Google. 110 new languages are coming to Google Translate (2024)</a></li>
+					<li><a href="https://blog.google/products-and-platforms/products/translate/fun-facts-google-translate-20-years/">Google. Fun facts about Google Translate at 20 (2026)</a></li>
+					<li><a href="https://en.wikipedia.org/wiki/Virtual_assistant">Wikipedia. Virtual assistant</a></li>
+					<li><a href="https://www.technologyreview.com/2019/04/11/136118/amazon-workers-are-listening-to-some-of-your-conversations-with-alexa/">MIT Technology Review. Amazon workers are listening to some of your conversations with Alexa (2019)</a></li>
+					<li><a href="https://www.technologyreview.com/2019/07/29/134008/apple-contractors-hear-confidential-details-from-siri-recordings">MIT Technology Review. Apple contractors hear confidential details from Siri recordings (2019)</a></li>
+					<li><a href="https://www.axios.com/2025/05/13/apple-lopez-voice-assistant-settlement-siri">Axios. Apple's Siri settlement: how to claim (2025)</a></li>
+					<li><a href="https://www.techrepublic.com/article/news-google-assistant-privacy-lawsuit/">TechRepublic. Google Assistant privacy lawsuit settlement (2026)</a></li>
+					<li><a href="https://techcrunch.com/2025/03/15/amazons-echo-will-send-all-voice-recordings-to-the-cloud-starting-march-28">TechCrunch. Amazon's Echo will send all voice recordings to the cloud starting March 28 (2025)</a></li>
+				</ol>
+			</section>
+		</main>
+		<footer id="article">
+			<a href="../../html/index.html">&#10094;&#10094;&#10094; Homepage</a>
+			<a id="back-to-top" href="#" title="Back to top"><span>Back to top</span><span>&#x2B06;</span></a>
+			<a href="what-your-apps-know-about-you.html">What Your Apps Know About You &#10095;&#10095;&#10095;</a>
+		</footer>
+    </body>
+</html>
