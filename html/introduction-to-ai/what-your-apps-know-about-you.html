@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>What Your Apps Know About You - AI in Everyday Life</title> <!-- ARTICLE TITLE -->
+		<link rel="icon" href="../../layout/ai-icon.png">
+		<link rel="stylesheet" href="../../css/global.css">
+		<!-- CUSTOM EXTERNAL CSS -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="description" content="How TikTok and other apps learn who you are from how you watch, type and look, and what they are built to do with it"> <!-- ARTICLE DESCRIPTION -->
+		<meta name="author" content="Eros Butti"> <!-- ARTICLE AUTHOR -->
+		<style>
+			:root {
+				--template-color: var(--first-main-topic-color);
+			}
+			
+			/* CUSTOM INTERNAL CSS */
+			.article-section figure {
+				max-width: 500px;
+				margin: 2em auto;
+			}
+
+			.article-section figure img {
+				width: 100%;
+				border: var(--article-card-border-style);
+				border-radius: var(--global-border-radius);
+			}
+
+			.article-section figcaption {
+				margin-top: 0.6em;
+				font-size: 0.9em;
+				font-style: italic;
+				text-align: center;
+				opacity: 0.7;
+			}
+		</style>
+	</head>
+	<body>
+		<nav>
+			<a id="back-to-homepage" href="../../html/index.html"><img src="../../layout/logotype.png" alt="Return to the homepage"></a>
+			<ul>
+				<li id="first-main-topic">
+					<a href="../../html/index.html#introduction-to-ai">Introduction to AI</a>
+					<ul class="dropdown">
+						<li><a href="../../html/index.html#history-of-ai">History of AI</a></li>
+						<li><a href="../../html/index.html#basic-concepts">Basic Concepts</a></li>
+					</ul>
+				</li>
+				<li id="second-main-topic">
+					<a href="../../html/index.html#ai-technologies">AI Technologies</a>
+					<ul class="dropdown">
+						<li><a href="../../html/index.html#interactions">Interactions</a></li>
+						<li><a href="../../html/index.html#language-technologies">Language Technologies</a></li>
+						<li><a href="../../html/index.html#robotics">Robotics</a></li>
+					</ul>
+				</li>
+				<li id="third-main-topic">
+					<a href="../../html/index.html#impact-and-ethics">Impact and Ethics</a>
+					<ul class="dropdown">
+						<li><a href="../../html/index.html#ethics">Ethics</a></li>
+						<li><a href="../../html/index.html#limitations">Limitations</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+		<!-- PUT YOUR CONTENT ONLY INSIDE THE <main> TAG, AFTER LINKS AND TITLE SECTION -->
+		<main>
+			<!-- PREVIOUS/NEXT ARTICLE LINKS -->
+			<a id="previous-article" href="the-invisible-assistant.html" aria-label="Read previous article" title="Previous article">&#10094;</a>
+			<a id="next-article" href="generative-ai.html" aria-label="Read next article" title="Next article">&#10095;</a>
+			<!-- ARTICLE TITLE (START) -->
+			<section id="article-title">
+				<div>
+					<h1>What Your Apps Know About You</h1>
+					<p id="article-subtitle">How Your Feed Learns Who You Are</p>
+					<p class="article-title-paragraph">In 2021 the Wall Street Journal created 100 fake TikTok accounts run by bots. The bots never searched for anything and never followed anyone. They only stayed a bit longer on some videos, watched a few of them twice, and swiped past the rest.</p>
+					<p id="author"><span>by </span>Eros Butti</p>
+					</div>
+			</section>
+			<!-- ARTICLE SECTIONS (START) -->
+			<section class="article-section">
+				<h2>The Experiment</h2>
+				<p>In less than two hours, TikTok had figured out what each one was interested in. One bot was programmed to be interested in sadness. In 33 minutes TikTok showed it 224 videos, and 93% of them were about depression and mental health struggles. Nobody had told the app anything. It had only watched how long the bot looked at each video.</p>
+				<figure>
+					<img src="../../contributors/eros-butti/AI_Today_3.jpg" alt="The TikTok app icon on a smartphone home screen">
+					<figcaption>The TikTok app on a phone. Photo: Solen Feyissa, CC BY-SA 2.0, via Wikimedia Commons. <a href="https://commons.wikimedia.org/wiki/File:TikTok_app.jpg">Source</a></figcaption>
+				</figure>
+				<p>TikTok is the extreme case, but not the only one. Netflix explains that its suggestions use what you watched and rated, people with similar tastes, and even the time of day and the device you are using. On TikTok, according to former YouTube engineer Guillaume Chaslot, around 90-95% of what people watch is chosen by the algorithm.</p>
+			</section>
+			<section class="article-section">
+				<h2>What Is the Algorithm Built For?</h2>
+				<p>An internal TikTok document called "TikTok Algo 101", reported by the New York Times in December 2021, answers this directly. The company's "ultimate goal" is to grow the number of daily active users, so the algorithm is optimized for retention, whether you come back, and time spent, how long you stay. Every video gets a score based on what you are predicted to do with it: like it, comment on it, keep watching it. The highest score wins your screen. TikTok confirmed the document was real.</p>
+			</section>
+			<section class="article-section">
+				<h2>What Else Do Apps Collect?</h2>
+				<p>Much more than your clicks. TikTok's privacy policy says it collects device information such as keystroke patterns, battery state, audio settings and connected audio devices.</p>
+				<p>Some viral claims go too far, though. The story that TikTok records every password you type was rated misleading by a fact-check: its in-app browser tracked whether a key was pressed, not which one.</p>
+				<p>And "anonymous" data is less anonymous than it sounds. When Netflix published anonymous movie ratings for a public competition, the Netflix Prize, researchers identified some users by matching the ratings with their public reviews on IMDb. Netflix was sued, and a second competition was cancelled.</p>
+			</section>
+			<section class="article-section">
+				<h2>What Does It See in Your Face?</h2>
+				<p>This is where it gets uncomfortable. Internal TikTok documents made public in 2024 through a lawsuit by the US state of Kentucky show that the company demoted users it considered unattractive from the main feed and promoted those it considered attractive.</p>
+				<figure>
+					<img src="../../contributors/eros-butti/AI_Today_4.jpg" alt="Entrance of Berlin S&#252;dkreuz station during a face recognition field test, with people walking in front of it">
+					<figcaption>A face recognition field test at Berlin S&#252;dkreuz station in 2017. Photo: C.Suthorn, CC BY-SA 4.0, via Wikimedia Commons. <a href="https://commons.wikimedia.org/wiki/File:Face_Recognition_Field_Test_at_S%C3%BCdkreuz_24.jpg">Source</a></figcaption>
+				</figure>
+				<p>Ayo Omolewa, a data scientist known online as "ayoships", takes popular apps apart to expose the tricks inside them. In TikTok he claims to have found a face model that guesses your attractiveness, age, gender and mood, and he built a tool that shows how it would rate your own photos. His findings have not been independently verified, and TikTok has not commented. But they fit exactly with what TikTok's own documents describe.</p>
+			</section>
+			<section class="article-section">
+				<h2>So What?</h2>
+				<p>Recommendations can be great: they help us find music, films and creators we would never have found alone. But they only work because the app learns who we are, from how long we look at a video, how we type and even what our face looks like. And according to their own documents, these apps are built to make us stay, not to make us happier or better informed. We cannot see the algorithm, but it can definitely see us. How to deal with that is part of Using AI Well.</p>
+			</section>
+			<section class="article-section">
+				<h2>Sources</h2>
+				<ol>
+					<li><a href="https://help.netflix.com/en/node/100639">Netflix Help Center. How Netflix's recommendations system works</a></li>
+					<li><a href="https://www.tubefilter.com/2021/07/21/tiktok-recommendation-algorithm-wall-street-journal-guillaume-chaslot/">Tubefilter. TikTok's recommendation algorithm and the Wall Street Journal investigation (2021)</a></li>
+					<li><a href="https://gizmodo.com/leaked-tiktok-doc-reveals-its-obvious-secret-to-an-addi-1848166901">Gizmodo. Leaked TikTok doc reveals its obvious secret to an addictive feed (2021)</a></li>
+					<li><a href="https://english.factcrescendo.com/2025/01/15/can-tiktok-track-keystrokes-or-taps-made-by-a-user/">Fact Crescendo. Can TikTok track keystrokes or taps made by a user? (2025)</a></li>
+					<li><a href="https://en.wikipedia.org/wiki/Recommender_system">Wikipedia. Recommender system</a></li>
+					<li><a href="https://www.kunc.org/2024-10-11/lawsuit-documents-reveal-what-tiktok-executives-know-about-apps-effect-on-teenagers">NPR / KUNC. Lawsuit documents reveal what TikTok executives know about app's effect on teenagers (2024)</a></li>
+					<li><a href="https://ayoships.com/tools/tiktok-face">Ayo Omolewa (ayoships). See what TikTok's face model says about you</a></li>
+					<li><a href="https://mobilegamer.biz/this-creator-says-he-decompiled-block-blast-candy-crush-and-subway-surfers-to-reveal-their-monetisation-secrets/">MobileGamer.biz. This creator says he decompiled Block Blast, Candy Crush and Subway Surfers to reveal their monetisation secrets</a></li>
+				</ol>
+			</section>
+		</main>
+		<footer id="article">
+			<a href="the-invisible-assistant.html">&#10094;&#10094;&#10094; The Invisible Assistant</a>
+			<a id="back-to-top" href="#" title="Back to top"><span>Back to top</span><span>&#x2B06;</span></a>
+			<a href="generative-ai.html">Generative AI &#10095;&#10095;&#10095;</a>
+		</footer>
+    </body>
+</html>
