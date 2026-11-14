@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Interacting with human language and voice</title> <!-- ARTICLE TITLE -->
+		<link rel="icon" href="../../layout/ai-icon.png">
+		<link rel="stylesheet" href="../../css/global.css">
+		<!-- CUSTOM EXTERNAL CSS -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="description" content="How we interact every day with language technologies, and what they are"> <!-- ARTICLE DESCRIPTION -->
+		<meta name="author" content="Daniele Gabriele Gambarota"> <!-- ARTICLE AUTHOR -->
+		<style>
+			:root {
+				--template-color: var(--second-main-topic-color);
+			}
+
+			.article-section figure {
+				width: 80%;
+				margin: 2em auto;
+
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+			}
+
+			.article-section figure img {
+				margin: 1em 0;
+
+				border: var(--article-card-border-style);
+				border-radius: var(--global-border-radius);
+
+				min-width: 100%;
+			}
+
+			.article-section ul,
+			.article-section ol {
+				display: flex;
+				flex-direction: column;
+
+				gap: 0.5em;
+				margin: 0.5em 0 0.5em 1.5em;
+			}
+
+			.article-section li::marker {
+				color: var(--template-color);
+			}
+
+			.article-section h2,
+			.article-section h3 {
+				margin: 1em 0;
+				color: var(--second-main-topic-color);
+			}
+
+			/* Section taken from Giacomo Demartini's pages*/
+
+			.sources {
+				margin-top: 3em;
+				padding: 1em 1.5em;
+				border-left: var(--global-border-thickness) solid var(--template-color);
+				background-color: var(--secondary-bg-color);
+				border-radius: 0 var(--global-border-radius) var(--global-border-radius) 0;
+				font-size: 0.85em;
+			}
+
+			.sources ul {
+				gap: 0.3em;
+				word-break: break-all;
+
+				display: flex;
+				flex-direction: column;
+				margin: 0.8em 0 0.8em 1.5em;
+				line-height: 1.4;
+			}
+
+			.sources h2 {
+				margin: 0;
+				font-size: 1em;
+				font-weight: 600;
+				text-transform: uppercase;
+				color: var(--template-color);
+			}
+
+			/* End borrowed section */
+
+			/* CUSTOM INTERNAL CSS */
+		</style>
+	</head>
+	<body>
+		<nav>
+			<a id="back-to-homepage" href="../../html/index.html"><img src="../../layout/logotype.png" alt="Return to the homepage"></a>
+			<ul>
+				<li id="first-main-topic">
+					<a href="../../html/index.html#introduction-to-ai">Introduction to AI</a>
+					<ul class="dropdown">
+						<li><a href="../../html/index.html#history-of-ai">History of AI</a></li>
+						<li><a href="../../html/index.html#basic-concepts">Basic Concepts</a></li>
+					</ul>
+				</li>
+				<li id="second-main-topic">
+					<a href="../../html/index.html#ai-technologies">AI Technologies</a>
+					<ul class="dropdown">
+						<li><a href="../../html/index.html#interactions">Interactions</a></li>
+						<li><a href="../../html/index.html#language-technologies">Language Technologies</a></li>
+						<li><a href="../../html/index.html#robotics">Robotics</a></li>
+					</ul>
+				</li>
+				<li id="third-main-topic">
+					<a href="../../html/index.html#impact-and-ethics">Impact and Ethics</a>
+					<ul class="dropdown">
+						<li><a href="../../html/index.html#ethics">Ethics</a></li>
+						<li><a href="../../html/index.html#limitations">Limitations</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+		<main>
+			<!-- PREVIOUS/NEXT ARTICLE LINKS -->
+			<a id="previous-article" href="PREVIOUS ARTICLE LINK" aria-label="Read previous article" title="Previous article">&#10094;</a>
+			<a id="next-article" href="NEXT ARTICLE LINK" aria-label="Read next article" title="Next article">&#10095;</a>
+			<!-- ARTICLE TITLE (START) -->
+			<section id="article-title">
+				<div>
+					<h1>Interacting with human voice and language</h1>
+					<p id="article-subtitle">You didn't even notice, but you interacted with an AI today... but when?</p>
+					<p class="article-title-paragraph">Language technologies are everywhere, even when you can't see them! Your phone's keyboard, your email system, your social media feed...</p>
+					<p id="author"><span>by </span>Daniele Gabriele Gambarota</p>
+					</div>
+			</section>
+			<!-- ARTICLE SECTIONS (START) -->
+			<section class="article-section">
+				<h2>You talked to an AI today</h2>
+				<p>Has your phone fixed a typo recently, without you even noticing? Did your email app hide a spam message?
+					Maybe you asked an AI assistant for the weather or read a web page translated into your language. In each case,
+					a machine handled human language. These tools are so common that we rarely stop to ask how they work,
+					and this section covers exactly that.</p>
+
+				<p>As we have already introduced, language technologies are everywhere.</p>
+
+				<p>Maybe in the morning your alarm is switched off with a voice command, and your phone reads out the news.
+					While you commute your navigation app speaks directions, and your messages are dictated rather than typed.
+					When at work your email filters spam, your documents suggest corrections,
+					and video calls generate automatic subtitles.
+					And in the evening a streaming service searches for a film from a vague description,
+					and a website translates a review from another language.</p>
+
+				<figure>
+					<img src="../../contributors/daniele-gabriele-gambarota/iphone_siri.png" alt="iPhone siri">
+					<figcaption>Siri, found on iPhones, is based on language technologies</figcaption>
+				</figure>
+
+				<h2>What are language technologies?</h2>
+				<p>Language technologies are computer systems that can work with the way people write or speak.</p>
+
+				<p>Text-based technologies, or "natural language processing" read, analyse and produce
+					written text.  Voice-based technologies, or speech technologies listen to speech,
+					turn it into text, and speak back with a synthetic voice.</p>
+
+				<p>The two families are closely linked. A voice assistant, for example, first converts your voice into text,
+					then uses text technology to work out what you want, and finally turns its answer back into speech.
+					Page 2 focuses on the text side, and Page 3 on the voice side.</p>
+
+				<h3>A short history: dreaming of talking machines</h3>
+				<p>The idea of talking to machines is much older than smartphones.</p>
+
+				<ul>
+					<li><p>1950s: early experiments tried to translate Russian sentences into English automatically,
+						and a laboratory machine learned to recognise spoken digits from a single speaker.</p></li>
+					<li><p>1960s: a program called ELIZA imitated a conversation by matching keywords in what the user typed.
+						It had no real understanding, yet some users felt as if they were being listened to.</p></li>
+					<li><p>Following decades: researchers wrote more and more rules by hand, covering grammar, dictionaries
+						and sound patterns. This worked in narrow situations but broke down quickly in real conversation.
+						Today: systems learn from enormous collections of examples instead of relying on hand-written rules,
+						which is why they have become so much more useful in recent years.</p></li>
+				</ul>
+
+				<figure>
+					<img src="../../contributors/daniele-gabriele-gambarota/ELIZA_conversation.png" alt="ELIZA conversation">
+					<figcaption>A conversation with ELIZA</figcaption>
+				</figure>
+
+				<h2>Why is human language so hard for machines?</h2>
+				<p>Human language, unlike programming languages, is:</p>
+
+				<ul>
+					<li><p>Ambiguous: “I saw her duck” can mean two very different things.</p></li>
+					<li><p>Dependent on context: “It’s cold in here” may be a comment or a request to close the window.</p></li>
+					<li><p>Constantly changing: slang, new words, abbreviations, emojis.</p></li>
+					<li><p>Varied in sound: accents, speed, background noise and different voices make speech very diverse.</p></li>
+					<li><p>Full of hidden meaning: irony, humour and politeness often say the opposite of what the words literally mean.
+						“Great, another Monday!” is rarely a happy sentence.</p></li>
+				</ul>
+
+				<p>Most systems therefore cannot be given a list of grammar rules, and they instead
+					learn patterns from huge amounts of examples. This approach is called machine learning, and
+					the steps are always similar:
+				</p>
+
+				<ol>
+					<li>Input: text typed by a person or audio recorded by a microphone.</li>
+					<li>Analysis: the model looks for patterns it learned during training.</li>
+					<li>Output: a prediction, such as the next word, a translation, a transcription or a spoken answer</li>
+				</ol>
+
+				<p>A simple example is a spam filter. It is shown thousands of messages already labelled “spam” or “not spam”,
+					and it learns which words and patterns tend to appear in each group. When a new email arrives,
+					it makes an informed guess
+				</p>
+
+				<aside class="sources">
+					<h2>Sources</h2>
+					<ul>
+						<li><a href="https://en.wikipedia.org/wiki/Language_technology" target="_blank" rel="noopener">https://en.wikipedia.org/wiki/Language_technology</a></li>
+						<li><a href="https://en.wikipedia.org/wiki/Natural_language_processing" target="_blank" rel="noopener">https://en.wikipedia.org/wiki/Natural_language_processing</a></li>
+						<li><a href="https://en.wikipedia.org/wiki/Computational_linguistics" target="_blank" rel="noopener">https://en.wikipedia.org/wiki/Computational_linguistics</a></li>
+						<li><a href="https://en.wikipedia.org/wiki/ELIZA" target="_blank" rel="noopener">https://en.wikipedia.org/wiki/ELIZA</a></li>
+						<li><a href="https://en.wikipedia.org/wiki/Machine_learning" target="_blank" rel="noopener">https://en.wikipedia.org/wiki/Machine_learning</a></li>
+						<li><a href="https://support.apple.com/en-gb/127893" target="_blank" rel="noopener">https://support.apple.com/en-gb/127893</a></li>
+					</ul>
+				</aside>
+			</section>
+
+		</main>
+		<footer id="article">
+			<a href="PREVIOUS ARTICLE LINK">&#10094;&#10094;&#10094; Previous article</a>
+			<a id="back-to-top" href="#" title="Back to top"><span>Back to top</span><span>&#x2B06;</span></a>
+			<a href="NEXT ARTICLE LINK">Next article &#10095;&#10095;&#10095;</a>
+		</footer>
+    </body>
+</html>
