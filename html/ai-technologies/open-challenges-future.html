@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Open challenges, future</title> <!-- ARTICLE TITLE -->
+		<link rel="icon" href="../../layout/ai-icon.png">
+		<link rel="stylesheet" href="../../css/global.css">
+		<!-- CUSTOM EXTERNAL CSS -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="description" content="Open challenges, future of language technologies"> <!-- ARTICLE DESCRIPTION -->
+		<meta name="author" content="Daniele Gabriele Gambarota"> <!-- ARTICLE AUTHOR -->
+		<style>
+			:root {
+				--template-color: var(--second-main-topic-color);
+			}
+
+			.article-section figure {
+				width: 80%;
+				margin: 2em auto;
+
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+			}
+
+			.article-section figure img {
+				margin: 1em 0;
+
+				border: var(--article-card-border-style);
+				border-radius: var(--global-border-radius);
+
+				min-width: 100%;
+			}
+
+			.article-section ul,
+			.article-section ol {
+				display: flex;
+				flex-direction: column;
+
+				gap: 0.5em;
+				margin: 0.5em 0 0.5em 1.5em;
+			}
+
+			.article-section li::marker {
+				color: var(--template-color);
+			}
+
+			.article-section h2,
+			.article-section h3 {
+				margin: 1em 0;
+				color: var(--second-main-topic-color);
+			}
+
+			/* Section taken from Giacomo Demartini's pages*/
+
+			.sources {
+				margin-top: 3em;
+				padding: 1em 1.5em;
+				border-left: var(--global-border-thickness) solid var(--template-color);
+				background-color: var(--secondary-bg-color);
+				border-radius: 0 var(--global-border-radius) var(--global-border-radius) 0;
+				font-size: 0.85em;
+			}
+
+			.sources ul {
+				gap: 0.3em;
+				word-break: break-all;
+
+				display: flex;
+				flex-direction: column;
+				margin: 0.8em 0 0.8em 1.5em;
+				line-height: 1.4;
+			}
+
+			.sources h2 {
+				margin: 0;
+				font-size: 1em;
+				font-weight: 600;
+				text-transform: uppercase;
+				color: var(--template-color);
+			}
+
+			/* End borrowed section */
+
+			/* CUSTOM INTERNAL CSS */
+		</style>
+	</head>
+	<body>
+		<nav>
+			<a id="back-to-homepage" href="../../html/index.html"><img src="../../layout/logotype.png" alt="Return to the homepage"></a>
+			<ul>
+				<li id="first-main-topic">
+					<a href="../../html/index.html#introduction-to-ai">Introduction to AI</a>
+					<ul class="dropdown">
+						<li><a href="../../html/index.html#history-of-ai">History of AI</a></li>
+						<li><a href="../../html/index.html#basic-concepts">Basic Concepts</a></li>
+					</ul>
+				</li>
+				<li id="second-main-topic">
+					<a href="../../html/index.html#ai-technologies">AI Technologies</a>
+					<ul class="dropdown">
+						<li><a href="../../html/index.html#interactions">Interactions</a></li>
+						<li><a href="../../html/index.html#language-technologies">Language Technologies</a></li>
+						<li><a href="../../html/index.html#robotics">Robotics</a></li>
+					</ul>
+				</li>
+				<li id="third-main-topic">
+					<a href="../../html/index.html#impact-and-ethics">Impact and Ethics</a>
+					<ul class="dropdown">
+						<li><a href="../../html/index.html#ethics">Ethics</a></li>
+						<li><a href="../../html/index.html#limitations">Limitations</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+		<main>
+			<!-- PREVIOUS/NEXT ARTICLE LINKS -->
+			<a id="previous-article" href="voice-based-language-technologies.html" aria-label="Read previous article" title="Previous article">&#10094;</a>
+			<a id="next-article" href="../index.html" aria-label="Read next article" title="Next article">&#10095;</a>
+			<!-- ARTICLE TITLE (START) -->
+			<section id="article-title">
+				<div>
+					<h1>Open challenges, future</h1>
+					<p id="article-subtitle">An insight on limitations and future objectives</p>
+					<p class="article-title-paragraph">What language technologies currently struggle with, what companies are trying to fix and what is being slowly worked on</p>
+					<p id="author"><span>by </span>Daniele Gabriele Gambarota</p>
+					</div>
+			</section>
+			<!-- ARTICLE SECTIONS (START) -->
+			<section class="article-section">
+				<h2>Challenges</h2>
+				<p>Humans use shared knowledge, tone and the situation to decide what a sentence means. Machines have only the words (and sometimes the sound)
+					to go on. Irony, sarcasm, jokes and indirect requests remain hard: “Nice weather we’re having” means the opposite during a storm.
+					The machines cannot know that. Long conversations are difficult too, since a system can lose track of something said several minutes earlier.</p>
+
+				<p>Language models can produce fluent, convincing text that is simply wrong, including invented facts, names or references.
+					This phenomenon is called hallucination, and reducing it is one of the most active areas of work in the field.
+					Because the answer sounds sure of itself, the mistake is often hard to spot without double-checking.</p>
+
+				<p>Speech recognition works well in a quiet room with a clear speaker, and much less well in a busy street, in a moving car,
+					or when several people talk at once. Also strong regional accents, fast speech and unusual vocabulary (names, technical terms)
+					to increase the number of errors.</p>
+
+				<p>Most systems learn from large collections of examples, so they perform best for languages that have plenty of text and recordings online.
+					Of the thousands of languages spoken around the world, only a small fraction is well-supported by today’s tools,
+					and many dialects and minority languages are barely covered at all.</p>
+
+				<p>As mentioned on the first page, these systems recognise patterns rather than truly understanding language.
+					This is why a model can pass a difficult exam question and then fail at a simple everyday reasoning task
+					(Remember the r in strawberry count?). Closing this gap is still an open research question.</p>
+
+				<figure>
+					<img src="../../contributors/daniele-gabriele-gambarota/r_strawberry_openai.png" alt="r in strawberry miscount">
+					<figcaption>Chatgpt response upon being asked to count the R's in straberry (nowadays fixed)</figcaption>
+				</figure>
+
+				<p>Behind the scenes, there are also everyday constraints: powerful models need large amounts of computing power,
+					a stable internet connection is often required, and delays of even a second can make a voice conversation feel unnatural.</p>
+
+				<h2>Future</h2>
+				<p>What comes next? More natural conversation</p>
+
+				<p>Today’s voice assistants are very robotic: you wait for the answer and cannot easily interrupt. Future systems aim to handle interruptions,
+					pauses, hesitations and changes of topic more like a human, and to respond more quickly.</p>
+
+				<p>Systems that listen to speech in one language and produce speech in another with only a short delay are already being developed and tested.
+					The goal is that two people who share no language could hold a normal conversation.</p>
+
+				<p>Instead of handling only text or only sound, newer systems can combine text, voice, images and video in a single conversation.
+					For example, you could point your phone camera at a menu, ask a question, and hear the answer spoken back.</p>
+
+				<aside class="sources">
+					<h2>Sources</h2>
+					<ul>
+						<li><a href="https://en.wikipedia.org/wiki/Language_technology" target="_blank" rel="noopener">https://en.wikipedia.org/wiki/Language_technology</a></li>
+						<li><a href="https://en.wikipedia.org/wiki/Speech_recognition" target="_blank" rel="noopener">https://en.wikipedia.org/wiki/Speech_recognition</a></li>
+						<li><a href="https://en.wikipedia.org/wiki/Speech_processing" target="_blank" rel="noopener">https://en.wikipedia.org/wiki/Speech_processing</a></li>
+						<li><a href="https://community.openai.com/t/incorrect-count-of-r-characters-in-the-word-strawberry/829618" target="_blank" rel="noopener">https://community.openai.com/t/incorrect-count-of-r-characters-in-the-word-strawberry/829618</a></li>
+						<li><a href="https://en.wikipedia.org/wiki/Machine_learning" target="_blank" rel="noopener">https://en.wikipedia.org/wiki/Machine_learning</a></li>
+						<li><a href="https://chatgpt.com/features/voice-with-video/" target="_blank" rel="noopener">https://chatgpt.com/features/voice-with-video/</a></li>
+					</ul>
+				</aside>
+			</section>
+
+		</main>
+		<footer id="article">
+			<a href="voice-based-language-technologies.html">&#10094;&#10094;&#10094; Previous article</a>
+			<a id="back-to-top" href="#" title="Back to top"><span>Back to top</span><span>&#x2B06;</span></a>
+			<a href="../index.html">Next article &#10095;&#10095;&#10095;</a>
+		</footer>
+    </body>
+</html>
