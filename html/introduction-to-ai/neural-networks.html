@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Neural Networks - AI in Everyday Life</title> <!-- ARTICLE TITLE -->
+		<link rel="icon" href="../../layout/ai-icon.png">
+		<link rel="stylesheet" href="../../css/global.css">
+		<!-- CUSTOM EXTERNAL CSS -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="description" content="What a neural network is, how a single artificial neuron decides, and why billions of them together can recognize a cat"> <!-- ARTICLE DESCRIPTION -->
+		<meta name="author" content="Mark Camarilla"> <!-- ARTICLE AUTHOR -->
+		<style>
+			:root {
+				--template-color: var(--first-main-topic-color);
+			}
+			
+			/* CUSTOM INTERNAL CSS */
+			.article-section figure {
+				max-width: 720px;
+				margin: 2em auto;
+			}
+
+			.article-section figure.portrait {
+				max-width: 420px;
+			}
+
+			.article-section figure img {
+				width: 100%;
+				border: var(--article-card-border-style);
+				border-radius: var(--global-border-radius);
+			}
+
+			.article-section figcaption {
+				margin-top: 0.6em;
+				font-size: 0.9em;
+				font-style: italic;
+				text-align: center;
+				opacity: 0.7;
+			}
+		</style>
+	</head>
+	<body>
+		<nav>
+			<a id="back-to-homepage" href="../../html/index.html"><img src="../../layout/logotype.png" alt="Return to the homepage"></a>
+			<ul>
+				<li id="first-main-topic">
+					<a href="../../html/index.html#introduction-to-ai">Introduction to AI</a>
+					<ul class="dropdown">
+						<li><a href="../../html/index.html#history-of-ai">History of AI</a></li>
+						<li><a href="../../html/index.html#basic-concepts">Basic Concepts</a></li>
+					</ul>
+				</li>
+				<li id="second-main-topic">
+					<a href="../../html/index.html#ai-technologies">AI Technologies</a>
+					<ul class="dropdown">
+						<li><a href="../../html/index.html#interactions">Interactions</a></li>
+						<li><a href="../../html/index.html#language-technologies">Language Technologies</a></li>
+						<li><a href="../../html/index.html#robotics">Robotics</a></li>
+					</ul>
+				</li>
+				<li id="third-main-topic">
+					<a href="../../html/index.html#impact-and-ethics">Impact and Ethics</a>
+					<ul class="dropdown">
+						<li><a href="../../html/index.html#ethics">Ethics</a></li>
+						<li><a href="../../html/index.html#limitations">Limitations</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+		<!-- PUT YOUR CONTENT ONLY INSIDE THE <main> TAG, AFTER LINKS AND TITLE SECTION -->
+		<main>
+			<!-- PREVIOUS/NEXT ARTICLE LINKS -->
+			<a id="previous-article" href="machine-learning.html" aria-label="Read previous article" title="Previous article">&#10094;</a>
+			<a id="next-article" href="data-and-training.html" aria-label="Read next article" title="Next article">&#10095;</a>
+			<!-- ARTICLE TITLE (START) -->
+			<section id="article-title">
+				<div>
+					<h1>Neural Networks</h1>
+					<p id="article-subtitle">A Brain Made of Numbers</p>
+					<p class="article-title-paragraph">In 2012 a team at Google, led by Andrew Ng and Jeff Dean, built a huge artificial "brain": 1,000 computers with 16,000 processors and more than a billion connections. They showed it thumbnails from 10 million random YouTube videos for three days, without telling it what to look for. At the end it had learned to recognize something on its own: cats. "We never told it during the training, &#x27;This is a cat&#x27;," Dean told the New York Times. It also became strangely interested in "tool-like objects oriented at 30 degrees", like spatulas.</p>
+					<p class="article-title-paragraph">That brain was a neural network, the technology behind almost all the AI we use today.</p>
+					<p id="author"><span>by </span>Mark Camarilla</p>
+					</div>
+			</section>
+			<!-- ARTICLE SECTIONS (START) -->
+			<section class="article-section">
+				<h2>Copying the Brain</h2>
+				<figure>
+					<img src="../../contributors/mark-camarilla/How_AI_Works_3.jpg" alt="An orange cat sitting in front of a laptop and looking up">
+					<figcaption>Google&#x27;s network learned what a cat is just by watching YouTube.</figcaption>
+				</figure>
+				<p>Your brain has about 86 billion neurons. Each one receives signals from other neurons, and if the signals are strong enough, it "fires" and sends a signal on. When you learn something, some connections become stronger and others weaker.</p>
+				<p>An artificial neural network copies this idea, but with numbers instead of cells. The Nobel committee describes it like this: the neurons become nodes with different values, and the connections between them work like synapses that can be made stronger or weaker.</p>
+				<figure>
+					<img src="../../contributors/mark-camarilla/How_AI_Works_4.jpg" alt="Real neurons under a microscope, glowing green">
+					<figcaption>Real neurons under a microscope. Each one is connected to many others.</figcaption>
+				</figure>
+			</section>
+			<section class="article-section">
+				<h2>One Artificial Neuron</h2>
+				<p>A single artificial neuron is very simple. Let&#x27;s say it has to decide whether you go to the beach today. It gets three inputs: is it sunny, are your friends going, and do you have a test tomorrow. Each input is 1 for yes and 0 for no.</p>
+				<p>Each input also has a weight, a number that says how much it matters. Sun counts +3, friends +2, the test -5. The neuron multiplies every input by its weight and adds everything up. If the total is above zero, it fires: go to the beach. On a sunny day with your friends but a test tomorrow, you get 3 + 2 - 5 = 0. Not enough. You stay home and study.</p>
+				<figure>
+					<img src="../../contributors/mark-camarilla/How_AI_Works_5.jpg" alt="Diagram of one artificial neuron deciding whether to go to the beach, with weights +3, +2 and -5 adding up to 0">
+					<figcaption>One neuron, three inputs, three weights. The total is 0, so it does not fire.</figcaption>
+				</figure>
+				<p>That is all a neuron does: multiply, add, decide. On its own it is almost useless. What makes it powerful is connecting thousands or billions of them.</p>
+			</section>
+			<section class="article-section">
+				<h2>Layers</h2>
+				<p>The neurons are arranged in layers. The first layer gets the raw data, for example the pixels of a photo. The last layer gives the answer, for example "cat" or "dog". In between there are hidden layers that pass the information along and transform it. A network with many hidden layers is called "deep", and that is where the name deep learning comes from.</p>
+				<p>Each layer learns something a bit more complex than the one before. In 2013 two researchers at New York University, Matthew Zeiler and Rob Fergus, found a way to see what each layer of an image network reacts to. The first layers react to simple edges and corners. The middle ones combine them into textures and patterns. The last ones react to whole parts of objects, like a dog&#x27;s face or a car wheel. Nobody programmed these steps. The network found them by itself while it learned.</p>
+			</section>
+			<section class="article-section">
+				<h2>Everything Is in the Weights</h2>
+				<p>Everything a neural network knows is stored in its weights, also called parameters. Google&#x27;s cat network had about a billion connections. GPT-3, released by OpenAI in 2020, had 175 billion parameters, and today&#x27;s biggest models are even larger. Every single number is meaningless on its own, but together they can recognize a face or write an essay.</p>
+				<p>The idea is not new. Researchers worked on neural networks for decades, but for a long time computers were too slow and there was not enough data. In 2024 John Hopfield and Geoffrey Hinton won the Nobel Prize in Physics for work they started in the 1980s, "for foundational discoveries and inventions that enable machine learning with artificial neural networks".</p>
+			</section>
+			<section class="article-section">
+				<h2>A Black Box</h2>
+				<p>There is a problem. We know exactly what each neuron does, because it is just multiplying and adding. But with billions of weights, nobody can read them and say why the network gave a certain answer. This is why neural networks are often called a "black box", and why a mistake like the husky and snow example from the previous article is so hard to catch.</p>
+				<p>One question is still open: who chooses all those billions of weights? Not a programmer. They are found automatically during training, by showing the network enormous amounts of data. That is the next article.</p>
+			</section>
+			<section class="article-section">
+				<h2>Sources</h2>
+				<ol>
+					<li><a href="https://www.nytimes.com/2012/06/26/technology/in-a-big-network-of-computers-evidence-of-machine-learning.html">The New York Times. How Many Computers to Identify a Cat? 16,000 (2012)</a></li>
+					<li><a href="https://www.slate.com/blogs/future_tense/2012/06/27/google_computers_learn_to_identify_cats_on_youtube_in_artificial_intelligence_study.html">Slate. In Artificial Intelligence Breakthrough, Google Computers Teach Themselves To Spot Cats on YouTube (2012)</a></li>
+					<li><a href="https://www.brainfacts.org/in-the-lab/meet-the-researcher/2018/how-many-neurons-are-in-the-brain-120418">BrainFacts / Society for Neuroscience. How Many Neurons Are in the Brain? (2018)</a></li>
+					<li><a href="https://www.nobelprize.org/prizes/physics/2024/press-release/">The Royal Swedish Academy of Sciences. The Nobel Prize in Physics 2024, press release (2024)</a></li>
+					<li><a href="https://arxiv.org/abs/1311.2901">Zeiler &amp; Fergus. Visualizing and Understanding Convolutional Networks (2013)</a></li>
+					<li><a href="https://arxiv.org/abs/2005.14165">Brown et al. Language Models are Few-Shot Learners (GPT-3) (2020)</a></li>
+				</ol>
+			</section>
+			<section class="article-section">
+				<h2>Image credits</h2>
+				<ul>
+					<li><a href="https://commons.wikimedia.org/wiki/File:Computer_Using_Cat.jpg">Computer Using Cat</a> by EvanLovely (image on screen: Chi King), CC BY 2.0, via Wikimedia Commons</li>
+					<li><a href="https://commons.wikimedia.org/wiki/File:GFP_Neurons.png">GFP Neurons</a> by Manuel Schottdorf, CC BY-SA 4.0, via Wikimedia Commons, cropped</li>
+				</ul>
+			</section>
+		</main>
+		<footer id="article">
+			<a href="machine-learning.html">&#10094;&#10094;&#10094; Machine Learning</a>
+			<a id="back-to-top" href="#" title="Back to top"><span>Back to top</span><span>&#x2B06;</span></a>
+			<a href="data-and-training.html">Data and Training &#10095;&#10095;&#10095;</a>
+		</footer>
+    </body>
+</html>

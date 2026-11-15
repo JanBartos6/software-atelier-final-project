@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Machine Learning - AI in Everyday Life</title> <!-- ARTICLE TITLE -->
+		<link rel="icon" href="../../layout/ai-icon.png">
+		<link rel="stylesheet" href="../../css/global.css">
+		<!-- CUSTOM EXTERNAL CSS -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="description" content="How computers learn from examples instead of rules, from a husky in the snow to AlphaZero teaching chess to world champions"> <!-- ARTICLE DESCRIPTION -->
+		<meta name="author" content="Mark Camarilla"> <!-- ARTICLE AUTHOR -->
+		<style>
+			:root {
+				--template-color: var(--first-main-topic-color);
+			}
+			
+			/* CUSTOM INTERNAL CSS */
+			.article-section figure {
+				max-width: 720px;
+				margin: 2em auto;
+			}
+
+			.article-section figure.portrait {
+				max-width: 420px;
+			}
+
+			.article-section figure img {
+				width: 100%;
+				border: var(--article-card-border-style);
+				border-radius: var(--global-border-radius);
+			}
+
+			.article-section figcaption {
+				margin-top: 0.6em;
+				font-size: 0.9em;
+				font-style: italic;
+				text-align: center;
+				opacity: 0.7;
+			}
+		</style>
+	</head>
+	<body>
+		<nav>
+			<a id="back-to-homepage" href="../../html/index.html"><img src="../../layout/logotype.png" alt="Return to the homepage"></a>
+			<ul>
+				<li id="first-main-topic">
+					<a href="../../html/index.html#introduction-to-ai">Introduction to AI</a>
+					<ul class="dropdown">
+						<li><a href="../../html/index.html#history-of-ai">History of AI</a></li>
+						<li><a href="../../html/index.html#basic-concepts">Basic Concepts</a></li>
+					</ul>
+				</li>
+				<li id="second-main-topic">
+					<a href="../../html/index.html#ai-technologies">AI Technologies</a>
+					<ul class="dropdown">
+						<li><a href="../../html/index.html#interactions">Interactions</a></li>
+						<li><a href="../../html/index.html#language-technologies">Language Technologies</a></li>
+						<li><a href="../../html/index.html#robotics">Robotics</a></li>
+					</ul>
+				</li>
+				<li id="third-main-topic">
+					<a href="../../html/index.html#impact-and-ethics">Impact and Ethics</a>
+					<ul class="dropdown">
+						<li><a href="../../html/index.html#ethics">Ethics</a></li>
+						<li><a href="../../html/index.html#limitations">Limitations</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+		<!-- PUT YOUR CONTENT ONLY INSIDE THE <main> TAG, AFTER LINKS AND TITLE SECTION -->
+		<main>
+			<!-- PREVIOUS/NEXT ARTICLE LINKS -->
+			<a id="previous-article" href="../../html/index.html" aria-label="Read previous article" title="Previous article">&#10094;</a>
+			<a id="next-article" href="neural-networks.html" aria-label="Read next article" title="Next article">&#10095;</a>
+			<!-- ARTICLE TITLE (START) -->
+			<section id="article-title">
+				<div>
+					<h1>Machine Learning</h1>
+					<p id="article-subtitle">Teaching Computers With Examples</p>
+					<p class="article-title-paragraph">In 2016 three researchers at the University of Washington trained a program to tell huskies from wolves. On purpose, they picked training photos where every wolf had snow behind it and the huskies did not. When they checked what the program was looking at, it was not the animal at all. It had learned a much easier rule: snow means wolf. Show it a husky in the snow and it says "wolf". The researchers wanted to see if people would notice the trick, and it is a good way to understand what machine learning really is.</p>
+					<p id="author"><span>by </span>Mark Camarilla</p>
+					</div>
+			</section>
+			<!-- ARTICLE SECTIONS (START) -->
+			<section class="article-section">
+				<h2>Rules or Examples</h2>
+				<figure>
+					<img src="../../contributors/mark-camarilla/How_AI_Works_1.jpg" alt="A husky and a wolf standing in the snow, side by side">
+					<figcaption>A husky and a wolf. Easy to mix up, especially if all you look at is the snow.</figcaption>
+				</figure>
+				<p>A normal program follows rules that a person writes. If you wanted to build a spam filter that way, you would write things like "if the email says &#x27;you won a prize&#x27;, it is spam". The next day the spammers would change the words, and you would never finish writing rules.</p>
+				<p>Machine learning turns this around. You do not give the computer the rules, you give it examples: thousands of emails that people have already marked as spam or not spam. The computer finds the patterns by itself and uses them on new emails it has never seen. IBM describes it as the part of AI where the logic is not programmed but learned from data. This is how Gmail blocks almost all spam, as explained in The Invisible Assistant.</p>
+				<p>The idea is old. The name "machine learning" goes back to 1959, when IBM researcher Arthur Samuel used it for a program that got better at checkers the more it played. The History of AI section tells that part of the story.</p>
+			</section>
+			<section class="article-section">
+				<h2>Three Ways to Learn</h2>
+				<p>There are three main ways a computer can learn, depending on what kind of examples it gets.</p>
+				<p>In supervised learning every example comes with the right answer, called a label: this email is spam, this photo is a cat. The program makes a guess, compares it with the label and corrects itself. Most of the AI we use every day works like this.</p>
+				<p>In unsupervised learning there are no labels. The program only gets the data and looks for groups or patterns on its own, for example customers who buy similar things. This is often behind the "people who bought this also bought..." suggestions in online shops.</p>
+				<p>In reinforcement learning there are no examples at all. The program tries something, gets a reward if it worked and a penalty if it did not, and slowly learns what to do. It is how you would train a dog, and it is how a computer learned to play chess better than anyone.</p>
+			</section>
+			<section class="article-section">
+				<h2>The Program That Taught Itself Chess</h2>
+				<p>In 2017 Google DeepMind gave a program called AlphaZero the rules of chess and nothing else: no opening books, no famous games, no advice. It played against itself millions of times. After about four hours of training it was already stronger than Stockfish, the best chess engine of the time. In a 100-game match it won 28 games, drew 72 and lost none.</p>
+				<p>In 2018 DeepMind published the full results in the journal Science. In a longer match of 1,000 games AlphaZero won 155 and lost only 6, and the same program had also learned shogi and Go. The strange part is that AlphaZero looked at far fewer positions than Stockfish, about 60 thousand per second against 60 million. It was not calculating more. It had a better feeling for which moves were good.</p>
+				<p>The same method works even in games where you cannot see everything. In 2019 Microsoft&#x27;s Suphx learned Japanese Mahjong, where the other players&#x27; tiles are hidden, and became the first AI to reach 10 dan on the online platform Tenhou, a level only about 180 human players had ever reached.</p>
+				<figure>
+					<img src="../../contributors/mark-camarilla/How_AI_Works_2.jpg" alt="Players&#x27; hands around a game of Mahjong on a green table">
+					<figcaption>A game of Mahjong. The other players&#x27; tiles stay hidden.</figcaption>
+				</figure>
+			</section>
+			<section class="article-section">
+				<h2>When the Student Teaches the Teacher</h2>
+				<p>The most interesting part happened after the matches. AlphaZero played in a style nobody expected: it gave away pieces for a long-term attack and liked to push its h-pawn all the way up the board towards the enemy king. Former world champion Garry Kasparov said that because AlphaZero programs itself, its style "reflects the truth".</p>
+				<p>Top players started copying it. In 2019 the world champion Magnus Carlsen had one of the best years of his career, and he said AlphaZero was one of his inspirations. "I have become a very different player in terms of style," he said. His second Peter Heine Nielsen wrote that Carlsen started to sacrifice pawns and push his h-pawn just like the engine did. Soon the "h-pawn march" became one of the best-known ideas in top-level chess. A program that learned only by playing against itself ended up teaching something new to the best humans in the world.</p>
+				<figure class="portrait">
+					<img src="../../contributors/mark-camarilla/How_AI_Works_Carlsen.jpg" alt="A young Magnus Carlsen signing autographs at a chess tournament">
+					<figcaption>Magnus Carlsen signing autographs at the London Chess Classic in 2009.</figcaption>
+				</figure>
+			</section>
+			<section class="article-section">
+				<h2>Learning the Right Thing</h2>
+				<p>The goal of machine learning is not to remember the examples, but to do well on new ones. IBM calls this generalization. A student who memorizes the answers of last year&#x27;s test has not learned the subject.</p>
+				<p>That is what went wrong with the huskies. The program was very good on its training photos, but it had learned the wrong lesson, and nobody would have noticed without looking inside. A machine learning system is only as good as the examples it gets. Most modern systems are built from something called a neural network, which is the topic of the next article.</p>
+			</section>
+			<section class="article-section">
+				<h2>Sources</h2>
+				<ol>
+					<li><a href="https://arxiv.org/abs/1602.04938">Ribeiro, Singh, Guestrin. "Why Should I Trust You?": Explaining the Predictions of Any Classifier (2016)</a></li>
+					<li><a href="https://www.ibm.com/think/topics/machine-learning">IBM. What is machine learning?</a></li>
+					<li><a href="https://www.ibm.com/think/topics/machine-learning-types">IBM. Five machine learning types to know</a></li>
+					<li><a href="https://news.sophos.com/en-us/2017/12/08/google-ai-teaches-itself-superhuman-chess-skills-in-four-hours/">Sophos News. Google AI teaches itself "superhuman" chess skills in four hours (2017)</a></li>
+					<li><a href="https://deepmind.google/blog/alphazero-shedding-new-light-on-chess-shogi-and-go/">Google DeepMind. AlphaZero: Shedding new light on chess, shogi, and Go (2018)</a></li>
+					<li><a href="https://www.science.org/doi/10.1126/science.aar6404">Silver et al. A general reinforcement learning algorithm that masters chess, shogi, and Go through self-play, Science (2018)</a></li>
+					<li><a href="https://etcentric.org/?p=135103">ETCentric. DeepMind&#x27;s Learning Algorithm Could Prove a Game-Changer (2018)</a></li>
+					<li><a href="https://news.microsoft.com/apac/features/mastering-mahjong-with-ai-and-machine-learning/">Microsoft. More than a game: Mastering Mahjong with AI and machine learning (2019)</a></li>
+					<li><a href="https://www.newinchess.com/media/wysiwyg/product_pdf/873.pdf">New in Chess. When Magnus met AlphaZero, Peter Heine Nielsen (2019)</a></li>
+					<li><a href="https://en.chessbase.com/post/how-the-ai-revolution-impacted-chess-1-2">ChessBase. How the AI Revolution Impacted Chess (2022)</a></li>
+				</ol>
+			</section>
+			<section class="article-section">
+				<h2>Image credits</h2>
+				<ul>
+					<li><a href="https://commons.wikimedia.org/wiki/File:Magnus_Carlsen_signing_autographs_at_London_Chess_Classic.jpg">Magnus Carlsen signing autographs at London Chess Classic</a> by Carcharoth, CC BY-SA 3.0, via Wikimedia Commons, cropped</li>
+					<li><a href="https://commons.wikimedia.org/wiki/File:Mahjong_game.jpg">Mahjong game</a> by yui*, CC BY-SA 2.0, via Wikimedia Commons</li>
+				</ul>
+			</section>
+		</main>
+		<footer id="article">
+			<a href="../../html/index.html">&#10094;&#10094;&#10094; Homepage</a>
+			<a id="back-to-top" href="#" title="Back to top"><span>Back to top</span><span>&#x2B06;</span></a>
+			<a href="neural-networks.html">Neural Networks &#10095;&#10095;&#10095;</a>
+		</footer>
+    </body>
+</html>
