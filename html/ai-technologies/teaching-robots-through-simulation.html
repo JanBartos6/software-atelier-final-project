@@ -157,6 +157,7 @@
                     </li>
                     <li>
                         <a href="../../html/index.html#applications">
+
                             Applications
                         </a>
                     </li>
@@ -233,7 +234,10 @@
                     This is one of the main advantages of
                     <strong>robotics simulation</strong>.
                 </p>
-
+<figure class="small">
+					<img src="../../contributors/giulia-mettifogo/SA-teaching-1.jpg">
+					<figcaption>Example of robot simulation (Nvidia)</figcaption>
+				</figure>
                 <p id="author">
                     <span>by </span>Giulia
                 </p>
@@ -249,20 +253,13 @@
             <p>
                 Robotics simulation involves recreating a robot
                 and its surrounding environment inside a computer.
-            </p>
-
-            <p>
                 A simulator can reproduce important physical
                 properties, including gravity, collisions,
                 friction, and the movement of objects.
-            </p>
 
-            <p>
                 It can also simulate sensors, cameras, and
                 the robot's mechanical structure.
-            </p>
 
-            <p>
                 Inside this environment, developers can observe
                 how the robot behaves, test different conditions,
                 and improve its performance before using
@@ -330,38 +327,26 @@
             <p>
                 One important method for training robots is
                 <strong>reinforcement learning (RL)</strong>.
-            </p>
 
-            <p>
                 In reinforcement learning, an AI agent learns
                 by interacting with an environment and receiving
                 feedback about its actions.
-            </p>
 
-            <p>
                 Imagine a robot learning to walk.
-            </p>
 
-            <p>
                 At first, it might move incorrectly and fall.
                 The learning algorithm receives information
                 about the outcome and gradually improves
                 the robot's movements.
-            </p>
 
-            <p>
                 Successful actions receive higher rewards,
                 encouraging the robot to repeat useful behavior.
-            </p>
 
-            <p>
                 Over many interactions, the agent learns a
                 <strong>policy</strong>, which is a strategy
                 for deciding which action to take in
                 a particular situation.
-            </p>
 
-            <p>
                 A single interaction usually consists of
                 performing an action and observing the
                 resulting state and reward.
@@ -425,22 +410,16 @@
                 <strong>Model-based reinforcement learning</strong>
                 uses a model of the environment to predict
                 the consequences of actions.
-            </p>
 
-            <p>
                 For example, instead of physically trying
                 every possible movement, a robot could use
                 a learned model to imagine different outcomes
                 and decide which actions are promising.
-            </p>
 
-            <p>
                 This approach can reduce the need for real-world
                 interactions, although its effectiveness depends
                 on the quality of its predictions.
-            </p>
 
-            <p>
                 Neither approach is universally better.
                 The choice depends on the task, the available
                 data, and the accuracy of the environment model.
@@ -453,36 +432,32 @@
                 itself uses a predictive dynamics model.
             </p>
 
+            <figure class="small">
+					<img src="../../contributors/giulia-mettifogo/SA-teaching-2.png">
+					<figcaption>Visual explanation (Source: research-gate)</figcaption>
+				</figure>
 
             <h2>Software-in-the-Loop Testing</h2>
 
             <p>
                 Simulation is useful not only for training
                 but also for testing robot software.
-            </p>
 
-            <p>
                 <strong>Software-in-the-Loop (SIL)</strong>
                 is a testing approach in which the software
                 controlling a robot is evaluated inside
                 a simulated environment rather than
                 directly on physical hardware.
-            </p>
 
-            <p>
                 For example, developers can test how
                 an autonomous warehouse robot responds
                 when an obstacle suddenly appears
                 in its path.
-            </p>
 
-            <p>
                 This allows them to identify software
                 problems and unexpected behaviors before
                 deploying the system.
-            </p>
 
-            <p>
                 While reinforcement learning focuses on
                 improving a robot's behavior, SIL testing
                 focuses on verifying that the software
@@ -496,28 +471,20 @@
                 Traditional robotics simulators often require
                 developers to manually create and
                 configure environments.
-            </p>
 
-            <p>
                 Generative world models offer the possibility
                 of producing more varied environments
                 automatically.
-            </p>
 
-            <p>
                 For example, instead of constructing hundreds
                 of different kitchens by hand, developers
                 might generate different layouts, furniture
                 arrangements, lighting conditions,
                 and obstacles.
-            </p>
 
-            <p>
                 These environments could help robots experience
                 a wider variety of situations.
-            </p>
 
-            <p>
                 However, AI-generated environments must still
                 provide reliable physical behavior before
                 they can be trusted for training.
@@ -532,9 +499,28 @@
             <p>
                 Achieving that transfer remains one of
                 the major challenges in robotics.
+            <a href="https://youtu.be/XdtQbMXHDjQ" target="_blank">
+
+    <figure style="text-align: center;">
+  <a href="https://youtu.be/XdtQbMXHDjQ" target="_blank">
+    <img
+      src="https://img.youtube.com/vi/XdtQbMXHDjQ/hqdefault.jpg"
+      alt="YouTube video about world models"
+      style="width: 500px; max-width: 100%; height: auto;"
+    >
+  </a>
+
+  <figcaption>
+    Example on how NVIDIA makes it feasable to create a world model on Blender. Ready to use for robot simulations.
+  </figcaption>
+</figure>
+
             </p>
 
+
+</a>
         </section>
+
 
     </main>
 
