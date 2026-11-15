@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>The Age of Language Models - AI in Everyday Life</title> <!-- ARTICLE TITLE -->
+		<link rel="icon" href="../../layout/ai-icon.png">
+		<link rel="stylesheet" href="../../css/global.css">
+		<!-- CUSTOM EXTERNAL CSS -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="description" content="The machines that read and write language, from the Transformer in 2017 to ChatGPT, Claude, Gemini and Llama"> <!-- ARTICLE DESCRIPTION -->
+		<meta name="author" content="Luca Clivio"> <!-- ARTICLE AUTHOR -->
+		<style>
+			:root {
+				--template-color: var(--first-main-topic-color);
+			}
+
+			/* CUSTOM INTERNAL CSS */
+			.article-section h2 {
+				color: var(--template-color);
+			}
+
+			.article-section figure {
+				max-width: 550px;
+				margin: 2em auto 0;
+			}
+
+			.article-section figure img {
+				display: block;
+				width: 100%;
+				border: 2px solid var(--template-color);
+				border-radius: var(--global-border-radius);
+			}
+
+			.article-section figcaption {
+				margin-top: 0.6em;
+				font-size: 0.85em;
+				color: var(--template-color);
+				opacity: 0.7;
+			}
+
+			.article-section ol {
+				padding-left: 1.5em;
+			}
+
+			.sources {
+				margin-top: 2.5em;
+			}
+		</style>
+	</head>
+	<body>
+		<nav>
+			<a id="back-to-homepage" href="../../html/index.html"><img src="../../layout/logotype.png" alt="Return to the homepage"></a>
+			<ul>
+				<li id="first-main-topic">
+					<a href="../../html/index.html#introduction-to-ai">Introduction to AI</a>
+					<ul class="dropdown">
+						<li><a href="../../html/index.html#history-of-ai">History of AI</a></li>
+						<li><a href="../../html/index.html#basic-concepts">Basic Concepts</a></li>
+					</ul>
+				</li>
+				<li id="second-main-topic">
+					<a href="../../html/index.html#ai-technologies">AI Technologies</a>
+					<ul class="dropdown">
+						<li><a href="../../html/index.html#interactions">Interactions</a></li>
+						<li><a href="../../html/index.html#language-technologies">Language Technologies</a></li>
+						<li><a href="../../html/index.html#robotics">Robotics</a></li>
+					</ul>
+				</li>
+				<li id="third-main-topic">
+					<a href="../../html/index.html#impact-and-ethics">Impact and Ethics</a>
+					<ul class="dropdown">
+						<li><a href="../../html/index.html#ethics">Ethics</a></li>
+						<li><a href="../../html/index.html#limitations">Limitations</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+		<!-- PUT YOUR CONTENT ONLY INSIDE THE <main> TAG, AFTER LINKS AND TITLE SECTION -->
+		<main>
+			<!-- PREVIOUS/NEXT ARTICLE LINKS -->
+			<a id="previous-article" href="learning-from-data.html" aria-label="Read previous article" title="Previous article">&#10094;</a>
+			<a id="next-article" href="../../html/index.html" aria-label="Read next article" title="Next article">&#10095;</a>
+			<!-- ARTICLE TITLE (START) -->
+			<section id="article-title">
+				<div>
+					<h1>The Age of Language Models</h1>
+					<p id="article-subtitle">History of AI from 2017 to Today</p>
+					<p class="article-title-paragraph">The last part of the story is about machines that can read and write language. In only a few years they went from research papers to the phones in our pockets.</p>
+					<p id="author"><span>by </span>Luca Clivio</p>
+					</div>
+			</section>
+			<!-- ARTICLE SECTIONS (START) -->
+			<section class="article-section">
+				<h2>2017: The Transformer</h2>
+				<p>In 2017 eight Google researchers published a paper called "Attention Is All You Need", which introduced the Transformer. Almost every modern language model is based on it.</p>
+				<p>Earlier models read a sentence one word at a time, from left to right, and with long texts they tended to lose track of the beginning. The Transformer processes all the words together and, for each word, calculates how much attention to give to every other word. In the sentence "The dog didn't eat because it was tired", this is how the model links "it" to "the dog". Since the words are processed in parallel, training on GPUs is also much faster. This made it possible to build much bigger models and train them on much more text than before, and this is what the next steps are based on. The T in GPT stands for Transformer.</p>
+				<figure>
+					<img src="../../contributors/luca-clivio/History_of_AI_10.jpg" alt="The Googleplex">
+					<figcaption>The Googleplex, Google's headquarters in Mountain View, California.</figcaption>
+				</figure>
+			</section>
+			<section class="article-section">
+				<h2>2018: Large Language Models</h2>
+				<p>After the Transformer, companies began to train very large models on huge amounts of text. These Large Language Models (LLMs) are trained to predict the next word in a sentence, and with enough data this simple task produces surprisingly fluent text. The model is not given any grammar rules or facts: everything it knows comes from patterns in the text it has read. This is also why it can write sentences that sound correct but are completely wrong. In 2018 OpenAI released GPT-1, with about 117 million parameters, and Google released BERT. Parameters are the numbers that change during training, the same idea as the weights of the 1957 Perceptron.</p>
+				<figure>
+					<img src="../../contributors/luca-clivio/History_of_AI_11.jpg" alt="Servers in a data center">
+					<figcaption>Servers in a data center. Large language models are trained on thousands of machines like these.</figcaption>
+				</figure>
+			</section>
+			<section class="article-section">
+				<h2>2019 and 2020: GPT-2 and GPT-3</h2>
+				<p>In February 2019 OpenAI announced GPT-2 but did not release the full model, saying it could be used to produce fake news. The complete version was published in November of the same year. GPT-3 followed in 2020 with 175 billion parameters, more than a hundred times as many as GPT-2. It could write essays, stories and code, and it could perform new tasks after seeing only a few examples in the prompt. Researchers noticed that bigger models did not just get a little better, but started to do things they had not been trained for, like translating or answering questions.</p>
+			</section>
+			<section class="article-section">
+				<h2>2022: ChatGPT</h2>
+				<p>OpenAI launched ChatGPT on 30 November 2022. Besides the usual training on text, it was trained with human feedback: people wrote example answers and ranked the model's replies, and the model learned from these rankings. Its answers were clearer and more useful than those of earlier models. Earlier models like GPT-3 simply continued a text, while ChatGPT learned to follow instructions and to answer in the form of a dialogue.</p>
+				<p>ChatGPT was free and easy to use, and according to an analysis by the bank UBS it reached about 100 million users in two months, at the time the fastest growth ever recorded for a consumer app. Some schools banned it at first, while others started to use it in class.</p>
+				<figure>
+					<img src="../../contributors/luca-clivio/History_of_AI_12.jpg" alt="ChatGPT on a smartphone">
+					<figcaption>ChatGPT on a smartphone.</figcaption>
+				</figure>
+			</section>
+			<section class="article-section">
+				<h2>After ChatGPT: Claude, Gemini and Llama</h2>
+				<p>Other companies released their own models in 2023. Anthropic launched Claude, Google launched Bard, renamed Gemini in 2024, and Meta released Llama, whose weights researchers could download and run on their own hardware. Many current models can also work with images and voice. Some problems are still open. These models can "hallucinate", which means inventing facts that sound true, and they can repeat the biases found in the texts they were trained on.</p>
+				<aside class="sources">
+					<h2>Sources</h2>
+					<ol>
+						<li><a href="https://arxiv.org/abs/1706.03762">Vaswani et al., Attention Is All You Need</a></li>
+						<li><a href="https://research.google/blog/transformer-a-novel-neural-network-architecture-for-language-understanding/">Google Research, Transformer: A Novel Neural Network Architecture</a></li>
+						<li><a href="https://www.ibm.com/think/topics/large-language-models">IBM, What are large language models?</a></li>
+						<li><a href="https://arxiv.org/abs/1810.04805">Devlin et al., BERT</a></li>
+						<li><a href="https://www.technologyreview.com/2019/02/14/137426/an-ai-tool-auto-generates-fake-news-bogus-tweets-and-plenty-of-gibberish/">MIT Technology Review, An AI that writes convincing prose risks mass-producing fake news</a></li>
+						<li><a href="https://arxiv.org/abs/2005.14165">Brown et al., Language Models are Few-Shot Learners</a></li>
+						<li><a href="https://openai.com/index/chatgpt/">OpenAI, Introducing ChatGPT</a></li>
+						<li><a href="https://www.theguardian.com/technology/2023/feb/02/chatgpt-100-million-users-open-ai-fastest-growing-app">The Guardian, ChatGPT reaches 100 million users two months after launch</a></li>
+						<li><a href="https://www.anthropic.com/news/introducing-claude">Anthropic, Introducing Claude</a></li>
+						<li><a href="https://blog.google/products-and-platforms/products/gemini/bard-gemini-advanced-app/">Google, Bard is now Gemini</a></li>
+						<li><a href="https://arxiv.org/abs/2302.13971">Touvron et al., LLaMA</a></li>
+					</ol>
+				</aside>
+			</section>
+		</main>
+		<footer id="article">
+			<a href="learning-from-data.html">&#10094;&#10094;&#10094; Learning from Data</a>
+			<a id="back-to-top" href="#" title="Back to top"><span>Back to top</span><span>&#x2B06;</span></a>
+			<a href="../../html/index.html">Homepage &#10095;&#10095;&#10095;</a>
+		</footer>
+    </body>
+</html>
