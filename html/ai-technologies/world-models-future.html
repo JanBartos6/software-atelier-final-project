@@ -1,0 +1,629 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>World Models: The Present and the Future - AI in Everyday Life</title>
+
+    <link rel="icon" href="../../layout/ai-icon.png">
+    <link rel="stylesheet" href="../../css/global.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+
+    <meta name="description" content="Explore the present and future of world models in robotics, including NVIDIA, World Labs, and the sim-to-real gap.">
+
+    <meta name="author" content="Giulia">
+
+    <style>
+        :root {
+            --template-color: var(--second-main-topic-color);
+        }
+
+        /* CUSTOM INTERNAL CSS */
+
+        .article-section {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .article-section ul {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5em;
+            margin: 0.8em 0 0.8em 1.5em;
+            line-height: 1.4;
+        }
+
+        .article-section li::marker {
+            color: var(--template-color);
+        }
+
+        .article-section strong {
+            font-weight: 600;
+            color: var(--second-main-topic-color-pale);
+        }
+
+        .article-section figure {
+            max-width: 500px;
+            margin: 2.5em auto;
+        }
+
+        .article-section figure img {
+            width: 100%;
+            border: var(--article-card-border-style);
+            border-radius: var(--global-border-radius);
+        }
+
+        .article-section figcaption {
+            margin-top: 0.6em;
+            font-size: 0.9em;
+            font-style: italic;
+            text-align: center;
+            opacity: 0.7;
+        }
+
+        .article-section .highlight {
+            margin-block: 1.5em;
+            padding-left: 1em;
+            border-left: 3px solid var(--template-color);
+            font-size: 1.15em;
+            font-weight: 400;
+        }
+
+        .sources {
+            margin-top: 3em;
+            padding: 1em 1.5em;
+            border-left: var(--global-border-thickness) solid var(--template-color);
+            background-color: var(--secondary-bg-color);
+            border-radius: 0 var(--global-border-radius) var(--global-border-radius) 0;
+            font-size: 0.85em;
+        }
+
+        .article-section .sources h2 {
+            margin: 0;
+            font-size: 1em;
+            font-weight: 600;
+            text-transform: uppercase;
+            color: var(--template-color);
+        }
+
+        .sources ul {
+            gap: 0.3em;
+            word-break: break-all;
+        }
+
+        .article-section h2 {
+            margin-top: 2.2em;
+            margin-bottom: 0.7em;
+            color: var(--template-color);
+        }
+
+        .article-section h3 {
+            margin-top: 1.5em;
+            margin-bottom: 0.7em;
+        }
+
+        .article-section p {
+            line-height: 1.7;
+            margin-bottom: 1em;
+        }
+
+        @media (max-width: 680px) {
+            .article-section {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+
+<body id="article">
+
+    <!-- NAVIGATION BAR -->
+    <nav>
+        <a id="back-to-homepage" href="../../html/index.html">
+            <img src="../../layout/logotype.png" alt="Return to the homepage">
+        </a>
+
+        <ul>
+            <li id="first-main-topic">
+                <a href="../../html/index.html#introduction-to-ai">
+                    Introduction to AI
+                </a>
+                <ul class="dropdown">
+                    <li>
+                        <a href="../../html/index.html#history-of-ai">
+                            History of AI
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../../html/index.html#basic-concepts">
+                            Basic Concepts
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li id="second-main-topic">
+                <a href="../../html/index.html#ai-technologies">
+                    AI Technologies
+                </a>
+                <ul class="dropdown">
+                    <li>
+                        <a href="../../html/index.html#robotics">
+                            Robotics
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../../html/index.html#applications">
+                            Applications
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../../html/index.html#language-technologies">
+                            Language Technologies
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li id="third-main-topic">
+                <a href="../../html/index.html#impact-and-ethics">
+                    Impact and Ethics
+                </a>
+                <ul class="dropdown">
+                    <li>
+                        <a href="../../html/index.html#ethics">
+                            Ethics
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../../html/index.html#limitations">
+                            Limitations
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <!-- PREVIOUS ARTICLE LINK -->
+        <a
+            id="previous-article"
+            href="teaching-robots-through-simulation.html"
+            aria-label="Read previous article"
+            title="Previous article">&#10094;</a>
+
+
+        <!-- ARTICLE TITLE -->
+        <section id="article-title">
+            <span>
+                <h1>World Models: The Present and the Future</h1>
+
+                <p id="article-subtitle">
+                    How close are we to training robots inside
+                    fully AI-generated worlds?
+                </p>
+
+                <p class="article-title-paragraph">
+                    The idea of training robots in simulated
+                    environments is not new. Researchers have used
+                    physics simulators for years to develop
+                    robotic systems.
+                </p>
+
+                <p class="article-title-paragraph">
+                    What is changing is the introduction of
+                    generative AI and world models, which could
+                    make simulated environments easier to create,
+                    more diverse, and increasingly useful
+                    for robotic learning.
+                </p>
+
+                <p class="article-title-paragraph">
+                    But how much of this technology
+                    is already possible?
+                </p>
+
+                <p id="author">
+                    <span>by </span>Giulia
+                </p>
+            </span>
+        </section>
+
+
+        <!-- ARTICLE CONTENT -->
+        <section class="article-section">
+
+            <h2>What Can We Do Today?</h2>
+
+            <p>
+                Today, researchers and developers can already:
+            </p>
+
+            <ul>
+                <li>
+                    Generate realistic-looking 3D environments
+                    using AI.
+                </li>
+                <li>
+                    Simulate physical properties such as gravity,
+                    friction, and collisions.
+                </li>
+                <li>
+                    Train robots inside virtual environments
+                    using reinforcement learning.
+                </li>
+                <li>
+                    Generate synthetic data for training
+                    AI systems.
+                </li>
+                <li>
+                    Test robot software before deploying it
+                    on physical hardware.
+                </li>
+                <li>
+                    Randomize simulated environments to improve
+                    the adaptability of robotic systems.
+                </li>
+            </ul>
+
+            <p>
+                However, there is an important limitation.
+            </p>
+
+            <p class="highlight">
+                A world that looks realistic does not
+                necessarily behave realistically.
+            </p>
+
+            <p>
+                For example, an AI-generated kitchen may
+                look indistinguishable from a real one.
+                However, the visual model may not accurately
+                predict the weight of a glass, how water spills,
+                or what happens when objects collide.
+            </p>
+
+            <p>
+                This distinction is particularly important
+                for robotics, where small physical errors
+                can have serious consequences.
+            </p>
+
+
+            <h2>NVIDIA: Building Tools for Physical AI</h2>
+
+            <p>
+                NVIDIA is developing several technologies
+                that support robotics simulation and training.
+            </p>
+
+            <h3>NVIDIA Isaac Sim</h3>
+
+            <p>
+                <strong>Isaac Sim</strong> is a robotics
+                simulation framework built on NVIDIA Omniverse.
+            </p>
+
+            <p>
+                It allows developers to create virtual
+                environments, simulate robots, and test
+                their behavior using physically based models.
+            </p>
+
+            <p>
+                For example, a developer could reproduce
+                a warehouse, place a virtual robot inside it,
+                and test whether the robot can navigate between
+                shelves while avoiding obstacles.
+            </p>
+
+
+            <h3>NVIDIA Isaac Lab</h3>
+
+            <p>
+                <strong>Isaac Lab</strong> is a framework
+                designed specifically for robot learning.
+            </p>
+
+            <p>
+                Built on Isaac Sim, it supports methods
+                such as reinforcement learning and
+                imitation learning, allowing robots
+                to practice tasks repeatedly in
+                simulated environments.
+            </p>
+
+
+            <h3>NVIDIA Cosmos</h3>
+
+            <p>
+                <strong>Cosmos</strong> is a platform
+                of world foundation models designed
+                for physical AI applications.
+            </p>
+
+            <p>
+                Its models can generate or transform
+                visual representations of physical
+                environments, helping researchers create
+                synthetic training data and explore
+                possible future observations.
+            </p>
+
+            <p>
+                These technologies serve different purposes.
+            </p>
+
+            <p class="highlight">
+                Isaac Sim provides physically based simulation,
+                Isaac Lab supports robot learning,
+                and Cosmos contributes generative
+                AI capabilities.
+            </p>
+
+            <p>
+                Together, they illustrate how world models
+                and traditional simulators can
+                complement each other.
+            </p>
+
+
+            <h2>World Labs: From Virtual Worlds to Robotics</h2>
+
+            <p>
+                <strong>World Labs</strong> is another company
+                researching spatial intelligence
+                and generative world models.
+            </p>
+
+            <p>
+                Its goal is to develop AI systems that
+                can represent, generate, and reason
+                about three-dimensional environments.
+            </p>
+
+            <p>
+                In July 2026, World Labs announced
+                the acquisition of SceniX, a robotics
+                company, to expand its work toward physical
+                environments and robot learning.
+            </p>
+
+            <p>
+                The company aims to connect advances
+                in world models with systems capable
+                of interacting with the physical world.
+            </p>
+
+            <p>
+                One example of its technology is
+                <strong>Atlas</strong>, a world model introduced
+                in September 2026. Atlas can process different
+                forms of input, including text, images, video,
+                and 3D information, to generate spatially
+                consistent environments.
+            </p>
+
+            <p>
+                World Labs has also developed
+                <strong>Marble</strong>, a tool for generating
+                explorable 3D worlds.
+            </p>
+
+            <p>
+                An interesting demonstration of the connection
+                between world building and robotics comes
+                from work integrating World Labs Marble
+                with NVIDIA Isaac Sim.
+            </p>
+
+            <p>
+                In this workflow, an AI-generated environment
+                can be imported into a simulator and equipped
+                with collision geometry and other physical
+                properties, allowing a virtual robot
+                to navigate within it.
+            </p>
+
+            <p class="highlight">
+                This illustrates an important direction
+                for the field: combining AI-generated worlds
+                with physics-based simulation tools.
+            </p>
+
+
+            <h2>The Biggest Challenge: The Sim-to-Real Gap</h2>
+
+            <p>
+                Although simulation offers enormous advantages,
+                robots trained in virtual environments do not
+                always perform as expected in the real world.
+            </p>
+
+            <p>
+                This problem is known as the
+                <strong>sim-to-real gap</strong>.
+            </p>
+
+            <p>
+                Imagine a robot that has learned to pick
+                up a cup perfectly in simulation.
+            </p>
+
+            <p>
+                In the real world, the cup might be slightly
+                heavier, the surface might be more slippery,
+                or the robot's sensors might produce
+                different readings.
+            </p>
+
+            <p>
+                Even small differences can cause
+                the robot to fail.
+            </p>
+
+            <p>
+                To address this challenge, researchers
+                use techniques such as domain randomization,
+                improved physics simulation, real-world
+                data collection, and further training
+                on physical hardware.
+            </p>
+
+            <p>
+                World models may help by creating more varied
+                experiences and learning aspects of real-world
+                behavior that are difficult to program manually.
+            </p>
+
+            <p>
+                However, they also introduce their own
+                challenges, including inaccurate predictions
+                and inconsistencies over time.
+            </p>
+
+
+            <h2>What Does the Future Look Like?</h2>
+
+            <p>
+                One long-term ambition is to develop robotic
+                systems that can learn new skills with less
+                human intervention.
+            </p>
+
+            <p>
+                Instead of manually designing every training
+                environment, developers could use generative
+                models to create many different situations
+                automatically.
+            </p>
+
+            <p>
+                A robot might practice navigating unfamiliar
+                rooms, manipulating different objects, or
+                responding to unexpected obstacles before
+                encountering them in reality.
+            </p>
+
+            <p>
+                Future systems could also combine simulation,
+                predictive world models, and real-world feedback
+                into a continuous learning process.
+            </p>
+
+            <p>
+                Nevertheless, completely realistic and
+                reliable AI-generated physical environments
+                remain an open research challenge.
+            </p>
+
+
+            <h2>Conclusion</h2>
+
+            <p>
+                World models represent a promising direction
+                for the development of physical AI.
+            </p>
+
+            <p>
+                By learning how environments change and how
+                actions affect the world, these systems
+                could help robots make predictions,
+                plan movements, and learn more efficiently.
+            </p>
+
+            <p>
+                Combined with traditional physics simulators
+                and reinforcement learning, generative
+                world models may make robotic training
+                safer, faster, and more adaptable.
+            </p>
+
+            <p class="highlight">
+                The future of robotics is not only about
+                teaching machines to act, but also about
+                helping them understand what may happen
+                before they act.
+            </p>
+
+
+            <!-- SOURCES -->
+            <aside class="sources">
+                <h2>Sources</h2>
+
+                <ul>
+                    <li>
+                        <a href="https://developer.nvidia.com/isaac/sim"
+                           target="_blank" rel="noopener">
+                            NVIDIA Isaac Sim
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://developer.nvidia.com/isaac/lab"
+                           target="_blank" rel="noopener">
+                            NVIDIA Isaac Lab
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://developer.nvidia.com/cosmos"
+                           target="_blank" rel="noopener">
+                            NVIDIA Cosmos
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.worldlabs.ai/blog/scenix"
+                           target="_blank" rel="noopener">
+                            World Labs - SceniX
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.worldlabs.ai/blog/atlas"
+                           target="_blank" rel="noopener">
+                            World Labs - Atlas
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.worldlabs.ai/"
+                           target="_blank" rel="noopener">
+                            World Labs Official Website
+                        </a>
+                    </li>
+                </ul>
+            </aside>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer id="article">
+
+        <a href="teaching-robots-through-simulation.html">
+            &#10094;&#10094;&#10094;
+            Teaching Robots Through Simulation
+        </a>
+
+        <a id="back-to-top" href="#">
+            Back to top
+        </a>
+
+        <a href="../../html/index.html#robotics">
+            Back to Robotics
+            &#10095;&#10095;&#10095;
+        </a>
+
+    </footer>
+
+</body>
+</html>

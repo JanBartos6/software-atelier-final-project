@@ -1,0 +1,28 @@
+.
+├── main/
+│   ├── contributors/
+│   │   ├── emanuele-tonazzo/
+│   │   ├── fabio-giandomenico/
+│   │   └── giacomo-demartini/
+│   ├── css/
+│   ├── documentation/
+│   ├── html/
+│   │   └── ai-technologies/
+│   ├── js/
+│   ├── layout/
+│   └── .gitignore
+├── Topic1/
+├── Topic2-SG1/
+├── Topic2-SG2/
+└── Topic3/
+
+*If it contains slash - / it is a directory. Only directories are mentioned here.
+
+
+Regarding media: please save images in a smart way (no img.png pls). For example, if you are working on "AI History", save the images as AI_History_1.png, AI_History_2.png, etc to avoid any conflict. You can also make subfolders, it's really up to you.
+
+Guides: Feel free to add anything that you think might help others.
+
+Topic: Check README to know which topic you are in, and work in your respective branch.
+Each topic folder can be organized in the way you prefer but it's really up to the topic
+leader/s to decide.
