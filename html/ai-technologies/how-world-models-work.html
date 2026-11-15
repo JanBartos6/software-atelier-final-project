@@ -246,32 +246,23 @@
                 The first step is collecting information
                 about the world.
             </p>
-
             <p>
                 Depending on the application, training data can
                 include videos, images, 3D scenes, robot movements,
                 sensor readings, and descriptions of actions.
-            </p>
 
-            <p>
                 For example, videos of people picking up objects
                 can provide information about how hands move,
                 how objects respond to contact, and how different
                 actions change a scene.
-            </p>
 
-            <p>
                 Before training, the data must be prepared.
-            </p>
 
-            <p>
                 <strong>Data pre-processing</strong> involves
                 organizing, cleaning, and filtering the information.
                 Low-quality or duplicated samples may be removed,
                 while particularly useful situations can be selected.
-            </p>
 
-            <p>
                 A good dataset should also contain a variety
                 of environments and interactions, allowing
                 the model to learn more than one specific situation.
@@ -291,14 +282,10 @@
                 unsupported objects tend to fall, or that an object
                 becomes partially hidden when another object
                 passes in front of it.
-            </p>
 
-            <p>
                 The model adjusts its internal parameters
                 to improve its predictions or reconstructions.
-            </p>
 
-            <p>
                 Different architectures use different training
                 objectives. Some predict future video frames,
                 while others learn compressed representations
@@ -322,15 +309,11 @@
                 For robotics, this might involve training
                 with data collected from robot cameras,
                 actions, and sensors.
-            </p>
 
-            <p>
                 For example, a model trained on general videos
                 could be further adapted to understand
                 the movement of a robotic arm.
-            </p>
 
-            <p>
                 This type of specialized training can improve
                 performance on particular tasks, although not
                 all world models follow the same training pipeline.
@@ -342,9 +325,7 @@
             <p>
                 The model can then be refined and evaluated
                 to determine whether its predictions are useful.
-            </p>
 
-            <p>
                 Researchers may test how accurately it predicts
                 object movements, how consistently it represents
                 a 3D scene, or how well it responds
@@ -358,34 +339,30 @@
                 intended use.
             </p>
 
+<figure class="small">
+					<img src="../../contributors/giulia-mettifogo/SA-how-wm-1.png">
+					<figcaption>Schematic explanation</figcaption>
+				</figure>
 
             <h2>How Does a World Model Predict the Future?</h2>
 
             <p>
                 Imagine that a robot is looking at a ball
                 resting on a table.
-            </p>
 
-            <p>
                 The model receives information about the current
                 situation. If it is conditioned on an action,
                 such as pushing the ball, it can generate
                 a prediction of what might happen next.
-            </p>
 
-            <p>
                 The predicted outcome may depend on the direction
                 of the push, the position of the ball, and
                 the physical relationships the model has learned.
-            </p>
 
-            <p>
                 Some world models predict future images or videos.
                 Others predict future states in a compressed
                 internal representation.
-            </p>
 
-            <p>
                 These predictions can help an AI system compare
                 possible actions before performing them.
             </p>
@@ -439,16 +416,12 @@
                 Once a system can represent or generate an
                 environment, it may become possible to create
                 entirely new virtual spaces for robots to explore.
-            </p>
 
-            <p>
                 Instead of manually constructing every room,
                 obstacle, and object, developers can use
                 generative AI to help create diverse
                 training environments.
-            </p>
 
-            <p>
                 But creating a convincing virtual world
                 is only the beginning.
             </p>
@@ -457,7 +430,18 @@
                 The next step is using these environments
                 to teach robots how to act.
             </p>
-
+<aside class="sources">
+  <h2>Sources</h2>
+  <ul>
+    <li><a href="https://developer.nvidia.com/isaac/sim" target="_blank" rel="noopener">https://developer.nvidia.com/isaac/sim</a></li>
+    <li><a href="https://developer.nvidia.com/isaac/lab" target="_blank" rel="noopener">https://developer.nvidia.com/isaac/lab</a></li>
+    <li><a href="https://developer.nvidia.com/cosmos" target="_blank" rel="noopener">https://developer.nvidia.com/cosmos</a></li>
+    <li><a href="https://www.worldlabs.ai/blog/scenix" target="_blank" rel="noopener">https://www.worldlabs.ai/blog/scenix</a></li>
+    <li><a href="https://www.worldlabs.ai/blog/atlas" target="_blank" rel="noopener">https://www.worldlabs.ai/blog/atlas</a></li>
+    <li><a href="https://www.worldlabs.ai/" target="_blank" rel="noopener">https://www.worldlabs.ai/</a></li>
+    <li><a href="https://youtu.be/XdtQbMXHDjQ" target="_blank" rel="noopener">https://youtu.be/XdtQbMXHDjQ</a></li>
+  </ul>
+</aside>
         </section>
 
     </main>
