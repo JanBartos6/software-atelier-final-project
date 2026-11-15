@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Can a Machine Think? - AI in Everyday Life</title> <!-- ARTICLE TITLE -->
+		<link rel="icon" href="../../layout/ai-icon.png">
+		<link rel="stylesheet" href="../../css/global.css">
+		<!-- CUSTOM EXTERNAL CSS -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="description" content="Why performing an intelligent task is not the same as understanding it, from the Turing Test to the Chinese Room and the ELIZA effect"> <!-- ARTICLE DESCRIPTION -->
+		<meta name="author" content="Alessio Giugno"> <!-- ARTICLE AUTHOR -->
+		<style>
+			:root {
+				--template-color: var(--first-main-topic-color);
+			}
+
+			/* CUSTOM INTERNAL CSS */
+			.article-section ul {
+				padding-left: 1.5em;
+			}
+
+			.article-section li {
+				margin-bottom: 0.6em;
+			}
+
+			.article-section figure {
+				max-width: 720px;
+				margin: 2em auto;
+			}
+
+			.article-section figure.portrait,
+			.article-section figure.diagram {
+				max-width: 420px;
+			}
+
+			.article-section figure img {
+				display: block;
+				width: 100%;
+				border: var(--article-card-border-style);
+				border-radius: var(--global-border-radius);
+			}
+
+			.article-section figure svg {
+				display: block;
+				width: 100%;
+				height: auto;
+			}
+
+			.article-section .ring {
+				fill: var(--template-color);
+				stroke: var(--first-main-topic-color-pale);
+				stroke-width: 2;
+			}
+
+			.article-section .ring-1 { fill-opacity: 0.12; }
+			.article-section .ring-2 { fill-opacity: 0.22; }
+			.article-section .ring-3 { fill-opacity: 0.32; }
+			.article-section .ring-4 { fill-opacity: 0.45; }
+
+			.article-section figure text {
+				fill: var(--main-font-color);
+				font-family: var(--main-font);
+				font-size: 19px;
+				font-weight: 600;
+				text-anchor: middle;
+			}
+
+			.article-section figcaption {
+				margin-top: 0.6em;
+				font-size: 0.9em;
+				font-style: italic;
+				text-align: center;
+				opacity: 0.7;
+			}
+		</style>
+	</head>
+	<body>
+		<nav>
+			<a id="back-to-homepage" href="../../html/index.html"><img src="../../layout/logotype.png" alt="Return to the homepage"></a>
+			<ul>
+				<li id="first-main-topic">
+					<a href="../../html/index.html#introduction-to-ai">Introduction to AI</a>
+					<ul class="dropdown">
+						<li><a href="../../html/index.html#history-of-ai">History of AI</a></li>
+						<li><a href="../../html/index.html#basic-concepts">Basic Concepts</a></li>
+					</ul>
+				</li>
+				<li id="second-main-topic">
+					<a href="../../html/index.html#ai-technologies">AI Technologies</a>
+					<ul class="dropdown">
+						<li><a href="../../html/index.html#interactions">Interactions</a></li>
+						<li><a href="../../html/index.html#language-technologies">Language Technologies</a></li>
+						<li><a href="../../html/index.html#robotics">Robotics</a></li>
+					</ul>
+				</li>
+				<li id="third-main-topic">
+					<a href="../../html/index.html#impact-and-ethics">Impact and Ethics</a>
+					<ul class="dropdown">
+						<li><a href="../../html/index.html#ethics">Ethics</a></li>
+						<li><a href="../../html/index.html#limitations">Limitations</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+		<!-- PUT YOUR CONTENT ONLY INSIDE THE <main> TAG, AFTER LINKS AND TITLE SECTION -->
+		<main>
+			<!-- PREVIOUS/NEXT ARTICLE LINKS -->
+			<a id="previous-article" href="what-is-artificial-intelligence.html" aria-label="Read previous article" title="Previous article">&#10094;</a>
+			<a id="next-article" href="the-ai-family-tree.html" aria-label="Read next article" title="Next article">&#10095;</a>
+			<!-- ARTICLE TITLE (START) -->
+			<section id="article-title">
+				<div>
+					<h1>Can a Machine Think?</h1>
+					<p id="article-subtitle">Why Intelligent Behaviour Is Not the Same as Understanding</p>
+					<p class="article-title-paragraph">In June 2022 a Google engineer called Blake Lemoine told the world that LaMDA, a chatbot he was testing, had become sentient: according to him, it had feelings and was aware of itself. Google answered that his claims were "wholly unfounded", put him on leave and, a month later, fired him for breaking its data security rules. Most AI researchers agreed with Google: LaMDA was a program that had learned to produce very convincing human language. But the question remains interesting. If a machine talks like a person, how do we know it does not think like one?</p>
+					<p id="author"><span>by </span>Alessio Giugno</p>
+					</div>
+			</section>
+			<!-- ARTICLE SECTIONS (START) -->
+			<section class="article-section">
+				<h2>Doing Is Not Understanding</h2>
+				<p>The word "intelligence" makes AI sound like a human mind inside a computer. But performing an intelligent task does not necessarily mean thinking or understanding the way a person does. A translation app can translate a joke without finding it funny. A photo app can recognize your grandmother without knowing who she is. An AI system can recognize an object or write a convincing answer without having experiences, emotions or awareness.</p>
+				<p>Keeping these two things separate helps us describe what AI can do, without giving it qualities that its results do not show.</p>
+			</section>
+			<section class="article-section">
+				<h2>Turing&#x27;s Answer: Look at the Behaviour</h2>
+				<p>In 1950 Alan Turing asked "Can machines think?", and then decided that the question was too vague, because nobody can define "thinking" precisely. He replaced it with a game: if a person chatting with a machine cannot tell it apart from a human, we should accept that the machine is intelligent. The <a href="the-beginning.html">History of AI</a> section tells this story in more detail.</p>
+				<p>Turing&#x27;s idea is practical: we judge machines by what they do, just like we do with other people. We cannot look inside someone else&#x27;s head either. But not everyone agreed that behaviour is enough.</p>
+			</section>
+			<section class="article-section">
+				<h2>The Chinese Room</h2>
+				<p>In 1980 the American philosopher John Searle proposed a famous thought experiment. Imagine a man who does not know a single word of Chinese, closed in a room. Through a slot in the door he receives notes written in Chinese. He has a huge book of instructions, in English, that tells him which Chinese symbols to write back for every symbol he receives. He follows the instructions perfectly, and the people outside receive excellent answers. They are sure there is a Chinese speaker in the room.</p>
+				<figure>
+					<img src="../../contributors/alessio-giugno/Basic_Concepts_3.jpg" alt="John Searle, an elderly man in a dark jacket, speaking at an event">
+					<figcaption>John Searle giving a talk on consciousness in artificial intelligence at Google in 2015.</figcaption>
+				</figure>
+				<p>But the man does not understand anything. He is only moving symbols around according to rules. Searle said that a computer running a program is in the same situation: it can produce the right answers without understanding what they mean. In his words, manipulating symbols (syntax) is not enough to get meaning (semantics).</p>
+				<p>Not everyone was convinced. The most common reply is that the man alone does not understand Chinese, but the whole system, the man together with the book and the room, does. More than 40 years later, philosophers are still debating it.</p>
+			</section>
+			<section class="article-section">
+				<h2>The ELIZA Effect</h2>
+				<p>Humans make this problem even harder, because we are very quick to see a mind where there is none. In 1966 the MIT professor Joseph Weizenbaum created ELIZA, one of the first chatbots. It worked with simple tricks, like turning the user&#x27;s sentences into questions. Still, many people who used it felt understood, and some told it very personal things. Weizenbaum was shocked. Ten years later he wrote that he had not realized "that extremely short exposures to a relatively simple computer program could induce powerful delusional thinking in quite normal people".</p>
+				<figure class="portrait">
+					<img src="../../contributors/alessio-giugno/Basic_Concepts_4.jpg" alt="Black and white photo of Joseph Weizenbaum, a man with dark hair, glasses and a moustache">
+					<figcaption>Joseph Weizenbaum, the creator of ELIZA, in 1982.</figcaption>
+				</figure>
+				<p>This tendency now has a name, the ELIZA effect. The writer Douglas Hofstadter described it as "the susceptibility of people to read far more understanding than is warranted into strings of symbols". The chatbots of today are far more complex and convincing than ELIZA, so the effect is even stronger. Blake Lemoine was an expert, and it happened to him too.</p>
+			</section>
+			<section class="article-section">
+				<h2>Choosing Our Words</h2>
+				<p>We often say that an AI "knows", "thinks", "understands" or "wants" something. These words are useful shortcuts, but they can make us trust a machine more than we should. A better habit is to ask three simple questions: what does the system actually do, how well does it do it, and how was that checked?</p>
+				<p>Whether a machine could one day truly think is still an open question. To discuss it seriously, we first need the right vocabulary. The next article explains the key terms: machine learning, deep learning and generative AI.</p>
+			</section>
+			<section class="article-section">
+				<h2>Sources</h2>
+				<ol>
+					<li><a href="https://www.euronews.com/next/2022/07/23/google-ai-chatbots">Euronews / Reuters. Google fires software engineer who claimed its AI chatbot is sentient (2022)</a></li>
+					<li><a href="https://www.ibm.com/think/topics/artificial-intelligence">IBM. Cole Stryker and Eda Kavlakoglu, What is artificial intelligence (AI)?</a></li>
+					<li><a href="https://academic.oup.com/mind/article/LIX/236/433/986238">Alan Turing. Computing Machinery and Intelligence (1950)</a></li>
+					<li><a href="https://plato.stanford.edu/entries/chinese-room/">Stanford Encyclopedia of Philosophy. The Chinese Room Argument</a></li>
+					<li><a href="https://en.wikipedia.org/wiki/ELIZA_effect">Wikipedia. ELIZA effect (with quotes from Weizenbaum 1976 and Hofstadter 1996)</a></li>
+				</ol>
+			</section>
+			<section class="article-section">
+				<h2>Image credits</h2>
+				<ul>
+					<li><a href="https://commons.wikimedia.org/wiki/File:John_Searle_speaking_at_Google_1.jpg">John Searle speaking at Google 1</a> by FranksValli, CC BY-SA 4.0, via Wikimedia Commons</li>
+					<li><a href="https://commons.wikimedia.org/wiki/File:Weizenbaum_1982.jpg">Weizenbaum 1982</a> by Rochester Institute of Technology, public domain, via Wikimedia Commons</li>
+				</ul>
+			</section>
+		</main>
+		<footer id="article">
+			<a href="../../html/index.html">&#10094;&#10094;&#10094; Homepage</a>
+			<a id="back-to-top" href="#" title="Back to top"><span>Back to top</span><span>&#x2B06;</span></a>
+			<a href="the-ai-family-tree.html">The AI Family Tree &#10095;&#10095;&#10095;</a>
+		</footer>
+    </body>
+</html>
