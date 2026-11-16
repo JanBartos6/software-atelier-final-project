@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Generative AI - AI in Everyday Life</title> <!-- ARTICLE TITLE -->
+		<link rel="icon" href="../../layout/ai-icon.png">
+		<link rel="stylesheet" href="../../css/global.css">
+		<!-- CUSTOM EXTERNAL CSS -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="description" content="What generative AI creates, from text and images to music and deepfakes, and who owns what it makes"> <!-- ARTICLE DESCRIPTION -->
+		<meta name="author" content="Eros Butti"> <!-- ARTICLE AUTHOR -->
+		<style>
+			:root {
+				--template-color: var(--first-main-topic-color);
+			}
+			
+			/* CUSTOM INTERNAL CSS */
+			
+			.article-section {
+				width: 80%;
+				margin: 0 auto;
+			}
+			
+			.article-section ul,
+			.article-section ol {
+				display: flex;
+				flex-direction: column;
+				gap: 0.5em;
+				margin: 0.8em 0 0.8em 1.5em;
+				line-height: 1.4;
+			}
+			
+			.article-section li::marker {
+				color: var(--template-color);
+			}
+			
+			.article-section figure {
+				max-width: 500px;
+				margin: 2.5em auto;
+			}
+			
+			.article-section figure img {
+				width: 100%;
+				border: var(--article-card-border-style);
+				border-radius: var(--global-border-radius);
+			}
+			
+			.article-section figcaption {
+				margin-top: 0.6em;
+				font-size: 0.9em;
+				font-style: italic;
+				text-align: center;
+				opacity: 0.7;
+			}
+			
+			.sources {
+				margin-top: 3em;
+				padding: 1em 1.5em;
+				border-left: var(--global-border-thickness) solid var(--template-color);
+				background-color: var(--secondary-bg-color);
+				border-radius: 0 var(--global-border-radius) var(--global-border-radius) 0;
+				font-size: 0.85em;
+			}
+			
+			.article-section .sources h2 {
+				margin: 0;
+				font-size: 1em;
+				font-weight: 600;
+				text-transform: uppercase;
+				color: var(--template-color);
+			}
+			
+			.sources ul {
+				gap: 0.3em;
+				word-break: break-all;
+			}
+		</style>
+	</head>
+	<body>
+		<nav>
+			<a id="back-to-homepage" href="../../html/index.html"><img src="../../layout/logotype.png" alt="Return to the homepage"></a>
+			<ul>
+				<li id="first-main-topic">
+					<a href="../../html/index.html#introduction-to-ai">Introduction to AI</a>
+					<ul class="dropdown">
+						<li><a href="../../html/index.html#history-of-ai">History of AI</a></li>
+						<li><a href="../../html/index.html#basic-concepts">Basic Concepts</a></li>
+					</ul>
+				</li>
+				<li id="second-main-topic">
+					<a href="../../html/index.html#ai-technologies">AI Technologies</a>
+					<ul class="dropdown">
+						<li><a href="../../html/index.html#interactions">Interactions</a></li>
+						<li><a href="../../html/index.html#language-technologies">Language Technologies</a></li>
+						<li><a href="../../html/index.html#robotics">Robotics</a></li>
+						<li><a href="../../html/index.html#world-building">World Building</a></li>
+					</ul>
+				</li>
+				<li id="third-main-topic">
+					<a href="../../html/index.html#impact-and-ethics">Impact and Ethics</a>
+					<ul class="dropdown">
+						<li><a href="../../html/index.html#ethics">Ethics</a></li>
+						<li><a href="../../html/index.html#limitations">Limitations</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+		<!-- PUT YOUR CONTENT ONLY INSIDE THE <main> TAG, AFTER LINKS AND TITLE SECTION -->
+		<main>
+			<!-- PREVIOUS/NEXT ARTICLE LINKS -->
+			<a id="previous-article" href="what-your-apps-know-about-you.html" aria-label="Read previous article" title="Previous article">&#10094;</a>
+			<a id="next-article" href="using-ai-well.html" aria-label="Read next article" title="Next article">&#10095;</a>
+			<!-- ARTICLE TITLE (START) -->
+			<section id="article-title">
+				<div>
+					<h1>Generative AI</h1>
+					<p id="article-subtitle">When Machines Create Text, Images and Music</p>
+					<p class="article-title-paragraph">Could you tell if a song was made by a human or by an AI? In a survey made for the streaming service Deezer, 97% of the listeners couldn't.</p>
+					<p id="author"><span>by </span>Eros Butti</p>
+					</div>
+			</section>
+			<!-- ARTICLE SECTIONS (START) -->
+			<section class="article-section">
+				<h2>A New Kind of AI</h2>
+				<p>In <a href="the-ai-family-tree.html">The AI Family Tree</a> we saw that generative AI is the kind of AI that creates new content instead of only recognizing it. This article looks at what it actually creates today, and at the problems that come with it.</p>
+				<p>What is often a surprise is how many people already use it. By February 2026 ChatGPT had 900 million users every week, and Switzerland is no exception: in 2025, 47% of people here had already used generative AI tools, way above the EU average of about 33%.</p>
+			</section>
+			<section class="article-section">
+				<h2>Text</h2>
+				<p>For most people generative AI means a chatbot such as ChatGPT, Gemini or Claude. You write a question and it writes back an answer. People use them nowadays to write emails, to summarize long articles, to translate and to study. Students were among the first to try them: by the end of 2024, 26% of American teenagers had used ChatGPT for schoolwork, double compared to the year before. How a chatbot actually builds its answers is explained in the "How Does AI Work?" part of this website.</p>
+			</section>
+			<section class="article-section">
+				<h2>Images and Video</h2>
+				<p>With images it works in a similar way. You describe a picture in one sentence (for example "a castle in the mountains at sunset") and an image generator draws it. The picture is not taken from somewhere on the internet: the generator starts from random noise and cleans it step by step until an image appears, like in the picture below.</p>
+				<figure>
+					<img src="../../contributors/eros-butti/AI_Today_5.png" alt="A grid of AI-generated images of a castle, going from random noise to a clear picture as the number of steps increases">
+					<figcaption>An AI image generator turning random noise into a picture, step by step. Image: Benlisquare, CC BY-SA 4.0, via Wikimedia Commons. <a href="https://commons.wikimedia.org/wiki/File:X-Y_plot_of_algorithmically-generated_AI_art_of_European-style_castle_in_Japan_demonstrating_DDIM_diffusion_steps.png" target="_blank" rel="noopener">Source</a></figcaption>
+				</figure>
+				<p>Video arrived quickly too, and in at least one case it also disappeared just as quickly. OpenAI released its video generator Sora in December 2024 and launched a second version, with its own app, in September 2025. Only six months later it announced: "We're saying goodbye to Sora."</p>
+			</section>
+			<section class="article-section">
+				<h2>Music</h2>
+				<p>Let's go back to the songs from the beginning. According to Deezer, in 2026 44% of all the tracks uploaded every day on the platform are made by AI, almost 75,000 a day. Yet they are only 1-3% of what people actually listen to.</p>
+				<p>The music industry didn't stay still. In 2024 the big record labels sued the AI music apps Suno and Udio, saying that they copied songs to build systems that would "directly compete with, cheapen, and ultimately drown out" human artists. By the end of 2025 several labels had settled, and the apps agreed to launch licensed versions in 2026.</p>
+			</section>
+			<section class="article-section">
+				<h2>Two Big Problems</h2>
+				<p>The first problem is fakes. To understand how serious it can be, let's take an example. In 2024 an employee of the engineering company Arup in Hong Kong joined a video call with the company's finance director and some colleagues. Everything looked normal, but all of them were deepfakes. The employee made 15 transfers worth about 25 million US dollars before anyone noticed. That is why, since August 2026, the EU's AI Act requires AI-generated content to be marked in a way that machines can detect, and deepfakes have to be disclosed.</p>
+				<p>The second problem is ownership. Generative AI learns from millions of books, articles, pictures and songs, and their creators were never asked. The New York Times sued OpenAI in 2023 and the case is still open. In 2025 Anthropic agreed to pay 1.5 billion dollars to authors, about 3,000 dollars per book, the biggest copyright settlement ever. In the UK, on the other hand, Getty Images lost its main case against Stability AI, because the court found that the model doesn't store copies of Getty's images. So the rules are still being written.</p>
+				<p>Generative AI can turn anyone into a writer, a designer or a composer, but it can also make anything look real. This is exactly why the next article is about using it well.</p>
+				<aside class="sources">
+					<h2>Sources</h2>
+					<ul>
+						<li><a href="https://techcrunch.com/2026/02/27/chatgpt-reaches-900m-weekly-active-users" target="_blank" rel="noopener">TechCrunch. ChatGPT reaches 900M weekly active users (2026)</a></li>
+						<li><a href="https://www.euronews.com/2025/12/29/chatgpt-gemini-grok-and-others-which-countries-use-generative-ai-tools-most-across-europe" target="_blank" rel="noopener">Euronews. Which countries use generative AI tools most across Europe (2025)</a></li>
+						<li><a href="https://www.pewresearch.org/short-reads/2025/01/15/about-a-quarter-of-us-teens-have-used-chatgpt-for-schoolwork-double-the-share-in-2023/" target="_blank" rel="noopener">Pew Research Center. About a quarter of U.S. teens have used ChatGPT for schoolwork (2025)</a></li>
+						<li><a href="https://engadget.com/ai/openai-is-shutting-down-its-sora-video-generation-app-211023358.html" target="_blank" rel="noopener">Engadget. OpenAI is shutting down its Sora video generation app (2026)</a></li>
+						<li><a href="https://engadget.com/entertainment/music/deezer-says-ai-made-songs-make-up-44-percent-of-daily-uploads-163642921.html" target="_blank" rel="noopener">Engadget. Deezer says AI-made songs make up 44 percent of daily uploads (2026)</a></li>
+						<li><a href="https://www.claimsjournal.com/news/national/2025/11/20/334192.htm" target="_blank" rel="noopener">Claims Journal / Reuters. Warner Music settles with Udio (2025)</a></li>
+						<li><a href="https://www.thestar.com.my/tech/tech-news/2025/11/26/warner-music-group-settles-copyright-case-with-suno-for-licensed-ai-music" target="_blank" rel="noopener">The Star / Reuters. Warner Music Group settles copyright case with Suno for licensed AI music (2025)</a></li>
+						<li><a href="https://edition.cnn.com/2024/05/16/tech/arup-deepfake-scam-loss-hong-kong-intl-hnk" target="_blank" rel="noopener">CNN. Arup revealed as victim of 25 million dollar deepfake scam (2024)</a></li>
+						<li><a href="https://digital-strategy.ec.europa.eu/en/policies/code-practice-ai-generated-content" target="_blank" rel="noopener">European Commission. Code of Practice on AI-generated content</a></li>
+						<li><a href="https://www.wgbh.org/news/2025-03-26/judge-allows-new-york-times-copyright-case-against-openai-to-go-forward" target="_blank" rel="noopener">WGBH / NPR. Judge allows New York Times copyright case against OpenAI to go forward (2025)</a></li>
+						<li><a href="https://www.jurist.org/news/2026/07/judge-approves-record-1-5-billion-settlement-involving-anthropic/" target="_blank" rel="noopener">JURIST. Judge approves record 1.5 billion dollar settlement involving Anthropic (2026)</a></li>
+						<li><a href="https://www.scl.org/high-court-issues-eagerly-awaited-judgment-in-getty-v-stability-ai-case/" target="_blank" rel="noopener">SCL. High Court issues judgment in Getty v Stability AI (2025)</a></li>
+					</ul>
+				</aside>
+			</section>
+		</main>
+		<footer id="article">
+			<a href="what-your-apps-know-about-you.html">&#10094;&#10094;&#10094; What Your Apps Know About You</a>
+			<a id="back-to-top" href="#" title="Back to top"><span>Back to top</span><span>&#x2B06;</span></a>
+			<a href="using-ai-well.html">Using AI Well &#10095;&#10095;&#10095;</a>
+		</footer>
+    </body>
+</html>
