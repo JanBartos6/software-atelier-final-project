@@ -1,0 +1,39 @@
+/* CUSTOM ASSETS FROM THE TEAM */
+
+/* ---------- Giacomo Demartino - Sources Box ---------- */
+
+.article-section ul {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5em;
+	margin: 0.8em 0 0.8em 1.5em;
+	line-height: 1.4;
+}
+			
+.article-section li::marker {
+	color: var(--template-color);
+}
+
+.sources {
+	margin-top: 3em;
+	padding: 1em 1.5em;
+	border-left: var(--global-border-thickness) solid var(--template-color);
+	background-color: var(--secondary-bg-color);
+	border-radius: 0 var(--global-border-radius) var(--global-border-radius) 0;
+	font-size: 0.85em;
+}
+
+.article-section .sources h2 {
+	margin: 0;
+	font-size: 1em;
+	font-weight: 600;
+	text-transform: uppercase;
+	color: var(--template-color);
+}
+
+.sources ul {
+	gap: 0.3em;
+	word-break: break-all;
+}
+
+/* ----------------------------------------------------- */
