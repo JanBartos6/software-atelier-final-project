@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Voice-Based Language Technologies</title> <!-- ARTICLE TITLE -->
+		<link rel="icon" href="../../layout/ai-icon.png">
+		<link rel="stylesheet" href="../../css/global.css">
+		<!-- CUSTOM EXTERNAL CSS -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="description" content="Voice-Based Language Technologies, from typing to talking, speech recognition, synthesis and voice assistants"> <!-- ARTICLE DESCRIPTION -->
+		<meta name="author" content="Daniele Gabriele Gambarota"> <!-- ARTICLE AUTHOR -->
+		<style>
+			:root {
+				--template-color: var(--second-main-topic-color);
+			}
+
+			.article-section figure {
+				width: 80%;
+				margin: 2em auto;
+
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+			}
+
+			.article-section figure img {
+				margin: 1em 0;
+
+				border: var(--article-card-border-style);
+				border-radius: var(--global-border-radius);
+
+				min-width: 100%;
+			}
+
+			.article-section ul,
+			.article-section ol {
+				display: flex;
+				flex-direction: column;
+
+				gap: 0.5em;
+				margin: 0.5em 0 0.5em 1.5em;
+			}
+
+			.article-section li::marker {
+				color: var(--template-color);
+			}
+
+			.article-section h2,
+			.article-section h3 {
+				margin: 1em 0;
+				color: var(--second-main-topic-color);
+			}
+
+			/* Section taken from Giacomo Demartini's pages*/
+
+			.sources {
+				margin-top: 3em;
+				padding: 1em 1.5em;
+				border-left: var(--global-border-thickness) solid var(--template-color);
+				background-color: var(--secondary-bg-color);
+				border-radius: 0 var(--global-border-radius) var(--global-border-radius) 0;
+				font-size: 0.85em;
+			}
+
+			.sources ul {
+				gap: 0.3em;
+				word-break: break-all;
+
+				display: flex;
+				flex-direction: column;
+				margin: 0.8em 0 0.8em 1.5em;
+				line-height: 1.4;
+			}
+
+			.sources h2 {
+				margin: 0;
+				font-size: 1em;
+				font-weight: 600;
+				text-transform: uppercase;
+				color: var(--template-color);
+			}
+
+			/* End borrowed section */
+
+			/* CUSTOM INTERNAL CSS */
+		</style>
+	</head>
+	<body>
+		<nav>
+			<a id="back-to-homepage" href="../../html/index.html"><img src="../../layout/logotype.png" alt="Return to the homepage"></a>
+			<ul>
+				<li id="first-main-topic">
+					<a href="../../html/index.html#introduction-to-ai">Introduction to AI</a>
+					<ul class="dropdown">
+						<li><a href="../../html/index.html#history-of-ai">History of AI</a></li>
+						<li><a href="../../html/index.html#basic-concepts">Basic Concepts</a></li>
+					</ul>
+				</li>
+				<li id="second-main-topic">
+					<a href="../../html/index.html#ai-technologies">AI Technologies</a>
+					<ul class="dropdown">
+						<li><a href="../../html/index.html#interactions">Interactions</a></li>
+						<li><a href="../../html/index.html#language-technologies">Language Technologies</a></li>
+						<li><a href="../../html/index.html#robotics">Robotics</a></li>
+						<li><a href="../../html/index.html#world-building">World Building</a></li>
+					</ul>
+				</li>
+				<li id="third-main-topic">
+					<a href="../../html/index.html#impact-and-ethics">Impact and Ethics</a>
+					<ul class="dropdown">
+						<li><a href="../../html/index.html#ethics">Ethics</a></li>
+						<li><a href="../../html/index.html#limitations">Limitations</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+		<main>
+			<!-- PREVIOUS/NEXT ARTICLE LINKS -->
+			<a id="previous-article" href="text-based-language-technologies.html" aria-label="Read previous article" title="Previous article">&#10094;</a>
+			<a id="next-article" href="open-challenges-future.html" aria-label="Read next article" title="Next article">&#10095;</a>
+			<!-- ARTICLE TITLE (START) -->
+			<section id="article-title">
+				<div>
+					<h1>Voice-Based Language Technologies</h1>
+					<p id="article-subtitle">The transition from typing to talking</p>
+					<p class="article-title-paragraph">The two types of voice based language technologies, and their union into voice assistants.</p>
+					<p id="author"><span>by </span>Daniele Gabriele Gambarota</p>
+					</div>
+			</section>
+			<!-- ARTICLE SECTIONS (START) -->
+			<section class="article-section">
+				<h2>From typing to talking</h2>
+				<p>Speaking is the most natural way humans communicate, so it is no surprise that companies wanted machines to understand our voice.
+					Voice technologies solve two opposite problems: turning sound into text and turning text into sound.</p>
+
+				<figure>
+					<img src="../../contributors/daniele-gabriele-gambarota/amazon_alexa.avif" alt="Amazon alexa">
+					<figcaption>Amazon alexa, amazon's voice assistant</figcaption>
+				</figure>
+
+				<h3>Speech recognition (speech-to-text)</h3>
+				<p>Automatic speech recognition (ASR) converts spoken words into written text. You meet it when you:</p>
+				<ul>
+					<li>dictate a message instead of typing it;</li>
+					<li>see automatic subtitles on videos or live meetings;</li>
+					<li>give a voice command to your phone, TV or car.</li>
+				</ul>
+				<p>Until the early 2010s, ASR relied on hand-built statistical models. The arrival of deep neural networks brought a big improvement in accuracy.
+					More recent open systems, such as OpenAI’s Whisper, are trained on hundreds of thousands of hours of recordings in many languages and work
+					reasonably well even with accents and noise.</p>
+				<h3>Speech synthesis (text-to-speech)</h3>
+				<p>Text-to-speech (TTS) does instead the reverse: it turns written text into a spoken voice. Everyday examples include GPS directions,
+					audiobooks and screen readers for blind or visually impaired users. Older synthetic voices sounded robotic because they stitched
+					together recorded fragments. Neural models such as WaveNet and Tacotron 2 generate the sound wave directly and produce voices much
+					closer to natural human speech.</p>
+
+				<h3>Voice assistants: merging text-to-speech and automatic speech recognition</h3>
+				<p>Assistants like Siri, Alexa or Google Assistant chain several technologies in a "pipeline":</p>
+
+				<ol>
+					<li>Wake word detection: the device listens for a phrase such as “Hey Siri” and ignores everything else.</li>
+					<li>Speech recognition: your voice is converted to text.</li>
+					<li>Language understanding: the system works out what you want (“set a timer”, “play music”).</li>
+					<li>Action and answer: it carries out the request or finds a reply.</li>
+					<li>Speech synthesis: the reply is spoken aloud.</li>
+				</ol>
+
+				<aside class="sources">
+					<h2>Sources</h2>
+					<ul>
+						<li><a href="https://en.wikipedia.org/wiki/Language_technology" target="_blank" rel="noopener">https://en.wikipedia.org/wiki/Language_technology</a></li>
+						<li><a href="https://en.wikipedia.org/wiki/Speech_recognition" target="_blank" rel="noopener">https://en.wikipedia.org/wiki/Speech_recognition</a></li>
+						<li><a href="https://en.wikipedia.org/wiki/Speech_synthesis" target="_blank" rel="noopener">https://en.wikipedia.org/wiki/Speech_synthesis</a></li>
+						<li><a href="https://www.amazon.it/echo-dot-2022/dp/B09B94956P/ref=sr_1_2?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&s=amazon-devices&sr=1-2" target="_blank" rel="noopener">https://www.amazon.it/echo-dot-2022/dp/B09B94956P/ref=sr_1_2?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&s=amazon-devices&sr=1-2</a></li>
+						<li><a href="https://en.wikipedia.org/wiki/Speech_processing" target="_blank" rel="noopener">https://en.wikipedia.org/wiki/Speech_processing</a></li>
+					</ul>
+				</aside>
+			</section>
+
+		</main>
+		<footer id="article">
+			<a href="text-based-language-technologies.html">&#10094;&#10094;&#10094; Previous article</a>
+			<a id="back-to-top" href="#" title="Back to top"><span>Back to top</span><span>&#x2B06;</span></a>
+			<a href="open-challenges-future.html">Next article &#10095;&#10095;&#10095;</a>
+		</footer>
+    </body>
+</html>
