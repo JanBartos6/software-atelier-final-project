@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>The Rise of Industrial Robots: Transforming Modern Factories</title> <!-- ARTICLE TITLE -->
+		<link rel="icon" href="../../layout/ai-icon.png">
+		<link rel="stylesheet" href="../../css/global.css">
+		<!-- CUSTOM EXTERNAL CSS -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="description" content="Description of household robots"> <!-- ARTICLE DESCRIPTION -->
+		<meta name="author" content="Emanuele Tonazzo">
+		<style>
+			:root {
+				--template-color: var(--second-main-topic-color);
+			}
+			
+			/* CUSTOM INTERNAL CSS */
+			
+			.article-section {
+				width: 80%;
+				margin: 0 auto;
+			}
+			
+			.article-section ul {
+				display: flex;
+				flex-direction: column;
+				gap: 0.5em;
+				margin: 0.8em 0 0.8em 1.5em;
+				line-height: 1.4;
+			}
+			
+			.article-section li::marker {
+				color: var(--template-color);
+			}
+			
+			.article-section strong {
+				font-weight: 600;
+				color: var(--second-main-topic-color-pale);
+			}
+			
+			.article-section figure {
+				max-width: 500px;
+				margin: 2.5em auto;
+			}
+			
+			.article-section figure img {
+				width: 100%;
+				border: var(--article-card-border-style);
+				border-radius: var(--global-border-radius);
+			}
+			
+			.article-section figcaption {
+				margin-top: 0.6em;
+				font-size: 0.9em;
+				font-style: italic;
+				text-align: center;
+				opacity: 0.7;
+			}
+			
+			.article-section .highlight {
+				margin-block: 1.5em;
+				padding-left: 1em;
+				border-left: 3px solid var(--template-color);
+				font-size: 1.15em;
+				font-weight: 400;
+			}
+			
+			.sources {
+				margin-top: 3em;
+				padding: 1em 1.5em;
+				border-left: var(--global-border-thickness) solid var(--template-color);
+				background-color: var(--secondary-bg-color);
+				border-radius: 0 var(--global-border-radius) var(--global-border-radius) 0;
+				font-size: 0.85em;
+			}
+			
+			.article-section .sources h2 {
+				margin: 0;
+				font-size: 1em;
+				font-weight: 600;
+				text-transform: uppercase;
+				color: var(--template-color);
+			}
+			
+			.sources ul {
+				gap: 0.3em;
+				word-break: break-all;
+			}
+		</style>
+	</head>
+	<body id="article">
+		<nav>
+			<a id="back-to-homepage" href="../../html/index.html"><img src="../../layout/logotype.png" alt="Return to the homepage"></a>
+			<ul>
+				<li id="first-main-topic">
+					<a href="../../html/index.html#introduction-to-ai">Introduction to AI</a>
+					<ul class="dropdown">
+						<li><a href="../../html/index.html#history-of-ai">History of AI</a></li>
+						<li><a href="../../html/index.html#basic-concepts">Basic Concepts</a></li>
+					</ul>
+				</li>
+				<li id="second-main-topic">
+					<a href="../../html/index.html#ai-technologies">AI Technologies</a>
+					<ul class="dropdown">
+						<li><a href="../../html/index.html#interactions">Interactions</a></li>
+						<li><a href="../../html/index.html#language-technologies">Language Technologies</a></li>
+						<li><a href="../../html/index.html#robotics">Robotics</a></li>
+					</ul>
+				</li>
+				<li id="third-main-topic">
+					<a href="../../html/index.html#impact-and-ethics">Impact and Ethics</a>
+					<ul class="dropdown">
+						<li><a href="../../html/index.html#ethics">Ethics</a></li>
+						<li><a href="../../html/index.html#limitations">Limitations</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+		<!-- PUT YOUR CONTENT ONLY INSIDE THE <main> TAG, AFTER LINKS AND TITLE SECTION -->
+		<main>
+			<!-- PREVIOUS/NEXT ARTICLE LINKS -->
+			<a id="previous-article" href="industrial-robots.html" aria-label="Read previous article" title="Previous article">&#10094</a>
+			<a id="next-article" href="NEXT ARTICLE" aria-label="Read next article" title="Next article">&#10095</a>
+			<!-- ARTICLE TITLE (START) -->
+			<section id="article-title">
+				<span>
+					<h1>Robots in Healthcare: A New Era of Hospital Automation</h1>
+					<p id="article-subtitle">Hospital robots are robotic systems designed to assist healthcare professionals with medical, logistical, and administrative activities.</p>
+					<p class="article-title-paragraph">They can operate in structured indoor environments such as hospitals, clinics, and healthcare facilities. Different types of hospital robots perform different tasks. Some transport medical supplies, others assist with cleaning and disinfection, while specialized robotic systems support surgical procedures. One important application is hospital logistics, where robots can automate the transportation of materials between departments.</p>
+					<p id="author"><span>by </span>Emanuele Tonazzo</p>
+				</span>
+			</section>
+			<!-- ARTICLE SECTION (START) -->
+			<section class="article-section">
+				<figure>
+					<img src="../../contributors/emanuele-tonazzo/hospital-robot.webp" alt="An hospital robot">
+					<figcaption>An autonomous medical robot</figcaption>
+				</figure>
+				<h2>How Do They Work?</h2>
+				<p>Autonomous hospital transport robots combine several technologies to navigate indoor environments.</p>
+
+				
+				<ul>
+					<li><strong>Sensors:</strong> Detect walls, equipment, people, and obstacles.</li>
+					<li><strong>Navigation software:</strong> Helps robots determine routes through corridors and hospital departments.</li>
+					<li><strong>Digital maps:</strong> Represent the hospital layout and support movement between locations.</li>
+					<li><strong>Communication systems:</strong> Allow robots to interact with compatible hospital infrastructure, such as automatic doors and elevators.</li>
+				</ul>
+
+				<p>Some robots can automatically transport supplies to designated locations without requiring a staff member to accompany them.</p>
+				<br>
+				<h2>Real-World Example: Aethon TUG</h2>
+				<p>Aethon TUG is an autonomous mobile robot designed to transport materials inside healthcare facilities. It can be used to move medical supplies, medications, meals, and other items between hospital departments. The robot navigates through corridors using sensors and mapping technology. In suitably equipped buildings, it can also interact with elevators and automatic doors. By automating routine transportation tasks, systems such as TUG can allow hospital staff to spend more time on activities involving direct patient care.</p>
+				<br>
+				<h2>Benefits and Challenges</h2>
+				<p>Hospital robots can reduce the time employees spend transporting materials and improve the organization of internal logistics. They can also support consistent delivery routines and reduce repetitive physical work. However, hospitals are busy environments where robots must navigate around patients, visitors, and medical staff. Reliable navigation, maintenance, hygiene, and integration with existing hospital systems are important challenges.</p>
+				<br>
+				<h2>The Future</h2>
+				<p>Hospital robots may become increasingly common as healthcare facilities adopt more automation. Future systems could offer improved navigation, greater flexibility, and better coordination with hospital infrastructure. Rather than replacing healthcare professionals, these robots could support them by handling routine logistical tasks and allowing more attention to be dedicated to patient care.</p>
+
+				
+
+				 
+				<aside class="sources">
+					<h2>Sources</h2>
+					<ul>
+						<li><a href="https://aethon.com/" target="_blank" rel="noopener">https://aethon.com/</a></li>
+						<li><a href="https://www.wired.com/2015/02/incredible-hospital-robot-saving-lives-also-hate/" target="_blank" rel="noopener">https://www.wired.com/2015/02/incredible-hospital-robot-saving-lives-also-hate/</a></li>
+					</ul>
+				</aside>
+			</section>
+		</main>
+		<footer id="article">
+			<a href="industrial-robots.html">&#10094&#10094&#10094 The Rise of Industrial Robots: Transforming Modern Factories</a>
+			<a id="back-to-top" href="#">Back to top</a>
+			<a href="NEXT ARTICLE">next article &#10095&#10095&#10095</a>
+		</footer>
+    </body>
+</html>
