@@ -26,6 +26,11 @@
 			.article-section ul li::marker {
 				color: var(--third-main-topic-color);
 			}
+
+			.article-section ol li::marker {
+				color: var(--third-main-topic-color);
+			}
+
 			.article-section h2 {
 				margin-block: 1.6em 0.8em;
 				color: var(--template-color);
@@ -70,7 +75,6 @@
 						<li><a href="../../html/index.html#interactions">Interactions</a></li>
 						<li><a href="../../html/index.html#language-technologies">Language Technologies</a></li>
 						<li><a href="../../html/index.html#robotics">Robotics</a></li>
-						<li><a href="../../html/index.html#world-building">World Building</a></li>
 					</ul>
 				</li>
 				<li id="third-main-topic">
@@ -85,15 +89,15 @@
 		<!-- PUT YOUR CONTENT ONLY INSIDE THE <main> TAG, AFTER LINKS AND TITLE SECTION -->
 		<main>
 			<!-- PREVIOUS/NEXT ARTICLE LINKS -->
-			<a id="previous-article" href="PREVIOUS ARTICLE LINK" aria-label="Read previous article" title="Previous article">&#10094;</a>
-			<a id="next-article" href="NEXT ARTICLE LINK" aria-label="Read next article" title="Next article">&#10095;</a>
+			<a id="previous-article" href="social_impact.html" aria-label="Read previous article" title="Previous article">&#10094;</a>
+			<a id="next-article" href="geopolitical_impact_of_ai.html" aria-label="Read next article" title="Next article">&#10095;</a>
 			<!-- ARTICLE TITLE (START) -->
 			<section id="article-title">
 				<div>
 					<h1>What Happens to Old AI Hardware? </h1>
-					<p id="article-subtitle">The Environmental Cost of Replacing Servers</p>
+					<p id="article-subtitle">Is it discarded or recycled? What steps are taken?</p>
 					<p class="article-title-paragraph">
-						What happens to an AI server when a faster one takes its place? An upgrade can save electricity, but manufacturing the replacement takes energy and materials, and the old equipment may end up as electronic waste. This article explores that trade-off and looks at how repairing servers or reusing their parts can keep them useful for longer.
+						What happens to AI servers when they’re replaced? This article explores how old hardware can get a second life through reuse, repairs, or recycling.
 					</p>
 					<p id="author"><span>by </span>Leonida Ilijoska</p>
 				</div>
@@ -101,48 +105,91 @@
 			<!-- ARTICLE SECTIONS (START) -->
 			<section class="article-section">
 				<p>
-					A server can still work when a data center decides to replace it. Newer chips may handle more requests or use less electricity for the same task, which can make an upgrade worthwhile. But replacing a server creates two environmental questions. What happens to the old equipment, and what resources go into making its replacement?
+					Since the AI Boom and rise of data centers, the demand of GPUs, servers, storage and networking equipment has risen to unprecedented level. Big corporate companies and data center cycle thousands hard drives, network switches and servers in just a few years. The amount of hardware waste this creates makes people question about its environmental repercussions. The solution to the evergrowing demand and saving the environment is simple - just reuse and recycle old AI hardware.
 				</p>
-				<h2>When retired hardware becomes waste</h2>
+
+				<h2>Ways of extending its use</h2>
 				<p>
-					Some retired servers can go back into use for less demanding jobs. Others can be taken apart so working components can be used for repairs. When equipment is discarded, it becomes electronic waste, or e-waste. This waste can contain valuable materials such as copper and gold, as well as substances that can pollute the environment if the equipment is handled improperly.
-				</p>
-				<p>
-					The Global E-waste Monitor 2024 estimated that the world generated <strong>62 million tonnes of electronic waste in 2022</strong>. Only <strong>22.3%</strong> was documented as formally collected and recycled. That figure covers discarded electronics of all kinds, including household appliances and computers. It gives a sense of the scale of the broader waste problem.
+					A data center might replace its equipment to train a larger AI model or run training jobs faster. An older GPU may struggle with that work, but it is able to run a smaller model that, for example: sorts customer messages. Using a trained model to answer questions, make predictions, or classify information is called <strong>inference</strong>.
 				</p>
 				<p>
-					The amount caused specifically by AI is harder to measure. A 2024 study in Nature Computational Science projected that generative AI hardware, with a focus on large language models, could produce <strong>1.2 to 5.0 million tonnes of e-waste in total from 2020 to 2030</strong>. The researchers modeled different rates of AI growth and hardware replacement. The resulting range is a projection, so it cannot tell us how much AI hardware has already been discarded.
+					Another way to extend the hardware's use is through <strong>software optimization</strong>. There are 3 ways you can do this:
+					<ul>
+						<li><strong>Dynamic Paging and Memory Management</strong> better, more optimized management of cache and memory</li>
+						<li><strong>Quantization</strong>: reduce the size of weight representations</li>
+						<li><strong>Speculative Decoding</strong> using older GPUs alongside new GPUs.</li>
+					</ul>
+				</p>
+
+				<h2>How old equipment gets a second job</h2>
+				<p>
+					What if even with extending its use the hardware isn't worth keeping in the data center? Instead of throwing it away as electric waste, the AI hardware can be reused by smaller companies, startups, hobbyists, schools and other institutions who do not need high computing power.
+				</p>
+				<p>
+					Before a server changes hands, someone needs to test its parts and handle any data left on its drives. Reloop describes this work as part of <strong>IT asset disposition</strong>, or ITAD. Technicians record the equipment and securely erase drives that can be reused. If a drive needs to be destroyed to protect its data, the rest of the server can still be assessed for reuse.
+				</p>
+				<h2>The recyling process</h2>
+				<p>
+					AI's hardware recyling is a little compared to regular waste recycle. The process is meticulous. The facility where the components are recyled must follow strict guidelines. The reasoning for this is:
+					<ul>
+						<li>To educe sensitive data exposure risk</li>
+						<li>Regulatory pressure (laws)</li>
+						<li>To recover scarce resources (gold and other rare earth elements)</li>
+						<li>Financial recovery</li>
+					</ul>
+				</p>
+				<p>
+					The process has 5 stages:
+					<ol>
+						<li>Asset collection</li>
+						<li>Data destruction</li>
+						<li>Testing and refurbishment</li>
+						<li>Material Recovery</li>
+						<li>Responsible Recycling</li>
+					</ol>
 				</p>
 
 				<figure>
-					<img src="../../contributors/leonida-ilijoska/what happens to old ai hardware-image.jpeg" alt="">
-					<figcaption>Pile of discarded electronics — Discarded computers and other electronics are part of the global e-waste stream.</figcaption>
+					<img src="../../contributors/leonida-ilijoska/old_server.png" alt="">
+					<figcaption>Old AI server that is being repaired</figcaption>
 				</figure>
 
-				<h2>Giving old servers a second life</h2>
+				<h2>What recycling can recover</h2>
 				<p>
-					Reusing equipment can be as simple as taking a working drive out of a retired server and installing it in another machine. Microsoft piloted the internal reuse of solid-state drives at one of its facilities. It also reported that it reused or recycled <strong>90.9% of servers and components across its cloud hardware</strong> in fiscal year 2024. That percentage combines reuse and recycling across its cloud operations, which include services beyond AI.
+					A server that can no longer be repaired or reused may still contain metals worth recovering, such as copper and gold. Recycling those materials can reduce some of demand for newly mined resources. What a recycler can recover depends on the equipment and the facility processing it.
 				</p>
 				<p>
-					Sometimes a newer server’s electricity savings can justify replacing an older one. In other cases, keeping the old server in service longer or upgrading only the parts that need replacing can avoid waste and delay the need for new equipment. The environmental cost of an upgrade depends on how much energy it saves, what it takes to manufacture the replacement, and how much useful life the old hardware still has.
+					A reused part goes back into service. A recycled part is broken down so some of its materials can go into a future product. When companies report how much equipment they “reused or recycled” as one figure, it’s hard to tell how much actually went back to work.
+				</p>
+
+				<h2>When is an upgrade worth it?</h2>
+				<p>
+					Consider two older servers. One runs a small job a few hours a week. Replacing it might save little electricity, so keeping it in service could postpone a purchase. The other runs almost continuously. If a newer machine can do the same work using much less power, the savings can add up faster. The environmental trade-off depends on how much electricity the replacement saves, what it takes to make it, and whether the old equipment still has a useful job to do.
+				</p>
+				<p>
+					The old server has finished its original job. If another team can use it, the whole machine may go back into service. If only a few parts are worth keeping, they can still help repair other machines and keep more hardware in use.
+				</p>
+
+				<h2>Conclusion</h2>
+				<p>
+					So, what should happen to old AI hardware? A server that can no longer handle its original workload might still be able to run a smaller model or give another team the computing power it needs. If the whole machine can’t be reused, its working parts can help repair other servers, and responsible recycling can recover materials like copper and gold. Before upgrading, data centers should weigh the electricity a new server could save against the resources needed to make it and the useful life left in the old one.
 				</p>
 			
 				<aside class="sources">
 					<h2>Sources</h2>
 					<ul>
-						<li><a href="https://www.itu.int/en/ITU-D/Environment/Pages/Publications/The-Global-E-Waste-Monitor-2024.aspx" target="_blank" rel="noopener">ITU & UNITAR (2024)</a></li>
-						<li><a href="https://doi.org/10.1038/s43588-024-00712-6" target="_blank" rel="noopener">Wang et al. (2024)</a></li>
-						<li><a href="https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/msc/documents/presentations/CSR/2025-Microsoft-Environmental-Sustainability-Report-PDF.pdf" target="_blank" rel="noopener">Microsoft (2025)</a></li>
-						<li><a href="https://www.jmlr.org/papers/v24/23-0069.html" target="_blank" rel="noopener">Luccioni et al. (2023)</a></li>
+						<li><a href="https://recyclenation.com/2026/08/what-happens-to-ai-hardware-when-it-becomes-obsolete/" target="_blank" rel="noopener">RecycleNation (2026) - What Happens to AI Hardware When It Becomes Obsolete?</a></li>
+						<li><a href="https://reloopglobal.com/blog/ai-hardware-recycling-gpu-servers/" target="_blank" rel="noopener">Reloop Recycling (2026) - AI Hardware Recycling Guide 2026: GPUs, Servers & ITAD</a></li>
+						<li><a href="https://chatgpt.com/s/m_6afb91b42adc8191a4c906e854159a30" target="_blank" rel="noopener">ChatGPT (2026) - Old server image</a></li>
 					</ul>
 				</aside>
 			</section>
 
 		</main>
 		<footer id="article">
-			<a href="PREVIOUS ARTICLE LINK">&#10094;&#10094;&#10094; Previous article</a>
+			<a href="social_impact.html">&#10094;&#10094;&#10094; Previous article</a>
 			<a id="back-to-top" href="#" title="Back to top"><span>Back to top</span><span>&#x2B06;</span></a>
-			<a href="NEXT ARTICLE LINK">Next article &#10095;&#10095;&#10095;</a>
+			<a href="geopolitical_impact_of_ai.html">Next article &#10095;&#10095;&#10095;</a>
 		</footer>
     </body>
 </html>
