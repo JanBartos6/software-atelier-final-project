@@ -316,7 +316,7 @@ footer#home #back-to-top {
 	animation: fade-out ease-out both;
 	animation-timeline: scroll(root);
 	animation-range: 25% 50%;
-	transition: color border-color 0.5s ease;
+	transition: color 0.5s ease, border-color 0.5s ease;
 }
 
 footer#home #back-to-top:hover {
