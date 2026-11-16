@@ -16,23 +16,64 @@
 			}
 			
 			/* CUSTOM INTERNAL CSS */
+			
+			.article-section {
+				width: 80%;
+				margin: 0 auto;
+			}
+			
+			.article-section ul,
+			.article-section ol {
+				display: flex;
+				flex-direction: column;
+				gap: 0.5em;
+				margin: 0.8em 0 0.8em 1.5em;
+				line-height: 1.4;
+			}
+			
+			.article-section li::marker {
+				color: var(--template-color);
+			}
+			
 			.article-section figure {
 				max-width: 500px;
-				margin: 2em auto;
+				margin: 2.5em auto;
 			}
-
+			
 			.article-section figure img {
 				width: 100%;
 				border: var(--article-card-border-style);
 				border-radius: var(--global-border-radius);
 			}
-
+			
 			.article-section figcaption {
 				margin-top: 0.6em;
 				font-size: 0.9em;
 				font-style: italic;
 				text-align: center;
 				opacity: 0.7;
+			}
+			
+			.sources {
+				margin-top: 3em;
+				padding: 1em 1.5em;
+				border-left: var(--global-border-thickness) solid var(--template-color);
+				background-color: var(--secondary-bg-color);
+				border-radius: 0 var(--global-border-radius) var(--global-border-radius) 0;
+				font-size: 0.85em;
+			}
+			
+			.article-section .sources h2 {
+				margin: 0;
+				font-size: 1em;
+				font-weight: 600;
+				text-transform: uppercase;
+				color: var(--template-color);
+			}
+			
+			.sources ul {
+				gap: 0.3em;
+				word-break: break-all;
 			}
 		</style>
 	</head>
@@ -84,7 +125,7 @@
 				<p>In less than two hours, TikTok had figured out what each one was interested in. One bot was programmed to be interested in sadness. In 33 minutes TikTok showed it 224 videos, and 93% of them were about depression and mental health struggles. Nobody had told the app anything. It had only watched how long the bot looked at each video.</p>
 				<figure>
 					<img src="../../contributors/eros-butti/AI_Today_3.jpg" alt="The TikTok app icon on a smartphone home screen">
-					<figcaption>The TikTok app on a phone. Photo: Solen Feyissa, CC BY-SA 2.0, via Wikimedia Commons. <a href="https://commons.wikimedia.org/wiki/File:TikTok_app.jpg">Source</a></figcaption>
+					<figcaption>The TikTok app on a phone. Photo: Solen Feyissa, CC BY-SA 2.0, via Wikimedia Commons. <a href="https://commons.wikimedia.org/wiki/File:TikTok_app.jpg" target="_blank" rel="noopener">Source</a></figcaption>
 				</figure>
 				<p>TikTok is the extreme case, but not the only one. Netflix explains that its suggestions use what you watched and rated, people with similar tastes, and even the time of day and the device you are using. On TikTok, according to former YouTube engineer Guillaume Chaslot, around 90-95% of what people watch is chosen by the algorithm.</p>
 			</section>
@@ -103,26 +144,26 @@
 				<p>This is where it gets uncomfortable. Internal TikTok documents made public in 2024 through a lawsuit by the US state of Kentucky show that the company demoted users it considered unattractive from the main feed and promoted those it considered attractive.</p>
 				<figure>
 					<img src="../../contributors/eros-butti/AI_Today_4.jpg" alt="Entrance of Berlin S&#252;dkreuz station during a face recognition field test, with people walking in front of it">
-					<figcaption>A face recognition field test at Berlin S&#252;dkreuz station in 2017. Photo: C.Suthorn, CC BY-SA 4.0, via Wikimedia Commons. <a href="https://commons.wikimedia.org/wiki/File:Face_Recognition_Field_Test_at_S%C3%BCdkreuz_24.jpg">Source</a></figcaption>
+					<figcaption>A face recognition field test at Berlin S&#252;dkreuz station in 2017. Photo: C.Suthorn, CC BY-SA 4.0, via Wikimedia Commons. <a href="https://commons.wikimedia.org/wiki/File:Face_Recognition_Field_Test_at_S%C3%BCdkreuz_24.jpg" target="_blank" rel="noopener">Source</a></figcaption>
 				</figure>
 				<p>Ayo Omolewa, a data scientist known online as "ayoships", takes popular apps apart to expose the tricks inside them. In TikTok he claims to have found a face model that guesses your attractiveness, age, gender and mood, and he built a tool that shows how it would rate your own photos. His findings have not been independently verified, and TikTok has not commented. But they fit exactly with what TikTok's own documents describe.</p>
 			</section>
 			<section class="article-section">
 				<h2>So What?</h2>
 				<p>Recommendations can be great: they help us find music, films and creators we would never have found alone. But they only work because the app learns who we are, from how long we look at a video, how we type and even what our face looks like. And according to their own documents, these apps are built to make us stay, not to make us happier or better informed. We cannot see the algorithm, but it can definitely see us. How to deal with that is part of Using AI Well.</p>
-			</section>
-			<section class="article-section">
-				<h2>Sources</h2>
-				<ol>
-					<li><a href="https://help.netflix.com/en/node/100639">Netflix Help Center. How Netflix's recommendations system works</a></li>
-					<li><a href="https://www.tubefilter.com/2021/07/21/tiktok-recommendation-algorithm-wall-street-journal-guillaume-chaslot/">Tubefilter. TikTok's recommendation algorithm and the Wall Street Journal investigation (2021)</a></li>
-					<li><a href="https://gizmodo.com/leaked-tiktok-doc-reveals-its-obvious-secret-to-an-addi-1848166901">Gizmodo. Leaked TikTok doc reveals its obvious secret to an addictive feed (2021)</a></li>
-					<li><a href="https://english.factcrescendo.com/2025/01/15/can-tiktok-track-keystrokes-or-taps-made-by-a-user/">Fact Crescendo. Can TikTok track keystrokes or taps made by a user? (2025)</a></li>
-					<li><a href="https://en.wikipedia.org/wiki/Recommender_system">Wikipedia. Recommender system</a></li>
-					<li><a href="https://www.kunc.org/2024-10-11/lawsuit-documents-reveal-what-tiktok-executives-know-about-apps-effect-on-teenagers">NPR / KUNC. Lawsuit documents reveal what TikTok executives know about app's effect on teenagers (2024)</a></li>
-					<li><a href="https://ayoships.com/tools/tiktok-face">Ayo Omolewa (ayoships). See what TikTok's face model says about you</a></li>
-					<li><a href="https://mobilegamer.biz/this-creator-says-he-decompiled-block-blast-candy-crush-and-subway-surfers-to-reveal-their-monetisation-secrets/">MobileGamer.biz. This creator says he decompiled Block Blast, Candy Crush and Subway Surfers to reveal their monetisation secrets</a></li>
-				</ol>
+				<aside class="sources">
+					<h2>Sources</h2>
+					<ul>
+						<li><a href="https://help.netflix.com/en/node/100639" target="_blank" rel="noopener">Netflix Help Center. How Netflix's recommendations system works</a></li>
+						<li><a href="https://www.tubefilter.com/2021/07/21/tiktok-recommendation-algorithm-wall-street-journal-guillaume-chaslot/" target="_blank" rel="noopener">Tubefilter. TikTok's recommendation algorithm and the Wall Street Journal investigation (2021)</a></li>
+						<li><a href="https://gizmodo.com/leaked-tiktok-doc-reveals-its-obvious-secret-to-an-addi-1848166901" target="_blank" rel="noopener">Gizmodo. Leaked TikTok doc reveals its obvious secret to an addictive feed (2021)</a></li>
+						<li><a href="https://english.factcrescendo.com/2025/01/15/can-tiktok-track-keystrokes-or-taps-made-by-a-user/" target="_blank" rel="noopener">Fact Crescendo. Can TikTok track keystrokes or taps made by a user? (2025)</a></li>
+						<li><a href="https://en.wikipedia.org/wiki/Recommender_system" target="_blank" rel="noopener">Wikipedia. Recommender system</a></li>
+						<li><a href="https://www.kunc.org/2024-10-11/lawsuit-documents-reveal-what-tiktok-executives-know-about-apps-effect-on-teenagers" target="_blank" rel="noopener">NPR / KUNC. Lawsuit documents reveal what TikTok executives know about app's effect on teenagers (2024)</a></li>
+						<li><a href="https://ayoships.com/tools/tiktok-face" target="_blank" rel="noopener">Ayo Omolewa (ayoships). See what TikTok's face model says about you</a></li>
+						<li><a href="https://mobilegamer.biz/this-creator-says-he-decompiled-block-blast-candy-crush-and-subway-surfers-to-reveal-their-monetisation-secrets/" target="_blank" rel="noopener">MobileGamer.biz. This creator says he decompiled Block Blast, Candy Crush and Subway Surfers to reveal their monetisation secrets</a></li>
+					</ul>
+				</aside>
 			</section>
 		</main>
 		<footer id="article">
