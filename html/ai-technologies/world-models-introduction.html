@@ -1,0 +1,372 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>World Models: Understanding the Physical World - AI in Everyday Life</title>
+
+    <link rel="icon" href="../../layout/ai-icon.png">
+    <link rel="stylesheet" href="../../css/global.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="Learn what physical AI and world models are, how they predict the physical world, and why they matter for robots.">
+    <meta name="author" content="Giulia">
+
+    <style>
+        :root {
+            --template-color: var(--second-main-topic-color);
+        }
+
+        /* CUSTOM INTERNAL CSS */
+
+        .article-section {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .article-section ul {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5em;
+            margin: 0.8em 0 0.8em 1.5em;
+            line-height: 1.4;
+        }
+
+        .article-section li::marker {
+            color: var(--template-color);
+        }
+
+        .article-section strong {
+            font-weight: 600;
+            color: var(--second-main-topic-color-pale);
+        }
+
+        .article-section figure {
+            max-width: 500px;
+            margin: 2.5em auto;
+        }
+
+        .article-section figure img {
+            width: 100%;
+            border: var(--article-card-border-style);
+            border-radius: var(--global-border-radius);
+        }
+
+        .article-section figcaption {
+            margin-top: 0.6em;
+            font-size: 0.9em;
+            font-style: italic;
+            text-align: center;
+            opacity: 0.7;
+        }
+
+        .article-section .highlight {
+            margin-block: 1.5em;
+            padding-left: 1em;
+            border-left: 3px solid var(--template-color);
+            font-size: 1.15em;
+            font-weight: 400;
+        }
+
+        .sources {
+            margin-top: 3em;
+            padding: 1em 1.5em;
+            border-left: var(--global-border-thickness) solid var(--template-color);
+            background-color: var(--secondary-bg-color);
+            border-radius: 0 var(--global-border-radius) var(--global-border-radius) 0;
+            font-size: 0.85em;
+        }
+
+        .article-section .sources h2 {
+            margin: 0;
+            font-size: 1em;
+            font-weight: 600;
+            text-transform: uppercase;
+            color: var(--template-color);
+        }
+
+        .sources ul {
+            gap: 0.3em;
+            word-break: break-all;
+        }
+
+        .article-section h2 {
+            margin-top: 2.2em;
+            margin-bottom: 0.7em;
+            color: var(--template-color);
+        }
+
+        .article-section p {
+            line-height: 1.7;
+            margin-bottom: 1em;
+        }
+
+        @media (max-width: 680px) {
+            .article-section {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+
+<body id="article">
+
+    <!-- NAVIGATION BAR -->
+    <nav>
+        <a id="back-to-homepage" href="../../html/index.html">
+            <img src="../../layout/logotype.png" alt="Return to the homepage">
+        </a>
+
+        <ul>
+            <li id="first-main-topic">
+                <a href="../../html/index.html#introduction-to-ai">
+                    Introduction to AI
+                </a>
+                <ul class="dropdown">
+                    <li>
+                        <a href="../../html/index.html#history-of-ai">
+                            History of AI
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../../html/index.html#basic-concepts">
+                            Basic Concepts
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li id="second-main-topic">
+                <a href="../../html/index.html#ai-technologies">
+                    AI Technologies
+                </a>
+                <ul class="dropdown">
+                    <li>
+                        <a href="../../html/index.html#robotics">
+                            Robotics
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../../html/index.html#applications">
+                            Applications
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../../html/index.html#language-technologies">
+                            Language Technologies
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li id="third-main-topic">
+                <a href="../../html/index.html#impact-and-ethics">
+                    Impact and Ethics
+                </a>
+                <ul class="dropdown">
+                    <li>
+                        <a href="../../html/index.html#ethics">
+                            Ethics
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../../html/index.html#limitations">
+                            Limitations
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <!-- ARTICLE TITLE -->
+        <section id="article-title">
+            <span>
+                <h1>World Models: Understanding the Physical World</h1>
+
+                <p id="article-subtitle">
+                    How can artificial intelligence learn to understand
+                    the world around us?
+                </p>
+
+                <p class="article-title-paragraph">
+                    Artificial intelligence has made enormous progress in
+                    understanding language, recognizing images, and
+                    generating digital content. However, interacting with
+                    the physical world presents a different challenge.
+                    A robot must do more than recognize objects: it needs
+                    to understand how they move, how they interact, and
+                    what might happen when it takes an action.
+                </p>
+
+                <p class="article-title-paragraph">
+                    This is where <strong>world models</strong>
+                    become important.
+                </p>
+
+                <p id="author">
+                    <span>by </span>Giulia
+                </p>
+            </span>
+        </section>
+
+        <!-- ARTICLE CONTENT -->
+        <section class="article-section">
+
+            <h2>What Is Physical AI?</h2>
+
+            <p>
+                Physical AI refers to artificial intelligence systems
+                designed to perceive, understand, and interact with
+                the physical world.
+            </p>
+
+            <p>
+                Unlike AI systems that primarily process digital
+                information, physical AI can help robots and autonomous
+                machines perform tasks in real environments.
+            </p>
+
+            <p>
+                Consider a robot working in a warehouse.
+                To move a package, it must recognize the object,
+                estimate its position, avoid obstacles, and control
+                its movements. If a person suddenly walks in front
+                of it, the robot must adapt its behavior.
+            </p>
+
+            <p class="highlight">
+                These tasks require an understanding of an environment
+                that is constantly changing.
+            </p>
+
+            <h2>What Is a World Model?</h2>
+
+            <p>
+                A <strong>world model</strong> is an AI system that
+                learns a representation of an environment and can
+                use it to predict how that environment might change.
+            </p>
+
+            <p>
+                World models can learn from different types of
+                information, including images, videos, movement data,
+                and actions. Some can also process text, sound,
+                and 3D information.
+            </p>
+
+            <p>
+                For example, imagine a robot holding a glass
+                above a table.
+            </p>
+
+            <p>
+                A world model could help it predict that releasing
+                the glass would cause it to fall. Depending on
+                the information the model has learned, it might
+                also predict whether the glass would land safely
+                or break.
+            </p>
+
+            <p>
+                The important idea is that the system is not simply
+                recognizing a glass. It is attempting to understand
+                <strong>what could happen next</strong>.
+            </p>
+
+            <p>
+                This ability to represent space, objects, and their
+                relationships is closely connected to
+                <em>spatial intelligence</em>.
+            </p>
+
+            <h2>Why Do Robots Need World Models?</h2>
+
+            <p>
+                Traditional robotics has often relied on mathematical
+                models, carefully programmed instructions, and
+                control algorithms.
+            </p>
+
+            <p>
+                These approaches remain extremely useful, especially
+                in predictable environments where the robot's tasks
+                and surroundings are well defined.
+            </p>
+
+            <p>
+                However, real environments are often unpredictable.
+                Objects can be moved, lighting conditions can change,
+                and people can behave unexpectedly.
+            </p>
+
+            <p>
+                Learning-based approaches offer another possibility:
+                rather than relying exclusively on predefined rules,
+                robots can learn useful patterns from data and
+                experience.
+            </p>
+
+            <p>
+                World models can support this process by helping robots
+                anticipate the consequences of different actions.
+            </p>
+
+            <h2>From Understanding to Acting</h2>
+
+            <p>
+                Imagine teaching a robot to pick up a cup.
+            </p>
+
+            <p>
+                First, the robot must recognize the cup and locate it
+                in three-dimensional space. Then, it must decide how
+                to approach the cup, position its gripper, and apply
+                enough force to lift it without dropping it.
+            </p>
+
+            <p>
+                A predictive world model could help the robot estimate
+                what might happen when it moves its gripper or
+                changes its grip.
+            </p>
+
+            <p class="highlight">
+                A robot that can predict the consequences of its actions
+                may be able to plan and adapt more effectively.
+            </p>
+
+            <p>
+                But how do we create AI systems capable of making
+                these predictions?
+            </p>
+
+            <p>
+                That begins with data, training, and learning
+                how the world behaves.
+            </p>
+
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer id="article">
+
+        <a href="../../html/index.html#robotics">
+            &#10094;&#10094;&#10094; Robotics
+        </a>
+
+        <a id="back-to-top" href="#">
+            Back to top
+        </a>
+
+    </footer>
+
+</body>
+</html>
+	world-models-introduction.html	world-models-introduction.html
