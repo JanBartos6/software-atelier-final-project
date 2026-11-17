@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Why is it so hard to stop scrolling? - AI in Everyday Life</title> <!-- ARTICLE TITLE -->
+		<link rel="icon" href="../../layout/ai-icon.png">
+		<link rel="stylesheet" href="../../css/global.css">
+		<!-- CUSTOM EXTERNAL CSS -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="description" content="How much of what we watch is chosen by recommendations, and three psychological mechanisms that explain their influence: unpredictable rewards, no stopping points and personalized nudges."> <!-- ARTICLE DESCRIPTION -->
+		<meta name="author" content="Minh Quan Tran">
+		<style>
+			:root {
+				--template-color: var(--second-main-topic-color);
+			}
+			
+			/* CUSTOM INTERNAL CSS */
+
+			.article-section {
+				width: 80%;
+				margin: 0 auto;
+			}
+
+			.article-section ul,
+			.article-section ol {
+				display: flex;
+				flex-direction: column;
+				gap: 0.5em;
+				margin: 0.8em 0 0.8em 1.5em;
+				line-height: 1.4;
+			}
+
+			.article-section li::marker {
+				color: var(--template-color);
+			}
+
+			.article-section ol li::marker {
+				font-weight: 600;
+			}
+
+			.article-section strong {
+				font-weight: 600;
+				color: var(--second-main-topic-color-pale);
+			}
+
+			.article-section h2 {
+				margin-block: 1.8em 0.4em;
+				font-size: 1.3em;
+				font-weight: 500;
+				color: var(--template-color);
+			}
+
+			.article-section figure {
+				max-width: 500px;
+				margin: 2.5em auto;
+			}
+
+			.article-section figure img {
+				width: 100%;
+				border: var(--article-card-border-style);
+				border-radius: var(--global-border-radius);
+			}
+
+			.article-section figure.small {
+				max-width: 400px;
+			}
+
+			.article-section figcaption {
+				margin-top: 0.6em;
+				font-size: 0.9em;
+				font-style: italic;
+				text-align: center;
+				opacity: 0.7;
+			}
+
+			.article-section .highlight {
+				margin-block: 1.5em;
+				padding-left: 1em;
+				border-left: 3px solid var(--template-color);
+				font-size: 1.15em;
+				font-weight: 400;
+			}
+
+			.article-section .table-wrapper {
+				margin: 1.5em 0;
+				overflow-x: auto;
+			}
+
+			.article-section table {
+				width: 100%;
+				border-collapse: collapse;
+				font-size: 0.9em;
+				line-height: 1.4;
+			}
+
+			.article-section caption {
+				margin-bottom: 0.6em;
+				font-style: italic;
+				text-align: left;
+				opacity: 0.7;
+			}
+
+			.article-section th,
+			.article-section td {
+				padding: 0.6em 0.8em;
+				text-align: left;
+				vertical-align: top;
+				border-bottom: 1px solid var(--secondary-bg-color);
+			}
+
+			.article-section th {
+				font-weight: 600;
+				color: var(--template-color);
+				background-color: var(--secondary-bg-color);
+			}
+
+			.sources {
+				margin-top: 3em;
+				padding: 1em 1.5em;
+				border-left: var(--global-border-thickness) solid var(--template-color);
+				background-color: var(--secondary-bg-color);
+				border-radius: 0 var(--global-border-radius) var(--global-border-radius) 0;
+				font-size: 0.85em;
+			}
+
+			.article-section .sources h2 {
+				margin: 0;
+				font-size: 1em;
+				font-weight: 600;
+				text-transform: uppercase;
+				color: var(--template-color);
+			}
+
+			.sources ul {
+				gap: 0.3em;
+				word-break: break-all;
+			}
+		</style>
+	</head>
+	<body id="article">
+		<nav>
+			<a id="back-to-homepage" href="../../html/index.html"><img src="../../layout/logotype.png" alt="Return to the homepage"></a>
+			<ul>
+				<li id="first-main-topic">
+					<a href="../../html/index.html#introduction-to-ai">Introduction to AI</a>
+					<ul class="dropdown">
+						<li><a href="../../html/index.html#history-of-ai">History of AI</a></li>
+						<li><a href="../../html/index.html#basic-concepts">Basic Concepts</a></li>
+					</ul>
+				</li>
+				<li id="second-main-topic">
+					<a href="../../html/index.html#ai-technologies">AI Technologies</a>
+					<ul class="dropdown">
+						<li><a href="../../html/index.html#interactions">Interactions</a></li>
+						<li><a href="../../html/index.html#language-technologies">Language Technologies</a></li>
+						<li><a href="../../html/index.html#robotics">Robotics</a></li>
+					</ul>
+				</li>
+				<li id="third-main-topic">
+					<a href="../../html/index.html#impact-and-ethics">Impact and Ethics</a>
+					<ul class="dropdown">
+						<li><a href="../../html/index.html#ethics">Ethics</a></li>
+						<li><a href="../../html/index.html#limitations">Limitations</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+		<!-- PUT YOUR CONTENT ONLY INSIDE THE <main> TAG, AFTER LINKS AND TITLE SECTION -->
+		<main>
+			<!-- PREVIOUS/NEXT ARTICLE LINKS -->
+			<a id="previous-article" href="what-is-a-recommender-system.html" aria-label="Read previous article" title="Previous article">&#10094</a>
+			<a id="next-article" href="benefits-risks-and-rules-of-recommender-systems.html" aria-label="Read next article" title="Next article">&#10095</a>
+			<!-- ARTICLE TITLE (START) -->
+			<section id="article-title">
+				<span>
+					<h1>Why is it so hard to stop scrolling?</h1>
+					<p id="article-subtitle">Most of what we watch online is not something we searched for, but something that was put in front of us.</p>
+					<p class="article-title-paragraph">To understand how strong this influence is, it helps to look at a few numbers first, and then at the psychology that makes a feed so hard to leave.</p>
+					<p id="author"><span>by </span>Minh Quan Tran</p>
+				</span>
+			</section>
+			<!-- ARTICLE SECTIONS (START) -->
+			<section class="article-section">
+				<figure>
+					<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Netflix_booth_%2836079051696%29.jpg/960px-Netflix_booth_%2836079051696%29.jpg" alt="A Netflix booth with large red screens at a trade fair">
+					<figcaption>Netflix: most of what is watched there starts from a recommendation</figcaption>
+				</figure>
+
+				<p>The table below shows how much of what people watch is shaped by recommendations. Note the last column: most figures are reported by the companies themselves, and only the Facebook and Instagram result comes from an independent randomized experiment.</p>
+
+				<div class="table-wrapper">
+					<table>
+						<caption>Reported influence of recommender systems</caption>
+						<thead>
+							<tr>
+								<th>Platform</th>
+								<th>Reported figure</th>
+								<th>Evidence type</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Netflix</td>
+								<td>About 80% of hours streamed are influenced by recommendations; 20% come from search</td>
+								<td>Article by company authors (2015)</td>
+							</tr>
+							<tr>
+								<td>YouTube</td>
+								<td>More than 70% of watch time is driven by recommendations</td>
+								<td>Statement by a YouTube executive (2018)</td>
+							</tr>
+							<tr>
+								<td>Facebook / Instagram</td>
+								<td>Switching from an algorithmic to a chronological feed substantially reduced time spent on the app</td>
+								<td>Randomized experiment (2023)</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+				<p>Why do recommendations have so much power over us? Three psychological mechanisms help explain it.</p>
+
+				<h2>1. Unpredictable rewards</h2>
+
+				<p>In 1957, psychologists Charles Ferster and B. F. Skinner published the results of years of experiments with animals in a special cage, known as the “Skinner box”, where pressing a lever or pecking a key delivered food. They found that rewards delivered on an <em>unpredictable</em> schedule produce high and persistent rates of responding, much more than rewards that arrive every time.</p>
+
+				<figure class="small">
+					<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Skinner_box_scheme_01.svg/500px-Skinner_box_scheme_01.svg.png" alt="Diagram of a Skinner box: a cage with levers, lights and a food dispenser">
+					<figcaption>A Skinner box, used to study how rewards shape behavior</figcaption>
+				</figure>
+
+				<p>A feed works in a similar way: most videos are just fine, but a really rewarding one might appear at any moment, so we keep scrolling to find it. This is why feeds are often compared to slot machines. The comparison is useful, but it remains an analogy, not a proven brain mechanism.</p>
+
+				<figure>
+					<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Casino_slots.jpg/500px-Casino_slots.jpg" alt="Rows of brightly lit slot machines in a casino">
+					<figcaption>Slot machines: a popular comparison, but only an analogy</figcaption>
+				</figure>
+
+				<h2>2. No natural stopping points</h2>
+
+				<p>A newspaper has a last page and a TV episode has its end credits. <strong>Infinite scroll</strong> and <strong>autoplay</strong> remove these natural stopping points: there is always another post below and another video about to start. Stopping is no longer the default, it becomes a decision we have to make actively.</p>
+
+				<h2>3. Personalized nudges</h2>
+
+				<p>The order of a list, autoplay and labels such as “Top picks for you” act as <strong>nudges</strong>: design choices that steer our decisions without restricting them. We are still free to choose anything, but most of us pick what is at the top. The concept comes from behavioral economics, where it was described long before modern AI. What changes with AI is that nudges become <em>personalized</em>: each of us is steered with the arrangement that works best on us.</p>
+
+				<p>Put together, these mechanisms explain why recommenders are so effective at holding our attention. Is that good or bad for us? The answer, as we will see, is less obvious than it might seem.</p>
+				<aside class="sources">
+					<h2>Sources</h2>
+					<ul>
+						<li><a href="https://doi.org/10.1145/2843948" target="_blank" rel="noopener">https://doi.org/10.1145/2843948</a></li>
+						<li><a href="https://www.cbsnews.com/news/ces-youtubes-ai-is-the-puppetmaster-over-what-you-watch" target="_blank" rel="noopener">https://www.cbsnews.com/news/ces-youtubes-ai-is-the-puppetmaster-over-what-you-watch</a></li>
+						<li><a href="https://doi.org/10.1126/science.abp9364" target="_blank" rel="noopener">https://doi.org/10.1126/science.abp9364</a></li>
+						<li><a href="https://en.wikipedia.org/wiki/Operant_conditioning_chamber" target="_blank" rel="noopener">https://en.wikipedia.org/wiki/Operant_conditioning_chamber</a></li>
+						<li><a href="https://en.wikipedia.org/wiki/Nudge_theory" target="_blank" rel="noopener">https://en.wikipedia.org/wiki/Nudge_theory</a></li>
+						<li><a href="https://commons.wikimedia.org/wiki/File:Netflix_booth_(36079051696).jpg" target="_blank" rel="noopener">https://commons.wikimedia.org/wiki/File:Netflix_booth_(36079051696).jpg</a></li>
+						<li><a href="https://commons.wikimedia.org/wiki/File:Skinner_box_scheme_01.svg" target="_blank" rel="noopener">https://commons.wikimedia.org/wiki/File:Skinner_box_scheme_01.svg</a></li>
+						<li><a href="https://commons.wikimedia.org/wiki/File:Casino_slots.jpg" target="_blank" rel="noopener">https://commons.wikimedia.org/wiki/File:Casino_slots.jpg</a></li>
+					</ul>
+				</aside>
+			</section>
+		</main>
+		<footer id="article">
+			<a href="what-is-a-recommender-system.html">&#10094&#10094&#10094 What is a recommender system, and how does it work?</a>
+			<a id="back-to-top" href="#">Back to top</a>
+			<a href="benefits-risks-and-rules-of-recommender-systems.html">Benefits, risks and rules of recommender systems &#10095&#10095&#10095</a>
+		</footer>
+    </body>
+</html>

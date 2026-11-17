@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Benefits, risks and rules of recommender systems - AI in Everyday Life</title> <!-- ARTICLE TITLE -->
+		<link rel="icon" href="../../layout/ai-icon.png">
+		<link rel="stylesheet" href="../../css/global.css">
+		<!-- CUSTOM EXTERNAL CSS -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="description" content="What recommenders give us and what they may cost: filter bubbles, adolescent mental health, privacy, diversity and autonomy, plus how the EU Digital Services Act regulates them and where they are heading."> <!-- ARTICLE DESCRIPTION -->
+		<meta name="author" content="Minh Quan Tran">
+		<style>
+			:root {
+				--template-color: var(--second-main-topic-color);
+			}
+			
+			/* CUSTOM INTERNAL CSS */
+
+			.article-section {
+				width: 80%;
+				margin: 0 auto;
+			}
+
+			.article-section ul,
+			.article-section ol {
+				display: flex;
+				flex-direction: column;
+				gap: 0.5em;
+				margin: 0.8em 0 0.8em 1.5em;
+				line-height: 1.4;
+			}
+
+			.article-section li::marker {
+				color: var(--template-color);
+			}
+
+			.article-section ol li::marker {
+				font-weight: 600;
+			}
+
+			.article-section strong {
+				font-weight: 600;
+				color: var(--second-main-topic-color-pale);
+			}
+
+			.article-section h2 {
+				margin-block: 1.8em 0.4em;
+				font-size: 1.3em;
+				font-weight: 500;
+				color: var(--template-color);
+			}
+
+			.article-section figure {
+				max-width: 500px;
+				margin: 2.5em auto;
+			}
+
+			.article-section figure img {
+				width: 100%;
+				border: var(--article-card-border-style);
+				border-radius: var(--global-border-radius);
+			}
+
+			.article-section figure.small {
+				max-width: 400px;
+			}
+
+			.article-section figcaption {
+				margin-top: 0.6em;
+				font-size: 0.9em;
+				font-style: italic;
+				text-align: center;
+				opacity: 0.7;
+			}
+
+			.article-section .highlight {
+				margin-block: 1.5em;
+				padding-left: 1em;
+				border-left: 3px solid var(--template-color);
+				font-size: 1.15em;
+				font-weight: 400;
+			}
+
+			.sources {
+				margin-top: 3em;
+				padding: 1em 1.5em;
+				border-left: var(--global-border-thickness) solid var(--template-color);
+				background-color: var(--secondary-bg-color);
+				border-radius: 0 var(--global-border-radius) var(--global-border-radius) 0;
+				font-size: 0.85em;
+			}
+
+			.article-section .sources h2 {
+				margin: 0;
+				font-size: 1em;
+				font-weight: 600;
+				text-transform: uppercase;
+				color: var(--template-color);
+			}
+
+			.sources ul {
+				gap: 0.3em;
+				word-break: break-all;
+			}
+		</style>
+	</head>
+	<body id="article">
+		<nav>
+			<a id="back-to-homepage" href="../../html/index.html"><img src="../../layout/logotype.png" alt="Return to the homepage"></a>
+			<ul>
+				<li id="first-main-topic">
+					<a href="../../html/index.html#introduction-to-ai">Introduction to AI</a>
+					<ul class="dropdown">
+						<li><a href="../../html/index.html#history-of-ai">History of AI</a></li>
+						<li><a href="../../html/index.html#basic-concepts">Basic Concepts</a></li>
+					</ul>
+				</li>
+				<li id="second-main-topic">
+					<a href="../../html/index.html#ai-technologies">AI Technologies</a>
+					<ul class="dropdown">
+						<li><a href="../../html/index.html#interactions">Interactions</a></li>
+						<li><a href="../../html/index.html#language-technologies">Language Technologies</a></li>
+						<li><a href="../../html/index.html#robotics">Robotics</a></li>
+					</ul>
+				</li>
+				<li id="third-main-topic">
+					<a href="../../html/index.html#impact-and-ethics">Impact and Ethics</a>
+					<ul class="dropdown">
+						<li><a href="../../html/index.html#ethics">Ethics</a></li>
+						<li><a href="../../html/index.html#limitations">Limitations</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+		<!-- PUT YOUR CONTENT ONLY INSIDE THE <main> TAG, AFTER LINKS AND TITLE SECTION -->
+		<main>
+			<!-- PREVIOUS/NEXT ARTICLE LINKS -->
+			<a id="previous-article" href="why-is-it-so-hard-to-stop-scrolling.html" aria-label="Read previous article" title="Previous article">&#10094</a>
+			<a id="next-article" href="interacting-with-human-language-and-voice.html" aria-label="Read next article" title="Next article">&#10095</a>
+			<!-- ARTICLE TITLE (START) -->
+			<section id="article-title">
+				<span>
+					<h1>Benefits, risks and rules of recommender systems</h1>
+					<p id="article-subtitle">Recommender systems make huge catalogues usable, but they are also blamed for polarization, anxiety and loss of privacy.</p>
+					<p class="article-title-paragraph">Some of these fears are well founded, others are weaker than often assumed. The only way to tell them apart is to look carefully at the evidence, and then to ask who decides what these systems are built to do.</p>
+					<p id="author"><span>by </span>Minh Quan Tran</p>
+				</span>
+			</section>
+			<!-- ARTICLE SECTIONS (START) -->
+			<section class="article-section">
+				<h2>The benefits</h2>
+
+				<p>Without recommendations, a catalogue of millions of songs or videos would be practically unusable. Recommenders save us time and help us discover things we would never have found on our own. They also create enormous economic value: Netflix estimates (a company figure) that personalization and recommendations save it more than <strong>one billion US dollars a year</strong>, because satisfied users are less likely to cancel their subscription.</p>
+
+				<p>Their risks, however, require careful assessment.</p>
+
+				<h2>Filter bubbles</h2>
+
+				<figure>
+					<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Filter_bubble_illustration.png/960px-Filter_bubble_illustration.png" alt="Illustration of a filter bubble: groups of like-minded people each enclosed in their own bubble">
+					<figcaption>The filter bubble idea: like-minded groups closed in their own bubbles</figcaption>
+				</figure>
+
+				<p>In 2011, the activist Eli Pariser argued that personalization encloses users in “filter bubbles”: each of us would only see information that confirms what we already think. The idea became extremely popular, but the evidence is mixed:</p>
+				<ul>
+					<li>Using data from <strong>10.1 million Facebook users</strong>, a 2015 study found that users’ own choices limited their exposure to opposing views more than the algorithm did.</li>
+					<li>During the 2020 US election, switching users to chronological feeds for three months did not significantly change their level of polarization.</li>
+					<li>An experiment with automated accounts (“bots”) found that following YouTube’s recommendations alone led, on average, to <em>less</em> partisan viewing than what real users chose for themselves.</li>
+				</ul>
+
+				<p class="highlight">in the short term, the bubble seems to be built more by our own choices than by the algorithm.</p>
+
+				<p>Long-term effects, however, remain uncertain: these studies cover weeks or months, not years.</p>
+
+				<h2>Mental health</h2>
+
+				<figure>
+					<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Young_people_in_Hong_Kong_using_smartphones_whilst_walking.png/960px-Young_people_in_Hong_Kong_using_smartphones_whilst_walking.png" alt="Group of young people walking in a street while looking at their smartphones">
+					<figcaption>Young people are at the center of the well-being debate</figcaption>
+				</figure>
+
+				<p>In 2023, the US Surgeon General warned that adolescents who use social media for more than three hours a day face <strong>double the risk</strong> of symptoms of depression and anxiety. Other researchers stress that the associations are small: in a study of more than 300,000 adolescents, technology use explained at most <strong>0.4%</strong> of the differences in well-being between them. The debate is still open, and it mostly concerns how to interpret correlations that are real but modest.</p>
+
+				<h2>Privacy, diversity and autonomy</h2>
+
+				<ul>
+					<li><strong>Privacy:</strong> behavioral data can reveal much more than users intend. In one study, Facebook “likes” alone were enough to tell Democrats from Republicans in 85% of cases.</li>
+					<li><strong>Diversity:</strong> collaborative filtering tends to push many users towards the same popular items, which can reduce the overall diversity of what people consume.</li>
+					<li><strong>Autonomy:</strong> when a system is optimized for engagement, what we click on in the moment may differ from what we would want if we thought about it. The system serves our impulses, not necessarily our intentions.</li>
+				</ul>
+
+				<h2>Who decides what recommenders optimize for?</h2>
+
+				<p>For a long time, the answer was simple: the companies that build them. Today, laws are starting to give users a say. The most important one is the European Union’s <strong>Digital Services Act</strong> (DSA), adopted in 2022. Among other things, it introduces three rules for recommender systems:</p>
+				<ul>
+					<li><strong>Transparency (Article 27):</strong> online platforms must explain, in their terms and conditions, the main parameters their recommender systems use.</li>
+					<li><strong>Protection of minors (Article 28):</strong> platforms may not show advertising based on profiling to users they know to be minors.</li>
+					<li><strong>A real alternative (Article 38):</strong> very large platforms must offer at least one recommendation option that is not based on profiling, for example a simple chronological feed.</li>
+				</ul>
+
+				<figure>
+					<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Belgique_-_Bruxelles_-_Schuman_-_Berlaymont_-_01.jpg/960px-Belgique_-_Bruxelles_-_Schuman_-_Berlaymont_-_01.jpg" alt="The Berlaymont building in Brussels, headquarters of the European Commission">
+					<figcaption>The Berlaymont in Brussels, seat of the European Commission</figcaption>
+				</figure>
+
+				<h2>Where recommenders are going</h2>
+
+				<p>Two developments could change recommenders deeply in the coming years:</p>
+				<ul>
+					<li><strong>Conversation instead of guessing:</strong> large language models, the same technology behind AI chatbots, allow users to describe what they want in their own words, such as “a short, funny film that isn’t too silly”, instead of letting the system infer everything from their clicks.</li>
+					<li><strong>Value-aligned recommenders:</strong> researchers are developing systems that try to optimize long-term well-being rather than immediate engagement, bringing human values directly into the goal the system pursues.</li>
+				</ul>
+
+				<figure class="small">
+					<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/European_flag_outside_the_Commission.jpg/500px-European_flag_outside_the_Commission.jpg" alt="European Union flag flying outside the European Commission">
+					<figcaption>The DSA applies to every platform operating in the EU</figcaption>
+				</figure>
+
+				<h2>Conclusion</h2>
+
+				<p>Recommender systems are the clearest example of AI interacting with the human psyche. They bring real benefits, but also risks for privacy, diversity, autonomy and the well-being of young people. Current evidence suggests that they strongly affect <em>how much</em> people engage, while their short-term effect on political attitudes is smaller than often assumed.</p>
+
+				<p>The key question is therefore not whether recommenders are good or bad, but:</p>
+				<p class="highlight">what are they optimized for, who decides, and how transparent and controllable are they?</p>
+				<aside class="sources">
+					<h2>Sources</h2>
+					<ul>
+						<li><a href="https://doi.org/10.1145/2843948" target="_blank" rel="noopener">https://doi.org/10.1145/2843948</a></li>
+						<li><a href="https://doi.org/10.1126/science.aaa1160" target="_blank" rel="noopener">https://doi.org/10.1126/science.aaa1160</a></li>
+						<li><a href="https://doi.org/10.1126/science.abp9364" target="_blank" rel="noopener">https://doi.org/10.1126/science.abp9364</a></li>
+						<li><a href="https://doi.org/10.1073/pnas.2313377121" target="_blank" rel="noopener">https://doi.org/10.1073/pnas.2313377121</a></li>
+						<li><a href="https://www.hhs.gov/sites/default/files/sg-youth-mental-health-social-media-advisory.pdf" target="_blank" rel="noopener">https://www.hhs.gov/sites/default/files/sg-youth-mental-health-social-media-advisory.pdf</a></li>
+						<li><a href="https://doi.org/10.1038/s41562-018-0506-1" target="_blank" rel="noopener">https://doi.org/10.1038/s41562-018-0506-1</a></li>
+						<li><a href="https://doi.org/10.1073/pnas.1218772110" target="_blank" rel="noopener">https://doi.org/10.1073/pnas.1218772110</a></li>
+						<li><a href="https://doi.org/10.1287/mnsc.1080.0974" target="_blank" rel="noopener">https://doi.org/10.1287/mnsc.1080.0974</a></li>
+						<li><a href="https://doi.org/10.1145/3632297" target="_blank" rel="noopener">https://doi.org/10.1145/3632297</a></li>
+						<li><a href="https://eur-lex.europa.eu/eli/reg/2022/2065/oj" target="_blank" rel="noopener">https://eur-lex.europa.eu/eli/reg/2022/2065/oj</a></li>
+						<li><a href="https://doi.org/10.1007/s11280-024-01291-2" target="_blank" rel="noopener">https://doi.org/10.1007/s11280-024-01291-2</a></li>
+						<li><a href="https://commons.wikimedia.org/wiki/File:Filter_bubble_illustration.png" target="_blank" rel="noopener">https://commons.wikimedia.org/wiki/File:Filter_bubble_illustration.png</a></li>
+						<li><a href="https://commons.wikimedia.org/wiki/File:Young_people_in_Hong_Kong_using_smartphones_whilst_walking.png" target="_blank" rel="noopener">https://commons.wikimedia.org/wiki/File:Young_people_in_Hong_Kong_using_smartphones_whilst_walking.png</a></li>
+						<li><a href="https://commons.wikimedia.org/wiki/File:Belgique_-_Bruxelles_-_Schuman_-_Berlaymont_-_01.jpg" target="_blank" rel="noopener">https://commons.wikimedia.org/wiki/File:Belgique_-_Bruxelles_-_Schuman_-_Berlaymont_-_01.jpg</a></li>
+						<li><a href="https://commons.wikimedia.org/wiki/File:European_flag_outside_the_Commission.jpg" target="_blank" rel="noopener">https://commons.wikimedia.org/wiki/File:European_flag_outside_the_Commission.jpg</a></li>
+					</ul>
+				</aside>
+			</section>
+		</main>
+		<footer id="article">
+			<a href="why-is-it-so-hard-to-stop-scrolling.html">&#10094&#10094&#10094 Why is it so hard to stop scrolling?</a>
+			<a id="back-to-top" href="#">Back to top</a>
+			<a href="interacting-with-human-language-and-voice.html">Interacting with human language and voice &#10095&#10095&#10095</a>
+		</footer>
+    </body>
+</html>
