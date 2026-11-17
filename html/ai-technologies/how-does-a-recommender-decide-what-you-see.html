@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>How does a recommender decide what you see? - AI in Everyday Life</title> <!-- ARTICLE TITLE -->
+		<link rel="icon" href="../../layout/ai-icon.png">
+		<link rel="stylesheet" href="../../css/global.css">
+		<!-- CUSTOM EXTERNAL CSS -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="description" content="Content-based filtering, collaborative filtering, matrix factorization and YouTube’s two-stage deep learning system: the methods behind recommendations and their feedback loop."> <!-- ARTICLE DESCRIPTION -->
+		<meta name="author" content="Minh Quan Tran">
+		<style>
+			:root {
+				--template-color: var(--second-main-topic-color);
+			}
+			
+			/* CUSTOM INTERNAL CSS */
+
+			.article-section {
+				width: 80%;
+				margin: 0 auto;
+			}
+
+			.article-section ul,
+			.article-section ol {
+				display: flex;
+				flex-direction: column;
+				gap: 0.5em;
+				margin: 0.8em 0 0.8em 1.5em;
+				line-height: 1.4;
+			}
+
+			.article-section li::marker {
+				color: var(--template-color);
+			}
+
+			.article-section ol li::marker {
+				font-weight: 600;
+			}
+
+			.article-section strong {
+				font-weight: 600;
+				color: var(--second-main-topic-color-pale);
+			}
+
+			.article-section h2 {
+				margin-block: 1.8em 0.4em;
+				font-size: 1.3em;
+				font-weight: 500;
+				color: var(--template-color);
+			}
+
+			.article-section figure {
+				max-width: 500px;
+				margin: 2.5em auto;
+			}
+
+			.article-section figure img {
+				width: 100%;
+				border: var(--article-card-border-style);
+				border-radius: var(--global-border-radius);
+			}
+
+			.article-section figure.small {
+				max-width: 400px;
+			}
+
+			.article-section figcaption {
+				margin-top: 0.6em;
+				font-size: 0.9em;
+				font-style: italic;
+				text-align: center;
+				opacity: 0.7;
+			}
+
+			.article-section .highlight {
+				margin-block: 1.5em;
+				padding-left: 1em;
+				border-left: 3px solid var(--template-color);
+				font-size: 1.15em;
+				font-weight: 400;
+			}
+
+			.sources {
+				margin-top: 3em;
+				padding: 1em 1.5em;
+				border-left: var(--global-border-thickness) solid var(--template-color);
+				background-color: var(--secondary-bg-color);
+				border-radius: 0 var(--global-border-radius) var(--global-border-radius) 0;
+				font-size: 0.85em;
+			}
+
+			.article-section .sources h2 {
+				margin: 0;
+				font-size: 1em;
+				font-weight: 600;
+				text-transform: uppercase;
+				color: var(--template-color);
+			}
+
+			.sources ul {
+				gap: 0.3em;
+				word-break: break-all;
+			}
+		</style>
+	</head>
+	<body id="article">
+		<nav>
+			<a id="back-to-homepage" href="../../html/index.html"><img src="../../layout/logotype.png" alt="Return to the homepage"></a>
+			<ul>
+				<li id="first-main-topic">
+					<a href="../../html/index.html#introduction-to-ai">Introduction to AI</a>
+					<ul class="dropdown">
+						<li><a href="../../html/index.html#history-of-ai">History of AI</a></li>
+						<li><a href="../../html/index.html#basic-concepts">Basic Concepts</a></li>
+					</ul>
+				</li>
+				<li id="second-main-topic">
+					<a href="../../html/index.html#ai-technologies">AI Technologies</a>
+					<ul class="dropdown">
+						<li><a href="../../html/index.html#interactions">Interactions</a></li>
+						<li><a href="../../html/index.html#language-technologies">Language Technologies</a></li>
+						<li><a href="../../html/index.html#robotics">Robotics</a></li>
+					</ul>
+				</li>
+				<li id="third-main-topic">
+					<a href="../../html/index.html#impact-and-ethics">Impact and Ethics</a>
+					<ul class="dropdown">
+						<li><a href="../../html/index.html#ethics">Ethics</a></li>
+						<li><a href="../../html/index.html#limitations">Limitations</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+		<!-- PUT YOUR CONTENT ONLY INSIDE THE <main> TAG, AFTER LINKS AND TITLE SECTION -->
+		<main>
+			<!-- PREVIOUS/NEXT ARTICLE LINKS -->
+			<a id="previous-article" href="what-is-a-recommender-system.html" aria-label="Read previous article" title="Previous article">&#10094</a>
+			<a id="next-article" href="why-is-it-so-hard-to-stop-scrolling.html" aria-label="Read next article" title="Next article">&#10095</a>
+			<!-- ARTICLE TITLE (START) -->
+			<section id="article-title">
+				<span>
+					<h1>How does a recommender decide what you see?</h1>
+					<p id="article-subtitle">Behind every “Because you watched…” row there is a method for comparing people and items.</p>
+					<p class="article-title-paragraph">There are two basic ideas: recommend things that look like what you already liked, or recommend what people similar to you liked. Large platforms combine both, and add a lot of deep learning on top.</p>
+					<p id="author"><span>by </span>Minh Quan Tran</p>
+				</span>
+			</section>
+			<!-- ARTICLE SECTIONS (START) -->
+			<section class="article-section">
+				<figure>
+					<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Free_Record_Shop.jpg/500px-Free_Record_Shop.jpg" alt="Shelves of CDs and DVDs inside a record shop">
+					<figcaption>Before recommenders, a shop assistant did this job</figcaption>
+				</figure>
+
+				<p>The classic approaches are three:</p>
+				<ul>
+					<li><strong>Content-based filtering:</strong> it recommends items similar to those you liked. If you watched three space documentaries, it suggests a fourth one.</li>
+					<li><strong>Collaborative filtering:</strong> it recommends what similar users liked. If people with tastes like yours loved a certain album, you will probably like it too, even if it has nothing in common with what you have heard so far. Amazon made this idea famous with its “customers who bought this item also bought” suggestions.</li>
+					<li><strong>Matrix factorization:</strong> it represents every user and every item as a list of numbers, a vector of “hidden factors” learned from the data. Nobody tells the system what these factors mean, but one might end up measuring how much a film is a comedy, another how much it is aimed at children. A user and an item that point in the same direction are a good match.</li>
+				</ul>
+
+				<figure>
+					<img src="https://upload.wikimedia.org/wikipedia/commons/5/52/Collaborative_filtering.gif" alt="Animated diagram of collaborative filtering predicting a missing rating from users with similar tastes">
+					<figcaption>Collaborative filtering predicts a missing rating from similar users</figcaption>
+				</figure>
+
+				<p>Large platforms combine these methods with deep learning. YouTube is a good example, because it has published how its system works. It uses two stages:</p>
+				<ol>
+					<li><strong>Candidate generation:</strong> a first neural network reduces millions of videos to a few hundred that might interest you.</li>
+					<li><strong>Ranking:</strong> a second network scores those candidates in much more detail and orders the few dozen that are actually shown.</li>
+				</ol>
+
+				<figure class="small">
+					<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Colored_neural_network.svg/500px-Colored_neural_network.svg.png" alt="Diagram of an artificial neural network with input, hidden and output layers">
+					<figcaption>Large platforms rank videos with neural networks</figcaption>
+				</figure>
+
+				<p>An important detail is <em>what</em> the ranking model tries to predict. YouTube’s model doesn’t predict whether you will click on a video, but how long you are expected to watch it. This choice was made because clicks can be fooled by misleading thumbnails, while watch time is harder to fake. It also shows something that is true of every recommender:</p>
+
+				<p class="highlight">every recommender optimizes a goal that someone has chosen.</p>
+
+				<p>Clicks, watch time, purchases, likes: each goal produces a different feed, and none of them is neutral.</p>
+
+				<h2>The feedback loop</h2>
+
+				<p>Finally, recommenders work in a <strong>feedback loop</strong>. You react to what you are shown, and your reactions become new training data for the next round of recommendations. This makes personalization very fast: after a few minutes on a new app, the feed already seems to know you. But the loop also reinforces existing patterns, because the system mostly learns from what it decided to show you in the first place.</p>
+
+				<p>A system that learns this quickly what keeps us watching is extremely powerful. But how much of what we watch is really chosen by the algorithm, and why do we find it so hard to put the phone down?</p>
+				<aside class="sources">
+					<h2>Sources</h2>
+					<ul>
+						<li><a href="https://doi.org/10.1109/MIC.2003.1167344" target="_blank" rel="noopener">https://doi.org/10.1109/MIC.2003.1167344</a></li>
+						<li><a href="https://doi.org/10.1109/MC.2009.263" target="_blank" rel="noopener">https://doi.org/10.1109/MC.2009.263</a></li>
+						<li><a href="https://doi.org/10.1145/2959100.2959190" target="_blank" rel="noopener">https://doi.org/10.1145/2959100.2959190</a></li>
+						<li><a href="https://en.wikipedia.org/wiki/Collaborative_filtering" target="_blank" rel="noopener">https://en.wikipedia.org/wiki/Collaborative_filtering</a></li>
+						<li><a href="https://commons.wikimedia.org/wiki/File:Free_Record_Shop.jpg" target="_blank" rel="noopener">https://commons.wikimedia.org/wiki/File:Free_Record_Shop.jpg</a></li>
+						<li><a href="https://commons.wikimedia.org/wiki/File:Collaborative_filtering.gif" target="_blank" rel="noopener">https://commons.wikimedia.org/wiki/File:Collaborative_filtering.gif</a></li>
+						<li><a href="https://commons.wikimedia.org/wiki/File:Colored_neural_network.svg" target="_blank" rel="noopener">https://commons.wikimedia.org/wiki/File:Colored_neural_network.svg</a></li>
+					</ul>
+				</aside>
+			</section>
+		</main>
+		<footer id="article">
+			<a href="what-is-a-recommender-system.html">&#10094&#10094&#10094 What is a recommender system?</a>
+			<a id="back-to-top" href="#">Back to top</a>
+			<a href="why-is-it-so-hard-to-stop-scrolling.html">Why is it so hard to stop scrolling? &#10095&#10095&#10095</a>
+		</footer>
+    </body>
+</html>
