@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Computer Vision &amp; Player Tracking in Football - AI in Everyday Life</title> <!-- ARTICLE TITLE -->
+		<link rel="icon" href="../../layout/ai-icon.png">
+		<link rel="stylesheet" href="../../css/global.css">
+		<!-- CUSTOM EXTERNAL CSS -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="description" content="How computer vision teaches machines to understand images and video, and how football uses it to track players and the ball, from FIFA&#39;s semi-automated offside technology to amateur analytics."> <!-- ARTICLE DESCRIPTION -->
+		<meta name="author" content="Mohamed El Bayad">
+		<style>
+			:root {
+				--template-color: var(--second-main-topic-color);
+			}
+			
+			/* CUSTOM INTERNAL CSS */
+			
+			.article-section h2 {
+				margin-block: 1.8em 0.4em;
+				font-size: 1.3em;
+				font-weight: 500;
+				color: var(--template-color);
+			}
+			
+			.article-section h3 {
+				margin-block: 1.4em 0.2em;
+				font-size: 1.1em;
+				font-weight: 500;
+				color: var(--second-main-topic-color-pale);
+			}
+			
+			.article-section ul {
+				display: flex;
+				flex-direction: column;
+				gap: 0.5em;
+				margin: 0.8em 0 0.8em 1.5em;
+				line-height: 1.4;
+			}
+			
+			.article-section li::marker {
+				color: var(--template-color);
+			}
+			
+			.article-section figure {
+				max-width: 500px;
+				margin: 2.5em auto;
+			}
+			
+			.article-section figure img {
+				width: 100%;
+				border: var(--article-card-border-style);
+				border-radius: var(--global-border-radius);
+			}
+			
+			.article-section figcaption {
+				margin-top: 0.6em;
+				font-size: 0.9em;
+				font-style: italic;
+				text-align: center;
+				opacity: 0.7;
+			}
+			
+			.sources {
+				margin-top: 3em;
+				padding: 1em 1.5em;
+				border-left: var(--global-border-thickness) solid var(--template-color);
+				background-color: var(--secondary-bg-color);
+				border-radius: 0 var(--global-border-radius) var(--global-border-radius) 0;
+				font-size: 0.85em;
+			}
+			
+			.article-section .sources h2 {
+				margin: 0;
+				font-size: 1em;
+				font-weight: 600;
+				text-transform: uppercase;
+				color: var(--template-color);
+			}
+			
+			.sources ul {
+				gap: 0.3em;
+				word-break: break-word;
+			}
+		</style>
+	</head>
+	<body id="article">
+		<nav>
+			<a id="back-to-homepage" href="../../html/index.html"><img src="../../layout/logotype.png" alt="Return to the homepage"></a>
+			<ul>
+				<li id="first-main-topic">
+					<a href="../../html/index.html#introduction-to-ai">Introduction to AI</a>
+					<ul class="dropdown">
+						<li><a href="../../html/index.html#history-of-ai">History of AI</a></li>
+						<li><a href="../../html/index.html#basic-concepts">Basic Concepts</a></li>
+					</ul>
+				</li>
+				<li id="second-main-topic">
+					<a href="../../html/index.html#ai-technologies">AI Technologies</a>
+					<ul class="dropdown">
+						<li><a href="../../html/index.html#interactions">Interactions</a></li>
+						<li><a href="../../html/index.html#language-technologies">Language Technologies</a></li>
+						<li><a href="../../html/index.html#robotics">Robotics</a></li>
+						<li><a href="../../html/index.html#world-building">World Building</a></li>
+					</ul>
+				</li>
+				<li id="third-main-topic">
+					<a href="../../html/index.html#impact-and-ethics">Impact and Ethics</a>
+					<ul class="dropdown">
+						<li><a href="../../html/index.html#ethics">Ethics</a></li>
+						<li><a href="../../html/index.html#limitations">Limitations</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+		<!-- PUT YOUR CONTENT ONLY INSIDE THE <main> TAG, AFTER LINKS AND TITLE SECTION -->
+		<main>
+			<!-- PREVIOUS/NEXT ARTICLE LINKS -->
+			<a id="previous-article" href="intro-to-applications.html" aria-label="Read previous article" title="Previous article">&#10094;</a>
+			<a id="next-article" href="what-is-a-recommender-system.html" aria-label="Read next article" title="Next article">&#10095;</a>
+			<!-- ARTICLE TITLE (START) -->
+			<section id="article-title">
+				<div>
+					<h1>Computer Vision &amp; Player Tracking in Football</h1>
+					<p id="article-subtitle">From Pixels to Tactical Data</p>
+					<p id="author"><span>by </span>Mohamed El Bayad</p>
+				</div>
+			</section>
+			<!-- ARTICLE SECTION (START) -->
+			<section class="article-section">
+				<h2>1. Short overview</h2>
+				<p>Computer vision is the field of AI that teaches machines to understand images and video, through recognition, reconstruction and reorganization. A model learns from labelled and augmented data, and a CNN extracts features layer by layer. It covers tasks such as classification, object detection, segmentation and tracking, and its history runs from experiments on cats in the 1950s to ImageNet (2009) and AlexNet (2012). Applications range from cashierless stores and virtual try-on to football, where FIFA's semi-automated offside technology (SAOT) tracks the ball and players with 16 cameras.</p>
+
+				<h2>2. Fuller summary</h2>
+
+				<h3>Definition and the 3 R</h3>
+				<p>Computer vision is a subfield of AI that equips machines to process, analyse and interpret visual inputs such as images and videos, using machine learning to derive meaningful information. It is pictured as three processes that inform each other. Recognition identifies actions, objects, people, places and writing. Reconstruction derives the three-dimensional characteristics of those entities. Reorganization infers the relationships between them. (IBM)</p>
+
+				<h3>How it works</h3>
+				<p>The workflow starts with data gathering: images or videos must be collected and labelled, for example chest X-rays marked normal or pneumonia. Preprocessing then cleans and enhances the data, and data augmentation, such as rotating or flipping images, expands the dataset. Next comes model selection (CNNs for images, RNNs for sequences such as video frames, vision transformers as a growing alternative), then training. Training runs a forward pass, measures the error with a loss function, applies backpropagation to compute the gradient of the loss for each weight, and uses gradient descent to update the weights. (IBM)</p>
+				<p>A CNN has three kinds of layers. The convolutional layer extracts features such as colours, edges, shapes and textures by sliding a filter over the pixel matrix. The pooling layer shrinks the feature map and keeps the essential features. The fully connected layer classifies, giving a probability for each class. (IBM)</p>
+
+				<h3>Main tasks</h3>
+				<ul>
+					<li>Image classification: assigns an image to a predefined class.</li>
+					<li>Object detection: locates objects with bounding boxes and classifies them. R-CNN works in two stages; YOLO works in a single pass and is fast enough for real time.</li>
+					<li>Image segmentation: pixel-level version of detection (semantic, instance, panoptic).</li>
+					<li>Object tracking: follows an object across frames and keeps its continuity.</li>
+					<li>Pose estimation: gauges the position of body parts to recognise gestures and track movement.</li>
+					<li>Facial recognition: applies image recognition to facial geometry, for example to unlock a phone.</li>
+					<li>OCR: converts text in images into machine-readable text.</li>
+				</ul>
+				<p>(IBM)</p>
+
+				<figure>
+					<img src="../../contributors/mohamed-el-bayad/1_VaeR_rVOBAe_0gOm5uN8vw.png" alt="Object Detection and Bounding Boxes on Football Match">
+					<figcaption>Figure 1: Object detection utilizing bounding boxes and confidence scores to isolate and classify players and objects on the pitch.</figcaption>
+				</figure>
+
+				<figure>
+					<img src="../../contributors/mohamed-el-bayad/1714476337749.png" alt="Semantic Segmentation and Bounding Boxes">
+					<figcaption>Figure 2: Semantic segmentation and bounding box detection isolating individual players and objects on the pitch.</figcaption>
+				</figure>
+
+				<figure>
+					<img src="../../contributors/mohamed-el-bayad/Computer-Vision-in-Sports-Analytics-16-1920x1466-optimized.webp" alt="Real-time Player Tracking and Fatigue Analysis">
+					<figcaption>Figure 3: Real-time player tracking combined with physiological metrics and workload/fatigue estimation.</figcaption>
+				</figure>
+
+				<h3>History</h3>
+				<p>In the 1950s and 1960s, neurophysiologists showed cats arrays of images while recording neural activity and found that the animals responded first to lines, so image processing starts with simple shapes. Around then, the first image scanning technology appeared. In 1982, David Marr showed that vision is hierarchical, and Kunihiko Fukushima developed the neocognitron, which included convolutional layers. By 2000 the focus was image classification and object recognition. The ImageNet dataset appeared in 2009, and in 2012 a University of Toronto team created AlexNet, a CNN trained on ImageNet that significantly reduced the error rate. (IBM)</p>
+
+				<h3>Applications and case study</h3>
+				<p>Amazon's Just Walk Out technology uses computer vision to track what customers pick, so they can leave without queuing at a till. Online stores combine augmented reality, face recognition and pose estimation for virtual try-on of clothes, eyewear or makeup. Other uses include agriculture, autonomous vehicles, healthcare, manufacturing, robotics and space exploration. (IBM)</p>
+				<p>Football case: SAOT. With video assistant referees, offside became hard to judge because it depends on the exact moment the ball is played and on the positions of the second-to-last defender and the attacker. FIFA's system uses 16 dedicated cameras to track the ball and players, typically 50 times per second, with 29 data points per player in each frame; ball data comes from optical tracking and, where available, a connected-ball sensor. When an attacker who was offside at the moment of the pass receives the ball, the system alerts the VARs, who review the decision before it reaches the on-field officials. Advanced SAOT also sends an audio signal to on-field officials for clear offsides. A 3D animation built from the same data shows the decision to fans. (FIFA)</p>
+				<p>The same logic works at amateur level with a simpler chain: detection, tracking, team assignment, pitch calibration (a homography that maps pixels to metres), then analytics. Its limits are occlusion, camera angle, the small and often hidden ball, and video quality. (Coaching guide) An open-source version of this idea was built in one month from Roboflow's tutorials and exports tracking data in the Metrica CSV standard. (Roboflow article) For comparison, goal-line technology uses seven cameras at each end and betters the FIFA margin of error of 3 cm. (Hawk-Eye, Premier League)</p>
+
+				<figure>
+					<img src="../../contributors/mohamed-el-bayad/Roberto-Carlos-Pose-Estimation-2-optimized-1.webp" alt="Skeletal Pose Estimation">
+					<figcaption>Figure 4: Skeletal joint mapping and pose estimation tracking biomechanical movements of players.</figcaption>
+				</figure>
+
+				<h2>3. Short overview (Key words)</h2>
+				<ul>
+					<li>Computer vision: machines understand images and video</li>
+					<li>3 R: recognition &rarr; reconstruction &rarr; reorganization</li>
+					<li>Labelled data &rarr; augmentation &rarr; model &rarr; training</li>
+					<li>CNN: convolution &rarr; pooling &rarr; fully connected</li>
+					<li>Tasks: classification, detection (YOLO, R-CNN), segmentation, tracking, pose, faces, OCR</li>
+					<li>History: 1950s cats &rarr; 2009 ImageNet &rarr; 2012 AlexNet</li>
+					<li>Applications: Just Walk Out, virtual try-on</li>
+					<li>Case study: SAOT, 16 cameras, 50 times per second</li>
+				</ul>
+
+				<h2>4. Fuller summary (Key words)</h2>
+
+				<h3>Definition and the 3 R</h3>
+				<ul>
+					<li>Subfield of AI: process, analyse, interpret images and video</li>
+					<li>Recognition &rarr; objects, people, places, writing</li>
+					<li>Reconstruction &rarr; 3D characteristics</li>
+					<li>Reorganization &rarr; relationships between entities</li>
+				</ul>
+
+				<h3>How it works</h3>
+				<ul>
+					<li>Data gathering &rarr; labelled images</li>
+					<li>Preprocessing &rarr; cleaning, brightness, resizing</li>
+					<li>Augmentation &rarr; rotate, flip</li>
+					<li>Model selection &rarr; CNN, RNN, ViT</li>
+					<li>Training &rarr; forward pass &rarr; loss &rarr; backpropagation &rarr; gradient descent</li>
+					<li>CNN layers &rarr; convolution (colours, edges, shapes, textures) &rarr; pooling &rarr; fully connected (probabilities)</li>
+				</ul>
+
+				<h3>Main tasks</h3>
+				<ul>
+					<li>Classification &rarr; one label per image</li>
+					<li>Detection &rarr; bounding boxes; R-CNN (two stages), YOLO (one pass, real time)</li>
+					<li>Segmentation &rarr; pixel level</li>
+					<li>Tracking &rarr; same object across frames</li>
+					<li>Pose estimation &rarr; body parts, gestures</li>
+					<li>Facial recognition &rarr; facial geometry</li>
+					<li>OCR &rarr; text in images</li>
+				</ul>
+
+				<h3>History</h3>
+				<ul>
+					<li>1950s to 1960s &rarr; cats respond to lines first</li>
+					<li>1982 &rarr; Marr (hierarchy), Fukushima (neocognitron)</li>
+					<li>2000 &rarr; classification and recognition</li>
+					<li>2009 &rarr; ImageNet</li>
+					<li>2012 &rarr; AlexNet (Toronto), lower error rate</li>
+				</ul>
+
+				<h3>Applications and case study</h3>
+				<ul>
+					<li>Amazon Just Walk Out &rarr; no checkout</li>
+					<li>Virtual try-on &rarr; AR + face recognition + pose estimation</li>
+					<li>SAOT &rarr; 16 cameras, 50 times per second, 29 data points per player</li>
+					<li>VAR reviews &rarr; advanced SAOT sends audio signal to officials</li>
+					<li>Amateur chain &rarr; detection &rarr; tracking &rarr; teams &rarr; calibration &rarr; analytics</li>
+					<li>Limits &rarr; occlusion, camera angle, ball, video quality</li>
+					<li>Goal line &rarr; 7 cameras per end, better than 3 cm</li>
+				</ul>
+
+				<aside class="sources">
+					<h2>5. References</h2>
+					<ul>
+						<li>IBM. What is computer vision? &mdash; <a href="https://www.ibm.com/think/topics/computer-vision" target="_blank" rel="noopener">https://www.ibm.com/think/topics/computer-vision</a> (cited as IBM)</li>
+						<li>Comonitski, J. Machine Learning &amp; Computer Vision: A Better Match Tactician than Pep Guardiola? Medium &mdash; <a href="https://medium.com/@johncomonitski/machine-learning-computer-vision-a-better-match-tactician-than-pep-guardiola-1b44924968e9" target="_blank" rel="noopener">https://medium.com/@johncomonitski/machine-learning-computer-vision-a-better-match-tactician-than-pep-guardiola-1b44924968e9</a> (cited as Roboflow article)</li>
+						<li>FIFA. Semi-automated offside technology &mdash; <a href="https://inside.fifa.com/innovation/innovating-the-game/semi-automated-offside-technology" target="_blank" rel="noopener">https://inside.fifa.com/innovation/innovating-the-game/semi-automated-offside-technology</a> (cited as FIFA)</li>
+						<li>Premier League. Goal-line technology explainer (Hawk-Eye) &mdash; <a href="https://www.premierleague.com/en/news/60515" target="_blank" rel="noopener">https://www.premierleague.com/en/news/60515</a> (cited as Hawk-Eye, Premier League)</li>
+						<li>Scrum Soccer. Computer vision football player tracking &mdash; <a href="https://scrumsoccer.com/computer-vision-football-player-tracking/" target="_blank" rel="noopener">https://scrumsoccer.com/computer-vision-football-player-tracking/</a> (cited as Coaching guide)</li>
+					</ul>
+				</aside>
+			</section>
+		</main>
+		<!-- PUT YOUR CONTENT ONLY INSIDE THE <main> TAG, BEFORE THE FOOTER -->
+		<footer id="article">
+			<a href="intro-to-applications.html">&#10094;&#10094;&#10094; Artificial Intelligence in Our Everyday Lives</a>
+			<a id="back-to-top" href="#" title="Back to top"><span>Back to top</span><span>&#x2B06;</span></a>
+			<a href="what-is-a-recommender-system.html">What is a recommender system, and how does it work? &#10095;&#10095;&#10095;</a>
+		</footer>
+    </body>
+</html>
