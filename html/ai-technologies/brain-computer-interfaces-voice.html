@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Brain Signals and AI - The Human Side of AI</title> <!-- ARTICLE TITLE -->
+		<link rel="icon" href="../../layout/ai-icon.png">
+		<link rel="stylesheet" href="../../css/global.css">
+		<!-- CUSTOM EXTERNAL CSS -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="description" content="How brain-computer interfaces help paralyzed patients type and speak again."> <!-- ARTICLE DESCRIPTION -->
+		<meta name="author" content="Nguyen Tuan Minh"> <!-- ARTICLE AUTHOR -->
+		<style>
+			:root {
+				--template-color: var(--second-main-topic-color);
+			}
+
+			/* CUSTOM INTERNAL CSS */
+
+			.article-section {
+				width: 80%;
+				margin: 0 auto;
+			}
+
+			.article-section ul,
+			.article-section ol {
+				display: flex;
+				flex-direction: column;
+				gap: 0.5em;
+				margin: 0.8em 0 0.8em 1.5em;
+				line-height: 1.4;
+			}
+
+			.article-section li::marker {
+				color: var(--template-color);
+			}
+
+			.article-section strong {
+				font-weight: 600;
+				color: var(--second-main-topic-color-pale);
+			}
+
+			.article-section figure {
+				max-width: 500px;
+				margin: 2.5em auto;
+			}
+
+			.article-section figure img {
+				width: 100%;
+				border: var(--article-card-border-style);
+				border-radius: var(--global-border-radius);
+			}
+
+			.article-section h2 {
+				margin: 1.4em 0 0.6em 0;
+				color: var(--second-main-topic-color);
+			}
+
+			.article-credits {
+				margin-top: 3.5em;
+				padding-top: 1.5em;
+				border-top: 1px solid var(--global-border-color);
+				text-align: center;
+			}
+
+			.article-credits h4 {
+				font-weight: 400;
+				text-transform: uppercase;
+				letter-spacing: 0.5px;
+				color: #4e6756;
+			}
+
+			.article-credits h4 span.author-highlight {
+				color: var(--main-font-color);
+			}
+
+			.article-credits h4 span.group-highlight {
+				color: var(--group-color);
+			}
+
+			.article-credits .ai-note {
+				font-size: 0.8em;
+				color: #4e6756;
+				margin-top: 0.4em;
+				font-style: italic;
+			}
+
+			.article-credits .members-short {
+				font-size: 0.82em;
+				color: var(--main-font-color);
+				opacity: 0.8;
+				max-width: 720px;
+				margin: 1em auto;
+				line-height: 1.5;
+			}
+
+			.article-credits .credits-list {
+				margin-top: 1.2em;
+				padding: 1em 1.5em;
+				background-color: rgba(167, 181, 158, 0.32);
+				border-left: var(--global-border-thickness) solid var(--template-color);
+				border-radius: 0 var(--global-border-radius) var(--global-border-radius) 0;
+				text-align: left;
+				font-size: 0.82em;
+			}
+
+			.article-credits .credits-list h5 {
+				font-size: 0.95em;
+				text-transform: uppercase;
+				color: var(--template-color);
+				margin-bottom: 0.5em;
+			}
+
+			.article-credits .credits-list ul {
+				gap: 0.3em;
+				word-break: break-all;
+				margin: 0.4em 0 0 1.2em;
+			}
+		</style>
+	</head>
+	<body id="article">
+		<nav>
+			<a id="back-to-homepage" href="../../html/index.html"><img src="../../layout/logotype.png" alt="Return to the homepage"></a>
+			<ul>
+				<li id="first-main-topic">
+					<a href="../../html/index.html#introduction-to-ai">Introduction to AI</a>
+					<ul class="dropdown">
+						<li><a href="../../html/index.html#history-of-ai">History of AI</a></li>
+						<li><a href="../../html/index.html#basic-concepts">Basic Concepts</a></li>
+					</ul>
+				</li>
+				<li id="second-main-topic">
+					<a href="../../html/index.html#ai-technologies">AI Technologies</a>
+					<ul class="dropdown">
+						<li><a href="../../html/index.html#interactions">Interactions</a></li>
+						<li><a href="../../html/index.html#language-technologies">Language Technologies</a></li>
+						<li><a href="../../html/index.html#robotics">Robotics</a></li>
+						<li><a href="../../html/index.html#world-building">World Building</a></li>
+					</ul>
+				</li>
+				<li id="third-main-topic">
+					<a href="../../html/index.html#impact-and-ethics">Impact and Ethics</a>
+					<ul class="dropdown">
+						<li><a href="../../html/index.html#ethics">Ethics</a></li>
+						<li><a href="../../html/index.html#limitations">Limitations</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+		<!-- PUT YOUR CONTENT ONLY INSIDE THE <main> TAG, AFTER LINKS AND TITLE SECTION -->
+		<main>
+			<!-- PREVIOUS/NEXT ARTICLE LINKS -->
+			<a id="previous-article" href="bionic-limbs-learning-movement.html" aria-label="Read previous article" title="Previous article">&#10094;</a>
+			<a id="next-article" href="interacting-with-human-language-and-voice.html" aria-label="Read next article" title="Next article">&#10095;</a>
+			<!-- ARTICLE TITLE (START) -->
+			<section id="article-title">
+				<div>
+					<h1>Brain Signals and AI</h1>
+					<p id="article-subtitle">How brain-computer interfaces help paralyzed patients type and speak again</p>
+					<p class="article-title-paragraph">In conditions like ALS or after a severe brainstem stroke, a person can lose the ability to move or speak while their mind stays completely clear. Since the muscles no longer receive instructions, researchers have been working on ways to read the signal directly from the brain.</p>
+					<p id="author"><span>by </span>Nguyen Tuan Minh</p>
+				</div>
+			</section>
+			<!-- ARTICLE SECTIONS (START) -->
+			<section class="article-section">
+				<h2>Recording signals from the brain</h2>
+				<p>A brain-computer interface (BCI) connects brain activity to a computer. There are two main ways to record the signal. The easiest and safest way is an EEG cap worn on the head, which picks up electrical activity through the scalp. The downside is that the skull blurs the signal, a bit like trying to listen to a conversation in the next room through a thick wall.</p>
+				<p>For patients with severe paralysis, doctors in clinical trials sometimes place tiny sensor arrays directly on the surface of the motor cortex, the part of the brain that controls movement. Even there, millions of neurons fire at the same time, so the recording looks like noisy waves rather than clear words.</p>
+
+				<figure>
+					<img src="../../contributors/minh-nguyen/eeg-headset.jpg" alt="A person wearing an electroencephalography (EEG) cap with electrodes">
+				</figure>
+
+				<h2>From slow spelling to 62 words per minute</h2>
+				<p>For a long time, brain interfaces were painfully slow. A patient had to move a cursor across an on-screen keyboard and select one letter at a time, typing only a few words per minute. In the last few years, machine learning changed the approach completely:</p>
+				<ul>
+					<li><strong>Imagined handwriting (2021):</strong> researchers at Stanford asked a paralyzed man to imagine holding a pen and writing letters by hand. Even though his hand could not move, his motor cortex still produced the same patterns, and an AI model decoded the letters at 90 characters per minute.</li>
+					<li><strong>Attempted speech (2023):</strong> in a follow-up study with a patient with ALS, the model learned to recognize the brain activity for 39 English speech sounds when she tried to speak. Combined with an autocomplete language model, her words appeared on screen at 62 words per minute, which is almost half the speed of normal conversation.</li>
+				</ul>
+
+				<h2>Can a computer read your mind?</h2>
+				<p>News headlines often make brain interfaces sound like mind-reading machines, which is not how they work at all. Current decoders cannot read your inner thoughts, memories or feelings. They only pick up motor signals from the movement area of the brain, which means the user has to actively try to move their mouth or hand for the system to decode anything.</p>
+				<p>Right now, high-speed brain implants only exist in a handful of university hospitals. Before they can become everyday medical tools, the hardware needs to last for years without losing signal quality, and strict rules are needed to protect patients' neural data.</p>
+
+				<div class="article-credits">
+					<div class="credits-list">
+						<h5>Sources &amp; Image Credits</h5>
+						<ul>
+							<li>Image Credit: EEG recording cap with electrodes (CC BY-SA 3.0, via Wikimedia Commons) - <a href="https://commons.wikimedia.org/wiki/File:EEG_cap.jpg" target="_blank" rel="noopener">https://commons.wikimedia.org/wiki/File:EEG_cap.jpg</a></li>
+							<li>Willett, F. R. et al. (2023), A High-Performance Speech Neuroprosthesis, Nature: <a href="https://www.nature.com/articles/s41586-023-06377-x" target="_blank" rel="noopener">https://www.nature.com/articles/s41586-023-06377-x</a></li>
+							<li>Willett, F. R. et al. (2021), High-Performance Brain-to-Text Communication via Handwriting, Nature: <a href="https://www.nature.com/articles/s41586-021-03506-2" target="_blank" rel="noopener">https://www.nature.com/articles/s41586-021-03506-2</a></li>
+							<li>NIH Research Matters - Brain-computer interface helps paralyzed man speak: <a href="https://www.nih.gov/news-events/nih-research-matters/brain-computer-interface-helps-paralyzed-man-speak" target="_blank" rel="noopener">https://www.nih.gov/news-events/nih-research-matters/brain-computer-interface-helps-paralyzed-man-speak</a></li>
+						</ul>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer id="article">
+			<a href="bionic-limbs-learning-movement.html">&#10094;&#10094;&#10094; Bionic Limbs: Learning Human Movement</a>
+			<a id="back-to-top" href="#" title="Back to top"><span>Back to top</span><span>&#x2B06;</span></a>
+			<a href="interacting-with-human-language-and-voice.html">Interacting with human language and voice &#10095;&#10095;&#10095;</a>
+		</footer>
+	</body>
+</html>

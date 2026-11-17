@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>AI and the Human Body - The Human Side of AI</title> <!-- ARTICLE TITLE -->
+		<link rel="icon" href="../../layout/ai-icon.png">
+		<link rel="stylesheet" href="../../css/global.css">
+		<!-- CUSTOM EXTERNAL CSS -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="description" content="How computers help doctors read X-rays, scans and heart signals."> <!-- ARTICLE DESCRIPTION -->
+		<meta name="author" content="Nguyen Tuan Minh"> <!-- ARTICLE AUTHOR -->
+		<style>
+			:root {
+				--template-color: var(--second-main-topic-color);
+			}
+
+			/* CUSTOM INTERNAL CSS */
+
+			.article-section {
+				width: 80%;
+				margin: 0 auto;
+			}
+
+			.article-section ul,
+			.article-section ol {
+				display: flex;
+				flex-direction: column;
+				gap: 0.5em;
+				margin: 0.8em 0 0.8em 1.5em;
+				line-height: 1.4;
+			}
+
+			.article-section li::marker {
+				color: var(--template-color);
+			}
+
+			.article-section strong {
+				font-weight: 600;
+				color: var(--second-main-topic-color-pale);
+			}
+
+			.article-section figure {
+				max-width: 500px;
+				margin: 2.5em auto;
+			}
+
+			.article-section figure img {
+				width: 100%;
+				border: var(--article-card-border-style);
+				border-radius: var(--global-border-radius);
+			}
+
+			.article-section h2 {
+				margin: 1.4em 0 0.6em 0;
+				color: var(--second-main-topic-color);
+			}
+
+			.article-credits {
+				margin-top: 3.5em;
+				padding-top: 1.5em;
+				border-top: 1px solid var(--global-border-color);
+				text-align: center;
+			}
+
+			.article-credits h4 {
+				font-weight: 400;
+				text-transform: uppercase;
+				letter-spacing: 0.5px;
+				color: #4e6756;
+			}
+
+			.article-credits h4 span.author-highlight {
+				color: var(--main-font-color);
+			}
+
+			.article-credits h4 span.group-highlight {
+				color: var(--group-color);
+			}
+
+			.article-credits .ai-note {
+				font-size: 0.8em;
+				color: #4e6756;
+				margin-top: 0.4em;
+				font-style: italic;
+			}
+
+			.article-credits .members-short {
+				font-size: 0.82em;
+				color: var(--main-font-color);
+				opacity: 0.8;
+				max-width: 720px;
+				margin: 1em auto;
+				line-height: 1.5;
+			}
+
+			.article-credits .credits-list {
+				margin-top: 1.2em;
+				padding: 1em 1.5em;
+				background-color: rgba(167, 181, 158, 0.32);
+				border-left: var(--global-border-thickness) solid var(--template-color);
+				border-radius: 0 var(--global-border-radius) var(--global-border-radius) 0;
+				text-align: left;
+				font-size: 0.82em;
+			}
+
+			.article-credits .credits-list h5 {
+				font-size: 0.95em;
+				text-transform: uppercase;
+				color: var(--template-color);
+				margin-bottom: 0.5em;
+			}
+
+			.article-credits .credits-list ul {
+				gap: 0.3em;
+				word-break: break-all;
+				margin: 0.4em 0 0 1.2em;
+			}
+		</style>
+	</head>
+	<body id="article">
+		<nav>
+			<a id="back-to-homepage" href="../../html/index.html"><img src="../../layout/logotype.png" alt="Return to the homepage"></a>
+			<ul>
+				<li id="first-main-topic">
+					<a href="../../html/index.html#introduction-to-ai">Introduction to AI</a>
+					<ul class="dropdown">
+						<li><a href="../../html/index.html#history-of-ai">History of AI</a></li>
+						<li><a href="../../html/index.html#basic-concepts">Basic Concepts</a></li>
+					</ul>
+				</li>
+				<li id="second-main-topic">
+					<a href="../../html/index.html#ai-technologies">AI Technologies</a>
+					<ul class="dropdown">
+						<li><a href="../../html/index.html#interactions">Interactions</a></li>
+						<li><a href="../../html/index.html#language-technologies">Language Technologies</a></li>
+						<li><a href="../../html/index.html#robotics">Robotics</a></li>
+						<li><a href="../../html/index.html#world-building">World Building</a></li>
+					</ul>
+				</li>
+				<li id="third-main-topic">
+					<a href="../../html/index.html#impact-and-ethics">Impact and Ethics</a>
+					<ul class="dropdown">
+						<li><a href="../../html/index.html#ethics">Ethics</a></li>
+						<li><a href="../../html/index.html#limitations">Limitations</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+		<!-- PUT YOUR CONTENT ONLY INSIDE THE <main> TAG, AFTER LINKS AND TITLE SECTION -->
+		<main>
+			<!-- PREVIOUS/NEXT ARTICLE LINKS -->
+			<a id="previous-article" href="benefits-risks-and-rules-of-recommender-systems.html" aria-label="Read previous article" title="Previous article">&#10094;</a>
+			<a id="next-article" href="smart-wearables-health-clues.html" aria-label="Read next article" title="Next article">&#10095;</a>
+			<!-- ARTICLE TITLE (START) -->
+			<section id="article-title">
+				<div>
+					<h1>AI and the Human Body</h1>
+					<p id="article-subtitle">How computers help doctors read X-rays, scans and heart signals</p>
+					<p class="article-title-paragraph">Every time you go to a hospital for a check-up, you leave behind data: a blood test, a recording of your heartbeat, or an X-ray of a sprained ankle. For a long time, only trained specialists could go through these results one by one. Today, machine learning is used in hospitals to help check medical images and signals much faster.</p>
+					<p id="author"><span>by </span>Nguyen Tuan Minh</p>
+				</div>
+			</section>
+			<!-- ARTICLE SECTIONS (START) -->
+			<section class="article-section">
+				<figure>
+					<img src="../../contributors/minh-nguyen/medical-xray.jpg" alt="First medical X-ray of a human hand by Wilhelm Röntgen in 1895">
+				</figure>
+
+				<h2>Turning the body into numbers</h2>
+				<p>When Wilhelm Röntgen took the first medical X-ray of his wife's hand in 1895, the image was burned onto a glass photographic plate. A computer could not do anything with that. Before software can help a doctor, a measurement from the body has to be turned into digital numbers.</p>
+				<p>Modern hospital scans such as X-rays, CT scans and MRIs are saved directly as digital pictures made of thousands of pixels, where each pixel has a number for its brightness. Heart monitors (ECGs) work in a similar way by recording the electrical activity of the heart as a graph of numbers over time.</p>
+				<p>Once a scan or a heartbeat recording is just numbers, it can be used to train a machine learning model in three basic steps:</p>
+				<ol>
+					<li><strong>Collect examples:</strong> researchers gather thousands of past scans where doctors already know the real diagnosis.</li>
+					<li><strong>Find patterns:</strong> the model compares healthy scans with sick ones and learns which pixel patterns usually appear in each group.</li>
+					<li><strong>Test on new scans:</strong> when a new patient comes in, the program checks the image and marks areas that look suspicious.</li>
+				</ol>
+
+				<h2>Where it is actually used</h2>
+				<p>One of the most common places to find AI in a hospital is the radiology department. A single CT scan is not just one flat picture, but hundreds of cross-section slices stacked together. Going through all of them takes time, especially during a night shift. Software can scan those slices in a few seconds and put urgent cases, such as a possible brain bleed or a blood clot in the lungs, at the top of the doctor's list.</p>
+				<p>Another real example is eye screening for people with diabetes. High blood sugar can slowly damage tiny blood vessels at the back of the eye and cause blindness if nobody catches it early. Several clinics now use special cameras with built-in AI that take a photo of the retina and tell the nurse right away if the patient needs to see an eye specialist.</p>
+
+				<h2>Why it cannot replace a doctor</h2>
+				<p>Even when an algorithm is fast at spotting a shadow on a lung scan, it does not actually know medicine. It only sees the pixels in front of it. It does not know if the patient has a fever, if they had pneumonia five years ago, or what medication they are taking.</p>
+				<p>Models can also get confused when moved to a new place. A system trained on X-ray machines in one big hospital might make more errors when used in a smaller clinic with different equipment. That is why medical AI works as a second check to save time, while the real decision always stays with the doctor.</p>
+
+				<div class="article-credits">
+					<div class="credits-list">
+						<h5>Sources &amp; Image Credits</h5>
+						<ul>
+							<li>Image Credit: Wilhelm Röntgen (1895), First medical X-ray of Anna Bertha Ludwig's hand (Public Domain, via Wikimedia Commons) - <a href="https://commons.wikimedia.org/wiki/File:First_medical_X-ray_by_Wilhelm_R%C3%B6ntgen_of_his_wife_Anna_Bertha_Ludwig%27s_hand_-_18951222.jpg" target="_blank" rel="noopener">https://commons.wikimedia.org/wiki/File:First_medical_X-ray_by_Wilhelm_R%C3%B6ntgen_of_his_wife_Anna_Bertha_Ludwig%27s_hand_-_18951222.jpg</a></li>
+							<li>NIH / NIBIB - Artificial Intelligence in Medical Imaging: <a href="https://www.nibib.nih.gov/science-education/science-topics/artificial-intelligence-ai" target="_blank" rel="noopener">https://www.nibib.nih.gov/science-education/science-topics/artificial-intelligence-ai</a></li>
+							<li>U.S. FDA - AI-Based Device to Detect Diabetes-Related Eye Problems: <a href="https://www.fda.gov/news-events/press-announcements/fda-permits-marketing-artificial-intelligence-based-device-detect-certain-diabetes-related-eye" target="_blank" rel="noopener">https://www.fda.gov/news-events/press-announcements/fda-permits-marketing-artificial-intelligence-based-device-detect-certain-diabetes-related-eye</a></li>
+							<li>Wikipedia - Artificial Intelligence in Healthcare: <a href="https://en.wikipedia.org/wiki/Artificial_intelligence_in_healthcare" target="_blank" rel="noopener">https://en.wikipedia.org/wiki/Artificial_intelligence_in_healthcare</a></li>
+						</ul>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer id="article">
+			<a href="benefits-risks-and-rules-of-recommender-systems.html">&#10094;&#10094;&#10094; Benefits, risks and rules of recommender systems</a>
+			<a id="back-to-top" href="#" title="Back to top"><span>Back to top</span><span>&#x2B06;</span></a>
+			<a href="smart-wearables-health-clues.html">Smart Wearables and Health Clues &#10095;&#10095;&#10095;</a>
+		</footer>
+	</body>
+</html>

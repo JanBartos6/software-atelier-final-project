@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Bionic Limbs: Learning Human Movement - The Human Side of AI</title> <!-- ARTICLE TITLE -->
+		<link rel="icon" href="../../layout/ai-icon.png">
+		<link rel="stylesheet" href="../../css/global.css">
+		<!-- CUSTOM EXTERNAL CSS -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="description" content="How modern prosthetic hands and legs use sensors and AI to follow the body."> <!-- ARTICLE DESCRIPTION -->
+		<meta name="author" content="Nguyen Tuan Minh"> <!-- ARTICLE AUTHOR -->
+		<style>
+			:root {
+				--template-color: var(--second-main-topic-color);
+			}
+
+			/* CUSTOM INTERNAL CSS */
+
+			.article-section {
+				width: 80%;
+				margin: 0 auto;
+			}
+
+			.article-section ul,
+			.article-section ol {
+				display: flex;
+				flex-direction: column;
+				gap: 0.5em;
+				margin: 0.8em 0 0.8em 1.5em;
+				line-height: 1.4;
+			}
+
+			.article-section li::marker {
+				color: var(--template-color);
+			}
+
+			.article-section strong {
+				font-weight: 600;
+				color: var(--second-main-topic-color-pale);
+			}
+
+			.article-section figure {
+				max-width: 500px;
+				margin: 2.5em auto;
+			}
+
+			.article-section figure img {
+				width: 100%;
+				border: var(--article-card-border-style);
+				border-radius: var(--global-border-radius);
+			}
+
+			.article-section h2 {
+				margin: 1.4em 0 0.6em 0;
+				color: var(--second-main-topic-color);
+			}
+
+			.article-credits {
+				margin-top: 3.5em;
+				padding-top: 1.5em;
+				border-top: 1px solid var(--global-border-color);
+				text-align: center;
+			}
+
+			.article-credits h4 {
+				font-weight: 400;
+				text-transform: uppercase;
+				letter-spacing: 0.5px;
+				color: #4e6756;
+			}
+
+			.article-credits h4 span.author-highlight {
+				color: var(--main-font-color);
+			}
+
+			.article-credits h4 span.group-highlight {
+				color: var(--group-color);
+			}
+
+			.article-credits .ai-note {
+				font-size: 0.8em;
+				color: #4e6756;
+				margin-top: 0.4em;
+				font-style: italic;
+			}
+
+			.article-credits .members-short {
+				font-size: 0.82em;
+				color: var(--main-font-color);
+				opacity: 0.8;
+				max-width: 720px;
+				margin: 1em auto;
+				line-height: 1.5;
+			}
+
+			.article-credits .credits-list {
+				margin-top: 1.2em;
+				padding: 1em 1.5em;
+				background-color: rgba(167, 181, 158, 0.32);
+				border-left: var(--global-border-thickness) solid var(--template-color);
+				border-radius: 0 var(--global-border-radius) var(--global-border-radius) 0;
+				text-align: left;
+				font-size: 0.82em;
+			}
+
+			.article-credits .credits-list h5 {
+				font-size: 0.95em;
+				text-transform: uppercase;
+				color: var(--template-color);
+				margin-bottom: 0.5em;
+			}
+
+			.article-credits .credits-list ul {
+				gap: 0.3em;
+				word-break: break-all;
+				margin: 0.4em 0 0 1.2em;
+			}
+		</style>
+	</head>
+	<body id="article">
+		<nav>
+			<a id="back-to-homepage" href="../../html/index.html"><img src="../../layout/logotype.png" alt="Return to the homepage"></a>
+			<ul>
+				<li id="first-main-topic">
+					<a href="../../html/index.html#introduction-to-ai">Introduction to AI</a>
+					<ul class="dropdown">
+						<li><a href="../../html/index.html#history-of-ai">History of AI</a></li>
+						<li><a href="../../html/index.html#basic-concepts">Basic Concepts</a></li>
+					</ul>
+				</li>
+				<li id="second-main-topic">
+					<a href="../../html/index.html#ai-technologies">AI Technologies</a>
+					<ul class="dropdown">
+						<li><a href="../../html/index.html#interactions">Interactions</a></li>
+						<li><a href="../../html/index.html#language-technologies">Language Technologies</a></li>
+						<li><a href="../../html/index.html#robotics">Robotics</a></li>
+						<li><a href="../../html/index.html#world-building">World Building</a></li>
+					</ul>
+				</li>
+				<li id="third-main-topic">
+					<a href="../../html/index.html#impact-and-ethics">Impact and Ethics</a>
+					<ul class="dropdown">
+						<li><a href="../../html/index.html#ethics">Ethics</a></li>
+						<li><a href="../../html/index.html#limitations">Limitations</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+		<!-- PUT YOUR CONTENT ONLY INSIDE THE <main> TAG, AFTER LINKS AND TITLE SECTION -->
+		<main>
+			<!-- PREVIOUS/NEXT ARTICLE LINKS -->
+			<a id="previous-article" href="smart-wearables-health-clues.html" aria-label="Read previous article" title="Previous article">&#10094;</a>
+			<a id="next-article" href="brain-computer-interfaces-voice.html" aria-label="Read next article" title="Next article">&#10095;</a>
+			<!-- ARTICLE TITLE (START) -->
+			<section id="article-title">
+				<div>
+					<h1>Bionic Limbs: Learning Human Movement</h1>
+					<p id="article-subtitle">How modern prosthetic hands and legs use sensors and AI to follow the body</p>
+					<p class="article-title-paragraph">Think about picking up a thin plastic cup full of water. You do not have to calculate how wide to open your fingers or how hard to squeeze so the cup does not fold. Your brain and hand do it automatically. Building a mechanical limb that can do the same thing has been one of the hardest problems in engineering.</p>
+					<p id="author"><span>by </span>Nguyen Tuan Minh</p>
+				</div>
+			</section>
+			<!-- ARTICLE SECTIONS (START) -->
+			<section class="article-section">
+				<h2>How a prosthetic hand reads muscles</h2>
+				<p>When someone loses a hand, the muscles and nerves left in their forearm do not disappear. If the person thinks about closing their fist or pointing a finger, those forearm muscles still tighten slightly and create tiny electrical signals on the skin.</p>
+				<p>Electronic prosthetics (called myoelectric prosthetics) have small metal sensors inside the socket that sit against the skin and read those signals. For a long time, however, the control was very stiff: flex one muscle on the top of the arm to open the hand, flex another on the bottom to close it. If you wanted to switch from a flat pinch to a round grip, you often had to press a button with your other hand.</p>
+
+				<figure>
+					<img src="../../contributors/minh-nguyen/bionic-hand.jpg" alt="A user wearing a myoelectric prosthetic arm">
+				</figure>
+
+				<h2>Teaching the hand to recognize grips</h2>
+				<p>Newer bionic hands use machine learning instead of simple two-muscle switches. Instead of forcing the wearer to learn awkward muscle tricks, the software learns the person's own muscle patterns.</p>
+				<p>During setup, the user imagines doing different movements, such as pinching a key, holding a bottle or opening the palm flat, while several sensors record the forearm at the same time. The model learns the electrical pattern for each movement and tells the small motors in the fingers which grip to use.</p>
+				<p>A similar idea is used in bionic knees and ankles. Sensors inside the leg measure walking speed, knee angle and foot pressure dozens of times per second, so the joint stiffens automatically when walking down stairs and swings freely on flat ground.</p>
+
+				<h2>Why many people still stop using them</h2>
+				<p>Even with AI, bionic limbs are far from perfect in real life. During the day, a person's arm gets tired, skin sweats in warm weather, and the socket shifts slightly when carrying a heavy bag. All of these change the electrical signal on the skin and can make the hand misread a command at the wrong moment.</p>
+				<p>Most prosthetics also have no real sense of touch, so the user has to watch the hand closely to avoid dropping things. Because bionic arms are heavy and can cost tens of thousands of dollars, many amputees still prefer simpler, lighter mechanical hooks or passive hands for everyday chores.</p>
+
+				<div class="article-credits">
+					<div class="credits-list">
+						<h5>Sources &amp; Image Credits</h5>
+						<ul>
+							<li>Image Credit: U.S. Navy photo of a myoelectric prosthetic arm (Public Domain, via Wikimedia Commons) - <a href="https://commons.wikimedia.org/wiki/File:Myoelectric_prosthetic_arm.jpg" target="_blank" rel="noopener">https://commons.wikimedia.org/wiki/File:Myoelectric_prosthetic_arm.jpg</a></li>
+							<li>NIH / NIBIB - Rehabilitation Engineering: <a href="https://www.nibib.nih.gov/science-education/science-topics/rehabilitation-engineering" target="_blank" rel="noopener">https://www.nibib.nih.gov/science-education/science-topics/rehabilitation-engineering</a></li>
+							<li>World Health Organization (WHO) - Assistive Technology Fact Sheet: <a href="https://www.who.int/news-room/fact-sheets/detail/assistive-technology" target="_blank" rel="noopener">https://www.who.int/news-room/fact-sheets/detail/assistive-technology</a></li>
+							<li>Wikipedia - Prosthesis: <a href="https://en.wikipedia.org/wiki/Prosthesis" target="_blank" rel="noopener">https://en.wikipedia.org/wiki/Prosthesis</a></li>
+						</ul>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer id="article">
+			<a href="smart-wearables-health-clues.html">&#10094;&#10094;&#10094; Smart Wearables and Health Clues</a>
+			<a id="back-to-top" href="#" title="Back to top"><span>Back to top</span><span>&#x2B06;</span></a>
+			<a href="brain-computer-interfaces-voice.html">Brain Signals and AI &#10095;&#10095;&#10095;</a>
+		</footer>
+	</body>
+</html>
