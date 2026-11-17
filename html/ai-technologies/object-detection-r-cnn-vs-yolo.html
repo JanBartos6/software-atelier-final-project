@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Object Detection with Convolution: R-CNN vs YOLO - AI in Everyday Life</title> <!-- ARTICLE TITLE -->
+		<link rel="icon" href="../../layout/ai-icon.png">
+		<link rel="stylesheet" href="../../css/global.css">
+		<!-- CUSTOM EXTERNAL CSS -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="description" content="How convolutional object detectors work: the two-stage R-CNN family compared with the one-stage YOLO, from grid cells and loss function to Non-max Suppression."> <!-- ARTICLE DESCRIPTION -->
+		<meta name="author" content="Mohamed El Bayad">
+		<style>
+			:root {
+				--template-color: var(--second-main-topic-color);
+			}
+			
+			/* CUSTOM INTERNAL CSS */
+			
+			.article-section h2 {
+				margin-block: 1.8em 0.4em;
+				font-size: 1.3em;
+				font-weight: 500;
+				color: var(--template-color);
+			}
+			
+			.article-section h3 {
+				margin-block: 1.4em 0.2em;
+				font-size: 1.1em;
+				font-weight: 500;
+				color: var(--second-main-topic-color-pale);
+			}
+			
+			.article-section ul,
+			.article-section ol {
+				display: flex;
+				flex-direction: column;
+				gap: 0.5em;
+				margin: 0.8em 0 0.8em 1.5em;
+				line-height: 1.4;
+			}
+			
+			.article-section li::marker {
+				color: var(--template-color);
+			}
+			
+			.article-section figure {
+				max-width: 500px;
+				margin: 2.5em auto;
+			}
+			
+			.article-section figure img {
+				width: 100%;
+				border: var(--article-card-border-style);
+				border-radius: var(--global-border-radius);
+			}
+			
+			.article-section figcaption {
+				margin-top: 0.6em;
+				font-size: 0.9em;
+				font-style: italic;
+				text-align: center;
+				opacity: 0.7;
+			}
+			
+			.sources {
+				margin-top: 3em;
+				padding: 1em 1.5em;
+				border-left: var(--global-border-thickness) solid var(--template-color);
+				background-color: var(--secondary-bg-color);
+				border-radius: 0 var(--global-border-radius) var(--global-border-radius) 0;
+				font-size: 0.85em;
+			}
+			
+			.article-section .sources h2 {
+				margin: 0;
+				font-size: 1em;
+				font-weight: 600;
+				text-transform: uppercase;
+				color: var(--template-color);
+			}
+			
+			.sources ul {
+				gap: 0.3em;
+				word-break: break-word;
+			}
+		</style>
+	</head>
+	<body id="article">
+		<nav>
+			<a id="back-to-homepage" href="../../html/index.html"><img src="../../layout/logotype.png" alt="Return to the homepage"></a>
+			<ul>
+				<li id="first-main-topic">
+					<a href="../../html/index.html#introduction-to-ai">Introduction to AI</a>
+					<ul class="dropdown">
+						<li><a href="../../html/index.html#history-of-ai">History of AI</a></li>
+						<li><a href="../../html/index.html#basic-concepts">Basic Concepts</a></li>
+					</ul>
+				</li>
+				<li id="second-main-topic">
+					<a href="../../html/index.html#ai-technologies">AI Technologies</a>
+					<ul class="dropdown">
+						<li><a href="../../html/index.html#interactions">Interactions</a></li>
+						<li><a href="../../html/index.html#language-technologies">Language Technologies</a></li>
+						<li><a href="../../html/index.html#robotics">Robotics</a></li>
+						<li><a href="../../html/index.html#world-building">World Building</a></li>
+					</ul>
+				</li>
+				<li id="third-main-topic">
+					<a href="../../html/index.html#impact-and-ethics">Impact and Ethics</a>
+					<ul class="dropdown">
+						<li><a href="../../html/index.html#ethics">Ethics</a></li>
+						<li><a href="../../html/index.html#limitations">Limitations</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+		<!-- PUT YOUR CONTENT ONLY INSIDE THE <main> TAG, AFTER LINKS AND TITLE SECTION -->
+		<main>
+			<!-- PREVIOUS/NEXT ARTICLE LINKS -->
+			<a id="previous-article" href="computer-vision-and-player-tracking-in-football.html" aria-label="Read previous article" title="Previous article">&#10094;</a>
+			<a id="next-article" href="sports-analytics-with-roboflow.html" aria-label="Read next article" title="Next article">&#10095;</a>
+			<!-- ARTICLE TITLE (START) -->
+			<section id="article-title">
+				<div>
+					<h1>Object Detection with Convolution</h1>
+					<p id="article-subtitle">R-CNN vs YOLO</p>
+					<p id="author"><span>by </span>Mohamed El Bayad</p>
+				</div>
+			</section>
+			<!-- ARTICLE SECTION (START) -->
+			<section class="article-section">
+				<h2>1. Short overview</h2>
+				<p>Object detection locates and classifies objects in an image. This article by Vincent Coulombe (Syntell, 1 Sep 2023) compares two convolutional approaches. Two-stage methods (the R-CNN family) first propose regions, then classify them, and are accurate but slow: from about 49 s per image for R-CNN down to 0.2 s for Faster R-CNN. The one-stage method YOLO processes the whole image in a single pass, with YOLO-NAS reaching about 0.002 s per image. From version 3 on, YOLO is both faster and more accurate than R-CNN. YOLOv1 divides the image into a 7&times;7 grid and outputs 49 candidate detections, which Non-max Suppression filters.</p>
+
+				<h2>2. Fuller summary</h2>
+
+				<h3>Two-stage vs one-stage</h3>
+				<p>Two-stage methods (R-CNN family) split detection into proposing regions that may contain objects, then classifying them. They were innovative but too slow for real time. One-stage methods (YOLO family) detect objects directly in a single step, which makes real-time uses such as autonomous driving and live surveillance possible.</p>
+
+				<h3>The R-CNN family</h3>
+				<p>R-CNN uses Selective Search to propose about 2,000 regions, which are cropped, resized and passed through a pretrained CNN. A classic classifier, an SVM, labels each one. The CNN runs 2,000 separate inferences per image, taking about 49 s. Fast R-CNN runs the CNN once on the whole image to produce feature maps, applies Selective Search on those maps, and uses a neural network instead of an SVM to classify and predict positions (taking about 2.3 s, though Selective Search still takes about 90% of the time). Faster R-CNN replaces Selective Search with a second CNN, the Region Proposal Network (RPN), reaching 0.2 s per image.</p>
+
+				<figure>
+					<img src="../../contributors/mohamed-el-bayad/rcnn-vs-yolo-comparison.jpg" alt="Comparison between Faster R-CNN and YOLOv8s">
+					<figcaption>Figure 1: Comparison of object detection results across raw image, Faster R-CNN, YOLOv8s, and VAR-YOLOv8s.</figcaption>
+				</figure>
+
+				<h3>YOLO: overview</h3>
+				<p>YOLO has had about ten versions, and the latest, YOLO-NAS, takes about 0.002 s per image on modern GPUs with 8-bit tensors. From YOLOv3, YOLO was both faster and more accurate than R-CNN, and the gap keeps growing. The basic principle of YOLOv1 remains the foundation of later versions.</p>
+
+				<figure>
+					<img src="../../contributors/mohamed-el-bayad/yolo-football-detection.webp" alt="YOLO Fine-tuning on Football Match">
+					<figcaption>Figure 2: Real-time object detection and bounding box confidence scores using fine-tuned YOLO on a football match.</figcaption>
+				</figure>
+
+				<h3>How YOLOv1 works (theory)</h3>
+				<p>The image is divided into a regular grid of cells, for example 7&times;7. A cell is responsible for an object only if the object’s centre falls inside it. Each cell predicts a confidence score that it contains an object centre, the centre coordinates (x, y) relative to the cell’s top-left corner, the width and height (w, h) relative to the cell, and the most likely class. This gives 7&times;7 = 49 potential detections, so false ones must be filtered.</p>
+
+				<h3>How YOLOv1 works (in practice)</h3>
+				<p>The output tensor is 7&times;7&times;30 = 1,470 values: 30 per cell. Each cell predicts 5 values for confidence and (x, y, w, h), another 5 values for a second attempt at the same prediction, and 20 values for class probabilities (PascalVOC has 20 classes), where only the highest is kept at inference. Weaknesses include a maximum of 49 detections, cells all the same size, slow training from random initialization, and no clear reason for two predictions per cell. Later versions fixed these issues, and the network itself is a standard CNN inspired by ResNet.</p>
+
+				<h3>Loss function</h3>
+				<p>YOLOv1 treats detection as a set of regressions. The loss is the sum of five terms: a quadratic penalty on x, y errors; a linear penalty on w, h errors; a term that raises confidence for cells containing an object centre; a term that lowers confidence for cells without one; and a classification loss, also a regression, against a one-hot vector. Training is supervised, requiring each label to specify the responsible cell, position, shape, and class.</p>
+
+				<h3>Non-max Suppression (NMS)</h3>
+				<p>Every cell produces values, even without an object, so redundant detections must be removed. Steps:</p>
+				<ol>
+					<li>Discard detections with confidence below a threshold (for example 0.6).</li>
+					<li>Keep the detection with the highest confidence.</li>
+					<li>Remove all same-class detections that overlap it.</li>
+					<li>Repeat steps 2 and 3 until no same-class overlaps remain.</li>
+				</ol>
+				<p>Overlap means IoU above 0.5, but this threshold depends on the problem. For counting grains on a corn cob, a lower IoU is needed so that real detections are not removed as duplicates.</p>
+
+				<h3>Looking ahead</h3>
+				<p>The author announces a follow-up on Detection Transformers (DETR), a newer family of algorithms.</p>
+
+				<h2>3. Short overview (Key words)</h2>
+				<ul>
+					<li>Object detection: locate + classify objects</li>
+					<li>Two-stage (R-CNN): propose regions &rarr; classify</li>
+					<li>R-CNN 49 s &rarr; Fast R-CNN 2.3 s &rarr; Faster R-CNN 0.2 s</li>
+					<li>One-stage (YOLO): one pass, real time, YOLO-NAS 0.002 s</li>
+					<li>YOLOv3 onwards: faster and more accurate than R-CNN</li>
+					<li>YOLOv1: 7&times;7 grid &rarr; 49 detections &rarr; output 7&times;7&times;30</li>
+					<li>NMS: removes redundant detections</li>
+				</ul>
+
+				<h2>4. Fuller summary (Key words)</h2>
+
+				<h3>Two-stage vs one-stage</h3>
+				<ul>
+					<li>Two-stage &rarr; regions, then classification &rarr; accurate, slow</li>
+					<li>One-stage &rarr; single pass &rarr; real time</li>
+				</ul>
+
+				<h3>R-CNN family</h3>
+				<ul>
+					<li>R-CNN &rarr; Selective Search (~2,000 regions) &rarr; CNN &rarr; SVM &rarr; 49 s</li>
+					<li>Fast R-CNN &rarr; CNN once &rarr; Selective Search on feature maps &rarr; neural network instead of SVM &rarr; 2.3 s (Selective Search ~90%)</li>
+					<li>Faster R-CNN &rarr; RPN replaces Selective Search &rarr; 0.2 s</li>
+					<li>Real time &rarr; ~0.03 s</li>
+				</ul>
+
+				<h3>YOLO overview</h3>
+				<ul>
+					<li>~10 versions &rarr; YOLO-NAS &rarr; 0.002 s (GPU, 8-bit)</li>
+					<li>From v3 &rarr; faster and more accurate than R-CNN</li>
+				</ul>
+
+				<h3>YOLOv1</h3>
+				<ul>
+					<li>Grid 7&times;7 &rarr; cell responsible if it contains the object centre</li>
+					<li>Cell predicts &rarr; confidence, (x, y), (w, h), class</li>
+					<li>Tensor 7&times;7&times;30 = 1,470 &rarr; 5 + 5 + 20 (PascalVOC)</li>
+					<li>Weaknesses &rarr; max 49 detections, same cell size, slow training, unexplained two predictions</li>
+					<li>Architecture &rarr; CNN inspired by ResNet</li>
+				</ul>
+
+				<h3>Loss function</h3>
+				<ul>
+					<li>5 terms: x, y (quadratic) &rarr; w, h (linear) &rarr; confidence with object &rarr; confidence without object &rarr; classification (one-hot)</li>
+					<li>No IoU (v4), no cross-entropy (v3)</li>
+					<li>Supervised training with detailed labels</li>
+				</ul>
+
+				<h3>NMS</h3>
+				<ul>
+					<li>Confidence &lt; 0.6 removed &rarr; keep highest &rarr; remove same-class overlaps (IoU &gt; 0.5) &rarr; repeat</li>
+					<li>Lower IoU for dense objects (corn grains)</li>
+				</ul>
+
+				<h3>Looking ahead</h3>
+				<ul>
+					<li>Detection Transformers (DETR)</li>
+				</ul>
+
+				<aside class="sources">
+					<h2>5. References</h2>
+					<ul>
+						<li>Coulombe, V. Introduction à la détection automatique d’objets : les méthodes à convolution (YOLO et R-CNN). Syntell, 1 Sep 2023 &mdash; <a href="https://www.syntell.com/2023/09/01/introduction-a-la-detection-automatique-dobjets-les-methodes-a-convolution-yolo-et-r-cnn/" target="_blank" rel="noopener">https://www.syntell.com/2023/09/01/introduction-a-la-detection-automatique-dobjets-les-methodes-a-convolution-yolo-et-r-cnn/</a> (cited as Syntell)</li>
+					</ul>
+				</aside>
+			</section>
+		</main>
+		<!-- PUT YOUR CONTENT ONLY INSIDE THE <main> TAG, BEFORE THE FOOTER -->
+		<footer id="article">
+			<a href="computer-vision-and-player-tracking-in-football.html">&#10094;&#10094;&#10094; Computer Vision &amp; Player Tracking in Football</a>
+			<a id="back-to-top" href="#" title="Back to top"><span>Back to top</span><span>&#x2B06;</span></a>
+			<a href="sports-analytics-with-roboflow.html">Sports Analytics AI with Roboflow &#10095;&#10095;&#10095;</a>
+		</footer>
+    </body>
+</html>

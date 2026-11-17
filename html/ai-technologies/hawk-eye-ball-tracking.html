@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Hawk-Eye: Ball Tracking and Goal-Line Technology - AI in Everyday Life</title> <!-- ARTICLE TITLE -->
+		<link rel="icon" href="../../layout/ai-icon.png">
+		<link rel="stylesheet" href="../../css/global.css">
+		<!-- CUSTOM EXTERNAL CSS -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="description" content="How Hawk-Eye tracks a ball with multiple cameras to build a 3D trajectory, and how it works as goal-line technology in football."> <!-- ARTICLE DESCRIPTION -->
+		<meta name="author" content="Mohamed El Bayad">
+		<style>
+			:root {
+				--template-color: var(--second-main-topic-color);
+			}
+			
+			/* CUSTOM INTERNAL CSS */
+			
+			.article-section h2 {
+				margin-block: 1.8em 0.4em;
+				font-size: 1.3em;
+				font-weight: 500;
+				color: var(--template-color);
+			}
+			
+			.article-section h3 {
+				margin-block: 1.4em 0.2em;
+				font-size: 1.1em;
+				font-weight: 500;
+				color: var(--second-main-topic-color-pale);
+			}
+			
+			.article-section ul {
+				display: flex;
+				flex-direction: column;
+				gap: 0.5em;
+				margin: 0.8em 0 0.8em 1.5em;
+				line-height: 1.4;
+			}
+			
+			.article-section li::marker {
+				color: var(--template-color);
+			}
+			
+			.article-section figure {
+				max-width: 500px;
+				margin: 2.5em auto;
+			}
+			
+			.article-section figure img {
+				width: 100%;
+				border: var(--article-card-border-style);
+				border-radius: var(--global-border-radius);
+			}
+			
+			.article-section figcaption {
+				margin-top: 0.6em;
+				font-size: 0.9em;
+				font-style: italic;
+				text-align: center;
+				opacity: 0.7;
+			}
+			
+			.sources {
+				margin-top: 3em;
+				padding: 1em 1.5em;
+				border-left: var(--global-border-thickness) solid var(--template-color);
+				background-color: var(--secondary-bg-color);
+				border-radius: 0 var(--global-border-radius) var(--global-border-radius) 0;
+				font-size: 0.85em;
+			}
+			
+			.article-section .sources h2 {
+				margin: 0;
+				font-size: 1em;
+				font-weight: 600;
+				text-transform: uppercase;
+				color: var(--template-color);
+			}
+			
+			.sources ul {
+				gap: 0.3em;
+				word-break: break-word;
+			}
+		</style>
+	</head>
+	<body id="article">
+		<nav>
+			<a id="back-to-homepage" href="../../html/index.html"><img src="../../layout/logotype.png" alt="Return to the homepage"></a>
+			<ul>
+				<li id="first-main-topic">
+					<a href="../../html/index.html#introduction-to-ai">Introduction to AI</a>
+					<ul class="dropdown">
+						<li><a href="../../html/index.html#history-of-ai">History of AI</a></li>
+						<li><a href="../../html/index.html#basic-concepts">Basic Concepts</a></li>
+					</ul>
+				</li>
+				<li id="second-main-topic">
+					<a href="../../html/index.html#ai-technologies">AI Technologies</a>
+					<ul class="dropdown">
+						<li><a href="../../html/index.html#interactions">Interactions</a></li>
+						<li><a href="../../html/index.html#language-technologies">Language Technologies</a></li>
+						<li><a href="../../html/index.html#robotics">Robotics</a></li>
+						<li><a href="../../html/index.html#world-building">World Building</a></li>
+					</ul>
+				</li>
+				<li id="third-main-topic">
+					<a href="../../html/index.html#impact-and-ethics">Impact and Ethics</a>
+					<ul class="dropdown">
+						<li><a href="../../html/index.html#ethics">Ethics</a></li>
+						<li><a href="../../html/index.html#limitations">Limitations</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+		<!-- PUT YOUR CONTENT ONLY INSIDE THE <main> TAG, AFTER LINKS AND TITLE SECTION -->
+		<main>
+			<!-- PREVIOUS/NEXT ARTICLE LINKS -->
+			<a id="previous-article" href="sports-analytics-with-roboflow.html" aria-label="Read previous article" title="Previous article">&#10094;</a>
+			<a id="next-article" href="what-is-a-recommender-system.html" aria-label="Read next article" title="Next article">&#10095;</a>
+			<!-- ARTICLE TITLE (START) -->
+			<section id="article-title">
+				<div>
+					<h1>Hawk-Eye</h1>
+					<p id="article-subtitle">Ball Tracking and Goal-Line Technology in Sport</p>
+					<p id="author"><span>by </span>Mohamed El Bayad</p>
+				</div>
+			</section>
+			<!-- ARTICLE SECTION (START) -->
+			<section class="article-section">
+				<h2>1. Short overview</h2>
+				<p>Hawk-Eye is a computer vision system that tracks a ball with several cameras and displays its statistically most likely path as a moving image. Developed in the United Kingdom by Paul Hawkins and now owned by Sony, it was first used in 2001 for cricket broadcasts. Up to ten cameras, usually fixed under the stadium roof, are triangulated to build a 3D trajectory with an advertised accuracy of 2.6 mm. It is used in more than 20 sports and serves as an impartial review tool in tennis, cricket and football. In football, it acts as goal-line technology, adopted by the Premier League in 2013&ndash;14, with seven cameras at each end and a result sent to the referee within a second.</p>
+
+				<h2>2. Fuller summary</h2>
+
+				<h3>Definition and origin</h3>
+				<p>Hawk-Eye is a computer vision system that visually tracks the trajectory of a ball and shows its statistically most likely path. It was created in the UK by Paul Hawkins and is now owned by Sony. Its first use was in 2001, in television broadcasts, to analyse leg before wicket decisions in cricket. (Wikipedia)</p>
+
+				<h3>How it works</h3>
+				<p>Up to ten high-performance cameras, normally placed on the underside of the stadium roof, follow the ball from different angles. Their video is triangulated and combined into a three-dimensional representation of the trajectory. The system is not infallible, but it is advertised as accurate to within 2.6 mm. (Wikipedia)</p>
+
+				<h3>Adoption in sport</h3>
+				<p>Hawk-Eye is used in more than 20 major sports, including baseball, cricket, tennis, badminton, hurling, rugby union, football, Gaelic football, American football and volleyball. Governing bodies in tennis, cricket and football accept it as a means of adjudication. It has powered the Challenge System in tennis since 2006 and the Decision Review System in cricket since 2009. (Wikipedia)</p>
+
+				<h3>Case study: goal-line technology in football</h3>
+				<p>The Premier League gave Hawk-Eye the contract for all matches from the 2013&ndash;14 season. Seven cameras are focused on each goal, usually on the stadium roof. The images are processed to find the ball and to ignore everything that is not the ball. When the whole ball crosses the line, the outcome reaches the referee within a second, through an encrypted watch developed with Adeunis and unaffected by interference. (Premier League)</p>
+				<p>Accuracy and limits. The system betters FIFA&rsquo;s margin-of-error requirement of &plusmn;3 cm. It can locate the ball even when players hide most of it, because only a small percentage needs to be visible, and in extensive tests the ball was always visible enough. Fog, rain, snow and mud on the ball do not disrupt it: if visibility is good enough for the match to go ahead, it is good enough for the cameras. (Premier League)</p>
+				<p>Replay. A video replay is available for television within 10 seconds, filmed by a dedicated high-speed camera that removes the players from the image so the ball stays visible. (Premier League)</p>
+
+				<figure>
+					<img src="../../contributors/mohamed-el-bayad/hawk-eye-goal-line-technology.jpg" alt="Hawk-Eye Goal-Line Technology Simulation and Accuracy">
+					<figcaption>Figure 1: Hawk-Eye goal-line technology simulation showing multiple camera angles tracking the ball with millimetre accuracy.</figcaption>
+				</figure>
+
+				<h2>3. Short overview (Key words)</h2>
+				<ul>
+					<li>Hawk-Eye: cameras track the ball, shows its most likely path</li>
+					<li>Origin: UK, Paul Hawkins, Sony, first used in 2001 (cricket LBW)</li>
+					<li>Up to 10 cameras &rarr; triangulation &rarr; 3D trajectory &rarr; 2.6 mm</li>
+					<li>20+ sports; tennis (2006), cricket (2009)</li>
+					<li>Football: goal-line technology, Premier League 2013&ndash;14</li>
+					<li>7 cameras per end, signal within 1 second</li>
+				</ul>
+
+				<h2>4. Fuller summary (Key words)</h2>
+
+				<h3>Definition and origin</h3>
+				<ul>
+					<li>Computer vision system &rarr; tracks ball trajectory</li>
+					<li>Paul Hawkins (UK) &rarr; owned by Sony</li>
+					<li>2001 &rarr; TV broadcasts &rarr; cricket LBW</li>
+				</ul>
+
+				<h3>How it works</h3>
+				<ul>
+					<li>Up to 10 cameras under the roof</li>
+					<li>Triangulation &rarr; 3D representation</li>
+					<li>Accuracy 2.6 mm (not infallible)</li>
+				</ul>
+
+				<h3>Adoption in sport</h3>
+				<ul>
+					<li>20+ sports (tennis, cricket, rugby, football, volleyball…)</li>
+					<li>Tennis &rarr; Challenge System (2006)</li>
+					<li>Cricket &rarr; Decision Review System (2009)</li>
+				</ul>
+
+				<h3>Case study: goal-line technology</h3>
+				<ul>
+					<li>Premier League contract &rarr; 2013&ndash;14</li>
+					<li>7 cameras per goal &rarr; find ball, ignore the rest</li>
+					<li>Whole ball over the line &rarr; alert to referee’s watch in 1 second</li>
+					<li>Encrypted signal, no interference</li>
+					<li>Accuracy: better than FIFA’s &plusmn;3 cm</li>
+					<li>Occlusion: small visible part is enough</li>
+					<li>Weather: fog, rain, snow, mud &rarr; no effect</li>
+					<li>Replay for TV in 10 seconds, high-speed camera removes players</li>
+				</ul>
+
+				<aside class="sources">
+					<h2>5. References</h2>
+					<ul>
+						<li>Wikipedia. Hawk-Eye &mdash; <a href="https://en.wikipedia.org/wiki/Hawk-Eye" target="_blank" rel="noopener">https://en.wikipedia.org/wiki/Hawk-Eye</a> (cited as Wikipedia)</li>
+						<li>Premier League. How Hawk-Eye’s goal-line technology will work, 11 Apr 2013 &mdash; <a href="https://www.premierleague.com/en/news/60515" target="_blank" rel="noopener">https://www.premierleague.com/en/news/60515</a> (cited as Premier League)</li>
+						<li>Sky News. Hawk-Eye Goal-Line System For Premier League &mdash; <a href="https://news.sky.com/story/hawk-eye-goal-line-system-for-premier-league-10449007" target="_blank" rel="noopener">https://news.sky.com/story/hawk-eye-goal-line-system-for-premier-league-10449007</a></li>
+					</ul>
+				</aside>
+			</section>
+		</main>
+		<!-- PUT YOUR CONTENT ONLY INSIDE THE <main> TAG, BEFORE THE FOOTER -->
+		<footer id="article">
+			<a href="sports-analytics-with-roboflow.html">&#10094;&#10094;&#10094; Sports Analytics AI with Roboflow</a>
+			<a id="back-to-top" href="#" title="Back to top"><span>Back to top</span><span>&#x2B06;</span></a>
+			<a href="what-is-a-recommender-system.html">What is a recommender system, and how does it work? &#10095;&#10095;&#10095;</a>
+		</footer>
+    </body>
+</html>

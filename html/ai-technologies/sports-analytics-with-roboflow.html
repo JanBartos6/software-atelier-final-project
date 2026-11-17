@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Sports Analytics AI with Roboflow - AI in Everyday Life</title> <!-- ARTICLE TITLE -->
+		<link rel="icon" href="../../layout/ai-icon.png">
+		<link rel="stylesheet" href="../../css/global.css">
+		<!-- CUSTOM EXTERNAL CSS -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="description" content="How a Roboflow pipeline combines RF-DETR detection and a vision-language model to estimate football formations, and tracks players into heatmaps."> <!-- ARTICLE DESCRIPTION -->
+		<meta name="author" content="Mohamed El Bayad">
+		<style>
+			:root {
+				--template-color: var(--second-main-topic-color);
+			}
+			
+			/* CUSTOM INTERNAL CSS */
+			
+			.article-section h2 {
+				margin-block: 1.8em 0.4em;
+				font-size: 1.3em;
+				font-weight: 500;
+				color: var(--template-color);
+			}
+			
+			.article-section h3 {
+				margin-block: 1.4em 0.2em;
+				font-size: 1.1em;
+				font-weight: 500;
+				color: var(--second-main-topic-color-pale);
+			}
+			
+			.article-section ul {
+				display: flex;
+				flex-direction: column;
+				gap: 0.5em;
+				margin: 0.8em 0 0.8em 1.5em;
+				line-height: 1.4;
+			}
+			
+			.article-section li::marker {
+				color: var(--template-color);
+			}
+			
+			.article-section figure {
+				max-width: 500px;
+				margin: 2.5em auto;
+			}
+			
+			.article-section figure img {
+				width: 100%;
+				border: var(--article-card-border-style);
+				border-radius: var(--global-border-radius);
+			}
+			
+			.article-section figcaption {
+				margin-top: 0.6em;
+				font-size: 0.9em;
+				font-style: italic;
+				text-align: center;
+				opacity: 0.7;
+			}
+			
+			.sources {
+				margin-top: 3em;
+				padding: 1em 1.5em;
+				border-left: var(--global-border-thickness) solid var(--template-color);
+				background-color: var(--secondary-bg-color);
+				border-radius: 0 var(--global-border-radius) var(--global-border-radius) 0;
+				font-size: 0.85em;
+			}
+			
+			.article-section .sources h2 {
+				margin: 0;
+				font-size: 1em;
+				font-weight: 600;
+				text-transform: uppercase;
+				color: var(--template-color);
+			}
+			
+			.sources ul {
+				gap: 0.3em;
+				word-break: break-word;
+			}
+		</style>
+	</head>
+	<body id="article">
+		<nav>
+			<a id="back-to-homepage" href="../../html/index.html"><img src="../../layout/logotype.png" alt="Return to the homepage"></a>
+			<ul>
+				<li id="first-main-topic">
+					<a href="../../html/index.html#introduction-to-ai">Introduction to AI</a>
+					<ul class="dropdown">
+						<li><a href="../../html/index.html#history-of-ai">History of AI</a></li>
+						<li><a href="../../html/index.html#basic-concepts">Basic Concepts</a></li>
+					</ul>
+				</li>
+				<li id="second-main-topic">
+					<a href="../../html/index.html#ai-technologies">AI Technologies</a>
+					<ul class="dropdown">
+						<li><a href="../../html/index.html#interactions">Interactions</a></li>
+						<li><a href="../../html/index.html#language-technologies">Language Technologies</a></li>
+						<li><a href="../../html/index.html#robotics">Robotics</a></li>
+						<li><a href="../../html/index.html#world-building">World Building</a></li>
+					</ul>
+				</li>
+				<li id="third-main-topic">
+					<a href="../../html/index.html#impact-and-ethics">Impact and Ethics</a>
+					<ul class="dropdown">
+						<li><a href="../../html/index.html#ethics">Ethics</a></li>
+						<li><a href="../../html/index.html#limitations">Limitations</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+		<!-- PUT YOUR CONTENT ONLY INSIDE THE <main> TAG, AFTER LINKS AND TITLE SECTION -->
+		<main>
+			<!-- PREVIOUS/NEXT ARTICLE LINKS -->
+			<a id="previous-article" href="object-detection-r-cnn-vs-yolo.html" aria-label="Read previous article" title="Previous article">&#10094;</a>
+			<a id="next-article" href="hawk-eye-ball-tracking.html" aria-label="Read next article" title="Next article">&#10095;</a>
+			<!-- ARTICLE TITLE (START) -->
+			<section id="article-title">
+				<div>
+					<h1>Sports Analytics AI with Roboflow</h1>
+					<p id="article-subtitle">From Broadcast Frames to Tactical Formations</p>
+					<p id="author"><span>by </span>Mohamed El Bayad</p>
+				</div>
+			</section>
+			<!-- ARTICLE SECTION (START) -->
+			<section class="article-section">
+				<h2>1. Short overview</h2>
+				<p>Sports analytics AI uses computer vision to turn match footage into structured data on players, positions and tactics. This tutorial by Mostafa Ibrahim builds a pipeline in which RF-DETR detects players, goalkeepers, referees and the ball, and Gemini 2.5 Pro estimates each team’s most likely formation from a single broadcast image. The detector reached 84.4% mAP@50, and the workflow returns a JSON with formation, attacking direction, confidence and reasoning. A second workflow adds ByteTrack and a heatmap block to show where players spend their time across frames.</p>
+
+				<h2>2. Fuller summary</h2>
+
+				<h3>Definition and pipeline</h3>
+				<p>Sports analytics AI applies machine learning and computer vision to sport so that teams can extract player data, formations and performance metrics from raw video. Most systems follow the same pattern: collect visual data, detect players and objects, track or structure their positions, then generate higher-level analytics from those spatial signals.</p>
+
+				<h3>Dataset and training</h3>
+				<p>The dataset comes from Roboflow Universe and contains broadcast images with four classes: player, goalkeeper, referee and ball. It has no tactical labels, only bounding boxes. The images vary in stadium, lighting and zoom, which matters because player spacing and visibility change with the camera. The model is RF-DETR Small, trained with a 70/15/15 split, auto-orientation and resizing to 512&times;512. RF-DETR is Apache 2.0 licensed, so it can be used commercially.</p>
+
+				<h3>Evaluation</h3>
+				<p>The model reached 84.4% mAP@50, 91.2% precision, 84.5% recall and an F1 score of 87.1%. High recall means few missed players, and high precision means few false detections that could distort a formation estimate. These metrics measure detection only, not tactical interpretation.</p>
+
+				<h3>Workflow: detection + VLM</h3>
+				<p>Roboflow Workflows chains four blocks. RF-DETR detects the objects, a visualization block annotates the frame, a Gemini 2.5 Pro block analyses the tactical structure, and a Parse Nested JSON block turns the answer into machine-readable output. Gemini runs with an open prompt at temperature 0.3. It first finds each team’s attacking direction and goal, then picks a formation from a fixed list (4-3-3, 4-4-2, 4-2-3-1, 3-5-2, 5-3-2, 3-4-3, unknown). Because the model never learned formation labels, the VLM acts as a reasoning layer on top of the detections. The parser also copes with responses wrapped in markdown fences.</p>
+
+				<h3>Limits</h3>
+				<p>Reasoning from a single frame gives estimates, not verified classifications. Wide tactical camera angles give the best results, while cropped transition frames and set pieces increase uncertainty.</p>
+
+				<h3>Case study: tracking and heatmaps</h3>
+				<p>A second workflow runs the same detector on a short video clip. A ByteTrack block gives each player a persistent ID across frames, and a heatmap block accumulates positions over time. The result shows which areas of the pitch were used most, which helps analyse positional discipline, zone coverage and changes in team shape. Wide or top-down views are more reliable than fast-moving camera shots.</p>
+
+				<figure>
+					<img src="../../contributors/mohamed-el-bayad/roboflow-player-tracking-heatmap.webp" alt="Player Tracking and Heatmap Analysis">
+					<figcaption>Figure 1: Player tracking combined with heatmap visualization showing positional coverage and movement density across the pitch.</figcaption>
+				</figure>
+
+				<h3>Extensions</h3>
+				<p>For production, the tutorial suggests team-colour clustering, top-down pitch homography and multi-frame temporal analysis, which would allow optical tracking without expensive stadium-installed hardware.</p>
+
+				<h2>3. Short overview (Key words)</h2>
+				<ul>
+					<li>Sports analytics AI: video &rarr; structured data (players, tactics)</li>
+					<li>Pipeline: collect &rarr; detect &rarr; track &rarr; analytics</li>
+					<li>RF-DETR (detection) + Gemini 2.5 Pro (formation)</li>
+					<li>84.4% mAP@50, 91.2% precision, 84.5% recall</li>
+					<li>Output: JSON (formation, direction, confidence, reason)</li>
+					<li>ByteTrack + heatmap &rarr; movement over time</li>
+				</ul>
+
+				<h2>4. Fuller summary (Key words)</h2>
+
+				<h3>Definition and pipeline</h3>
+				<ul>
+					<li>ML + computer vision on sport &rarr; telemetry, formations, metrics</li>
+					<li>Collect &rarr; detect &rarr; track/structure &rarr; analytics</li>
+				</ul>
+
+				<h3>Dataset and training</h3>
+				<ul>
+					<li>Roboflow Universe &rarr; player, goalkeeper, referee, ball</li>
+					<li>Boxes only, no tactical labels</li>
+					<li>RF-DETR Small &rarr; split 70/15/15 &rarr; auto-orientation, 512&times;512</li>
+					<li>Apache 2.0 &rarr; commercial use</li>
+				</ul>
+
+				<h3>Evaluation</h3>
+				<ul>
+					<li>mAP@50 84.4% &rarr; precision 91.2% &rarr; recall 84.5% &rarr; F1 87.1%</li>
+					<li>Detection quality only</li>
+				</ul>
+
+				<h3>Workflow: detection + VLM</h3>
+				<ul>
+					<li>RF-DETR &rarr; bounding box visualization &rarr; Gemini 2.5 Pro &rarr; Parse Nested JSON</li>
+					<li>Temperature 0.3, open prompt</li>
+					<li>Direction first &rarr; then formation from a fixed list</li>
+					<li>VLM = reasoning layer (no formation labels)</li>
+				</ul>
+
+				<h3>Limits</h3>
+				<ul>
+					<li>Single frame &rarr; estimate, not verified</li>
+					<li>Best: wide angle; worst: cropped frames, set pieces</li>
+				</ul>
+
+				<h3>Case study: tracking and heatmaps</h3>
+				<ul>
+					<li>RF-DETR &rarr; ByteTrack (persistent IDs) &rarr; heatmap</li>
+					<li>Positional discipline, zone coverage, team shape</li>
+					<li>Best: wide or top-down views</li>
+				</ul>
+
+				<h3>Extensions</h3>
+				<ul>
+					<li>Team-colour clustering &rarr; homography &rarr; temporal analysis</li>
+				</ul>
+
+				<aside class="sources">
+					<h2>5. References</h2>
+					<ul>
+						<li>Ibrahim, M. Sports Analytics AI with Roboflow. Roboflow, 1 Jun 2026 &mdash; <a href="https://roboflow.com/blog/sports-analytics-ai" target="_blank" rel="noopener">https://roboflow.com/blog/sports-analytics-ai</a> (cited as Roboflow)</li>
+					</ul>
+				</aside>
+			</section>
+		</main>
+		<!-- PUT YOUR CONTENT ONLY INSIDE THE <main> TAG, BEFORE THE FOOTER -->
+		<footer id="article">
+			<a href="object-detection-r-cnn-vs-yolo.html">&#10094;&#10094;&#10094; Object Detection with Convolution: R-CNN vs YOLO</a>
+			<a id="back-to-top" href="#" title="Back to top"><span>Back to top</span><span>&#x2B06;</span></a>
+			<a href="hawk-eye-ball-tracking.html">Hawk-Eye: Ball Tracking and Goal-Line Technology &#10095;&#10095;&#10095;</a>
+		</footer>
+    </body>
+</html>
