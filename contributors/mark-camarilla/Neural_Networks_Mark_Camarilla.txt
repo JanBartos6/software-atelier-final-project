@@ -20,7 +20,7 @@ A single artificial neuron is very simple. Let's say it has to decide whether yo
 
 Each input also has a weight, a number that says how much it matters. Sun counts +3, friends +2, the test -5. The neuron multiplies every input by its weight and adds everything up. If the total is above zero, it fires: go to the beach. On a sunny day with your friends but a test tomorrow, you get 3 + 2 - 5 = 0. Not enough. You stay home and study.
 
-That is all a neuron does: multiply, add, decide. On its own it is almost useless. What makes it powerful is connecting thousands or billions of them.
+That's all a neuron does: multiply, add, decide. On its own it is almost useless. What makes it powerful is connecting thousands or billions of them.
 
 
 Layers
@@ -34,14 +34,14 @@ Everything Is in the Weights
 
 Everything a neural network knows is stored in its weights, also called parameters. Google's cat network had about a billion connections. GPT-3, released by OpenAI in 2020, had 175 billion parameters, and today's biggest models are even larger. Every single number is meaningless on its own, but together they can recognize a face or write an essay. (New York Times 2012, Brown et al. 2020)
 
-The idea is not new. Researchers worked on neural networks for decades, but for a long time computers were too slow and there was not enough data. In 2024 John Hopfield and Geoffrey Hinton won the Nobel Prize in Physics for work they started in the 1980s, "for foundational discoveries and inventions that enable machine learning with artificial neural networks". (Nobel Prize 2024)
+The idea is not new. Researchers worked on neural networks for decades, but for a long time computers were too slow and there wasn't enough data. In 2024 John Hopfield and Geoffrey Hinton won the Nobel Prize in Physics for work they started in the 1980s, "for foundational discoveries and inventions that enable machine learning with artificial neural networks". (Nobel Prize 2024)
 
 
 A Black Box
 
 There is a problem. We know exactly what each neuron does, because it is just multiplying and adding. But with billions of weights, nobody can read them and say why the network gave a certain answer. This is why neural networks are often called a "black box", and why a mistake like the husky and snow example from the previous article is so hard to catch.
 
-One question is still open: who chooses all those billions of weights? Not a programmer. They are found automatically during training, by showing the network enormous amounts of data. That is the next article.
+One question is still open: who chooses all those billions of weights? Not a programmer. They are found automatically during training, by showing the network enormous amounts of data. That's the next article.
 
 
 Sources
