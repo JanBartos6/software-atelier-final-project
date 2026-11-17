@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>What Is Artificial Intelligence? - AI in Everyday Life</title> <!-- ARTICLE TITLE -->
+		<link rel="icon" href="../../layout/ai-icon.png">
+		<link rel="stylesheet" href="../../css/global.css">
+		<!-- CUSTOM EXTERNAL CSS -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="description" content="What the word artificial intelligence really means, from the official definitions of the OECD and the EU AI Act to the AI effect"> <!-- ARTICLE DESCRIPTION -->
+		<meta name="author" content="Alessio Giugno"> <!-- ARTICLE AUTHOR -->
+		<style>
+			:root {
+				--template-color: var(--first-main-topic-color);
+			}
+
+			/* CUSTOM INTERNAL CSS */
+			.article-section ul {
+				padding-left: 1.5em;
+			}
+
+			.article-section li {
+				margin-bottom: 0.6em;
+			}
+
+			.article-section figure {
+				max-width: 720px;
+				margin: 2em auto;
+			}
+
+			.article-section figure.portrait,
+			.article-section figure.diagram {
+				max-width: 420px;
+			}
+
+			.article-section figure img {
+				display: block;
+				width: 100%;
+				border: var(--article-card-border-style);
+				border-radius: var(--global-border-radius);
+			}
+
+			.article-section figure svg {
+				display: block;
+				width: 100%;
+				height: auto;
+			}
+
+			.article-section .ring {
+				fill: var(--template-color);
+				stroke: var(--first-main-topic-color-pale);
+				stroke-width: 2;
+			}
+
+			.article-section .ring-1 { fill-opacity: 0.12; }
+			.article-section .ring-2 { fill-opacity: 0.22; }
+			.article-section .ring-3 { fill-opacity: 0.32; }
+			.article-section .ring-4 { fill-opacity: 0.45; }
+
+			.article-section figure text {
+				fill: var(--main-font-color);
+				font-family: var(--main-font);
+				font-size: 19px;
+				font-weight: 600;
+				text-anchor: middle;
+			}
+
+			.article-section figcaption {
+				margin-top: 0.6em;
+				font-size: 0.9em;
+				font-style: italic;
+				text-align: center;
+				opacity: 0.7;
+			}
+		</style>
+	</head>
+	<body>
+		<nav>
+			<a id="back-to-homepage" href="../../html/index.html"><img src="../../layout/logotype.png" alt="Return to the homepage"></a>
+			<ul>
+				<li id="first-main-topic">
+					<a href="../../html/index.html#introduction-to-ai">Introduction to AI</a>
+					<ul class="dropdown">
+						<li><a href="../../html/index.html#history-of-ai">History of AI</a></li>
+						<li><a href="../../html/index.html#basic-concepts">Basic Concepts</a></li>
+					</ul>
+				</li>
+				<li id="second-main-topic">
+					<a href="../../html/index.html#ai-technologies">AI Technologies</a>
+					<ul class="dropdown">
+						<li><a href="../../html/index.html#interactions">Interactions</a></li>
+						<li><a href="../../html/index.html#language-technologies">Language Technologies</a></li>
+						<li><a href="../../html/index.html#robotics">Robotics</a></li>
+						<li><a href="../../html/index.html#world-building">World Building</a></li>
+					</ul>
+				</li>
+				<li id="third-main-topic">
+					<a href="../../html/index.html#impact-and-ethics">Impact and Ethics</a>
+					<ul class="dropdown">
+						<li><a href="../../html/index.html#ethics">Ethics</a></li>
+						<li><a href="../../html/index.html#limitations">Limitations</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+		<!-- PUT YOUR CONTENT ONLY INSIDE THE <main> TAG, AFTER LINKS AND TITLE SECTION -->
+		<main>
+			<!-- PREVIOUS/NEXT ARTICLE LINKS -->
+			<a id="previous-article" href="../../html/index.html" aria-label="Read previous article" title="Previous article">&#10094;</a>
+			<a id="next-article" href="can-a-machine-think.html" aria-label="Read next article" title="Next article">&#10095;</a>
+			<!-- ARTICLE TITLE (START) -->
+			<section id="article-title">
+				<div>
+					<h1>What Is Artificial Intelligence?</h1>
+					<p id="article-subtitle">Defining a Word Everyone Uses</p>
+					<p class="article-title-paragraph">In March 2024 the US Securities and Exchange Commission fined two investment companies a total of 400,000 dollars. Their crime was not stealing money, but using a word: they told clients they used artificial intelligence to choose investments, and they did not. The chair of the SEC, Gary Gensler, called it "AI washing" and said that it "hurts investors". If a company can be fined for using the word "AI" in the wrong way, it is worth asking what the word actually means.</p>
+					<p id="author"><span>by </span>Alessio Giugno</p>
+					</div>
+			</section>
+			<!-- ARTICLE SECTIONS (START) -->
+			<section class="article-section">
+				<h2>A Field, Not a Single Invention</h2>
+				<p>Artificial intelligence, usually called AI, is technology that enables computers and machines to perform tasks we associate with human intelligence: recognizing images, understanding language, solving problems, making decisions and creating content. AI is also the name of the field of computer science that builds these systems.</p>
+				<p>The name is older than most people think. It appeared in 1955, in a proposal written by John McCarthy, Marvin Minsky, Nathaniel Rochester and Claude Shannon for a summer workshop at Dartmouth College. The <a href="the-beginning.html">History of AI</a> section tells that story.</p>
+				<figure class="portrait">
+					<img src="../../contributors/alessio-giugno/Basic_Concepts_1.jpg" alt="Portrait of John McCarthy, an elderly man with white hair, beard and glasses">
+					<figcaption>John McCarthy, one of the authors of the 1955 proposal, at Stanford University, where he worked for most of his career.</figcaption>
+				</figure>
+				<p>So AI is not one machine or one program. The same word covers a chess computer from the 1990s, the filter that hides your spam and the chatbot you ask for help with homework. They work in very different ways, but they all do something we would call "intelligent" if a person did it.</p>
+			</section>
+			<section class="article-section">
+				<h2>Input, Inference, Output</h2>
+				<p>To write laws about AI, governments needed a precise definition. In 2023 the 38 member countries of the OECD agreed on this one: an AI system is a machine-based system that, for explicit or implicit objectives, "infers, from the input it receives, how to generate outputs such as predictions, content, recommendations, or decisions" that can influence physical or virtual environments. In 2024 the European Union used almost the same words in its AI Act, the first comprehensive law on artificial intelligence in the world.</p>
+				<p>The definition sounds complicated, but it describes three simple steps:</p>
+				<ul>
+					<li>Input: the system receives information, like a photo, a sentence, your location or the videos you watched.</li>
+					<li>Inference: it works out what to do with that information. This is the important part. Nobody wrote an exact instruction for your photo or your sentence. The system uses what it has learned, or the knowledge it was given, to decide.</li>
+					<li>Output: it produces a result. That can be a prediction ("this email is spam"), content (a text or an image), a recommendation ("you might like this song") or a decision (block a card payment).</li>
+				</ul>
+				<p>The last part of the definition says that AI systems have "varying levels of autonomy". A spam filter only sorts your emails. A self-driving car makes decisions on a real road. Both are AI, but the second one acts much more on its own.</p>
+			</section>
+			<section class="article-section">
+				<h2>What Is Not AI</h2>
+				<p>The EU AI Act also says what does not count. Its definition "should not cover systems that are based on the rules defined solely by natural persons to automatically execute operations". In simple words: a calculator, or an app that always follows the same fixed steps written by a programmer, is normal software, not AI. As the law puts it: "A key characteristic of AI systems is their capability to infer."</p>
+			</section>
+			<section class="article-section">
+				<h2>A Moving Target</h2>
+				<p>There is one more problem with the word: its meaning keeps changing. In 1997 a computer beating the world chess champion was front-page news and the symbol of artificial intelligence. Today a free chess app on any phone plays better than any human, and almost nobody calls it AI anymore.</p>
+				<figure class="portrait">
+					<img src="../../contributors/alessio-giugno/Basic_Concepts_2.jpg" alt="A tall black IBM computer cabinet on display in a museum">
+					<figcaption>IBM's Deep Blue, the chess computer that beat Garry Kasparov in 1997, at the Computer History Museum in California.</figcaption>
+				</figure>
+				<p>This is called the AI effect: when a machine finally learns to do something, people stop considering it "real" intelligence. The writer Douglas Hofstadter summed it up in a sentence he called Tesler&#x27;s Theorem, after the computer scientist Larry Tesler: "AI is whatever hasn&#x27;t been done yet."</p>
+			</section>
+			<section class="article-section">
+				<h2>Why the Definition Matters</h2>
+				<p>A clear definition is not just for dictionaries. It decides which products must follow the rules of the EU AI Act, and it helps people notice when a company uses "AI" only as a marketing label. For us, the most useful idea is the simplest: AI is a large family of technologies that perform tasks associated with intelligence. But does performing an intelligent task mean that the machine thinks? That is the question of the next article.</p>
+			</section>
+			<section class="article-section">
+				<h2>Sources</h2>
+				<ol>
+					<li><a href="https://www.sec.gov/newsroom/press-releases/2024-36">U.S. Securities and Exchange Commission. SEC Charges Two Investment Advisers with Making False and Misleading Statements About Their Use of Artificial Intelligence (2024)</a></li>
+					<li><a href="https://www.ibm.com/think/topics/artificial-intelligence">IBM. Cole Stryker and Eda Kavlakoglu, What is artificial intelligence (AI)?</a></li>
+					<li><a href="https://www-formal.stanford.edu/jmc/history/dartmouth/dartmouth.html">McCarthy, Minsky, Rochester and Shannon. A Proposal for the Dartmouth Summer Research Project on Artificial Intelligence (1955)</a></li>
+					<li><a href="https://oecd.ai/en/wonk/ai-system-definition-update">OECD.AI. Updates to the OECD&#x27;s definition of an AI system explained (2023)</a></li>
+					<li><a href="https://artificialintelligenceact.eu/article/3/">EU Artificial Intelligence Act. Article 3: Definitions</a></li>
+					<li><a href="https://artificialintelligenceact.eu/recital/12/">EU Artificial Intelligence Act. Recital 12</a></li>
+					<li><a href="https://en.wikipedia.org/wiki/AI_effect">Wikipedia. AI effect</a></li>
+				</ol>
+			</section>
+			<section class="article-section">
+				<h2>Image credits</h2>
+				<ul>
+					<li><a href="https://commons.wikimedia.org/wiki/File:John_McCarthy_Stanford.jpg">John McCarthy Stanford</a> by null0, CC BY-SA 2.0, via Wikimedia Commons</li>
+					<li><a href="https://commons.wikimedia.org/wiki/File:IBM_Deep_Blue_at_Computer_History_Museum_(9361685537).jpg">IBM Deep Blue at Computer History Museum</a> by Anton Chiang, CC BY 2.0, via Wikimedia Commons</li>
+				</ul>
+			</section>
+		</main>
+		<footer id="article">
+			<a href="../../html/index.html">&#10094;&#10094;&#10094; Homepage</a>
+			<a id="back-to-top" href="#" title="Back to top"><span>Back to top</span><span>&#x2B06;</span></a>
+			<a href="can-a-machine-think.html">Can a Machine Think? &#10095;&#10095;&#10095;</a>
+		</footer>
+    </body>
+</html>

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Do we really know what a robot is? - AI in Everyday Life</title> <!-- ARTICLE TITLE -->
+		<link rel="icon" href="../../layout/ai-icon.png">
+		<link rel="stylesheet" href="../../css/global.css">
+		<!-- CUSTOM EXTERNAL CSS -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="description" content="What really makes a machine a robot: the cycle of perception, decision and action, some borderline examples, and the difference between a chatbot and embodied AI."> <!-- ARTICLE DESCRIPTION -->
+		<meta name="author" content="Francesco Ardei">
+		<style>
+			:root {
+				--template-color: var(--third-main-topic-color);
+			}
+			
+			/* CUSTOM INTERNAL CSS */
+			
+			.article-section ul {
+				display: flex;
+				flex-direction: column;
+				gap: 0.5em;
+				margin: 0.8em 0 0.8em 1.5em;
+				line-height: 1.4;
+			}
+			
+			.article-section li::marker {
+				color: var(--template-color);
+			}
+			
+			.article-section strong {
+				font-weight: 600;
+				color: var(--second-main-topic-color-pale);
+			}
+			
+			.article-section figure {
+				max-width: 500px;
+				margin: 2.5em auto;
+			}
+			
+			.article-section figure img {
+				width: 100%;
+				border: var(--article-card-border-style);
+				border-radius: var(--global-border-radius);
+			}
+			
+			.article-section figcaption {
+				margin-top: 0.6em;
+				font-size: 0.9em;
+				font-style: italic;
+				text-align: center;
+				opacity: 0.7;
+			}
+			
+			.article-section .highlight {
+				margin-block: 1.5em;
+				padding-left: 1em;
+				border-left: 3px solid var(--template-color);
+				font-size: 1.15em;
+				font-weight: 400;
+			}
+			
+			.sources {
+				margin-top: 3em;
+				padding: 1em 1.5em;
+				border-left: var(--global-border-thickness) solid var(--template-color);
+				background-color: var(--secondary-bg-color);
+				border-radius: 0 var(--global-border-radius) var(--global-border-radius) 0;
+				font-size: 0.85em;
+			}
+			
+			.article-section .sources h2 {
+				margin: 0;
+				font-size: 1em;
+				font-weight: 600;
+				text-transform: uppercase;
+				color: var(--template-color);
+			}
+			
+			.sources ul {
+				gap: 0.3em;
+				word-break: break-all;
+			}
+
+			h2 {
+				font-weight: 600;
+				text-transform: uppercase;
+				color: var(--template-color);
+				padding-top: 10px;
+				padding-bottom: 10px;
+			}
+			
+		</style>
+	</head>
+	<body id="article">
+		<nav>
+			<a id="back-to-homepage" href="../../html/index.html"><img src="../../layout/logotype.png" alt="Return to the homepage"></a>
+			<ul>
+				<li id="first-main-topic">
+					<a href="../../html/index.html#introduction-to-ai">Introduction to AI</a>
+					<ul class="dropdown">
+						<li><a href="../../html/index.html#history-of-ai">History of AI</a></li>
+						<li><a href="../../html/index.html#basic-concepts">Basic Concepts</a></li>
+					</ul>
+				</li>
+				<li id="second-main-topic">
+					<a href="../../html/index.html#ai-technologies">AI Technologies</a>
+					<ul class="dropdown">
+						<li><a href="../../html/index.html#interactions">Interactions</a></li>
+						<li><a href="../../html/index.html#language-technologies">Language Technologies</a></li>
+						<li><a href="../../html/index.html#robotics">Robotics</a></li>
+						<li><a href="../../html/index.html#world-building">World Building</a></li>
+					</ul>
+				</li>
+				<li id="third-main-topic">
+					<a href="../../html/index.html#impact-and-ethics">Impact and Ethics</a>
+					<ul class="dropdown">
+						<li><a href="../../html/index.html#ethics">Ethics</a></li>
+						<li><a href="../../html/index.html#limitations">Limitations</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+		<!-- PUT YOUR CONTENT ONLY INSIDE THE <main> TAG, AFTER LINKS AND TITLE SECTION -->
+		<main>
+			<!-- PREVIOUS/NEXT ARTICLE LINKS -->
+			<a id="previous-article" href="../index.html#robotics" aria-label="Read previous article" title="Previous article">&#10094;</a>
+			<a id="next-article" href="programmed-robots-vs-intelligent-robots.html" aria-label="Read next article" title="Next article">&#10095;</a>
+			<!-- ARTICLE TITLE (START) -->
+			<section id="article-title">
+				<div>
+					<h1>AI’s Water Footprint</h1>
+					<p id="article-subtitle">Our freshwater will be used by data centers and all that will be left for us is tears.</p>
+					<p class="article-title-paragraph">How Data Center Cooling Affects Local Water Supplies</p>
+					<p id="author"><span>by </span>Francesco Ardei</p>
+				</div>
+			</section>
+			<!-- ARTICLE SECTION (START) -->
+			<section class="article-section">
+				<figure>
+					<img src="../../contributors/francesco-ardei/wfall.jpg.avif" alt="Water yum">
+					<figcaption>A waterfall.</figcaption>
+				</figure>
+
+				<p>As we have been led to believe, AI has been using a substantial amount of water thanks to its data centers’ need for cooling. But where does the truth of this statement lie?</p>
+
+              	<p><h2> Assumptions vs Reality</h2></p>
+
+				<p>After checking some statistics I’ve found out that, on average, a datacenter can consume up to <strong>19 million</strong>  liters of water per day. Which equals to a town of around fifty thousands inhabitants. </p>
+
+				<p>One might say that this is outrageous, it’s blasphemy that this much FRESH water is being used on something that isn’t palpable, but merely digital.</p>
+				
+                <p>But in practice, there exists many kinds of data centers, and they are built up to necessity:</p>
+                <ul>
+					<li>When one is planning to build a data center, one must consider the water availability of its surrounding. If it is being built near a lake or something of the sort, the presence of water is all but scarce. The engineers will, hence, employ the usage of open loop / water cooled systems; because water is cheaper in that region.</li>
+					<li>On the other hand, were one to choose to build their data center in a dry region, they’ll consider employing closed loop / air cooled systems, as power itself is more easily attainable than water in such a place.</li>
+				</ul>
+
+				<p><h2>Not as devastating as we thought</h2></p>
+
+				<p>Therefore, water usage is really not the index we should be worried about, as it’s not a fixed property of each data center.</p>
+
+                <p>One that consumes a lot but is near a lake is not as much of an issue as it might seem, as plenty of water is available.</p>
+
+                <p>One that is placed in a dry territory will do it’s best not to tap into water as much, as it’s not available.</p>
+
+                <p>There’s a chance that it might strain the water supply of the region even more, careful considerations should be taken, but it does in fact not consume more than what a normal factory would.</p>
+                
+                <p>So, in this sense, it seems less scary.</p>
+                
+				<p><h2>Final Thoughts</h2></p>
+				
+                <p>In conclusion, water usage of data centers is not the problem.</p>
+                
+                <p>It might be seen as wasteful as people might see plenty of water going in and no product coming out, but it must be taken into account that data centers in america consume only 8% of the water that golf courses use.</p>
+
+                <p>That’s right. </p>
+
+                <p>And arguably, golf is way more pointless than AI.</p>
+
+                <p class="highlight">There are metrics that are worrying (like CO2 emissions and power consumption), but in regard to water usage, it’s an exaggeration to call it worrying.</p>
+
+				<figure>
+					<img src="../../contributors/francesco-ardei/barren.jpeg" alt="Behold, my field unto which I grow my f, notice that it is barren.">
+					<figcaption>Barren land.</figcaption>
+				</figure>
+
+				<aside class="sources">
+					<h2>Sources</h2>
+					<ul>
+						<li><a href="https://www.eesi.org/articles/view/data-centers-and-water-consumption" target="_blank" rel="noopener">https://www.eesi.org/articles/view/data-centers-and-water-consumption</a></li>
+						<li><a href="https://blog.andymasley.com/p/the-ai-water-issue-is-fake" target="_blank" rel="noopener">https://blog.andymasley.com/p/the-ai-water-issue-is-fake</a></li>
+						<li><a href="https://www.reddit.com/r/AskEngineers/comments/1sj35pc/real_facts_on_data_center_water_use_is_it_that/" target="_blank" rel="noopener">https://www.reddit.com/r/AskEngineers/comments/1sj35pc/real_facts_on_data_center_water_use_is_it_that/</a></li>
+					</ul>
+				</aside>
+			</section>
+            <!-- i have been denied the joy of calling this article "Will AI suck us dry?" but someone has to know. -->
+		</main>
+		<footer id="article">
+			<a href="">&#10094;&#10094;&#10094; Previous article</a>
+			<a id="back-to-top" href="#" title="Back to top"><span>Back to top</span><span>&#x2B06;</span></a>
+			<a href="">To Be Decided &#10095;&#10095;&#10095;</a>
+		</footer>
+    </body>
+</html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>The Environmental Cost of AI - AI in Everyday Life</title> <!-- ARTICLE TITLE -->
+		<link rel="icon" href="../../layout/ai-icon.png">
+		<link rel="stylesheet" href="../../css/global.css">
+		<!-- CUSTOM EXTERNAL CSS -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="description" content="Training and running AI models requires vast amounts of power, water, and rare minerals. Learn how artificial intelligence impacts our planet."> <!-- ARTICLE DESCRIPTION -->
+		<meta name="author" content="Andrea Dell'Agnello"> <!-- ARTICLE AUTHOR -->
+		<style>
+			:root {
+				--template-color: var(--third-main-topic-color);
+			}
+			
+			/* CUSTOM INTERNAL CSS */
+
+			.article-section {
+				padding-block: 0;
+			}
+
+			.article-section ul {
+				display: flex;
+				flex-direction: column;
+				gap: 0.5em;
+				margin: 0.8em 0 0.8em 1.5em;
+				line-height: 1.4;
+			}
+			
+			.article-section li::marker {
+				color: var(--template-color);
+			}
+			
+			.article-section strong {
+				font-weight: 600;
+			}
+			
+			.article-section h2 {
+				margin-block: 1.8em 0.4em;
+				font-size: 1.3em;
+				font-weight: 500;
+				color: var(--template-color);
+				text-transform: uppercase;
+			}
+			
+			.article-section figure {
+				max-width: 500px;
+				margin: 2.5em auto;
+			}
+			
+			.article-section figure img {
+				width: 100%;
+				border: var(--article-card-border-style);
+				border-radius: var(--global-border-radius);
+			}
+			
+			.article-section figcaption {
+				margin-top: 0.6em;
+				font-size: 0.9em;
+				font-style: italic;
+				text-align: center;
+				opacity: 0.7;
+			}
+			
+			.article-section .highlight {
+				margin-block: 1.5em;
+				padding-left: 1em;
+				border-left: 3px solid var(--template-color);
+				font-size: 1.15em;
+				font-weight: 400;
+			}
+			
+			.sources {
+				margin-top: 3em;
+				padding: 1em 1.5em;
+				border-left: var(--global-border-thickness) solid var(--template-color);
+				background-color: var(--secondary-bg-color);
+				border-inline: var(--global-border-radius);
+				font-size: 0.85em;
+			}
+			
+			.article-section .sources h2 {
+				margin: 0;
+				font-size: 1em;
+				font-weight: 600;
+				text-transform: uppercase;
+				color: var(--template-color);
+			}
+			
+			.sources ul {
+				gap: 0.3em;
+				word-break: break-all;
+			}
+		</style>
+	</head>
+	<body>
+		<nav>
+			<a id="back-to-homepage" href="../../html/index.html"><img src="../../layout/logotype.png" alt="Return to the homepage"></a>
+			<ul>
+				<li id="first-main-topic">
+					<a href="../../html/index.html#introduction-to-ai">Introduction to AI</a>
+					<ul class="dropdown">
+						<li><a href="../../html/index.html#history-of-ai">History of AI</a></li>
+						<li><a href="../../html/index.html#basic-concepts">Basic Concepts</a></li>
+					</ul>
+				</li>
+				<li id="second-main-topic">
+					<a href="../../html/index.html#ai-technologies">AI Technologies</a>
+					<ul class="dropdown">
+						<li><a href="../../html/index.html#interactions">Interactions</a></li>
+						<li><a href="../../html/index.html#language-technologies">Language Technologies</a></li>
+						<li><a href="../../html/index.html#robotics">Robotics</a></li>
+						<li><a href="../../html/index.html#world-building">World Building</a></li>
+					</ul>
+				</li>
+				<li id="third-main-topic">
+					<a href="../../html/index.html#impact-and-ethics">Impact and Ethics</a>
+					<ul class="dropdown">
+						<li><a href="../../html/index.html#ethics">Ethics</a></li>
+						<li><a href="../../html/index.html#limitations">Limitations</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+		<!-- PUT YOUR CONTENT ONLY INSIDE THE <main> TAG, AFTER LINKS AND TITLE SECTION -->
+		<main>
+			<!-- PREVIOUS/NEXT ARTICLE LINKS -->
+			<a id="previous-article" href="PREVIOUS ARTICLE LINK" aria-label="Read previous article" title="Previous article">&#10094;</a>
+			<a id="next-article" href="NEXT ARTICLE LINK" aria-label="Read next article" title="Next article">&#10095;</a>
+			<!-- ARTICLE TITLE (START) -->
+			<section id="article-title">
+				<div>
+					<h1>The environmental cost of Artificial Intelligence</h1>
+					<p id="article-subtitle">Emissions from training and running models</p>
+					<p class="article-title-paragraph">Artificial intelligence is transforming industries, automating complex workflows, and powering everyday digital tools; from drafting emails and writing software code to accelerating scientific discovery, <strong>generative AI has quickly become a standard utility across the global economy</strong>. Behind every chatbot reply, generated image, and predictive algorithm, however, lies a massive physical infrastructure.</p>
+					<p class="article-title-paragraph">Understanding <strong>the true environmental footprint</strong> of artificial intelligence requires looking closely at the energy demands of building these systems, keeping them running at global scale, and manufacturing the hardware that makes them possible <sup><a href="#ref-1">[1]</a></sup>.</p>
+					<p id="author"><span>by </span>Andrea Dell'Agnello</p>
+					</div>
+			</section>
+			<!-- ARTICLE SECTIONS (START) -->
+			<section class="article-section">
+				<h2>Training foundation models</h2>
+				<p>Training a modern large language model (LLM) or multimodal AI system <strong>is an extraordinarily energy-intensive process</strong>: before an AI model can answer a single question, it must process trillions of words, images, or data points across thousands of specialized processors, such as GPUs and TPUs, running continuously at peak capacity for weeks or months <sup><a href="#ref-1">[1]</a></sup>.</p>
+				<figure>
+					<img src="../../contributors/andrea-dellagnello/ai-data-center.jpg" alt="A picture of an enormous AI data center">
+					<figcaption>A data center</figcaption>
+				</figure>
+				<p>Hyperscale data centers housing tens of thousands of interconnected chips draw tens of megawatts of continuous power to perform billions of matrix multiplications per second.</p>
+				<p>High-density server racks <strong>generate immense heat</strong>, requiring energy-hungry liquid or air-cooling systems (and often <strong>millions</strong> of gallons of freshwater) to keep processors within safe operating temperatures <sup><a href="#ref-3">[3]</a></sup>.</p>
+				<p>For perspective, training a single frontier-scale model can consume dozens of gigawatt-hours of electricity, generating hundreds or even thousands of metric tons of carbon dioxide equivalent (CO₂e) depending on the regional power grid <sup><a href="#ref-1">[1]</a></sup>.</p>
+				<p>Also, <strong>the final training run is rarely a one-time event</strong>: AI labs run hundreds of smaller experiments, hyperparameter sweeps, and failed training runs before achieving a production-ready model, multiplying total energy consumption <sup><a href="#ref-1">[1]</a></sup>.</p>
+			</section>
+			<section class="article-section">
+				<h2>The hidden ongoing cost of inference</h2>
+				<p>While training generates headlines due to its concentrated burst of energy use, inference, the process of running a trained model to generate responses for users, often <strong>accounts for the vast majority of an AI system's lifetime emissions</strong>.</p>
+				<p class="highlight">A single text query to a generative AI assistant requires roughly ten times more electricity than a traditional keyword web search <sup><a href="#ref-2">[2]</a></sup>.</p>
+				<p>Generating high-resolution images, complex reasoning chains, or synthetic video demands orders of magnitude more power. Unlike training, which happens once before deployment, <strong>inference occurs continuously</strong>.</p>
+				<figure>
+					<img src="../../contributors/andrea-dellagnello/web-search.jpg" alt="An image showing a search engine input field">
+					<figcaption>A traditional search engine input field</figcaption>
+				</figure>
+				<p>When billions of users interact with AI features integrated into search engines, customer service portals, office software, and mobile devices every single day, those small per-query energy costs multiply rapidly into a massive, uninterrupted <strong>global power draw</strong> <sup><a href="#ref-2">[2]</a></sup>.</p>
+			</section>
+			<section class="article-section">
+				<h2>Embodied carbon and supply chains</h2>
+				<p>Evaluating AI's climate impact solely through operational electricity overlooks a critical piece of the equation: embodied carbon. This refers to the greenhouse gas emissions generated <strong>before a server is ever plugged in</strong> <sup><a href="#ref-4">[4]</a></sup>.</p>
+				<p>Manufacturing cutting-edge AI accelerators involves mining rare earth minerals, refining ultra-pure silicon, and operating semiconductor fabrication plants that require vast amounts of energy and specialized industrial gases.</p>
+				<figure>
+					<img src="../../contributors/andrea-dellagnello/rare-minerals-mine.jpg" alt="High-angle drone shot showing a walking excavator operating in a rare minerals mine">
+					<figcaption>A rare minerals mine</figcaption>
+				</figure>
+				<p>Furthermore, data center buildings themselves require large volumes of carbon-intensive materials like steel and concrete.</p>
+				<p>Because <strong>AI hardware upgrades occur on rapid two-to-three-year cycles</strong> to keep pace with computational demands, embodied emissions remain a persistent factor in the lifecycle of AI infrastructure <sup><a href="#ref-4">[4]</a></sup>.</p>
+			</section>
+			<section class="article-section" style="padding-bottom:3em">
+				<h2>Looking ahead</h2>
+				<p>Artificial intelligence holds immense potential to help solve environmental challenges, from optimizing electrical grids and forecasting extreme weather, to discovering new materials for carbon capture and battery storage <sup><a href="#ref-2">[2]</a></sup>.</p>
+				<p>But, as the industry matures, <strong>measuring energy efficiency alongside accuracy and speed will be essential</strong> to ensuring that intelligent software supports a sustainable future.</p>
+				<aside class="sources">
+					<h2>Sources</h2>
+					<ul>
+						<li id="ref-1"><a href="https://arxiv.org/abs/2309.14393" target="_blank" rel="noopener">LLMCarbon: Modeling the end-to-end Carbon Footprint of Large Language Models</a></li>
+						<li id="ref-2"><a href="https://www.iea.org/reports/energy-and-ai/" target="_blank" rel="noopener">Energy and AI</a></li>
+						<li id="ref-3"><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12827721/" target="_blank" rel="noopener">The carbon and water footprints of data centers and what this could mean for artificial intelligence</a></li>
+						<li id="ref-4"><a href="https://arxiv.org/abs/2502.01671" target="_blank" rel="noopener">Life-Cycle Emissions of AI Hardware: A Cradle-To-Grave Approach and Generational Trends</a></li>
+					</ul>
+				</aside>
+			</section>
+		</main>
+		<footer id="article">
+			<a href="PREVIOUS ARTICLE LINK">&#10094;&#10094;&#10094; Previous article</a>
+			<a id="back-to-top" href="#" title="Back to top"><span>Back to top</span><span>&#x2B06;</span></a>
+			<a href="NEXT ARTICLE LINK">Next article &#10095;&#10095;&#10095;</a>
+		</footer>
+    </body>
+</html>

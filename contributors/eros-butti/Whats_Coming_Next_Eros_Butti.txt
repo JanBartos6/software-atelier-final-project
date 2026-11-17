@@ -1,0 +1,51 @@
+Eros Butti
+What's Coming Next: Five AI Trends You Will Notice
+
+
+So far, most AI has answered questions or made suggestions. The next step is AI that acts. It is also moving into new places, and governments are writing the first rules for it. Here are five trends you will notice in the next few years.
+
+
+1. AI That Does Things for You
+
+In July 2025 OpenAI launched ChatGPT agent, which can "complete complex online tasks on your behalf", like filling in forms or editing spreadsheets. In 2024 Anthropic had already shown a version of Claude that uses a computer "by looking at a screen, moving a cursor, clicking buttons, and typing text", while admitting it was still "at times cumbersome and error-prone". The research company Gartner expects that by 2028 at least 15% of day-to-day work decisions will be made by such AI agents. (OpenAI 2025, Anthropic 2024, Reuters / The Star 2025)
+
+
+2. Search Becomes a Conversation
+
+Google's AI Overviews, the AI summaries above the normal results, reached more than 2 billion monthly users in 2025. AI Mode, where you chat instead of scrolling through links, passed 1 billion monthly users in 2026. People search differently there: their questions are three times longer than normal searches, and one in five uses voice, images or documents instead of typing. (Google 2025, 2026)
+
+
+3. AI You Wear
+
+AI is leaving the screen. Meta and EssilorLuxottica sold 7 million Ray-Ban and Oakley smart glasses with a built-in AI assistant in 2025 alone. Voice assistants are being rebuilt as well: in January 2026 Apple announced that Google's Gemini will help power a new, more personal Siri. (UploadVR 2026, MacRumors 2026)
+
+
+4. AI in Science and Medicine
+
+Some of the biggest changes will happen where we can't see them. In 2024 Demis Hassabis and John Jumper of Google DeepMind won the Nobel Prize in Chemistry for AlphaFold, an AI that predicts the 3D shape of proteins, a problem scientists had worked on for 50 years. More than 2 million researchers in 190 countries have used it, for example to develop new medicines. Meanwhile, the US Food and Drug Administration has authorized more than 1,400 medical devices that use AI. (Google DeepMind 2024, MedTech Dive 2026)
+
+
+5. Rules for AI
+
+The EU was one of the first to regulate AI with a single law, the AI Act. It entered into force in August 2024, banned the most dangerous uses of AI from February 2025, and requires AI-generated content to be labelled from 2026. In 2026, however, the EU delayed the rules for "high-risk" AI, such as AI used in hiring, schools or medical devices, to 2027 and 2028. (European Commission, Hunton 2026)
+
+
+A Quick Reality Check
+
+Not every trend will last. The same Gartner report warns that more than 40% of AI agent projects will be cancelled by the end of 2027, and that only about 130 of the thousands of companies selling "AI agents" offer real ones. Which raises a bigger question: how far can AI actually go? (Reuters / The Star 2025)
+
+
+Sources
+
+1. OpenAI Help Center. ChatGPT release notes: ChatGPT agent (2025) - https://help.openai.com/en/articles/11794368
+2. Anthropic. Introducing computer use (2024) - https://www.anthropic.com/news/3-5-models-and-computer-use
+3. The Star / Reuters. Over 40% of agentic AI projects will be scrapped by 2027, Gartner says (2025) - https://www.thestar.com.my/tech/tech-news/2025/06/25/over-40-of-agentic-ai-projects-will-be-scrapped-by-2027-gartner-says
+4. Google. Alphabet Q2 2025 earnings: CEO remarks (2025) - https://blog.google/inside-google/message-ceo/alphabet-earnings-q2-2025/
+5. Google. Alphabet Q2 2026 earnings: CEO remarks (2026) - https://blog.google/company-news/inside-google/message-ceo/alphabet-earnings-q2-2026/
+6. Google. Alphabet Q3 2026 earnings: CEO remarks (2026) - https://blog.google/company-news/inside-google/message-ceo/alphabet-earnings-q3-2026/
+7. UploadVR. Meta and EssilorLuxottica sold 7 million smart glasses in 2025 (2026) - https://uploadvr.com/meta-essilorluxottica-sold-7-million-smart-glasses-in-2025/
+8. MacRumors. Google Gemini to power next-generation Siri (2026) - https://www.macrumors.com/2026/01/12/google-gemini-next-generation-siri/
+9. Google DeepMind. Demis Hassabis and John Jumper awarded Nobel Prize in Chemistry (2024) - https://deepmind.google/discover/blog/demis-hassabis-john-jumper-awarded-nobel-prize-in-chemistry/
+10. MedTech Dive. Tracking AI medical devices cleared by the FDA (2026) - https://www.medtechdive.com/news/ai-medtech-track-new-devices-fda/748397/
+11. European Commission. AI Act - https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai
+12. Hunton. EU Digital Omnibus on AI enters into force (2026) - https://www.hunton.com/privacy-and-cybersecurity-law-blog/eu-digital-omnibus-on-ai-enters-into-force

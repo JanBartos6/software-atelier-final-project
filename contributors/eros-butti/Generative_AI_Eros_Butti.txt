@@ -1,0 +1,50 @@
+Eros Butti
+Generative AI: When Machines Create Text, Images and Music
+
+
+Could you tell if a song was made by a human or by an AI? In a survey for the streaming service Deezer, 97% of listeners could not. (Claims Journal / Reuters 2025)
+
+That is generative AI. Most of the AI in our lives recognizes and predicts: a face, the traffic, a spam email. Generative AI creates text, images, music and videos that did not exist before, in seconds, for anyone who asks. And it spread faster than any app before it: according to an estimate by the bank UBS, ChatGPT reached 100 million users about two months after launch, while TikTok needed nine months and Instagram two and a half years. By February 2026 it had 900 million weekly users. In Switzerland, 47% of people had used generative AI tools by 2025, well above the EU average of about 33%. (Euronews / Reuters 2023, TechCrunch 2026, Euronews 2025)
+
+
+Text
+
+For most people, generative AI means chatbots like ChatGPT, Gemini or Claude. They write emails, summarize articles, translate and help with studying. Students were among the first to use them: by the end of 2024, 26% of American teenagers had used ChatGPT for schoolwork, double the share of one year before. How a chatbot actually writes its answers is explained in the "How Does AI Work?" part of this website. (Pew Research Center 2025)
+
+
+Images and Video
+
+Describe a picture in one sentence, and an image generator draws it. Video followed fast, and disappeared just as fast in at least one case: OpenAI released its video generator Sora in December 2024, launched a second version with its own app in September 2025, and only six months later announced: "We're saying goodbye to Sora." (Engadget 2026)
+
+
+Music
+
+Back to the songs. According to Deezer, 44% of all tracks uploaded to the platform every day in 2026 are made by AI, almost 75,000 a day, although they make up only 1-3% of what people actually listen to. (Engadget 2026)
+
+The music industry fought back. In 2024 the major record labels sued the AI music apps Suno and Udio, accusing them of copying songs to build systems that would "directly compete with, cheapen, and ultimately drown out" human artists. By the end of 2025 several labels had settled, and the apps agreed to launch licensed versions in 2026. (Claims Journal / Reuters 2025, The Star / Reuters 2025)
+
+
+Two Big Problems
+
+The first problem: fakes. In 2024 an employee of the engineering firm Arup in Hong Kong joined a video call with the company's finance director and several colleagues. Every one of them was a deepfake. The employee made 15 transfers worth about 25 million US dollars before anyone noticed. To make fakes easier to spot, the EU's AI Act requires since August 2026 that AI-generated content is marked in a way machines can detect, and that deepfakes are disclosed. (CNN 2024, European Commission)
+
+The second problem: who owns it. Generative AI learns from millions of books, articles, pictures and songs whose creators were never asked. The New York Times sued OpenAI in 2023, and the case is still open. In 2025 Anthropic agreed to pay 1.5 billion dollars to authors, about 3,000 dollars per book, the largest copyright settlement ever. But in the UK, Getty Images lost its main case against Stability AI, because the court found that the model does not store copies of Getty's images. The rules are still being written. (WGBH / NPR 2025, JURIST 2026, SCL 2025)
+
+Generative AI can make anyone a writer, a designer or a composer. It can also make anything look real. That is why the next article is about using it well.
+
+
+Sources
+
+1. Euronews / Reuters. ChatGPT is the fastest growing app in the history of the web (2023) - https://www.euronews.com/next/2023/02/02/openai-chatgpt
+2. TechCrunch. ChatGPT reaches 900M weekly active users (2026) - https://techcrunch.com/2026/02/27/chatgpt-reaches-900m-weekly-active-users
+3. Euronews. Which countries use generative AI tools most across Europe (2025) - https://www.euronews.com/2025/12/29/chatgpt-gemini-grok-and-others-which-countries-use-generative-ai-tools-most-across-europe
+4. Pew Research Center. About a quarter of U.S. teens have used ChatGPT for schoolwork (2025) - https://www.pewresearch.org/short-reads/2025/01/15/about-a-quarter-of-us-teens-have-used-chatgpt-for-schoolwork-double-the-share-in-2023/
+5. Engadget. OpenAI is shutting down its Sora video generation app (2026) - https://engadget.com/ai/openai-is-shutting-down-its-sora-video-generation-app-211023358.html
+6. Engadget. Deezer says AI-made songs make up 44 percent of daily uploads (2026) - https://engadget.com/entertainment/music/deezer-says-ai-made-songs-make-up-44-percent-of-daily-uploads-163642921.html
+7. Claims Journal / Reuters. Warner Music settles with Udio (2025) - https://www.claimsjournal.com/news/national/2025/11/20/334192.htm
+8. The Star / Reuters. Warner Music Group settles copyright case with Suno for licensed AI music (2025) - https://www.thestar.com.my/tech/tech-news/2025/11/26/warner-music-group-settles-copyright-case-with-suno-for-licensed-ai-music
+9. CNN. Arup revealed as victim of 25 million dollar deepfake scam (2024) - https://edition.cnn.com/2024/05/16/tech/arup-deepfake-scam-loss-hong-kong-intl-hnk
+10. European Commission. Code of Practice on AI-generated content - https://digital-strategy.ec.europa.eu/en/policies/code-practice-ai-generated-content
+11. WGBH / NPR. Judge allows New York Times copyright case against OpenAI to go forward (2025) - https://www.wgbh.org/news/2025-03-26/judge-allows-new-york-times-copyright-case-against-openai-to-go-forward
+12. JURIST. Judge approves record 1.5 billion dollar settlement involving Anthropic (2026) - https://www.jurist.org/news/2026/07/judge-approves-record-1-5-billion-settlement-involving-anthropic/
+13. SCL. High Court issues judgment in Getty v Stability AI (2025) - https://www.scl.org/high-court-issues-eagerly-awaited-judgment-in-getty-v-stability-ai-case/

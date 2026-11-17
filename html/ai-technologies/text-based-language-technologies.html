@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Text-Based Language Technologies</title> <!-- ARTICLE TITLE -->
+		<link rel="icon" href="../../layout/ai-icon.png">
+		<link rel="stylesheet" href="../../css/global.css">
+		<!-- CUSTOM EXTERNAL CSS -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="description" content="Why text based technologies came first and everyday examples"> <!-- ARTICLE DESCRIPTION -->
+		<meta name="author" content="Daniele Gabriele Gambarota"> <!-- ARTICLE AUTHOR -->
+		<style>
+			:root {
+				--template-color: var(--second-main-topic-color);
+			}
+
+			.article-section figure {
+				width: 80%;
+				margin: 2em auto;
+
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+			}
+
+			.article-section figure img {
+				margin: 1em 0;
+
+				border: var(--article-card-border-style);
+				border-radius: var(--global-border-radius);
+
+				min-width: 100%;
+			}
+
+			.article-section ul,
+			.article-section ol {
+				display: flex;
+				flex-direction: column;
+
+				gap: 0.5em;
+				margin: 0.5em 0 0.5em 1.5em;
+			}
+
+			.article-section li::marker {
+				color: var(--template-color);
+			}
+
+			.article-section h2,
+			.article-section h3 {
+				margin: 1em 0;
+				color: var(--second-main-topic-color);
+			}
+
+			/* Section taken from Giacomo Demartini's pages*/
+
+			.sources {
+				margin-top: 3em;
+				padding: 1em 1.5em;
+				border-left: var(--global-border-thickness) solid var(--template-color);
+				background-color: var(--secondary-bg-color);
+				border-radius: 0 var(--global-border-radius) var(--global-border-radius) 0;
+				font-size: 0.85em;
+			}
+
+			.sources ul {
+				gap: 0.3em;
+				word-break: break-all;
+
+				display: flex;
+				flex-direction: column;
+				margin: 0.8em 0 0.8em 1.5em;
+				line-height: 1.4;
+			}
+
+			.sources h2 {
+				margin: 0;
+				font-size: 1em;
+				font-weight: 600;
+				text-transform: uppercase;
+				color: var(--template-color);
+			}
+
+			/* End borrowed section */
+
+			/* CUSTOM INTERNAL CSS */
+		</style>
+	</head>
+	<body>
+		<nav>
+			<a id="back-to-homepage" href="../../html/index.html"><img src="../../layout/logotype.png" alt="Return to the homepage"></a>
+			<ul>
+				<li id="first-main-topic">
+					<a href="../../html/index.html#introduction-to-ai">Introduction to AI</a>
+					<ul class="dropdown">
+						<li><a href="../../html/index.html#history-of-ai">History of AI</a></li>
+						<li><a href="../../html/index.html#basic-concepts">Basic Concepts</a></li>
+					</ul>
+				</li>
+				<li id="second-main-topic">
+					<a href="../../html/index.html#ai-technologies">AI Technologies</a>
+					<ul class="dropdown">
+						<li><a href="../../html/index.html#interactions">Interactions</a></li>
+						<li><a href="../../html/index.html#language-technologies">Language Technologies</a></li>
+						<li><a href="../../html/index.html#robotics">Robotics</a></li>
+						<li><a href="../../html/index.html#world-building">World Building</a></li>
+					</ul>
+				</li>
+				<li id="third-main-topic">
+					<a href="../../html/index.html#impact-and-ethics">Impact and Ethics</a>
+					<ul class="dropdown">
+						<li><a href="../../html/index.html#ethics">Ethics</a></li>
+						<li><a href="../../html/index.html#limitations">Limitations</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+		<main>
+			<!-- PREVIOUS/NEXT ARTICLE LINKS -->
+			<a id="previous-article" href="interacting-with-human-language-and-voice.html" aria-label="Read previous article" title="Previous article">&#10094;</a>
+			<a id="next-article" href="voice-based-language-technologies.html" aria-label="Read next article" title="Next article">&#10095;</a>
+			<!-- ARTICLE TITLE (START) -->
+			<section id="article-title">
+				<div>
+					<h1>Text-Based Language Technologies</h1>
+					<p id="article-subtitle">Text came first, then voice</p>
+					<p class="article-title-paragraph">Why did text come first, everyday examples, how a chatbot understands you</p>
+					<p id="author"><span>by </span>Daniele Gabriele Gambarota</p>
+					</div>
+			</section>
+			<!-- ARTICLE SECTIONS (START) -->
+			<section class="article-section">
+				<h2>Why text came first</h2>
+				<p>Text is easy for computers to store and search, and the web contains enormous amounts of it. Every article, forum post, product review,
+					or even every book is a potential example from which a machine can learn. That is why text-based AI developed quickly and now sits behind
+					many of the services we use every day.</p>
+
+				<figure>
+					<img src="../../contributors/daniele-gabriele-gambarota/british_museum.jpg" alt="British museum reading room">
+					<figcaption>British museum reading room</figcaption>
+				</figure>
+
+				<h2>Everyday examples</h2>
+				<ul>
+					<li>
+						<h3>Autocomplete, autocorrect</h3>
+						<p>When your keyboard suggests the next word, it is predicting what is most likely to follow what you have typed so far.
+							This fairly simple idea of predicting the next word is also the core mechanism of large language models. What is often
+							a surprise is that your phone keyboard also continuously edits the hitboxes of each letter based on what you are typing.
+							If the system expects a vowel after “th”, the “e” key becomes a slightly larger target, so that a slightly imprecise tap
+							still lands on the letter you most likely meant. Autocorrect works on the same principle: if you type “teh”, the system knows that
+							“the” is far more likely than any other word, and fixes it before you notice.</p>
+					</li>
+					<li>
+						<h3>Machine translation</h3>
+						<p>Services such as Google Translate convert text from one language to another. Around 2016, translation systems moved from phrase-by-phrase methods
+							to neural networks that read the whole sentence, which made the results much more fluent.</p>
+					</li>
+					<li>
+						<h3>Chatbots and AI assistants</h3>
+						<p>Customer-service chats and general assistants often found nowadays in websites can answer questions, summarise documents,
+							and write or correct text. They are built on large language models trained on vast collections of text.</p>
+					</li>
+					<li>
+						<h3>Spam</h3>
+						<p>As previously mentioned, spam filters and email sorting. Email services classify messages by analysing their content,
+							separating spam and unwanted mail from ordinary mail.</p>
+					</li>
+					<li>
+						<h3>Search and summarisation</h3>
+						<p>Search engines try to understand the intent behind a query, not just match keywords.
+							Summarisation tools shorten long articles into a few lines.</p>
+					</li>
+					<li>
+						<h3>Sentiment analysis</h3>
+						<p>Companies analyse reviews and social-media posts to estimate whether people sound positive, negative or neutral about a product..</p>
+
+						<p>So how does a chatbot “understand” you?</p>
+
+						<p>Well, not the way humans do! It splits your text into small pieces called tokens and,
+							using what it learned from enormous amounts of text, calculates which piece is most likely to come next,
+							again and again, until a full answer appears. The system is simply working with statistical patterns.</p>
+					</li>
+				</ul>
+
+				<aside class="sources">
+					<h2>Sources</h2>
+					<ul>
+						<li><a href="https://en.wikipedia.org/wiki/Language_technology" target="_blank" rel="noopener">https://en.wikipedia.org/wiki/Language_technology</a></li>
+						<li><a href="https://en.wikipedia.org/wiki/Natural_language_processing" target="_blank" rel="noopener">https://en.wikipedia.org/wiki/Natural_language_processing</a></li>
+						<li><a href="https://en.wikipedia.org/wiki/Google_Neural_Machine_Translation" target="_blank" rel="noopener">https://en.wikipedia.org/wiki/Google_Neural_Machine_Translation</a></li>
+						<li><a href="https://www.apple.com/newsroom/2023/06/ios-17-makes-iphone-more-personal-and-intuitive/" target="_blank" rel="noopener">https://www.apple.com/newsroom/2023/06/ios-17-makes-iphone-more-personal-and-intuitive/</a></li>
+						<li><a href="https://en.wikipedia.org/wiki/Sentiment_analysis" target="_blank" rel="noopener">https://en.wikipedia.org/wiki/Sentiment_analysis</a></li>
+						<li><a href="https://en.wikipedia.org/wiki/British_Museum_Reading_Room" target="_blank" rel="noopener">https://en.wikipedia.org/wiki/British_Museum_Reading_Room</a></li>
+						<li><a href="https://en.wikipedia.org/wiki/Text_mining" target="_blank" rel="noopener">https://en.wikipedia.org/wiki/Text_mining</a></li>
+					</ul>
+				</aside>
+			</section>
+
+		</main>
+		<footer id="article">
+			<a href="interacting-with-human-language-and-voice.html">&#10094;&#10094;&#10094; Previous article</a>
+			<a id="back-to-top" href="#" title="Back to top"><span>Back to top</span><span>&#x2B06;</span></a>
+			<a href="voice-based-language-technologies.html">Next article &#10095;&#10095;&#10095;</a>
+		</footer>
+    </body>
+</html>

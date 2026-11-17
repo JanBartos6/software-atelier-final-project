@@ -1,0 +1,55 @@
+Alessio Giugno
+What Is Artificial Intelligence? Defining a Word Everyone Uses
+
+
+In March 2024 the US Securities and Exchange Commission fined two investment companies a total of 400,000 dollars. Their crime was not stealing money, but using a word: they told clients they used artificial intelligence to choose investments, and they did not. The chair of the SEC, Gary Gensler, called it "AI washing" and said that it "hurts investors". If a company can be fined for using the word "AI" in the wrong way, it is worth asking what the word actually means. (SEC 2024)
+
+
+A Field, Not a Single Invention
+
+Artificial intelligence, usually called AI, is technology that enables computers and machines to perform tasks we associate with human intelligence: recognizing images, understanding language, solving problems, making decisions and creating content. AI is also the name of the field of computer science that builds these systems. (IBM)
+
+The name is older than most people think. It appeared in 1955, in a proposal written by John McCarthy, Marvin Minsky, Nathaniel Rochester and Claude Shannon for a summer workshop at Dartmouth College. The History of AI section tells that story. (McCarthy et al. 1955)
+
+So AI is not one machine or one program. The same word covers a chess computer from the 1990s, the filter that hides your spam and the chatbot you ask for help with homework. They work in very different ways, but they all do something we would call "intelligent" if a person did it.
+
+
+Input, Inference, Output
+
+To write laws about AI, governments needed a precise definition. In 2023 the 38 member countries of the OECD agreed on this one: an AI system is a machine-based system that, for explicit or implicit objectives, "infers, from the input it receives, how to generate outputs such as predictions, content, recommendations, or decisions" that can influence physical or virtual environments. In 2024 the European Union used almost the same words in its AI Act, the first comprehensive law on artificial intelligence in the world. (OECD 2023, EU AI Act)
+
+The definition sounds complicated, but it describes three simple steps:
+
+- Input: the system receives information, like a photo, a sentence, your location or the videos you watched.
+- Inference: it works out what to do with that information. This is the important part. Nobody wrote an exact instruction for your photo or your sentence. The system uses what it has learned, or the knowledge it was given, to decide.
+- Output: it produces a result. That can be a prediction ("this email is spam"), content (a text or an image), a recommendation ("you might like this song") or a decision (block a card payment).
+
+The last part of the definition says that AI systems have "varying levels of autonomy". A spam filter only sorts your emails. A self-driving car makes decisions on a real road. Both are AI, but the second one acts much more on its own.
+
+
+What Is Not AI
+
+The EU AI Act also says what does not count. Its definition "should not cover systems that are based on the rules defined solely by natural persons to automatically execute operations". In simple words: a calculator, or an app that always follows the same fixed steps written by a programmer, is normal software, not AI. As the law puts it: "A key characteristic of AI systems is their capability to infer." (EU AI Act, Recital 12)
+
+
+A Moving Target
+
+There is one more problem with the word: its meaning keeps changing. In 1997 a computer beating the world chess champion was front-page news and the symbol of artificial intelligence. Today a free chess app on any phone plays better than any human, and almost nobody calls it AI anymore.
+
+This is called the AI effect: when a machine finally learns to do something, people stop considering it "real" intelligence. The writer Douglas Hofstadter summed it up in a sentence he called Tesler's Theorem, after the computer scientist Larry Tesler: "AI is whatever hasn't been done yet." (Wikipedia: AI effect, Hofstadter 1979)
+
+
+Why the Definition Matters
+
+A clear definition is not just for dictionaries. It decides which products must follow the rules of the EU AI Act, and it helps people notice when a company uses "AI" only as a marketing label. For us, the most useful idea is the simplest: AI is a large family of technologies that perform tasks associated with intelligence. But does performing an intelligent task mean that the machine thinks? That is the question of the next article.
+
+
+Sources
+
+1. U.S. Securities and Exchange Commission. SEC Charges Two Investment Advisers with Making False and Misleading Statements About Their Use of Artificial Intelligence (2024) - https://www.sec.gov/newsroom/press-releases/2024-36
+2. IBM. Cole Stryker and Eda Kavlakoglu, What is artificial intelligence (AI)? - https://www.ibm.com/think/topics/artificial-intelligence
+3. McCarthy, Minsky, Rochester and Shannon. A Proposal for the Dartmouth Summer Research Project on Artificial Intelligence (1955) - https://www-formal.stanford.edu/jmc/history/dartmouth/dartmouth.html
+4. OECD.AI. Updates to the OECD's definition of an AI system explained (2023) - https://oecd.ai/en/wonk/ai-system-definition-update
+5. EU Artificial Intelligence Act. Article 3: Definitions - https://artificialintelligenceact.eu/article/3/
+6. EU Artificial Intelligence Act. Recital 12 - https://artificialintelligenceact.eu/recital/12/
+7. Wikipedia. AI effect - https://en.wikipedia.org/wiki/AI_effect
