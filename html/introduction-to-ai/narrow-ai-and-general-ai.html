@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Narrow AI and General AI - AI in Everyday Life</title> <!-- ARTICLE TITLE -->
+		<link rel="icon" href="../../layout/ai-icon.png">
+		<link rel="stylesheet" href="../../css/global.css">
+		<!-- CUSTOM EXTERNAL CSS -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="description" content="The difference between narrow AI and general AI, the four types of AI, and what today&#x27;s AI systems can and cannot do"> <!-- ARTICLE DESCRIPTION -->
+		<meta name="author" content="Alessio Giugno"> <!-- ARTICLE AUTHOR -->
+		<style>
+			:root {
+				--template-color: var(--first-main-topic-color);
+			}
+
+			/* CUSTOM INTERNAL CSS */
+			.article-section ul {
+				padding-left: 1.5em;
+			}
+
+			.article-section li {
+				margin-bottom: 0.6em;
+			}
+
+			.article-section figure {
+				max-width: 720px;
+				margin: 2em auto;
+			}
+
+			.article-section figure.portrait,
+			.article-section figure.diagram {
+				max-width: 420px;
+			}
+
+			.article-section figure img {
+				display: block;
+				width: 100%;
+				border: var(--article-card-border-style);
+				border-radius: var(--global-border-radius);
+			}
+
+			.article-section figure svg {
+				display: block;
+				width: 100%;
+				height: auto;
+			}
+
+			.article-section .ring {
+				fill: var(--template-color);
+				stroke: var(--first-main-topic-color-pale);
+				stroke-width: 2;
+			}
+
+			.article-section .ring-1 { fill-opacity: 0.12; }
+			.article-section .ring-2 { fill-opacity: 0.22; }
+			.article-section .ring-3 { fill-opacity: 0.32; }
+			.article-section .ring-4 { fill-opacity: 0.45; }
+
+			.article-section figure text {
+				fill: var(--main-font-color);
+				font-family: var(--main-font);
+				font-size: 19px;
+				font-weight: 600;
+				text-anchor: middle;
+			}
+
+			.article-section figcaption {
+				margin-top: 0.6em;
+				font-size: 0.9em;
+				font-style: italic;
+				text-align: center;
+				opacity: 0.7;
+			}
+		</style>
+	</head>
+	<body>
+		<nav>
+			<a id="back-to-homepage" href="../../html/index.html"><img src="../../layout/logotype.png" alt="Return to the homepage"></a>
+			<ul>
+				<li id="first-main-topic">
+					<a href="../../html/index.html#introduction-to-ai">Introduction to AI</a>
+					<ul class="dropdown">
+						<li><a href="../../html/index.html#history-of-ai">History of AI</a></li>
+						<li><a href="../../html/index.html#basic-concepts">Basic Concepts</a></li>
+					</ul>
+				</li>
+				<li id="second-main-topic">
+					<a href="../../html/index.html#ai-technologies">AI Technologies</a>
+					<ul class="dropdown">
+						<li><a href="../../html/index.html#interactions">Interactions</a></li>
+						<li><a href="../../html/index.html#language-technologies">Language Technologies</a></li>
+						<li><a href="../../html/index.html#robotics">Robotics</a></li>
+						<li><a href="../../html/index.html#world-building">World Building</a></li>
+					</ul>
+				</li>
+				<li id="third-main-topic">
+					<a href="../../html/index.html#impact-and-ethics">Impact and Ethics</a>
+					<ul class="dropdown">
+						<li><a href="../../html/index.html#ethics">Ethics</a></li>
+						<li><a href="../../html/index.html#limitations">Limitations</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+		<!-- PUT YOUR CONTENT ONLY INSIDE THE <main> TAG, AFTER LINKS AND TITLE SECTION -->
+		<main>
+			<!-- PREVIOUS/NEXT ARTICLE LINKS -->
+			<a id="previous-article" href="the-ai-family-tree.html" aria-label="Read previous article" title="Previous article">&#10094;</a>
+			<a id="next-article" href="the-beginning.html" aria-label="Read next article" title="Next article">&#10095;</a>
+			<!-- ARTICLE TITLE (START) -->
+			<section id="article-title">
+				<div>
+					<h1>Narrow AI and General AI</h1>
+					<p id="article-subtitle">What Today&#x27;s AI Can and Cannot Do</p>
+					<p class="article-title-paragraph">Show a modern image recognition system a photo of a panda, and it will say "panda". In 2014 three researchers, Ian Goodfellow, Jonathon Shlens and Christian Szegedy, took such a photo and added a layer of carefully calculated noise, so small that to a human the picture looked exactly the same. The AI changed its mind: it was now 99.3% sure that the photo showed a gibbon, a kind of monkey. They called these images adversarial examples. A system that recognizes thousands of objects can be fooled by a change that no person would even notice. This is a good place to start talking about what AI can and cannot do.</p>
+					<p id="author"><span>by </span>Alessio Giugno</p>
+					</div>
+			</section>
+			<!-- ARTICLE SECTIONS (START) -->
+			<section class="article-section">
+				<h2>Narrow AI</h2>
+				<figure>
+					<img src="../../contributors/alessio-giugno/Basic_Concepts_7.jpg" alt="A giant panda sitting on the grass and eating bamboo">
+					<figcaption>A giant panda at Taipei Zoo. To an AI, a few changes invisible to us were enough to turn a photo like this into a gibbon.</figcaption>
+				</figure>
+				<p>Every AI system that exists today is narrow AI, also called weak AI. It is designed for one specific task, or a limited set of tasks: recognizing faces, recommending videos, translating, playing Go, answering questions. IBM calls it "the only type of AI that exists today".</p>
+				<p>"Weak" does not mean bad. A narrow AI can be much better than any human at its job: in 2016 AlphaGo beat Lee Sedol, one of the best Go players in the world, as told in the <a href="learning-from-data.html">History of AI</a> section. But being excellent in one area does not give a system abilities in others. AlphaGo could not translate a sentence, and a translation app cannot play Go.</p>
+			</section>
+			<section class="article-section">
+				<h2>General AI</h2>
+				<p>Artificial general intelligence, or AGI, also called strong AI, is something different: a machine able to understand, learn and apply knowledge across a broad range of tasks, at a level comparable to a human. It could use what it learned in one area to solve problems in a completely new one, as people do. IBM describes this level of AI as "currently theoretical" and adds that "no known AI systems approach this level of sophistication". Beyond it there is an even more hypothetical idea, super AI, a machine more intelligent than humans in every way.</p>
+				<p>Today&#x27;s chatbots can write, translate, summarize and write code, so they can seem general. But producing fluent language, or doing several tasks, is not by itself proof of general intelligence. When AGI might arrive, and if it ever will, is one of the most debated questions in technology: the article "General AI: Hype vs Reality" on this website looks at both sides.</p>
+			</section>
+			<section class="article-section">
+				<h2>Four Types of AI</h2>
+				<p>Another way to classify AI, popular in textbooks and used by IBM, looks at how a system works and what it remembers.</p>
+				<ul>
+					<li>Reactive machines have no memory and react only to what is in front of them. IBM&#x27;s chess computer Deep Blue, which beat Garry Kasparov in 1997, is the classic example: it analyzed the board, but it did not learn from past games.</li>
+					<li>Limited memory systems can use recent information and what they learned from data. Most of today&#x27;s AI belongs here, from self-driving cars, which follow the other cars on the road, to chatbots like ChatGPT.</li>
+					<li>Theory of mind AI would understand the thoughts and emotions of other beings. It does not exist yet.</li>
+					<li>Self-aware AI would understand its own internal state and have its own feelings and beliefs. It is purely theoretical.</li>
+				</ul>
+				<figure>
+					<img src="../../contributors/alessio-giugno/Basic_Concepts_8.jpg" alt="A small white self-driving car with a sensor on its roof, driving on a street">
+					<figcaption>A Waymo self-driving car in Mountain View, California. It belongs to the limited memory type: it keeps track of the cars and people around it.</figcaption>
+				</figure>
+				<p>The first two types exist. The last two are still science fiction, and the previous article "<a href="can-a-machine-think.html">Can a Machine Think?</a>" shows why it is so hard even to know how we would recognize them.</p>
+			</section>
+			<section class="article-section">
+				<h2>What AI Is Good At</h2>
+				<p>AI can process huge amounts of information very fast, find patterns that people would miss, and support human decisions. It filters billions of emails, checks card payments in a fraction of a second and helps doctors and scientists with their work. The article "<a href="the-invisible-assistant.html">The Invisible Assistant</a>" on this website shows how much of it we use every day without noticing.</p>
+			</section>
+			<section class="article-section">
+				<h2>Where It Fails</h2>
+				<p>The panda shows that AI can be fragile. Here are three more limits to remember:</p>
+				<ul>
+					<li>It can be confidently wrong. A clear and convincing answer is not necessarily a correct one. Chatbots sometimes invent facts, names or sources. (The article "Using AI Well" shows real cases.)</li>
+					<li>It can be unfair. An AI learns from data, and if the data is biased, the results can be too. (The article "<a href="data-and-training.html">Data and Training</a>" shows how.)</li>
+					<li>It does not understand like we do. It works with patterns, not with experience of the world, so it can fail in situations that are different from its training data.</li>
+				</ul>
+			</section>
+			<section class="article-section">
+				<h2>Capabilities and Boundaries</h2>
+				<p>Understanding AI means knowing both what it can do and where it stops. AI is not a single thinking machine, but a broad collection of technologies for performing tasks associated with intelligence. How useful they are depends on the task, on the information they learned from, and on how carefully people check their results. That last part is still our job.</p>
+			</section>
+			<section class="article-section">
+				<h2>Sources</h2>
+				<ol>
+					<li><a href="https://arxiv.org/abs/1412.6572">Goodfellow, Shlens and Szegedy. Explaining and Harnessing Adversarial Examples (2014)</a></li>
+					<li><a href="https://www.ibm.com/think/topics/artificial-intelligence-types">IBM. Understanding the different types of artificial intelligence</a></li>
+					<li><a href="https://www.ibm.com/think/topics/artificial-intelligence">IBM. Cole Stryker and Eda Kavlakoglu, What is artificial intelligence (AI)?</a></li>
+					<li><a href="https://deepmind.google/research/alphago/">Google DeepMind. AlphaGo</a></li>
+				</ol>
+			</section>
+			<section class="article-section">
+				<h2>Image credits</h2>
+				<ul>
+					<li><a href="https://commons.wikimedia.org/wiki/File:Giant_panda_eating_bamboo_Taipei_Zoo.jpg">Giant panda eating bamboo Taipei Zoo</a> by KQuhen, CC BY-SA 4.0, via Wikimedia Commons</li>
+					<li><a href="https://commons.wikimedia.org/wiki/File:Waymo_self-driving_car_front_view.gk.jpg">Waymo self-driving car front view</a> by Grendelkhan, CC BY-SA 4.0, via Wikimedia Commons</li>
+				</ul>
+			</section>
+		</main>
+		<footer id="article">
+			<a href="../../html/index.html">&#10094;&#10094;&#10094; Homepage</a>
+			<a id="back-to-top" href="#" title="Back to top"><span>Back to top</span><span>&#x2B06;</span></a>
+			<a href="the-beginning.html">The Beginning &#10095;&#10095;&#10095;</a>
+		</footer>
+    </body>
+</html>

@@ -1,0 +1,47 @@
+Eros Butti
+What Your Apps Know About You: How Your Feed Learns Who You Are
+
+
+In 2021 the Wall Street Journal created 100 fake TikTok accounts run by bots. The bots never searched for anything and never followed anyone. They only stayed a bit longer on some videos, watched a few of them twice, and swiped past the rest.
+
+In less than two hours, TikTok had figured out what each one was interested in. One bot was programmed to be interested in sadness. In 33 minutes TikTok showed it 224 videos, and 93% of them were about depression and mental health struggles. Nobody had told the app anything. It had only watched how long the bot looked at each video. (Tubefilter / Wall Street Journal)
+
+TikTok is the extreme case, but not the only one. Netflix explains that its suggestions use what you watched and rated, people with similar tastes, and even the time of day and the device you are using. On TikTok, according to former YouTube engineer Guillaume Chaslot, around 90-95% of what people watch is chosen by the algorithm. (Netflix, Tubefilter / Wall Street Journal)
+
+
+What Is the Algorithm Built For?
+
+An internal TikTok document called "TikTok Algo 101", reported by the New York Times in December 2021, answers this directly. The company's "ultimate goal" is to grow the number of daily active users, so the algorithm is optimized for retention, whether you come back, and time spent, how long you stay. Every video gets a score based on what you are predicted to do with it: like it, comment on it, keep watching it. The highest score wins your screen. TikTok confirmed the document was real. (Gizmodo / New York Times)
+
+
+What Else Do Apps Collect?
+
+Much more than your clicks. TikTok's privacy policy says it collects device information such as keystroke patterns, battery state, audio settings and connected audio devices. (Fact Crescendo)
+
+Some viral claims go too far, though. The story that TikTok records every password you type was rated misleading by a fact-check: its in-app browser tracked whether a key was pressed, not which one. (Fact Crescendo)
+
+And "anonymous" data is less anonymous than it sounds. When Netflix published anonymous movie ratings for a public competition, the Netflix Prize, researchers identified some users by matching the ratings with their public reviews on IMDb. Netflix was sued, and a second competition was cancelled. (Wikipedia: Recommender system)
+
+
+What Does It See in Your Face?
+
+This is where it gets uncomfortable. Internal TikTok documents made public in 2024 through a lawsuit by the US state of Kentucky show that the company demoted users it considered unattractive from the main feed and promoted those it considered attractive. (NPR)
+
+Ayo Omolewa, a data scientist known online as "ayoships", takes popular apps apart to expose the tricks inside them. In TikTok he claims to have found a face model that guesses your attractiveness, age, gender and mood, and he built a tool that shows how it would rate your own photos. His findings have not been independently verified, and TikTok has not commented. But they fit exactly with what TikTok's own documents describe. (ayoships, MobileGamer.biz, NPR)
+
+
+So What?
+
+Recommendations can be great: they help us find music, films and creators we would never have found alone. But they only work because the app learns who we are, from how long we look at a video, how we type and even what our face looks like. And according to their own documents, these apps are built to make us stay, not to make us happier or better informed. We cannot see the algorithm, but it can definitely see us. How to deal with that is part of Using AI Well.
+
+
+Sources
+
+1. Netflix Help Center. How Netflix's recommendations system works - https://help.netflix.com/en/node/100639
+2. Tubefilter. TikTok's recommendation algorithm and the Wall Street Journal investigation (2021) - https://www.tubefilter.com/2021/07/21/tiktok-recommendation-algorithm-wall-street-journal-guillaume-chaslot/
+3. Gizmodo. Leaked TikTok doc reveals its obvious secret to an addictive feed (2021) - https://gizmodo.com/leaked-tiktok-doc-reveals-its-obvious-secret-to-an-addi-1848166901
+4. Fact Crescendo. Can TikTok track keystrokes or taps made by a user? (2025) - https://english.factcrescendo.com/2025/01/15/can-tiktok-track-keystrokes-or-taps-made-by-a-user/
+5. Wikipedia. Recommender system - https://en.wikipedia.org/wiki/Recommender_system
+6. NPR / KUNC. Lawsuit documents reveal what TikTok executives know about app's effect on teenagers (2024) - https://www.kunc.org/2024-10-11/lawsuit-documents-reveal-what-tiktok-executives-know-about-apps-effect-on-teenagers
+7. Ayo Omolewa (ayoships). See what TikTok's face model says about you - https://ayoships.com/tools/tiktok-face
+8. MobileGamer.biz. This creator says he decompiled Block Blast, Candy Crush and Subway Surfers to reveal their monetisation secrets - https://mobilegamer.biz/this-creator-says-he-decompiled-block-blast-candy-crush-and-subway-surfers-to-reveal-their-monetisation-secrets/
