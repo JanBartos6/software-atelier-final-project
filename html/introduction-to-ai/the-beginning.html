@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>The Beginning - AI in Everyday Life</title> <!-- ARTICLE TITLE -->
+		<link rel="icon" href="../../layout/ai-icon.png">
+		<link rel="stylesheet" href="../../css/global.css">
+		<!-- CUSTOM EXTERNAL CSS -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="description" content="The first years of artificial intelligence, from the first artificial neuron in 1943 to the Perceptron in 1957"> <!-- ARTICLE DESCRIPTION -->
+		<meta name="author" content="Luca Clivio"> <!-- ARTICLE AUTHOR -->
+		<style>
+			:root {
+				--template-color: var(--first-main-topic-color);
+			}
+
+			/* CUSTOM INTERNAL CSS */
+			.article-section h2 {
+				color: var(--template-color);
+			}
+
+			.article-section figure {
+				max-width: 550px;
+				margin: 2em auto 0;
+			}
+
+			.article-section figure img {
+				display: block;
+				width: 100%;
+				border: 2px solid var(--template-color);
+				border-radius: var(--global-border-radius);
+			}
+
+			.article-section figcaption {
+				margin-top: 0.6em;
+				font-size: 0.85em;
+				color: var(--template-color);
+				opacity: 0.7;
+			}
+
+			.article-section ol {
+				padding-left: 1.5em;
+			}
+
+			.sources {
+				margin-top: 2.5em;
+			}
+		</style>
+	</head>
+	<body>
+		<nav>
+			<a id="back-to-homepage" href="../../html/index.html"><img src="../../layout/logotype.png" alt="Return to the homepage"></a>
+			<ul>
+				<li id="first-main-topic">
+					<a href="../../html/index.html#introduction-to-ai">Introduction to AI</a>
+					<ul class="dropdown">
+						<li><a href="../../html/index.html#history-of-ai">History of AI</a></li>
+						<li><a href="../../html/index.html#basic-concepts">Basic Concepts</a></li>
+					</ul>
+				</li>
+				<li id="second-main-topic">
+					<a href="../../html/index.html#ai-technologies">AI Technologies</a>
+					<ul class="dropdown">
+						<li><a href="../../html/index.html#interactions">Interactions</a></li>
+						<li><a href="../../html/index.html#language-technologies">Language Technologies</a></li>
+						<li><a href="../../html/index.html#robotics">Robotics</a></li>
+						<li><a href="../../html/index.html#world-building">World Building</a></li>
+					</ul>
+				</li>
+				<li id="third-main-topic">
+					<a href="../../html/index.html#impact-and-ethics">Impact and Ethics</a>
+					<ul class="dropdown">
+						<li><a href="../../html/index.html#ethics">Ethics</a></li>
+						<li><a href="../../html/index.html#limitations">Limitations</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+		<!-- PUT YOUR CONTENT ONLY INSIDE THE <main> TAG, AFTER LINKS AND TITLE SECTION -->
+		<main>
+			<!-- PREVIOUS/NEXT ARTICLE LINKS -->
+			<a id="previous-article" href="narrow-ai-and-general-ai.html" aria-label="Read previous article" title="Previous article">&#10094;</a>
+			<a id="next-article" href="problems-and-winters.html" aria-label="Read next article" title="Next article">&#10095;</a>
+			<!-- ARTICLE TITLE (START) -->
+			<section id="article-title">
+				<div>
+					<h1>The Beginning</h1>
+					<p id="article-subtitle">History of AI from 1943 to 1957</p>
+					<p class="article-title-paragraph">Today artificial intelligence (AI) is everywhere. We use it to translate texts, to write emails and even to make pictures. But AI is not a new idea. Its story started more than eighty years ago, and it is full of big hopes, big problems and big surprises.</p>
+					<p id="author"><span>by </span>Luca Clivio</p>
+					</div>
+			</section>
+			<!-- ARTICLE SECTIONS (START) -->
+			<section class="article-section">
+				<h2>1943: The First Artificial Neuron</h2>
+				<p>The story begins in 1943. Two scientists, Warren McCulloch and Walter Pitts, wrote a paper with the first mathematical model of an artificial neuron, inspired by the cells of the human brain. A real neuron receives signals from other cells and, if they are strong enough, it "fires". In their model the output was simply 1 or 0. They also showed that a network of these simple units could, in theory, calculate any logical rule, like AND, OR and NOT. It was the first time someone described thinking as a kind of calculation that a machine could also do. Modern neural networks are still built on this basic unit.</p>
+			</section>
+			<section class="article-section">
+				<h2>1950: The Turing Test</h2>
+				<p>In 1950 the mathematician Alan Turing published a paper called "Computing Machinery and Intelligence". It opens with the question "Can machines think?", but Turing himself found the question too vague, since nobody can define "thinking" precisely. So he replaced it with a game, today known as the Turing Test: a person chats with a machine and with a human, and if the person cannot tell which one is the machine, the machine passes. The idea is that we judge the intelligence of other people only from what they say and do, so the same rule can be used for machines.</p>
+				<p>During the Second World War Turing had worked at Bletchley Park, in England, breaking the German army's secret codes. In the 1950 paper he also predicted that by the year 2000 a computer would fool an average interrogator about 30% of the time after five minutes of conversation.</p>
+				<figure>
+					<img src="../../contributors/luca-clivio/History_of_AI_1.jpg" alt="Statue of Alan Turing">
+					<figcaption>A detail of the slate statue of Alan Turing at Bletchley Park, made by Stephen Kettle.</figcaption>
+				</figure>
+			</section>
+			<section class="article-section">
+				<h2>1956: The Birth of AI at Dartmouth</h2>
+				<p>1956 is usually considered the year AI was born. That summer a small group of researchers met for a workshop at Dartmouth College, in the USA, organized by John McCarthy, Marvin Minsky, Claude Shannon and Nathaniel Rochester. Their proposal claimed that every aspect of learning or intelligence could be described so precisely that a machine could simulate it. It also listed the problems they wanted to work on: making machines use language, form concepts, solve problems that only humans could solve, and improve themselves. These are still some of the main goals of AI today. It also asked the Rockefeller Foundation for 13,500 dollars to pay for the meeting. The term "artificial intelligence" was used for the first time in this proposal, by McCarthy.</p>
+				<figure>
+					<img src="../../contributors/luca-clivio/History_of_AI_2.jpg" alt="Dartmouth Hall">
+					<figcaption>Dartmouth Hall at Dartmouth College, where the 1956 workshop took place.</figcaption>
+				</figure>
+			</section>
+			<section class="article-section">
+				<h2>1956: The Logic Theorist</h2>
+				<p>At the same event, Allen Newell and Herbert Simon presented the Logic Theorist, a program that proved mathematical theorems. It proved 38 of the first 52 theorems in Principia Mathematica by Whitehead and Russell, and for one of them it found a shorter proof than the one in the book. The program did not try every possible combination, which would have taken far too long. It used heuristics, simple rules of thumb like the ones a mathematician uses, to choose the most promising steps. Searching in a smart way instead of trying everything became one of the basic ideas of AI. The researchers were very optimistic. In 1965 Simon wrote that within twenty years machines would be able to do any work a man can do.</p>
+			</section>
+			<section class="article-section">
+				<h2>1957: The Perceptron</h2>
+				<p>In 1957 Frank Rosenblatt invented the Perceptron, a simple neural network that learned to recognize patterns, like shapes, by adjusting its own numbers, called weights. It was the first machine that could learn from examples. Nobody wrote the rules for it: the Perceptron was shown many examples, and every time it gave a wrong answer its weights were corrected a little, until the answers became right.</p>
+				<p>Rosenblatt worked at the Cornell Aeronautical Laboratory, with funding from the US Navy. The hardware version, the Mark I Perceptron, used a camera made of 400 light sensors arranged in a 20 by 20 grid. In July 1958 the New York Times reported that the Navy expected the machine to one day walk, talk, see, write and even be conscious of its existence.</p>
+				<figure>
+					<img src="../../contributors/luca-clivio/History_of_AI_3.png" alt="The Mark I Perceptron">
+					<figcaption>The Mark I Perceptron, from its operator's manual (1960).</figcaption>
+				</figure>
+				<aside class="sources">
+					<h2>Sources</h2>
+					<ol>
+						<li><a href="https://link.springer.com/article/10.1007/BF02478259">McCulloch and Pitts, A logical calculus of the ideas immanent in nervous activity</a></li>
+						<li><a href="https://academic.oup.com/mind/article/LIX/236/433/986238">Alan Turing, Computing Machinery and Intelligence</a></li>
+						<li><a href="http://jmc.stanford.edu/articles/dartmouth/dartmouth.pdf">The Dartmouth proposal (1955)</a></li>
+						<li><a href="https://home.dartmouth.edu/about/artificial-intelligence-ai-coined-dartmouth">Dartmouth, Artificial Intelligence coined at Dartmouth</a></li>
+						<li><a href="https://www.historyofinformation.com/detail.php?id=742">History of Information, The Logic Theorist</a></li>
+						<li><a href="https://news.cornell.edu/stories/2019/09/professors-perceptron-paved-way-ai-60-years-too-soon">Cornell Chronicle, Professor's perceptron paved the way for AI</a></li>
+						<li><a href="https://www.nytimes.com/1958/07/08/archives/new-navy-device-learns-by-doing-psychologist-shows-embryo-of.html">New York Times, New Navy Device Learns by Doing (1958)</a></li>
+					</ol>
+				</aside>
+			</section>
+		</main>
+		<footer id="article">
+			<a href="narrow-ai-and-general-ai.html">&#10094;&#10094;&#10094; Narrow AI and General AI</a>
+			<a id="back-to-top" href="#" title="Back to top"><span>Back to top</span><span>&#x2B06;</span></a>
+			<a href="problems-and-winters.html">Problems and Winters &#10095;&#10095;&#10095;</a>
+		</footer>
+    </body>
+</html>

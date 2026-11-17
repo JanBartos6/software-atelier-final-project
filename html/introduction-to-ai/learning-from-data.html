@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Learning from Data - AI in Everyday Life</title> <!-- ARTICLE TITLE -->
+		<link rel="icon" href="../../layout/ai-icon.png">
+		<link rel="stylesheet" href="../../css/global.css">
+		<!-- CUSTOM EXTERNAL CSS -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="description" content="How computers started to learn from examples, from machine learning and Deep Blue to ImageNet, AlexNet and AlphaGo"> <!-- ARTICLE DESCRIPTION -->
+		<meta name="author" content="Luca Clivio"> <!-- ARTICLE AUTHOR -->
+		<style>
+			:root {
+				--template-color: var(--first-main-topic-color);
+			}
+
+			/* CUSTOM INTERNAL CSS */
+			.article-section h2 {
+				color: var(--template-color);
+			}
+
+			.article-section figure {
+				max-width: 550px;
+				margin: 2em auto 0;
+			}
+
+			.article-section figure img {
+				display: block;
+				width: 100%;
+				border: 2px solid var(--template-color);
+				border-radius: var(--global-border-radius);
+			}
+
+			.article-section figcaption {
+				margin-top: 0.6em;
+				font-size: 0.85em;
+				color: var(--template-color);
+				opacity: 0.7;
+			}
+
+			.article-section ol {
+				padding-left: 1.5em;
+			}
+
+			.sources {
+				margin-top: 2.5em;
+			}
+		</style>
+	</head>
+	<body>
+		<nav>
+			<a id="back-to-homepage" href="../../html/index.html"><img src="../../layout/logotype.png" alt="Return to the homepage"></a>
+			<ul>
+				<li id="first-main-topic">
+					<a href="../../html/index.html#introduction-to-ai">Introduction to AI</a>
+					<ul class="dropdown">
+						<li><a href="../../html/index.html#history-of-ai">History of AI</a></li>
+						<li><a href="../../html/index.html#basic-concepts">Basic Concepts</a></li>
+					</ul>
+				</li>
+				<li id="second-main-topic">
+					<a href="../../html/index.html#ai-technologies">AI Technologies</a>
+					<ul class="dropdown">
+						<li><a href="../../html/index.html#interactions">Interactions</a></li>
+						<li><a href="../../html/index.html#language-technologies">Language Technologies</a></li>
+						<li><a href="../../html/index.html#robotics">Robotics</a></li>
+						<li><a href="../../html/index.html#world-building">World Building</a></li>
+					</ul>
+				</li>
+				<li id="third-main-topic">
+					<a href="../../html/index.html#impact-and-ethics">Impact and Ethics</a>
+					<ul class="dropdown">
+						<li><a href="../../html/index.html#ethics">Ethics</a></li>
+						<li><a href="../../html/index.html#limitations">Limitations</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+		<!-- PUT YOUR CONTENT ONLY INSIDE THE <main> TAG, AFTER LINKS AND TITLE SECTION -->
+		<main>
+			<!-- PREVIOUS/NEXT ARTICLE LINKS -->
+			<a id="previous-article" href="problems-and-winters.html" aria-label="Read previous article" title="Previous article">&#10094;</a>
+			<a id="next-article" href="the-age-of-language-models.html" aria-label="Read next article" title="Next article">&#10095;</a>
+			<!-- ARTICLE TITLE (START) -->
+			<section id="article-title">
+				<div>
+					<h1>Learning from Data</h1>
+					<p id="article-subtitle">History of AI from the 1990s to 2016</p>
+					<p class="article-title-paragraph">In the 1990s scientists changed their approach. Instead of following rules written by people, computers started to learn from examples, and this idea slowly changed everything.</p>
+					<p id="author"><span>by </span>Luca Clivio</p>
+					</div>
+			</section>
+			<!-- ARTICLE SECTIONS (START) -->
+			<section class="article-section">
+				<h2>1990s: Machine Learning</h2>
+				<p>In the 1990s researchers moved from hand-written rules to machine learning, where programs find patterns in data by themselves. A spam filter, for example, does not need a list of bad words. It is trained on thousands of emails labeled "spam" or "not spam" and learns which features matter. This also changed what made a program good: with more and better examples, the same method could give much better results. By the end of the decade some American banks used a neural network developed by Yann LeCun to read handwritten numbers on cheques.</p>
+			</section>
+			<section class="article-section">
+				<h2>1997: Deep Blue</h2>
+				<p>In May 1997 IBM's Deep Blue beat the world chess champion Garry Kasparov in New York, 3.5 to 2.5. The machine did not play like a human. It relied on special chips that evaluated about 200 million positions per second. It explored a huge number of possible moves and judged the positions with rules written together with chess experts. In this sense Deep Blue was closer to the old rule-based AI than to machine learning, because it did not learn anything from its games.</p>
+				<p>The year before, Kasparov had won the first match against Deep Blue 4 to 2. After losing the rematch he accused IBM of cheating and asked for a third match. IBM refused and dismantled the computer.</p>
+				<figure>
+					<img src="../../contributors/luca-clivio/History_of_AI_7.jpg" alt="Garry Kasparov">
+					<figcaption>Garry Kasparov in 1987, ten years before his match against Deep Blue.</figcaption>
+				</figure>
+			</section>
+			<section class="article-section">
+				<h2>2000s: Data, GPUs and Deep Learning</h2>
+				<p>Three things changed in the 2000s. The internet produced huge amounts of data. Graphics cards (GPUs) turned out to be very good at training neural networks. And new techniques made it possible to train networks with many layers, an approach called deep learning. Before, deep networks were very hard to train, because the error signal of backpropagation became weaker at every layer and the first layers almost stopped learning.</p>
+				<p>GPUs were designed for video games, where they draw 3D graphics by running thousands of small calculations in parallel. Training a neural network requires the same kind of calculations. In 2006 Hinton and his colleagues published a method to train deep networks one layer at a time, and the term "deep learning" spread from there.</p>
+				<figure>
+					<img src="../../contributors/luca-clivio/History_of_AI_8.jpg" alt="Graphics card">
+					<figcaption>An NVIDIA GeForce graphics card from the 2000s. Chips like this one made training neural networks much faster.</figcaption>
+				</figure>
+			</section>
+			<section class="article-section">
+				<h2>2009: ImageNet</h2>
+				<p>In 2009 Fei-Fei Li and her team at Princeton presented ImageNet, a large database of labeled images. At that time most researchers focused on improving algorithms, while Li believed that the lack of data was the real limit. The labeling was done through Amazon Mechanical Turk, a website where people are paid for small online tasks. ImageNet grew to more than 14 million images in about 20,000 categories, such as "dog", "strawberry" or "car". From 2010 a yearly competition compared the programs that recognized them best. A dataset this big was necessary, because deep networks have millions of weights, and with only a few examples they just memorize them instead of learning general patterns.</p>
+			</section>
+			<section class="article-section">
+				<h2>2012: AlexNet</h2>
+				<p>In 2012 a deep network called AlexNet won the ImageNet competition with an error rate of about 15%, against about 26% for the second best entry. It was built by Alex Krizhevsky, Ilya Sutskever and Geoffrey Hinton at the University of Toronto and trained on two gaming graphics cards. AlexNet was a convolutional neural network, a type of network that looks at small parts of an image at a time: the first layers detect edges and colors, and the deeper ones combine them into shapes like eyes, wheels or letters. The rules for recognizing objects were not written by anyone, the network found them in the data. In the following years Google, Facebook and other tech companies hired deep learning researchers and bought their startups.</p>
+			</section>
+			<section class="article-section">
+				<h2>2016: AlphaGo</h2>
+				<p>In March 2016 AlphaGo, developed by Google DeepMind, beat Lee Sedol, one of the strongest Go players in the world, 4 games to 1 in Seoul. Go has far more possible positions than chess, and many experts expected this result to take at least another decade. Because of this, the brute force approach of Deep Blue could not work. AlphaGo used two neural networks, one to suggest good moves and one to estimate who was winning. It first learned from about 30 million moves of human games, and then improved by playing millions of games against itself.</p>
+				<p>In the second game AlphaGo played "move 37", a move so unusual that commentators first thought it was a mistake. Lee Sedol won the fourth game. In 2019 he retired from professional Go, saying that AI is "an entity that cannot be defeated".</p>
+				<figure>
+					<img src="../../contributors/luca-clivio/History_of_AI_9.jpg" alt="Go stones on a board">
+					<figcaption>Stones on a Go board.</figcaption>
+				</figure>
+				<aside class="sources">
+					<h2>Sources</h2>
+					<ol>
+						<li><a href="https://www.ibm.com/think/topics/machine-learning">IBM, What is machine learning?</a></li>
+						<li><a href="http://yann.lecun.com/exdb/lenet/">Yann LeCun, LeNet-5 demos</a></li>
+						<li><a href="https://www.ibm.com/history/deep-blue">IBM, Deep Blue</a></li>
+						<li><a href="https://www.computerhistory.org/chess/">Computer History Museum, Mastering the Game</a></li>
+						<li><a href="https://www.ibm.com/think/topics/deep-learning">IBM, What is deep learning?</a></li>
+						<li><a href="https://en.wikipedia.org/wiki/ImageNet">Wikipedia, ImageNet</a></li>
+						<li><a href="https://papers.nips.cc/paper/2012/hash/c399862d3b9d6b76c8436e924a68c45b-Abstract.html">Krizhevsky, Sutskever and Hinton, ImageNet Classification with Deep Convolutional Neural Networks</a></li>
+						<li><a href="https://deepmind.google/research/alphago/">Google DeepMind, AlphaGo</a></li>
+						<li><a href="https://www.wired.com/2016/03/two-moves-alphago-lee-sedol-redefined-future/">Wired, In Two Moves, AlphaGo and Lee Sedol Redefined the Future</a></li>
+						<li><a href="https://www.theverge.com/2019/11/27/20985260/ai-go-alphago-lee-se-dol-retired-deepmind-defeat">The Verge, Former Go champion retires after declaring AI invincible</a></li>
+					</ol>
+				</aside>
+			</section>
+		</main>
+		<footer id="article">
+			<a href="problems-and-winters.html">&#10094;&#10094;&#10094; Problems and Winters</a>
+			<a id="back-to-top" href="#" title="Back to top"><span>Back to top</span><span>&#x2B06;</span></a>
+			<a href="the-age-of-language-models.html">The Age of Language Models &#10095;&#10095;&#10095;</a>
+		</footer>
+    </body>
+</html>

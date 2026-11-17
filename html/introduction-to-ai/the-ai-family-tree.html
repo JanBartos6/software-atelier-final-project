@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>The AI Family Tree - AI in Everyday Life</title> <!-- ARTICLE TITLE -->
+		<link rel="icon" href="../../layout/ai-icon.png">
+		<link rel="stylesheet" href="../../css/global.css">
+		<!-- CUSTOM EXTERNAL CSS -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="description" content="The key terms of AI explained: artificial intelligence, machine learning, deep learning, generative AI, algorithms, models and training"> <!-- ARTICLE DESCRIPTION -->
+		<meta name="author" content="Alessio Giugno"> <!-- ARTICLE AUTHOR -->
+		<style>
+			:root {
+				--template-color: var(--first-main-topic-color);
+			}
+
+			/* CUSTOM INTERNAL CSS */
+			.article-section ul {
+				padding-left: 1.5em;
+			}
+
+			.article-section li {
+				margin-bottom: 0.6em;
+			}
+
+			.article-section figure {
+				max-width: 720px;
+				margin: 2em auto;
+			}
+
+			.article-section figure.portrait,
+			.article-section figure.diagram {
+				max-width: 420px;
+			}
+
+			.article-section figure img {
+				display: block;
+				width: 100%;
+				border: var(--article-card-border-style);
+				border-radius: var(--global-border-radius);
+			}
+
+			.article-section figure svg {
+				display: block;
+				width: 100%;
+				height: auto;
+			}
+
+			.article-section .ring {
+				fill: var(--template-color);
+				stroke: var(--first-main-topic-color-pale);
+				stroke-width: 2;
+			}
+
+			.article-section .ring-1 { fill-opacity: 0.12; }
+			.article-section .ring-2 { fill-opacity: 0.22; }
+			.article-section .ring-3 { fill-opacity: 0.32; }
+			.article-section .ring-4 { fill-opacity: 0.45; }
+
+			.article-section figure text {
+				fill: var(--main-font-color);
+				font-family: var(--main-font);
+				font-size: 19px;
+				font-weight: 600;
+				text-anchor: middle;
+			}
+
+			.article-section figcaption {
+				margin-top: 0.6em;
+				font-size: 0.9em;
+				font-style: italic;
+				text-align: center;
+				opacity: 0.7;
+			}
+		</style>
+	</head>
+	<body>
+		<nav>
+			<a id="back-to-homepage" href="../../html/index.html"><img src="../../layout/logotype.png" alt="Return to the homepage"></a>
+			<ul>
+				<li id="first-main-topic">
+					<a href="../../html/index.html#introduction-to-ai">Introduction to AI</a>
+					<ul class="dropdown">
+						<li><a href="../../html/index.html#history-of-ai">History of AI</a></li>
+						<li><a href="../../html/index.html#basic-concepts">Basic Concepts</a></li>
+					</ul>
+				</li>
+				<li id="second-main-topic">
+					<a href="../../html/index.html#ai-technologies">AI Technologies</a>
+					<ul class="dropdown">
+						<li><a href="../../html/index.html#interactions">Interactions</a></li>
+						<li><a href="../../html/index.html#language-technologies">Language Technologies</a></li>
+						<li><a href="../../html/index.html#robotics">Robotics</a></li>
+						<li><a href="../../html/index.html#world-building">World Building</a></li>
+					</ul>
+				</li>
+				<li id="third-main-topic">
+					<a href="../../html/index.html#impact-and-ethics">Impact and Ethics</a>
+					<ul class="dropdown">
+						<li><a href="../../html/index.html#ethics">Ethics</a></li>
+						<li><a href="../../html/index.html#limitations">Limitations</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+		<!-- PUT YOUR CONTENT ONLY INSIDE THE <main> TAG, AFTER LINKS AND TITLE SECTION -->
+		<main>
+			<!-- PREVIOUS/NEXT ARTICLE LINKS -->
+			<a id="previous-article" href="can-a-machine-think.html" aria-label="Read previous article" title="Previous article">&#10094;</a>
+			<a id="next-article" href="narrow-ai-and-general-ai.html" aria-label="Read next article" title="Next article">&#10095;</a>
+			<!-- ARTICLE TITLE (START) -->
+			<section id="article-title">
+				<div>
+					<h1>The AI Family Tree</h1>
+					<p id="article-subtitle">Machine Learning, Deep Learning and Generative AI Explained</p>
+					<p class="article-title-paragraph">Read a few news articles about technology and you will find the same words again and again: AI, algorithm, machine learning, neural network, deep learning, generative AI, ChatGPT. They are often used as if they meant the same thing. They don&#x27;t. These terms fit inside each other like Russian dolls: today&#x27;s generative AI is built with deep learning, deep learning is a kind of machine learning, and machine learning is one part of AI. But not the other way around: not all AI learns, and not all AI creates.</p>
+					<p id="author"><span>by </span>Alessio Giugno</p>
+					</div>
+			</section>
+			<!-- ARTICLE SECTIONS (START) -->
+			<section class="article-section">
+				<figure class="diagram">
+					<svg viewBox="0 0 400 400" role="img" aria-labelledby="family-tree-title">
+						<title id="family-tree-title">Four nested circles: Artificial Intelligence contains Machine Learning, which contains Deep Learning, which contains Generative AI</title>
+						<circle cx="200" cy="200" r="195" class="ring ring-1"/>
+						<circle cx="200" cy="245" r="150" class="ring ring-2"/>
+						<circle cx="200" cy="290" r="105" class="ring ring-3"/>
+						<circle cx="200" cy="335" r="60" class="ring ring-4"/>
+						<text x="200" y="50">Artificial Intelligence</text>
+						<text x="200" y="138">Machine Learning</text>
+						<text x="200" y="230">Deep Learning</text>
+						<text x="200" y="340">Generative AI</text>
+					</svg>
+					<figcaption>The AI family tree: each term is a part of the one around it.</figcaption>
+				</figure>
+			</section>
+			<section class="article-section">
+				<h2>Artificial Intelligence: The Biggest Doll</h2>
+				<figure>
+					<img src="../../contributors/alessio-giugno/Basic_Concepts_5.jpg" alt="A set of colourful Russian nesting dolls, some opened to show smaller dolls inside">
+					<figcaption>Russian nesting dolls: each one fits inside a bigger one, just like the terms of AI.</figcaption>
+				</figure>
+				<p>AI is the whole field: any technology that lets a machine perform tasks we associate with human intelligence. It includes systems that learn from data, but also older systems based on rules written by people. The expert systems of the 1980s, for example, used thousands of "if this, then that" rules written together with doctors or engineers. They were AI, but they did not learn anything. The <a href="problems-and-winters.html">History of AI</a> section tells what happened to them.</p>
+			</section>
+			<section class="article-section">
+				<h2>Machine Learning: Learning From Examples</h2>
+				<p>Machine learning is the part of AI in which a computer learns patterns from data instead of following rules written for every situation. A spam filter is the classic example: instead of a list of forbidden words, it gets thousands of emails already marked as "spam" or "not spam", finds the patterns, and uses them on emails it has never seen before.</p>
+				<p>Three words are often confused here:</p>
+				<ul>
+					<li>An algorithm is a set of instructions. In machine learning, it is the method used to learn, like a recipe.</li>
+					<li>A model is the result of that learning: the finished system that receives new inputs and produces outputs. If the algorithm is the recipe, the model is the cake.</li>
+					<li>Training is the process in which the algorithm looks at the examples and builds the model. Using the model afterwards, on new data, is called inference.</li>
+				</ul>
+				<p>The articles "<a href="machine-learning.html">Machine Learning</a>" and "<a href="data-and-training.html">Data and Training</a>" on this website explain how it works step by step.</p>
+			</section>
+			<section class="article-section">
+				<h2>Deep Learning: Many Layers</h2>
+				<p>Deep learning is a branch of machine learning that uses neural networks with many layers. A neural network is a mathematical structure loosely inspired by the neurons in the brain: it is made of small units connected to each other, and each connection has a weight, a number that decides how much it counts. IBM describes weights as "dials that control how strongly each input feature influences the decision". The word "deep" only means that there are many layers, one after the other.</p>
+				<figure class="portrait">
+					<img src="../../contributors/alessio-giugno/Basic_Concepts_6.png" alt="Diagram of a neural network with three red input circles, four blue hidden circles and two green output circles connected by arrows">
+					<figcaption>A simple neural network with an input layer (red), a hidden layer (blue) and an output layer (green). Every arrow is a connection with its own weight.</figcaption>
+				</figure>
+				<p>The word "neural" can be misleading. Neural networks are not digital copies of the human brain. They are made of numbers and calculations, and they learn in a very different way from us. What they are very good at is finding complex patterns in images, sound and text. Since around 2012, deep learning has been behind most of the big progress in AI, from face recognition to translation, as the <a href="learning-from-data.html">History of AI</a> section shows.</p>
+			</section>
+			<section class="article-section">
+				<h2>Generative AI: Creating New Content</h2>
+				<p>For a long time, most AI was used to recognize and predict: is this email spam, is there a cat in this photo, how long will the trip take? Generative AI does something different. It produces new content: text, images, audio, video or computer code, based on the patterns it learned during training. IBM describes it as deep learning models "that can create complex original content".</p>
+				<p>Large language models, or LLMs, are generative AI for text. They are trained on huge amounts of writing and learn to continue a text one small piece at a time. A chatbot like ChatGPT, Gemini or Claude is an app built on top of an LLM. So ChatGPT is not "AI" itself: it is one product, from one company, in the smallest of our dolls. The article "Generative AI" on this website shows what these tools can do.</p>
+			</section>
+			<section class="article-section">
+				<h2>Cheat Sheet</h2>
+				<ul>
+					<li>Artificial intelligence: the whole field of machines doing tasks associated with intelligence.</li>
+					<li>Machine learning: AI that learns patterns from data.</li>
+					<li>Deep learning: machine learning with neural networks of many layers.</li>
+					<li>Generative AI: AI that creates new content.</li>
+					<li>Algorithm: the instructions, or the method used to learn.</li>
+					<li>Model: the result of training, the system that is actually used.</li>
+					<li>Training data: the examples the model learns from.</li>
+					<li>Weights (or parameters): the numbers inside a model that change during training.</li>
+					<li>Inference: using a trained model on new inputs.</li>
+					<li>Large language model (LLM): a generative model for text.</li>
+					<li>Chatbot: an app you talk to, often built on an LLM.</li>
+				</ul>
+				<p>Now that we know the names of the dolls, one question is left: how far can they go? The next article looks at narrow AI, general AI, and the limits of today&#x27;s systems.</p>
+			</section>
+			<section class="article-section">
+				<h2>Sources</h2>
+				<ol>
+					<li><a href="https://www.ibm.com/think/topics/artificial-intelligence">IBM. Cole Stryker and Eda Kavlakoglu, What is artificial intelligence (AI)?</a></li>
+					<li><a href="https://www.ibm.com/think/topics/machine-learning">IBM. Dave Bergmann, What is machine learning?</a></li>
+					<li><a href="https://www.ibm.com/think/topics/deep-learning">IBM. What is deep learning?</a></li>
+					<li><a href="https://www.ibm.com/think/topics/neural-networks">IBM. Fangfang Lee, What is a neural network?</a></li>
+					<li><a href="https://www.ibm.com/think/topics/generative-ai">IBM. What is generative AI?</a></li>
+					<li><a href="https://www.ibm.com/think/topics/large-language-models">IBM. What are large language models (LLMs)?</a></li>
+				</ol>
+			</section>
+			<section class="article-section">
+				<h2>Image credits</h2>
+				<ul>
+					<li><a href="https://commons.wikimedia.org/wiki/File:Russian-Matroshka_no_bg.jpg">Russian Matroshka no bg</a> by Fanghong, derivative work by Gnomz007, CC BY-SA 3.0, via Wikimedia Commons</li>
+					<li><a href="https://commons.wikimedia.org/wiki/File:Colored_neural_network.svg">Colored neural network</a> by Glosser.ca, CC BY-SA 3.0, via Wikimedia Commons</li>
+				</ul>
+			</section>
+		</main>
+		<footer id="article">
+			<a href="../../html/index.html">&#10094;&#10094;&#10094; Homepage</a>
+			<a id="back-to-top" href="#" title="Back to top"><span>Back to top</span><span>&#x2B06;</span></a>
+			<a href="narrow-ai-and-general-ai.html">Narrow AI and General AI &#10095;&#10095;&#10095;</a>
+		</footer>
+    </body>
+</html>

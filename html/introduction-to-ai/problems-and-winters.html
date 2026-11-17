@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Problems and Winters - AI in Everyday Life</title> <!-- ARTICLE TITLE -->
+		<link rel="icon" href="../../layout/ai-icon.png">
+		<link rel="stylesheet" href="../../css/global.css">
+		<!-- CUSTOM EXTERNAL CSS -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="description" content="The difficult years of AI, from ELIZA to the two AI winters"> <!-- ARTICLE DESCRIPTION -->
+		<meta name="author" content="Luca Clivio"> <!-- ARTICLE AUTHOR -->
+		<style>
+			:root {
+				--template-color: var(--first-main-topic-color);
+			}
+
+			/* CUSTOM INTERNAL CSS */
+			.article-section h2 {
+				color: var(--template-color);
+			}
+
+			.article-section figure {
+				max-width: 550px;
+				margin: 2em auto 0;
+			}
+
+			.article-section figure img {
+				display: block;
+				width: 100%;
+				border: 2px solid var(--template-color);
+				border-radius: var(--global-border-radius);
+			}
+
+			.article-section figcaption {
+				margin-top: 0.6em;
+				font-size: 0.85em;
+				color: var(--template-color);
+				opacity: 0.7;
+			}
+
+			.article-section ol {
+				padding-left: 1.5em;
+			}
+
+			.sources {
+				margin-top: 2.5em;
+			}
+		</style>
+	</head>
+	<body>
+		<nav>
+			<a id="back-to-homepage" href="../../html/index.html"><img src="../../layout/logotype.png" alt="Return to the homepage"></a>
+			<ul>
+				<li id="first-main-topic">
+					<a href="../../html/index.html#introduction-to-ai">Introduction to AI</a>
+					<ul class="dropdown">
+						<li><a href="../../html/index.html#history-of-ai">History of AI</a></li>
+						<li><a href="../../html/index.html#basic-concepts">Basic Concepts</a></li>
+					</ul>
+				</li>
+				<li id="second-main-topic">
+					<a href="../../html/index.html#ai-technologies">AI Technologies</a>
+					<ul class="dropdown">
+						<li><a href="../../html/index.html#interactions">Interactions</a></li>
+						<li><a href="../../html/index.html#language-technologies">Language Technologies</a></li>
+						<li><a href="../../html/index.html#robotics">Robotics</a></li>
+						<li><a href="../../html/index.html#world-building">World Building</a></li>
+					</ul>
+				</li>
+				<li id="third-main-topic">
+					<a href="../../html/index.html#impact-and-ethics">Impact and Ethics</a>
+					<ul class="dropdown">
+						<li><a href="../../html/index.html#ethics">Ethics</a></li>
+						<li><a href="../../html/index.html#limitations">Limitations</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+		<!-- PUT YOUR CONTENT ONLY INSIDE THE <main> TAG, AFTER LINKS AND TITLE SECTION -->
+		<main>
+			<!-- PREVIOUS/NEXT ARTICLE LINKS -->
+			<a id="previous-article" href="the-beginning.html" aria-label="Read previous article" title="Previous article">&#10094;</a>
+			<a id="next-article" href="learning-from-data.html" aria-label="Read next article" title="Next article">&#10095;</a>
+			<!-- ARTICLE TITLE (START) -->
+			<section id="article-title">
+				<div>
+					<h1>Problems and Winters</h1>
+					<p id="article-subtitle">History of AI from 1966 to the Late 1980s</p>
+					<p class="article-title-paragraph">After the first successes, the scientists wanted to go even further. But soon the road became difficult, and twice the money and the interest in AI almost disappeared.</p>
+					<p id="author"><span>by </span>Luca Clivio</p>
+					</div>
+			</section>
+			<!-- ARTICLE SECTIONS (START) -->
+			<section class="article-section">
+				<h2>1966: ELIZA, One of the First Chatbots</h2>
+				<p>In 1966 Joseph Weizenbaum, a professor at MIT, created ELIZA, one of the first chatbots. Its best known script, DOCTOR, imitated a therapist. The program only looked for keywords and turned the user's sentence into a question: "I am sad" could become "Why do you think you are sad?" ELIZA had no memory of the conversation and no knowledge of the world, so it did not even know what "sad" means. It showed that a program can seem intelligent in a conversation without understanding anything, which is also one of the weak points of the Turing Test.</p>
+				<p>Some users still felt that ELIZA understood them. Weizenbaum's own secretary once asked him to leave the room so she could talk to the program in private. The episode worried him, and in 1976 he published a book, "Computer Power and Human Reason", arguing that some decisions should never be left to computers. The tendency to believe that a program understands more than it does is now called the "ELIZA effect".</p>
+				<figure>
+					<img src="../../contributors/luca-clivio/History_of_AI_4.jpg" alt="Console of an IBM 7094">
+					<figcaption>The console of an IBM 7094, the type of computer ELIZA was written for at MIT.</figcaption>
+				</figure>
+			</section>
+			<section class="article-section">
+				<h2>1969: The Limits of the Perceptron</h2>
+				<p>In 1969 Marvin Minsky and Seymour Papert published a book called "Perceptrons". It showed that a single-layer perceptron cannot solve some simple problems, such as XOR, where the answer is "yes" only when exactly one of two inputs is "yes". The reason is that a single perceptron can only separate its examples with a straight line, and many real problems cannot be split in this way. Networks with more layers could solve it, but there was no good method to train them. Many researchers stopped working on neural networks. Rosenblatt died in a boating accident in 1971.</p>
+			</section>
+			<section class="article-section">
+				<h2>1973: The Lighthill Report and the First AI Winter</h2>
+				<p>In 1973 the British mathematician James Lighthill wrote a report on AI for the Science Research Council. According to the report, AI programs only worked on small "toy" problems, and on real problems the number of possibilities grew too fast to handle. A program planning a few moves ahead could work, but every extra step multiplied the number of options, and even the fastest computers could not check them all. This problem is called combinatorial explosion. The same year the BBC broadcast a public debate between Lighthill and three AI researchers, including John McCarthy. The British government cut most of its funding, and in the USA the military agency DARPA also reduced its support. This period is known as the first AI winter.</p>
+			</section>
+			<section class="article-section">
+				<h2>1980s: Expert Systems</h2>
+				<p>In the 1980s AI came back with expert systems: programs containing rules written by human experts, such as "if the patient has this symptom, then check this disease". MYCIN, developed at Stanford in the 1970s, suggested antibiotics for blood infections. Unlike the general programs of the 1950s, expert systems worked only in one small field, but there they could be really useful. Their strength was also their weakness: they only knew the rules someone had written, and they could not learn new ones by themselves.</p>
+				<p>Companies started buying these systems. DEC used one called XCON to configure its computer orders and reported savings of about 40 million dollars a year. In 1982 Japan launched the Fifth Generation Computer Systems project, a ten-year national plan, and the USA and Britain answered with programs of their own.</p>
+				<figure>
+					<img src="../../contributors/luca-clivio/History_of_AI_5.jpg" alt="Lisp machines in a museum">
+					<figcaption>Lisp machines from the 1980s at the Computer History Museum. Computers like these were used to build AI programs and expert systems.</figcaption>
+				</figure>
+			</section>
+			<section class="article-section">
+				<h2>1986: Backpropagation</h2>
+				<p>In 1986 David Rumelhart, Geoffrey Hinton and Ronald Williams published a paper in Nature that made backpropagation famous. The method lets a neural network learn from its errors. The network makes a guess and measures how far it is from the correct answer. Then the error is sent back through the layers, and each weight is changed a little. This is repeated thousands of times.</p>
+				<p>Backpropagation made it possible to train networks with more than one layer, the problem Minsky and Papert had pointed out. With more layers a network can learn more complex patterns: the first layers find simple features, and the next ones combine them into more abstract ones. In 2024 Hinton received the Nobel Prize in Physics, together with John Hopfield, for this line of work.</p>
+				<figure>
+					<img src="../../contributors/luca-clivio/History_of_AI_6.jpg" alt="Geoffrey Hinton">
+					<figcaption>Geoffrey Hinton at the 2024 Nobel Lectures in Stockholm.</figcaption>
+				</figure>
+			</section>
+			<section class="article-section">
+				<h2>Late 1980s: The Second AI Winter</h2>
+				<p>By the late 1980s expert systems had become a problem. They were expensive, hard to update and unreliable outside their narrow topic. In 1987 the market for Lisp machines, special computers built for AI, collapsed, because desktop computers from Apple and IBM had become cheaper and almost as powerful. The Japanese project ended in 1992 without reaching its goals. This was the second AI winter, although some researchers kept working on neural networks and learning methods during these years. For many of them the lesson was that writing knowledge by hand does not scale, and that machines would have to learn it from data.</p>
+				<aside class="sources">
+					<h2>Sources</h2>
+					<ol>
+						<li><a href="https://www.theguardian.com/technology/2023/jul/25/joseph-weizenbaum-inventor-eliza-chatbot-turned-against-artificial-intelligence-ai">The Guardian, Weizenbaum's nightmares</a></li>
+						<li><a href="https://en.wikipedia.org/wiki/Perceptrons_(book)">Wikipedia, Perceptrons (book)</a></li>
+						<li><a href="http://www.chilton-computing.org.uk/inf/literature/reports/lighthill_report/p001.htm">The Lighthill Report (1973)</a></li>
+						<li><a href="https://www.shortliffe.net/Buchanan-Shortliffe-1984/MYCIN%20Book.htm">Buchanan and Shortliffe, Rule-Based Expert Systems: The MYCIN Experiments</a></li>
+						<li><a href="https://en.wikipedia.org/wiki/Xcon">Wikipedia, XCON</a></li>
+						<li><a href="https://www.nytimes.com/1992/06/05/business/fifth-generation-became-japan-s-lost-generation.html">New York Times, 'Fifth Generation' Became Japan's Lost Generation (1992)</a></li>
+						<li><a href="https://www.nature.com/articles/323533a0">Rumelhart, Hinton and Williams, Learning representations by back-propagating errors</a></li>
+						<li><a href="https://www.nobelprize.org/prizes/physics/2024/summary/">NobelPrize.org, The Nobel Prize in Physics 2024</a></li>
+					</ol>
+				</aside>
+			</section>
+		</main>
+		<footer id="article">
+			<a href="the-beginning.html">&#10094;&#10094;&#10094; The Beginning</a>
+			<a id="back-to-top" href="#" title="Back to top"><span>Back to top</span><span>&#x2B06;</span></a>
+			<a href="learning-from-data.html">Learning from Data &#10095;&#10095;&#10095;</a>
+		</footer>
+    </body>
+</html>
