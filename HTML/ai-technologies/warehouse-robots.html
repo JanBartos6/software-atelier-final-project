@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Inside the Warehouse: How Robots Are Changing Logistics</title> <!-- ARTICLE TITLE -->
+		<link rel="icon" href="../../layout/ai-icon.png">
+		<link rel="stylesheet" href="../../css/global.css">
+		<!-- CUSTOM EXTERNAL CSS -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="description" content="Description of household robots"> <!-- ARTICLE DESCRIPTION -->
+		<meta name="author" content="Emanuele Tonazzo">
+		<style>
+			:root {
+				--template-color: var(--second-main-topic-color);
+			}
+			
+			/* CUSTOM INTERNAL CSS */
+			
+			.article-section {
+				width: 80%;
+				margin: 0 auto;
+			}
+			
+			.article-section ul {
+				display: flex;
+				flex-direction: column;
+				gap: 0.5em;
+				margin: 0.8em 0 0.8em 1.5em;
+				line-height: 1.4;
+			}
+			
+			.article-section li::marker {
+				color: var(--template-color);
+			}
+			
+			.article-section strong {
+				font-weight: 600;
+				color: var(--second-main-topic-color-pale);
+			}
+			
+			.article-section figure {
+				max-width: 500px;
+				margin: 2.5em auto;
+			}
+			
+			.article-section figure img {
+				width: 100%;
+				border: var(--article-card-border-style);
+				border-radius: var(--global-border-radius);
+			}
+			
+			.article-section figcaption {
+				margin-top: 0.6em;
+				font-size: 0.9em;
+				font-style: italic;
+				text-align: center;
+				opacity: 0.7;
+			}
+			
+			.article-section .highlight {
+				margin-block: 1.5em;
+				padding-left: 1em;
+				border-left: 3px solid var(--template-color);
+				font-size: 1.15em;
+				font-weight: 400;
+			}
+			
+			.sources {
+				margin-top: 3em;
+				padding: 1em 1.5em;
+				border-left: var(--global-border-thickness) solid var(--template-color);
+				background-color: var(--secondary-bg-color);
+				border-radius: 0 var(--global-border-radius) var(--global-border-radius) 0;
+				font-size: 0.85em;
+			}
+			
+			.article-section .sources h2 {
+				margin: 0;
+				font-size: 1em;
+				font-weight: 600;
+				text-transform: uppercase;
+				color: var(--template-color);
+			}
+			
+			.sources ul {
+				gap: 0.3em;
+				word-break: break-all;
+			}
+		</style>
+	</head>
+	<body id="article">
+		<nav>
+			<a id="back-to-homepage" href="../../html/index.html"><img src="../../layout/logotype.png" alt="Return to the homepage"></a>
+			<ul>
+				<li id="first-main-topic">
+					<a href="../../html/index.html#introduction-to-ai">Introduction to AI</a>
+					<ul class="dropdown">
+						<li><a href="../../html/index.html#history-of-ai">History of AI</a></li>
+						<li><a href="../../html/index.html#basic-concepts">Basic Concepts</a></li>
+					</ul>
+				</li>
+				<li id="second-main-topic">
+					<a href="../../html/index.html#ai-technologies">AI Technologies</a>
+					<ul class="dropdown">
+						<li><a href="../../html/index.html#interactions">Interactions</a></li>
+						<li><a href="../../html/index.html#language-technologies">Language Technologies</a></li>
+						<li><a href="../../html/index.html#robotics">Robotics</a></li>
+					</ul>
+				</li>
+				<li id="third-main-topic">
+					<a href="../../html/index.html#impact-and-ethics">Impact and Ethics</a>
+					<ul class="dropdown">
+						<li><a href="../../html/index.html#ethics">Ethics</a></li>
+						<li><a href="../../html/index.html#limitations">Limitations</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+		<!-- PUT YOUR CONTENT ONLY INSIDE THE <main> TAG, AFTER LINKS AND TITLE SECTION -->
+		<main>
+			<!-- PREVIOUS/NEXT ARTICLE LINKS -->
+			<a id="previous-article" href="household-robots.html" aria-label="Read previous article" title="Previous article">&#10094</a>
+			<a id="next-article" href="industrial-robots.html" aria-label="Read next article" title="Next article">&#10095</a>
+			<!-- ARTICLE TITLE (START) -->
+			<section id="article-title">
+				<span>
+					<h1>Inside the Warehouse: How Robots Are Changing Logistics</h1>
+					<p id="article-subtitle">Warehouse robots are automated machines used to transport, organize, and handle goods inside storage and distribution facilities.</p>
+					<p class="article-title-paragraph">As online shopping and global logistics continue to grow, companies increasingly use robots to support warehouse operations. These machines can move products between different locations, assist workers with repetitive tasks, and improve the organization of warehouse activities.</p>
+					<p id="author"><span>by </span>Emanuele Tonazzo</p>
+				</span>
+			</section>
+			<!-- ARTICLE SECTION (START) -->
+			<section class="article-section">
+				<figure>
+					<img src="../../contributors/emanuele-tonazzo/warehouse-robot.jpg" alt="A warehouse robot">
+					<figcaption>Amazon robots in the warehouse</figcaption>
+				</figure>
+				<h2>How Do They Work?</h2>
+				<p>Warehouse robots use a combination of hardware and software to operate in structured indoor environments.</p>
+
+				
+				<ul>
+					<li><strong>Sensors:</strong> Detect obstacles, workers, and other objects.</li>
+					<li><strong>Navigation systems:</strong> Help mobile robots determine their position and move through warehouse areas.</li>
+					<li><strong>Control software:</strong> Coordinates robotic tasks and movements.</li>
+					<li><strong>Artificial intelligence:</strong> Can help robots interpret their surroundings and adapt to changing situations.</li>
+				</ul>
+
+				<p>Some warehouse robots follow predefined routes, while more advanced autonomous mobile robots can navigate dynamically around obstacles.</p>
+				<br>
+				<h2>Real-World Example: Amazon Robotics</h2>
+				<p>Amazon uses robotic systems in its fulfillment centers to support the movement and processing of packages. One example is Proteus, an autonomous mobile robot designed to transport heavy carts through warehouse environments. Unlike some traditional warehouse robots that operate in separated areas, Proteus is designed to navigate in spaces shared with human workers. It uses advanced sensing and navigation technology to detect obstacles and move safely through its working environment.</p>
+				<br>
+				<h2>Benefits and Challenges</h2>
+				<p>Warehouse robots can increase operational efficiency, reduce repetitive physical work, and support the movement of large quantities of goods. They can also help employees focus on tasks that require human judgment and problem-solving. However, implementing warehouse robotics requires significant investment, technical maintenance, and careful coordination between machines and human workers.</p>
+				<br>
+				<h2>The Future</h2>
+				<p>Warehouse automation is expected to become more flexible as robotic systems improve. Future warehouses may use increasingly autonomous robots that can coordinate with each other, adapt to changing layouts, and perform a wider range of logistics tasks.</p>
+
+				
+
+				 
+				<aside class="sources">
+					<h2>Sources</h2>
+					<ul>
+						<li><a href="https://www.aboutamazon.com/stories/amazon-robotics-autonomous-robot-proteus-warehouse-packages" target="_blank" rel="noopener">https://www.aboutamazon.com/stories/amazon-robotics-autonomous-robot-proteus-warehouse-packages</a></li>
+						<li><a href="https://roboticwarehousepicker.com/amazon-robots-in-the-warehouse-efficiency-and-innovation/" target="_blank" rel="noopener">https://roboticwarehousepicker.com/amazon-robots-in-the-warehouse-efficiency-and-innovation/</a></li>
+					</ul>
+				</aside>
+			</section>
+		</main>
+		<footer id="article">
+			<a href="household-robots.html">&#10094&#10094&#10094 Robots at Home: The Rise of Robotic Vacuum Cleaners</a>
+			<a id="back-to-top" href="#">Back to top</a>
+			<a href="industrial-robots.html">The Rise of Industrial Robots: Transforming Modern Factories &#10095&#10095&#10095</a>
+		</footer>
+    </body>
+</html>
