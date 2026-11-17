@@ -2,7 +2,7 @@ Mark Camarilla
 Data and Training: An AI Is What It Learns From
 
 
-In 2014 Amazon started building an AI to read job applications and pick the best candidates automatically. They trained it on the resumes the company had received over the previous 10 years. The problem was that most of those resumes came from men, so the AI learned that men were better candidates. It gave lower scores to resumes with the word "women's" in them, as in "women's chess club captain". Amazon could not make sure it would stop doing this, and in the end the project was dropped. (Reuters 2018)
+In 2014 Amazon started building an AI to read job applications and pick the best candidates automatically. They trained it on the resumes the company had received over the previous 10 years. The problem was that most of those resumes came from men, so the AI learned that men were better candidates. It gave lower scores to resumes with the word "women's" in them, as in "women's chess club captain". Amazon couldn't make sure it would stop doing this, and in the end the project was dropped. (Reuters 2018)
 
 Nobody at Amazon had told the AI to be unfair. It just copied what it saw in the data. This article explains how data turns into an AI, and why the data matters so much.
 
@@ -13,7 +13,7 @@ In the last article we saw that a neural network stores everything it knows in i
 
 It works in a loop. The network looks at an example, say a photo of a cat, and makes a guess. At the beginning the guess is basically random, maybe "dog". Then a formula called the loss function measures how wrong the guess was. A method called backpropagation goes back through the network and works out which weights caused the mistake, and each of them is changed by a tiny amount so that the error gets a bit smaller. Then the network looks at the next example, and the loop starts again, millions or billions of times. (IBM, Zeiler & Fergus 2013)
 
-The step where the weights are adjusted is called gradient descent. Think of being on a mountain in thick fog, trying to get down to the valley. You cannot see the bottom, but you can feel which way the ground slopes under your feet. So you take a small step downhill, feel again, and take another step. Training does the same thing, only the mountain is the error and there are billions of directions instead of four.
+The step where the weights are adjusted is called gradient descent. Think of being on a mountain in thick fog, trying to get down to the valley. You can't see the bottom, but you can feel which way the ground slopes under your feet. So you take a small step downhill, feel again, and take another step. Training does the same thing, only the mountain is the error and there are billions of directions instead of four.
 
 
 Don't Memorize the Test
@@ -25,7 +25,7 @@ How Much Data?
 
 A lot. GPT-3, released in 2020, was trained on about 300 billion tokens, small pieces of text. In 2024 Meta trained its Llama 3 models on more than 15 trillion tokens collected from public sources, seven times more than the model before. The training ran on two clusters of 24,000 graphics cards each. (Brown et al. 2020, Meta 2024)
 
-It is also very expensive. OpenAI's CEO Sam Altman said that training GPT-4 cost more than 100 million dollars. (Wired 2023)
+It's also very expensive. OpenAI's CEO Sam Altman said that training GPT-4 cost more than 100 million dollars. (Wired 2023)
 
 
 The People Behind the Data
@@ -40,7 +40,7 @@ If some groups are missing from the data, the AI works worse for them. In 2018 t
 
 Garbage In, Garbage Out
 
-Programmers have an old saying for this: "garbage in, garbage out". An AI does not know what is true or fair, it only knows what was in its data. Amazon's tool copied the past, and the face systems failed the people who were missing from their photos. Choosing and checking the data is just as important as building the network. The next article looks at the AI trained on the biggest pile of data of all, a big part of the public internet: the chatbot.
+Programmers have an old saying for this: "garbage in, garbage out". An AI doesn't know what is true or fair, it only knows what was in its data. Amazon's tool copied the past, and the face systems failed the people who were missing from their photos. Choosing and checking the data is just as important as building the network. The next article looks at the AI trained on the biggest pile of data of all, a big part of the public internet: the chatbot.
 
 
 Sources

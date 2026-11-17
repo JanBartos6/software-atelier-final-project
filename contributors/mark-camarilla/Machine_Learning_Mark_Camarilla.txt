@@ -2,14 +2,14 @@ Mark Camarilla
 Machine Learning: Teaching Computers With Examples
 
 
-In 2016 three researchers at the University of Washington trained a program to tell huskies from wolves. On purpose, they picked training photos where every wolf had snow behind it and the huskies did not. When they checked what the program was looking at, it was not the animal at all. It had learned a much easier rule: snow means wolf. Show it a husky in the snow and it says "wolf". The researchers wanted to see if people would notice the trick, and it is a good way to understand what machine learning really is. (Ribeiro et al. 2016)
+In 2016 three researchers at the University of Washington trained a program to tell huskies from wolves. On purpose, they picked training photos where every wolf had snow behind it and the huskies didn't. When they checked what the program was looking at, it wasn't the animal at all. It had learned a much easier rule: snow means wolf. Show it a husky in the snow and it says "wolf". The researchers wanted to see if people would notice the trick, and it is a good way to understand what machine learning really is. (Ribeiro et al. 2016)
 
 
 Rules or Examples
 
 A normal program follows rules that a person writes. If you wanted to build a spam filter that way, you would write things like "if the email says 'you won a prize', it is spam". The next day the spammers would change the words, and you would never finish writing rules.
 
-Machine learning turns this around. You do not give the computer the rules, you give it examples: thousands of emails that people have already marked as spam or not spam. The computer finds the patterns by itself and uses them on new emails it has never seen. IBM describes it as the part of AI where the logic is not programmed but learned from data. This is how Gmail blocks almost all spam, as explained in The Invisible Assistant. (IBM)
+Machine learning turns this around. You don't give the computer the rules, you give it examples: thousands of emails that people have already marked as spam or not spam. The computer finds the patterns by itself and uses them on new emails it has never seen. IBM describes it as the part of AI where the logic isn't programmed but learned from data. This is how Gmail blocks almost all spam, as explained in The Invisible Assistant. (IBM)
 
 The idea is old. The name "machine learning" goes back to 1959, when IBM researcher Arthur Samuel used it for a program that got better at checkers the more it played. The History of AI section tells that part of the story. (IBM)
 
@@ -22,16 +22,16 @@ In supervised learning every example comes with the right answer, called a label
 
 In unsupervised learning there are no labels. The program only gets the data and looks for groups or patterns on its own, for example customers who buy similar things. This is often behind the "people who bought this also bought..." suggestions in online shops. (IBM)
 
-In reinforcement learning there are no examples at all. The program tries something, gets a reward if it worked and a penalty if it did not, and slowly learns what to do. It is how you would train a dog, and it is how a computer learned to play chess better than anyone.
+In reinforcement learning there are no examples at all. The program tries something, gets a reward if it worked and a penalty if it didn't, and slowly learns what to do. It's how you would train a dog, and it is how a computer learned to play chess better than anyone.
 
 
 The Program That Taught Itself Chess
 
 In 2017 Google DeepMind gave a program called AlphaZero the rules of chess and nothing else: no opening books, no famous games, no advice. It played against itself millions of times. After about four hours of training it was already stronger than Stockfish, the best chess engine of the time. In a 100-game match it won 28 games, drew 72 and lost none. (Sophos 2017)
 
-In 2018 DeepMind published the full results in the journal Science. In a longer match of 1,000 games AlphaZero won 155 and lost only 6, and the same program had also learned shogi and Go. The strange part is that AlphaZero looked at far fewer positions than Stockfish, about 60 thousand per second against 60 million. It was not calculating more. It had a better feeling for which moves were good. (DeepMind 2018)
+In 2018 DeepMind published the full results in the journal Science. In a longer match of 1,000 games AlphaZero won 155 and lost only 6, and the same program had also learned shogi and Go. The strange part is that AlphaZero looked at far fewer positions than Stockfish, about 60 thousand per second against 60 million. So it wasn't calculating more, it just had a better feeling for which moves were good. (DeepMind 2018)
 
-The same method works even in games where you cannot see everything. In 2019 Microsoft's Suphx learned Japanese Mahjong, where the other players' tiles are hidden, and became the first AI to reach 10 dan on the online platform Tenhou, a level only about 180 human players had ever reached. (Microsoft 2019)
+The same method works even in games where you can't see everything. In 2019 Microsoft's Suphx learned Japanese Mahjong, where the other players' tiles are hidden, and became the first AI to reach 10 dan on the online platform Tenhou, a level only about 180 human players had ever reached. (Microsoft 2019)
 
 
 When the Student Teaches the Teacher
@@ -43,9 +43,9 @@ Top players started copying it. In 2019 the world champion Magnus Carlsen had on
 
 Learning the Right Thing
 
-The goal of machine learning is not to remember the examples, but to do well on new ones. IBM calls this generalization. A student who memorizes the answers of last year's test has not learned the subject. (IBM)
+The goal of machine learning isn't to remember the examples, but to do well on new ones. IBM calls this generalization. A student who memorizes the answers of last year's test hasn't learned the subject. (IBM)
 
-That is what went wrong with the huskies. The program was very good on its training photos, but it had learned the wrong lesson, and nobody would have noticed without looking inside. A machine learning system is only as good as the examples it gets. Most modern systems are built from something called a neural network, which is the topic of the next article.
+That's what went wrong with the huskies. The program was very good on its training photos, but it had learned the wrong lesson, and nobody would have noticed without looking inside. A machine learning system is only as good as the examples it gets. Most modern systems are built from something called a neural network, which is the topic of the next article.
 
 
 Sources
