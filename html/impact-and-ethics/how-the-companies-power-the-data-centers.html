@@ -16,6 +16,85 @@
 			}
 			
 			/* CUSTOM INTERNAL CSS */
+
+			.article-section {
+				padding-top: 0;
+				padding-bottom: 0;
+			}
+
+			.article-section ul {
+				display: flex;
+				flex-direction: column;
+				gap: 0.5em;
+				margin: 0.8em 0 0.8em 1.5em;
+				line-height: 1.4;
+			}
+			
+			.article-section li::marker {
+				color: var(--template-color);
+			}
+			
+			.article-section strong {
+				font-weight: 600;
+			}
+			
+			.article-section h2 {
+				margin-top: 1.8em;
+				margin-bottom: 0.4em;
+				font-size: 1.3em;
+				font-weight: 500;
+				color: var(--template-color);
+				text-transform: uppercase;
+			}
+			
+			.article-section figure {
+				max-width: 500px;
+				margin: 2.5em auto;
+			}
+			
+			.article-section figure img {
+				width: 100%;
+				border: var(--article-card-border-style);
+				border-radius: var(--global-border-radius);
+			}
+			
+			.article-section figcaption {
+				margin-top: 0.6em;
+				font-size: 0.9em;
+				font-style: italic;
+				text-align: center;
+				opacity: 0.7;
+			}
+			
+			.article-section .highlight {
+				margin-top: 1.5em;
+				margin-bottom: 1.5em;
+				padding-left: 1em;
+				border-left: 3px solid var(--template-color);
+				font-size: 1.15em;
+				font-weight: 400;
+			}
+			
+			.sources {
+				margin-top: 3em;
+				padding: 1em 1.5em;
+				border-left: var(--global-border-thickness) solid var(--template-color);
+				background-color: var(--secondary-bg-color);
+				font-size: 0.85em;
+			}
+			
+			.article-section .sources h2 {
+				margin: 0;
+				font-size: 1em;
+				font-weight: 600;
+				text-transform: uppercase;
+				color: var(--template-color);
+			}
+			
+			.sources ul {
+				gap: 0.3em;
+				word-break: break-all;
+			}
 		</style>
 	</head>
 	<body>
@@ -52,38 +131,49 @@
 		</nav>
 		<!-- PUT YOUR CONTENT ONLY INSIDE THE <main> TAG, AFTER LINKS AND TITLE SECTION -->
 		<main>
-			<!-- PREVIOUS/NEXT ARTICLE LINKS -->
-			<a id="previous-article" href="the-ai-boom-vs-net-zero.html" aria-label="Read previous article" title="Previous article">&#10094;</a>
-			<a id="next-article" href="AI_Water_Footprint.html" aria-label="Read next article" title="Next article">&#10095;</a>
-			<!-- ARTICLE TITLE (START) -->
 			<section id="article-title">
 				<div>
 					<h1>How AI Companies Power Their Data Centers</h1>
-					<p id="article-subtitle">Nuclear deals, gas turbines and giant batteries</p>
+					<p id="article-subtitle">Nuclear deals, gas turbines and renewables</p>
 					<p class="article-title-paragraph">The world has experienced a rising demand for computing resources that goes hand in hand with the demand for electrical energy. This article explores how companies are powering the data centers without overloading the grid.</p>
 					<p id="author"><span>by </span>Jan Bartos</p>
-					</div>
+				</div>
 			</section>
+			<a id="previous-article" href="the-ai-boom-vs-net-zero.html" aria-label="Read previous article" title="Previous article">&#10094;</a>
+			<a id="next-article" href="AI_Water_Footprint.html" aria-label="Read next article" title="Next article">&#10095;</a>
 			<!-- ARTICLE SECTIONS (START) -->
 			<section class="article-section">
 				<h2>Reasons why the grid is not enough</h2>
 				<p>With AI scaling up our economies and the unstoppable demand for better models, every AI company is trying to get more compute, bring down the token prices and make their services more reliable.</p>
-				<p>This global race that consumes power 24/7 requires imense amounts of energy that can't be produced by the grid in such a short timeframe and keep up with the demand. Hence, the AI companies and hyper scalers are turning to alternative energy sources.</p>
+				<p>This global race that consumes power 24/7 requires immense amounts of energy that the grid can't produce fast enough to keep up with the demand. Hence, the AI companies and hyperscalers are turning to alternative energy sources.</p>
 			</section>
 			<section class="article-section">
 				<h2>Going nuclear</h2>
-				<p>Nuclear power has been around for decades and is one of the most reliable and clean sources of energy. Therefore, many companies have already signed deals to use energy from nuclear power plants and future contracts binding them to the output of the future generation buildout.</p>
-				<p>Microsoft has committed to buy electricity from a reactor at Three Mile Island, the site of the worst nuclear accident in US history. It's being renovated for whoping $1.6B with the aim to deliver about 835 megawatts of power starting in 2027.</p>
-				<p>While Meta has also signed a similar deal with a power plant in Illinois, Google placed it's money on building modular nuclear reactors with the aim to be cheaper and faster to build, strenghtening their position in the market.</p>
+				<p>Nuclear power has been around for decades and is one of the most reliable and clean sources of energy. Therefore, many companies have already signed deals to use energy from nuclear power plants and contracts for the output of plants that are yet to be built.</p>
+				<p>Microsoft has committed to buy electricity from a reactor at Three Mile Island, the site of the worst nuclear accident in US history. It is being renovated for a whopping $1.6 billion with the aim of delivering about 835 megawatts of power as early as 2027 <sup><a href="#ref-1">[1]</a></sup>.</p>
+				<p>While Meta has also signed a similar deal with a power plant in Illinois <sup><a href="#ref-2">[2]</a></sup>, Google placed its money on building modular nuclear reactors, which aim to be cheaper and faster to build, strengthening its position in the market <sup><a href="#ref-3">[3]</a></sup>.</p>
 			</section>
 			<section class="article-section">
 				<h2>Building their own power plants</h2>
-				<p>Some companies don't have time to waste and are building their own power plants right next to their data centers. One of such examples is Colossus built by Elon Musk's company SpaceX in Memphis, where the Grok chatbot is being trained. The data center itself was legendarily built in a matter of months with a real need for an electricity solution. Therefore, the company decided to build up to 35 gas turbines, producing over 1 gigawatt of power.</p>
-				<p>While this approach is great for scaling, it pollutes local environements and consequently keeps becoming more problematic due to regulatory and environmental concerns.</p>
+				<p>Some companies don't have time to waste and are building their own power plants right next to their data centers. One such example is Colossus, built by Elon Musk's company xAI in Memphis, where the Grok chatbot was trained. The data center itself was legendarily built in a matter of months, creating a real need for an electricity solution. Therefore, the company decided to build around 35 gas turbines <sup><a href="#ref-4">[4]</a></sup>.</p>
+				<p>While this approach is great for scaling, it pollutes local environments and consequently is becoming increasingly problematic due to regulatory and environmental concerns <sup><a href="#ref-5">[5]</a></sup>.</p>
 			</section>
 			<section class="article-section">
 				<h2>Renewables for data centers</h2>
-				<p></p>
+				<p>There is a long-term trend towards using renewable energy sources across all industries, including the tech sector. However, there is a persistent challenge in ensuring a stable and reliable supply due to the unpredictable nature of wind and solar power.</p>
+				<p>Amazon ranks among the top investors in this sector with its support for over 700 projects related to renewable energy <sup><a href="#ref-6">[6]</a></sup>. The real challenge is to store the excess energy efficiently to balance out the fluctuations in supply and demand.</p>
+				<p>There appears to be no obvious solution as of now, but the companies' actions provide clues. They are combining all of the above-mentioned approaches to ensure a stable supply of energy for their ventures while avoiding excessive regulations and environmental limitations.</p>
+				<aside class="sources">
+					<h2>Sources</h2>
+					<ul>
+						<li id="ref-1"><a href="https://www.datacenterdynamics.com/en/news/three-mile-island-nuclear-plant-restart-ahead-of-schedule-in-boon-to-microsofts-ai-ambitions-report" target="_blank" rel="noopener">[1] DatacenterDynamics: Three Mile Island nuclear plant restart ahead of schedule</a></li>
+						<li id="ref-2"><a href="https://www.datacenterdynamics.com/en/news/three-mile-island-nuclear-plant-restart-ahead-of-schedule-in-boon-to-microsofts-ai-ambitions-report" target="_blank" rel="noopener">[2] DatacenterDynamics: Constellation's deal with Meta for the Clinton Clean Energy Center</a></li>
+						<li id="ref-3"><a href="https://www.nucnet.org/news/google-signs-world-first-deal-to-buy-power-from-small-modular-reactors-for-data-centres-10-2-2024" target="_blank" rel="noopener">[3] NucNet: Google signs world-first deal to buy power from small modular reactors</a></li>
+						<li id="ref-4"><a href="https://www.datacenterdynamics.com/en/news/campaigners-appeal-decision-to-permit-gas-turbines-at-xais-memphis-data-center/" target="_blank" rel="noopener">[4] DatacenterDynamics: Campaigners appeal decision to permit gas turbines at xAI's Memphis data center</a></li>
+						<li id="ref-5"><a href="https://www.eenews.net/articles/xai-gets-air-permit-for-unauthorized-gas-turbines/" target="_blank" rel="noopener">[5] E&amp;E News: xAI gets air permit for unauthorized gas turbines</a></li>
+						<li id="ref-6"><a href="https://carboncredits.com/amazon-tops-global-clean-energy-rankings-with-40gw-renewable-projects-says-bnef" target="_blank" rel="noopener">[6] Carbon Credits: Amazon tops global clean energy rankings</a></li>
+					</ul>
+				</aside>
 			</section>
 		</main>
 		<footer id="article">
