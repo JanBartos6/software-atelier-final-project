@@ -61,5 +61,5 @@ tmbootpicker.efi
 #Jetbrains IDEs
 .idea/
 
-documentation/contributions.*
-!documentation/contributions.tex
+documentation/FinalReport.*
+!documentation/FinalReport.tex
