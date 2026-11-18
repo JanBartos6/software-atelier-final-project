@@ -6,19 +6,11 @@
     │   ├── giacomo-demartini/
     │   └── ...
     ├── css/
-    │   ├── article.css
-    │   ├── global.css
-    │   ├── homepage.css
-    │   └── ...
     ├── documentation/
-    │   ├── midway.pptx
-    │   ├── Final Report.pdf
-    │   └── ...
     ├── html/
-    │   ├── ai-technologies
-    │   ├── impact-and-ethics
-    │   ├── introduction-to-ai
-    │   └── ...
+    │   ├── ai-technologies/
+    │   ├── impact-and-ethics/
+    │   └──  introduction-to-ai/
     ├── js/
     ├── layout/
     ├── Topic1/
