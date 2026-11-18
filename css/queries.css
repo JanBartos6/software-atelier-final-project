@@ -2,18 +2,6 @@
 
 /* ---------- HOMEPAGE ---------- */
 
-@media (width <= 1500px) {
-
-	#main-topics {
-		width: 100%;
-	}
-
-	.main-topic {
-		padding-inline: 16px;
-	}
-
-}
-
 @media (width <= 1250px) {
 
 	#topics-container a {
@@ -21,8 +9,6 @@
 	}
 
 	.main-topic {
-		min-width: 40%;
-		max-width: 60%;
 		margin: 16px auto;
 		padding-bottom: 0;
 	}
@@ -61,19 +47,18 @@
 	#topics-container a {
 		text-align: center;
 	}
-
-	#main-topics {
-		flex-direction: column;
-		gap: 24px;
+	
+	#main-topics, .main-topic {
+		width: 90%;
 	}
 
 	.main-topic {
 		min-width: 0;
 		max-width: none;
 	}
-
-	#main-topics, .main-topic {
-		width: 80%;
+	
+	.sub-topic article {
+		width: 28vw;
 	}
 
 }
@@ -95,6 +80,10 @@
 	.sub-topic:last-child {
 		margin-bottom: 0;
 	}
+	
+	.sub-topic article {
+		width: 60vw;
+	}
 
 	footer#home {
 		padding-inline: 32px;
@@ -112,6 +101,10 @@
 		 display: block;
 		 width: 80%;
 		 margin: 0 auto;
+	}
+	
+	.sub-topic article {
+		width: 100%;
 	}
 
 	footer#home > div {
