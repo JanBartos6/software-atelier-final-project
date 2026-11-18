@@ -200,6 +200,7 @@
 	footer#article #back-to-top {
 		padding-inline: 9px;
 		font-size: 2vw;
+		margin-inline: 20px;
 	}
 
 }
