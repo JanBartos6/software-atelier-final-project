@@ -1,20 +1,22 @@
 .
-├── main/
-│   ├── contributors/
-│   │   ├── emanuele-tonazzo/
-│   │   ├── fabio-giandomenico/
-│   │   └── giacomo-demartini/
-│   ├── css/
-│   ├── documentation/
-│   ├── html/
-│   │   └── ai-technologies/
-│   ├── js/
-│   ├── layout/
-│   └── .gitignore
-├── Topic1/
-├── Topic2-SG1/
-├── Topic2-SG2/
-└── Topic3/
+└── main/
+    ├── contributors/
+    │   ├── emanuele-tonazzo/
+    │   ├── fabio-giandomenico/
+    │   ├── giacomo-demartini/
+    │   └── ...
+    ├── css/
+    ├── documentation/
+    ├── html/
+    │   ├── ai-technologies/
+    │   ├── impact-and-ethics/
+    │   └──  introduction-to-ai/
+    ├── js/
+    ├── layout/
+    ├── Topic1/
+    ├── Topic2-SG1/
+    ├── Topic2-SG2/
+    └── Topic3/
 
 *If it contains slash - / it is a directory. Only directories are mentioned here.
 
