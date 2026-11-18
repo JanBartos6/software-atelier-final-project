@@ -18,7 +18,6 @@
 
 *If it contains slash - / it is a directory. Only directories are mentioned here.
 
-
 Regarding media: please save images in a smart way (no img.png pls). For example, if you are working on "AI History", save the images as AI_History_1.png, AI_History_2.png, etc to avoid any conflict. You can also make subfolders, it's really up to you.
 
 Guides: Feel free to add anything that you think might help others.
